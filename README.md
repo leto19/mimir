@@ -23,7 +23,13 @@ model directories go in 'speech_recognition/models'
 [Models for Vosk can be obtained here](https://alphacephei.com/vosk/models)
 
 ## Running 
-Run test_microphone.py:
+### Speech Recognition
+
+Run get_speech_input.py:
 ```    
-python3 test_microphone.py models/model-directory-here
+python3 get_speech_input.py models/model-directory-here
+```
+To get mic input as a string in other locations:
+```
+from speech_recognition.get_speech_input import get_input_string() 
 ```

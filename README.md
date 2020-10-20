@@ -14,9 +14,9 @@ anything. The Companion will speak its answers.
 
 ## Requirements
 ### Speech Recognition
-Uses Vosk pip package
+Uses Vosk and pyaudio pip packages:
 ```
-pip install vosk 
+pip install vosk pyaudio
 ```
 model directories go in 'speech_recognition/models'
 

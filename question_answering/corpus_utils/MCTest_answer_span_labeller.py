@@ -13,13 +13,15 @@ tokenize = nlp.word_tokenize
 MCTest_dir = "/home/jonathan/Desktop/corpora/MCTest"
 
 text_file_name = "mc160.train.txt"
+text_file_path = op.join(MCTest_dir, text_file_name)
+with open(text_file_path) as infile:
+	text_file_lines = infile.readlines()
+
 
 class bcolors:
     OKBLUE = '\033[94m'
     ENDC = '\033[0m'
 
-
-mc160dev = op.join(MCTest_dir, text_file_name)
 
 def levenshtein(input_sentence, target_sentence):
 
@@ -41,11 +43,6 @@ def levenshtein(input_sentence, target_sentence):
 
 def normalize(text):
 	return(text.lower())
-
-
-
-with open(mc160dev) as infile:
-	dev_lines = infile.readlines()
 
 
 def split_by_story(file_lines):
@@ -155,7 +152,7 @@ if __name__ == "__main__":
 	
 	npy_name = text_file_name[:-4] + "_answer_spans.npy"
 
-	stories = split_by_story(dev_lines)
+	stories = split_by_story(text_file_lines)
 	organized_stories = [organize_story(s) for s in stories]
 
 	n_questions = len(organized_stories) * 4
@@ -239,7 +236,3 @@ if __name__ == "__main__":
 			n += 1
 	
 		np.save(npy_name, np.array([{"auto": auto_answer_spans, "corrected": corrected_answer_spans}]))	
-
-
-print(string_out)
-import pdb; pdb.set_trace()

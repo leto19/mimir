@@ -28,11 +28,11 @@ download_models()
 line_list = get_line_list_from_file(sys.argv[1])
 print(line_list)
 entity_list = list()
-for line in line_list:
+for line in line_list: #for each sentance in the input file 
     print(line)
     line.strip("\n")
-    t = get_tokens_from_text(line)
-    entities = get_named_entities(t)
+    t = get_tokens_from_text(line) #get tokens 
+    entities = get_named_entities(t) # get entities tree
 
     for l in entities:
         if len(l) == 1: #it's an entity

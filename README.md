@@ -22,6 +22,11 @@ model directories go in 'speech_recognition/models'
 
 [Models for Vosk can be obtained here](https://alphacephei.com/vosk/models)
 
+### NER
+Uses the python module nltk (http://www.nltk.org/):
+```
+pip install nltk
+```
 ## Running 
 ### Speech Recognition
 

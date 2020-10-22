@@ -3,7 +3,7 @@ import os
 import os.path as op
 import re
 import requests
-
+import sys
 spark_lit_page = requests.get("https://www.sparknotes.com/lit/")
 
 lit_page_text = spark_lit_page.text
@@ -12,7 +12,10 @@ title_regex = re.compile(r'__card__title__link--full-card-link"\s*href="\S*">(.*
 
 spark_books = re.findall(title_regex, lit_page_text)
 
-NarrativeQADir = "/home/jonathan/Desktop/corpora/narrativeqa-master"
+if len(sys.argv) == 1:
+	NarrativeQADir = "/home/jonathan/Desktop/corpora/narrativeqa-master"
+else:
+	NarrativeQADir = sys.argv[1]
 docs_file_path = op.join(NarrativeQADir, "documents.csv")
 
 def csv_to_list(csv_file_path):

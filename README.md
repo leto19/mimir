@@ -31,5 +31,7 @@ python3 get_speech_input.py models/model-directory-here
 ```
 To get mic input as a string in other locations:
 ```
-from speech_recognition.get_speech_input import get_input_string() 
+import speech_recognition.get_speech_input as sr
+
+string = sr.get_input_string()
 ```

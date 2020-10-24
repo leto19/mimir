@@ -1,4 +1,5 @@
 import re
+from utils import embedding_cos_sim
 
 # States
 S_START = "STATE: START" 
@@ -25,7 +26,7 @@ TRANSITIONS = (
   {
     'src': S_ANSWER,
     'dst': S_NEUTRAL,
-    'condition': lambda x: re.match("(okay|see|great|thank)", x),
+    'condition': lambda x: embedding_cos_sim(x, "okay great") > 0.7,
     'response': "Is there anything else I can you help you with?"
   },
   {
@@ -37,13 +38,13 @@ TRANSITIONS = (
   {
     'src': S_NEUTRAL,
     'dst': S_START,
-    'condition': lambda x: re.match("(yes|yeah|ye)", x),
+    'condition': lambda x: embedding_cos_sim(x, "yes okay") > 0.7,
     'response': "What is it?"
   },
   {
     'src': S_NEUTRAL,
     'dst': S_END,
-    'condition': lambda x: re.match("(no|nope|na)", x),
+    'condition': lambda x: embedding_cos_sim(x, "no") > 0.7,
     'response': ""
   },
 )

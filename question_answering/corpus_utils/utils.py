@@ -1,3 +1,4 @@
+import os.path as op
 import numpy as np
 import csv
 
@@ -11,6 +12,15 @@ def csv_to_list(csv_file_path):
 			line_list.append(row)
 
 	return(line_list)
+
+def load_or_create_object(numpy_filename: str, obj: object):
+	if not numpy_filename.endswith(".npy"):
+		numpy_filename += ".npy"
+	if not op.exists(numpy_filename):
+		return obj
+	else:
+		return np.load(numpy_filename, allow_pickle=True)[0]	
+		
 
 def levenshtein(input_sentence, target_sentence):
 	#Calculates the minimum edit distance (Levenshtein distance) between two strings (or lists)

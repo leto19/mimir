@@ -27,7 +27,7 @@ download_models()
 line_list = get_line_list_from_file(sys.argv[1])
 print(line_list)
 entity_list = list()
-for line in line_list: #for each sentance in the input file 
+for line in line_list: #for each sentence in the input file 
     print(line)
     line.strip("\n")
     t = get_tokens_from_text(line) #get tokens 
@@ -38,3 +38,5 @@ for line in line_list: #for each sentance in the input file
             if "%s (%s)" % ( l[0][0], l.label().lower() ) not in entity_list: #if it's not in the list
                 entity_list.append("%s (%s)" % ( l[0][0], l.label().lower() ) )
 print(entity_list)
+print(entities)
+import pdb; pdb.set_trace()

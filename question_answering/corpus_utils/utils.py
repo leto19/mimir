@@ -13,6 +13,13 @@ def csv_to_list(csv_file_path):
 
 	return(line_list)
 
+def list_to_csv(csv_file_path, line_list):
+	
+	with open(csv_file_path, "w+") as csvfile:
+		csvwriter = csv.writer(csvfile)
+		for row in line_list:
+			csvwriter.writerow(row)
+
 def load_or_create_object(numpy_filename: str, obj: object):
 	if not numpy_filename.endswith(".npy"):
 		numpy_filename += ".npy"

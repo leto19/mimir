@@ -1,6 +1,11 @@
+import os
 import os.path as op
 import numpy as np
 import csv
+
+nqa_dir = os.environ["NARRATIVEQA_DIR"]
+
+	
 
 def csv_to_list(csv_file_path):
 
@@ -20,6 +25,7 @@ def list_to_csv(csv_file_path, line_list):
 		for row in line_list:
 			csvwriter.writerow(row)
 
+
 def load_or_create_object(numpy_filename: str, obj: object):
 	if not numpy_filename.endswith(".npy"):
 		numpy_filename += ".npy"
@@ -28,6 +34,19 @@ def load_or_create_object(numpy_filename: str, obj: object):
 	else:
 		return np.load(numpy_filename, allow_pickle=True)[0]	
 		
+
+def make_id_name_dict():
+	id_name_dict = {}
+	docs_csv = op.join(nqa_dir, "documents.csv")
+	docs_list = csv_to_list(docs_csv)
+	for line in docs_list[1:]:
+		print(line)
+		try:
+			if line[2] == "gutenberg":
+				id_name_dict[line[0]] = line[6]
+		except:
+			pass
+	return(id_name_dict)
 
 def levenshtein(input_sentence, target_sentence):
 	#Calculates the minimum edit distance (Levenshtein distance) between two strings (or lists)

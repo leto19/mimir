@@ -13,7 +13,6 @@ def get_line_list_from_file(file):
     
     return line_list
 
-
 def get_tokens_from_text(line):
     tokens = nltk.word_tokenize(line)
     
@@ -38,6 +37,4 @@ for line in line_list: #for each sentance in the input file
         if len(l) == 1: #it's an entity
             if "%s (%s)" % ( l[0][0], l.label().lower() ) not in entity_list: #if it's not in the list
                 entity_list.append("%s (%s)" % ( l[0][0], l.label().lower() ) )
-
-
 print(entity_list)

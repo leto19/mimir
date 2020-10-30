@@ -43,3 +43,6 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.x
+
+#misc
+speech_recognition/models

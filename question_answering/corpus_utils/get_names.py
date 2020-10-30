@@ -33,11 +33,12 @@ for line in line_list: #for each sentance in the input file
     line.strip("\n")
     t = get_tokens_from_text(line) #get tokens 
     entities = get_named_entities(t) # get entities tree
-
+    
     for l in entities:
         if len(l) == 1: #it's an entity
             if "%s (%s)" % ( l[0][0], l.label().lower() ) not in entity_list: #if it's not in the list
                 entity_list.append("%s (%s)" % ( l[0][0], l.label().lower() ) )
 
 
+entity_list = sorted(entity_list)
 print(entity_list)

@@ -7,9 +7,15 @@ import pandas as pd
 #import tkinter as tk
 import re
 from utils import csv_to_list, load_or_create_object
+import sys
 
-MimirDir = os.environ["MIMIR_DIR"] #Set to Mimir root directory
-NarrativeQADir = os.environ["NARRATIVEQA_DIR"] #Set to NarrativeQA root directory
+if len(sys.argv) == 1:
+	MimirDir = os.environ["MIMIR_DIR"] #Set to Mimir root directory
+	NarrativeQADir = os.environ["NARRATIVEQA_DIR"] #Set to NarrativeQA root directory
+elif len(sys.argv) == 3:
+	MimirDir = sys.argv[1]
+	NarrativeQADir = sys.argv[2]
+
 
 qaps_line_list = csv_to_list(op.join(NarrativeQADir, "qaps.csv"))
 header = qaps_line_list[0]

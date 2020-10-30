@@ -23,7 +23,7 @@ def get_audio(seconds=3):
     for i in range(0, int(FS / CHUNK * SECONDS_RECORD)):
         data = stream.read(CHUNK)
         frames.append(data)
-        print
+        print(i)
 
     stream.stop_stream()
     stream.close() 
@@ -32,7 +32,7 @@ def get_audio(seconds=3):
 
 
 
-def get_input_string(seconds=7):
+def get_input_string(seconds=5):
     """returns speech input from the user as a string
     records for the number of seconds specified, default 3"""
     SetLogLevel(-1) #Hides Kaldi outputs to terminal 

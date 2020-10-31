@@ -1,25 +1,26 @@
 import re 
 
 class DialogueStateMachine():
-  def __init__(self, states, transitions, start_state, end_states, is_clarify = True):
+  def __init__(self, states, transitions, start_state, end_states):
     self.states = states
     self.transitions = transitions
     self.current_state = start_state
     self.end_states = end_states
-    self.is_clarify = is_clarify
-    print("Hello, what can I help you with?")
+    self.state_history = []
+    print("Hello, what book are you reading today?")
 
-  def get_clarify_transition(self):
+  def get_repeat_transition(self):
     return {
       "src": self.current_state,
       "dst": self.current_state,
       "condition": None,
-      "response": "Sorry, I did not understand."
+      "response": lambda: "Sorry, I did not understand."
     }
 
   def trans_state(self, transition):
+    self.state_history.append(self.current_state)
     self.current_state = transition['dst']
-    print(transition['response'])
+    print(transition['response']())
     print("***{}***".format(transition['dst']))
 
     if self.current_state in self.end_states:
@@ -35,6 +36,4 @@ class DialogueStateMachine():
       if t['condition'](text_in):
         return self.trans_state(t)
     
-    return self.trans_state(self.get_clarify_transition()) if self.is_clarify else False
-    
-    
+    return self.trans_state(self.get_repeat_transition())

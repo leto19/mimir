@@ -48,6 +48,19 @@ def make_id_name_dict():
 			pass
 	return(id_name_dict)
 
+def make_name_url_dict():
+	id_name_dict = make_id_name_dict()
+	name_url_dict = {}
+	id_url_csv = op.join(nqa_dir, "id_url.csv")
+	id_url_list = csv_to_list(id_url_csv)
+	for line in id_url_list[1:]:
+		try:
+			if line[1] == "gutenberg":
+				name_url_dict[id_name_dict[line[0]]] = line[2]
+		except:
+			pass
+	return name_url_dict
+
 def levenshtein(input_sentence, target_sentence):
 	#Calculates the minimum edit distance (Levenshtein distance) between two strings (or lists)
 

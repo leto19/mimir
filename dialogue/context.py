@@ -30,14 +30,14 @@ def is_book_present(user_utterance):
   # Collect/store wikipedia suggestions based on utterance
   wikipedia_suggested = wikipedia.search(user_utterance + " (novel)", results=3)
 
-  # print(wikipedia_suggested)
+  #print(wikipedia_suggested)
   
   # For each of the suggestions, parse the wikipedia html to see if the
   # 'author' field exists in the info box on the page - it does for all
   # books with wikipedia pages, so this confirms the book info is correct/available
   for (i, title) in list(enumerate(wikipedia_suggested)):
     try:
-      url = wikipedia.page(title).url
+      url = wikipedia.page(title, auto_suggest=False).url
       html_text = requests.get(url).text
       soup = BeautifulSoup(html_text, 'html.parser')
       info_box = soup.find_all("table", { "class": "infobox" })[0] # I think there is only ever 1
@@ -48,7 +48,7 @@ def is_book_present(user_utterance):
       global s_books
       s_books.append({ "title": book_title, "author": author_name })
     except Exception as e: 
-      #print(e)
+      print(e)
       print("Suggestion {} failed.".format(i+1))
 
 

@@ -32,7 +32,7 @@ TRANSITIONS = (
   {
     'src': S_START,
     'dst': S_START,
-    'condition': lambda x: not context.is_book_present(x),
+    'condition': lambda x: True,
     'response': lambda: (
       "I'm sorry, I cannot find the book you're looking for. " +
       "Is there another book you'd like to try?"

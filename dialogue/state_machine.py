@@ -7,7 +7,10 @@ class DialogueStateMachine():
     self.current_state = start_state
     self.end_states = end_states
     self.state_history = []
-    print("Hello, what book are you reading today?")
+    self.boldPrint("Hello, what book are you reading today?")
+
+  def boldPrint(self, text):
+    print('\033[1m' + text + '\033[0m')
 
   def get_repeat_transition(self):
     return {
@@ -20,7 +23,7 @@ class DialogueStateMachine():
   def trans_state(self, transition):
     self.state_history.append(self.current_state)
     self.current_state = transition['dst']
-    print(transition['response']())
+    self.boldPrint(transition['response']())
     print("***{}***".format(transition['dst']))
 
     if self.current_state in self.end_states:

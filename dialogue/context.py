@@ -2,6 +2,9 @@ import wikipedia, requests
 from bs4 import BeautifulSoup
 
 def init():
+  '''
+  Initialises the global variables.
+  '''
   global s_books
   s_books = []
 
@@ -14,8 +17,8 @@ def init():
 
 def is_book_present(user_utterance):
   '''
-  Searches for the book title on wikipedia and retrieves the author name 
-  if match is found.
+  Searches for the book title on wikipedia and retrieves the top suggestions.
+  Returns true if any similar books are found on wikipedia, false otherwise. 
   '''
   init()
 
@@ -25,7 +28,7 @@ def is_book_present(user_utterance):
   
   wikipedia_suggested = wikipedia.search(user_utterance + " (novel)", results=3)
 
-  print(wikipedia_suggested)
+  # print(wikipedia_suggested)
   
   for (i, title) in list(enumerate(wikipedia_suggested)):
     try:
@@ -40,18 +43,20 @@ def is_book_present(user_utterance):
       global s_books
       s_books.append({ "title": book_title, "author": author_name })
     except Exception as e: 
-      print(e)
+      #print(e)
       print("Suggestion {} failed.".format(i+1))
+
 
   if len(s_books) == 0:
     return False
-
-  print(s_books)
 
   return True
 
 
 def suggest_book():
+  '''
+  Returns a string suggesting the next possible book from the suggested books.
+  '''
   global s_book_index
   s_book_index += 1
 
@@ -62,13 +67,20 @@ def suggest_book():
 
 
 def confirm_book():
+  '''
+  Confirms the current suggested book is correct. Returns a string (system response) 
+  for the transition to the "neutral" state from the "clarify" state.
+  '''
   global confirmed_book
   confirmed_book = s_books[s_book_index]
 
-  # It may be appriate to collect relevant resources on the book here
+  # It may be appropriate to collect/store relevant resources on the book here
 
   return "Great, let me know if you have any questions."
 
 
 def is_suggested_book():
+  '''
+  Returns true if the current suggested book is the last suggested book.
+  '''
   return s_book_index != (len(s_books) - 1)

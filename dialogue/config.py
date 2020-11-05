@@ -30,12 +30,34 @@ TRANSITIONS = (
     'response': lambda: context.suggest_book()
   },
   {
+    'src': S_START,
+    'dst': S_START,
+    'condition': lambda x: not context.is_book_present(x),
+    'response': lambda: (
+      "I'm sorry, I cannot find the book you're looking for. " +
+      "Is there another book you'd like to try?"
+    )
+  },
+  {
     'src': S_CLARIFY,
     'dst': S_CLARIFY,
     'condition': lambda x: (
       embedding_cos_sim(x, "no") > SIM_THRESHOLD # and is not final suggestion_
-      ),
+      and context.is_suggested_book()
+    ),
     'response': lambda: context.suggest_book()
+  },
+  {
+    'src': S_CLARIFY,
+    'dst': S_START,
+    'condition': lambda x: (
+      embedding_cos_sim(x, "no") > SIM_THRESHOLD
+      and not context.is_suggested_book()
+    ),
+    'response': lambda: (
+      "I'm sorry, I cannot find the book you're looking for. " +
+      "Is there another book you'd like to try?"
+    )
   },
   {
     'src': S_CLARIFY,

@@ -10,6 +10,7 @@ Original file is located at
 """
 
 import os
+import os.path as op
 import pandas as pd
 import torch
 import time
@@ -18,26 +19,35 @@ import datetime
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 #!pip install transformers
 
+from transformers import AutoTokenizer, AutoModelForQuestionAnswering
+
+#tokenizer = AutoTokenizer.from_pretrained("bert-large-uncased-whole-word-masking-finetuned-squad")
+			
+
+
 def format_time(elapsed):
   elapsed_rounded = int(round(elapsed))
   return str(datetime.timedelta(seconds=elapsed_rounded))
 
-from google.colab import drive
-drive.mount('/content/gdrive')
+#from google.colab import drive
+#drive.mount('/content/gdrive')
 
-ROOT        = 'gdrive/Shared drives/CDT Mini-Project Team 1/Colab Notebooks/'
-DATA_DIR    = ROOT + 'data/' 
-MODELS_DIR  = ROOT + 'models/'
-N_QA        = DATA_DIR + 'narrativeqa/'
+#ROOT        = 'gdrive/Shared drives/CDT Mini-Project Team 1/Colab Notebooks/'
+
+mimir_dir = os.environ["MIMIR_DIR"]
+
+DATA_DIR    = op.join(mimir_dir, "data") 
+#MODELS_DIR  = op.join(mimir_dir, "models")
+N_QA        = os.environ["NARRATIVEQA_DIR"]
 
 import tensorflow as tf
 
 device_name = tf.test.gpu_device_name()
 
-if device_name == '/device:GPU:0':
-  print('Found GPU at: {}'.format(device_name))
-else:
-  raise SystemError('GPU device not found')
+#if device_name == '/device:GPU:0':
+#  print('Found GPU at: {}'.format(device_name))
+#else:
+#  raise SystemError('GPU device not found')
 
 if torch.cuda.is_available():
 
@@ -50,8 +60,8 @@ else:
   print('No GPU available, using CPU instead')
   device = torch.device('cpu')
 
-docs = pd.read_csv(N_QA + 'documents.csv')
-qaps = pd.read_csv(N_QA + 'qaps.csv')
+docs = pd.read_csv(op.join(N_QA,'documents.csv'))
+qaps = pd.read_csv(op.join(N_QA, 'qaps.csv'))
 
 docs = docs[(docs['set'] == 'train') & 
             (docs['kind'] == 'gutenberg')]
@@ -64,7 +74,7 @@ docs.head()
 
 qaps.head()
 
-summaries = pd.read_csv(N_QA + 'third_party/wikipedia/summaries.csv')
+summaries = pd.read_csv(op.join(N_QA,'third_party/wikipedia/summaries.csv'))
 summaries = summaries[(summaries['set'] == 'train') & 
                       (summaries['document_id'].isin(doc_ids))] #filter questions/answers
 
@@ -78,11 +88,11 @@ from transformers import BertForQuestionAnswering, BertTokenizer
 
 #Get the model
 
-MODEL_ID = MODEL_ID = 'bert-large-uncased-whole-word-masking-finetuned-squad'
-model = BertForQuestionAnswering.from_pretrained(MODELS_DIR + MODEL_ID)
+MODEL_ID = 'bert-large-uncased-whole-word-masking-finetuned-squad'
+model = BertForQuestionAnswering.from_pretrained(MODEL_ID)
 model.to(device)
 model.eval()
-tokenizer = BertTokenizer.from_pretrained(MODELS_DIR + MODEL_ID)
+tokenizer = BertTokenizer.from_pretrained(MODEL_ID)
 
 baskervilles = 'a7edd5dfe618e9d0fe3051af99e305362791e5e3'
 question = qaps[qaps['document_id'] == baskervilles]['question'].iloc[0]

@@ -22,14 +22,19 @@ def is_book_present(user_utterance):
   '''
   init()
 
+  # Phrases to remove from the user utterance
   blacklist = ["i am reading", "it is called"]
   for n_gram in blacklist:
     user_utterance = user_utterance.replace(n_gram, '')
   
+  # Collect/store wikipedia suggestions based on utterance
   wikipedia_suggested = wikipedia.search(user_utterance + " (novel)", results=3)
 
   # print(wikipedia_suggested)
   
+  # For each of the suggestions, parse the wikipedia html to see if the
+  # 'author' field exists in the info box on the page - it does for all
+  # books with wikipedia pages, so this confirms the book info is correct/available
   for (i, title) in list(enumerate(wikipedia_suggested)):
     try:
       url = wikipedia.page(title).url

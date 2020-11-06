@@ -196,6 +196,8 @@ def ne_list_from_file(file_path):
 			if isinstance(e, nltk.tree.Tree): #it's an entity
 				ent_string = " ".join([leaf[0] for leaf in e.leaves()])
 				ent_tuple = (ent_string, e.label())
+				import pdb; pdb.set_trace()
+				
 				if ent_tuple not in entity_list:
 					entity_list.append(ent_tuple)
 	return(entity_list)
@@ -204,5 +206,6 @@ def ne_list_from_file(file_path):
 if __name__ == "__main__":
 
 	
-	print(ne_BOWs_from_file(op.join(mimir_dir,"data","nqa_summary_text_files","train", "Anna Karenina")))
+	print(ne_list_from_file(op.join(mimir_dir,"data","nqa_summary_text_files","train", "Anna Karenina")))
+	
 	print(BOWs_to_TFIDF(ne_BOWs_from_file(op.join(mimir_dir,"data","dune_plot.txt"))))

@@ -43,9 +43,9 @@ class TFIDFModel():
 
 		for c, s in character_scores.items():
 			probabilities[c] = character_scores[c]/character_scores_sum
-		print("keywords:",keywords)
-		print("answers:")
-		print([(c, probabilities[c]) for c in sorted(characters, key = lambda x: character_scores[x], reverse=True)][:3])
+		#print("keywords:",keywords)
+		#print("answers:")
+		#print([(c, probabilities[c]) for c in sorted(characters, key = lambda x: character_scores[x], reverse=True)][:3])
 		return(max(characters, key=lambda x: character_scores[x]))
 
 if __name__ == "__main__":

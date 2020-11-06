@@ -73,7 +73,7 @@ def suggest_book():
 
 def confirm_book():
   '''
-  Confirms the current suggested book is correct. Returns a string (system response) 
+  Confirms the current suggested book is correct. Returns a string (system response)
   for the transition to the "neutral" state from the "clarify" state.
   '''
   global confirmed_book

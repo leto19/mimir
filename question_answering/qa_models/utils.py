@@ -8,8 +8,9 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize 
 
 
-nqa_dir = os.environ["NARRATIVEQA_DIR"]
+#nqa_dir = os.environ["NARRATIVEQA_DIR"]
 mimir_dir = os.environ["MIMIR_DIR"]
+data_dir = op.join(mimir_dir, "data")
 
 def tokenize(sent:str):
 	return word_tokenize(sent)
@@ -48,7 +49,7 @@ def load_or_create_object(numpy_filename: str, obj: object):
 
 def make_id_name_dict():
 	id_name_dict = {}
-	docs_csv = op.join(nqa_dir, "documents.csv")
+	docs_csv = op.join(data_dir, "documents.csv")
 	docs_list = csv_to_list(docs_csv)
 	for line in docs_list[1:]:
 		print(line)
@@ -62,7 +63,7 @@ def make_id_name_dict():
 def make_name_url_dict():
 	id_name_dict = make_id_name_dict()
 	name_url_dict = {}
-	id_url_csv = op.join(nqa_dir, "id_url.csv")
+	id_url_csv = op.join(data_dir, "id_url.csv")
 	id_url_list = csv_to_list(id_url_csv)
 	for line in id_url_list[1:]:
 		try:

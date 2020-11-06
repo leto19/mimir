@@ -6,10 +6,10 @@ from qa_models.tfidf_baseline import TFIDFModel
 parser = argparse.ArgumentParser
 
 id_name_dict = make_id_name_dict()
-nqa_dir = os.environ["NARRATIVEQA_DIR"]
+#nqa_dir = os.environ["NARRATIVEQA_DIR"]
 mimir_dir = os.environ["MIMIR_DIR"]
 summary_dir = op.join(mimir_dir, "data", "nqa_summary_text_files")
-qaps_line_list = csv_to_list(op.join(nqa_dir, "qaps.csv"))
+qaps_line_list = csv_to_list(op.join(mimir_dir, "data", "nqa_qas.csv"))
 
 def make_qa_dict_valid(qaps_line_list):
 	qa_dict_valid = {}

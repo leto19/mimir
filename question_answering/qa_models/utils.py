@@ -76,43 +76,44 @@ def make_name_url_dict():
 def levenshtein(input_sentence, target_sentence):
 	#Calculates the minimum edit distance (Levenshtein distance) between two strings (or lists)
 
-    trellis = np.zeros((len(input_sentence) + 1, len(target_sentence) + 1))
-    trellis[:,0] = np.arange(len(input_sentence)+1)
-    trellis[0,:] = np.arange(len(target_sentence)+1)
+	trellis = np.zeros((len(input_sentence) + 1, len(target_sentence) + 1))
+	trellis[:,0] = np.arange(len(input_sentence)+1)
+	trellis[0,:] = np.arange(len(target_sentence)+1)
 
-    for i in range(1, len(input_sentence) + 1):
-        w_in = input_sentence[i-1]
-        for j in range(1, len(target_sentence) +1):
-            w_t = target_sentence[j-1]
-            if w_in == w_t:
-                square_score = 0
-            else:
-                square_score = 1
-            trellis[i,j] = min(trellis[i-1,j], trellis[i-1,j-1], trellis[i,j-1]) +square_score
+	for i in range(1, len(input_sentence) + 1):
+		w_in = input_sentence[i-1]
+		for j in range(1, len(target_sentence) +1):
+			w_t = target_sentence[j-1]
+			if w_in == w_t:
+				square_score = 0
+			else:
+				square_score = 1
+			trellis[i,j] = min(trellis[i-1,j], trellis[i-1,j-1], trellis[i,j-1]) +square_score
 
-    return(trellis[-1,-1])
+	return(trellis[-1,-1])
 
 
 def download_models():
-    nltk.download('punkt')
-    nltk.download('averaged_perceptron_tagger')
-    nltk.download('maxent_ne_chunker')
-    nltk.download('words')
+	nltk.download('stopwords')
+	nltk.download('punkt')
+	nltk.download('averaged_perceptron_tagger')
+	nltk.download('maxent_ne_chunker')
+	nltk.download('words')
 
 def get_line_list_from_file(file):
-    with open(file) as f:
-        line_list = f.readlines()
-    
-    return line_list
+	with open(file) as f:
+		line_list = f.readlines()
+	
+	return line_list
 
 def get_tokens_from_text(line):
-    tokens = nltk.word_tokenize(line)
-    
-    return tokens
+	tokens = nltk.word_tokenize(line)
+	
+	return tokens
 
 def get_named_entities(tokens):
-    entities = nltk.chunk.ne_chunk(nltk.pos_tag(tokens))
-    return entities
+	entities = nltk.chunk.ne_chunk(nltk.pos_tag(tokens))
+	return entities
 
 def ne_labels_from_file(file_path):
 	line_list = get_line_list_from_file(file_path)
@@ -206,7 +207,7 @@ def ne_list_from_file(file_path):
 
 if __name__ == "__main__":
 
-	
+	download_models()
 	print(ne_list_from_file(op.join(mimir_dir,"data","nqa_summary_text_files","train", "Anna Karenina")))
 	
 	print(BOWs_to_TFIDF(ne_BOWs_from_file(op.join(mimir_dir,"data","dune_plot.txt"))))

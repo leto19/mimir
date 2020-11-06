@@ -2,16 +2,11 @@ import os
 import os.path as op
 import argparse
 import string
-from qa_models.utils import csv_to_list, tokenize, make_id_name_dict
+from qa_models.utils import mimir_dir, data_dir, csv_to_list, tokenize, make_id_name_dict
 from qa_models.tfidf_baseline import TFIDFModel
 from qa_models.question_classifiers import SimpleBaseline
 parser = argparse.ArgumentParser
 
-id_name_dict = make_id_name_dict()
-#nqa_dir = os.environ["NARRATIVEQA_DIR"]
-mimir_dir = os.environ["MIMIR_DIR"]
-summary_dir = op.join(mimir_dir, "data", "nqa_summary_text_files")
-qaps_line_list = csv_to_list(op.join(mimir_dir, "data", "nqa_qas.csv"))
 
 def make_qa_dict_valid(qaps_line_list):
 	qa_dict_valid = {}
@@ -42,7 +37,7 @@ def exact_match(model, qa_dict_valid, summary_dir):
 		reference_answers = [tokenize(a) for a in value[1]]
 		reference_answers = [[t for t in a if t not in string.punctuation] for a in reference_answers] 
 		model_output = model.evaluate_question(question, summary_filepath)
-		print("question {} of {}".format(k, len(qa_dict_valid)))
+		print("question {} of {}".format(n_questions+1, len(qa_dict_valid)))
 		print(question)
 		print(reference_answers)
 		print(model_output)	
@@ -61,11 +56,9 @@ models_dict = {"tf_idf_baseline": TFIDFModel}
 if __name__ == "__main__":
 
 	id_name_dict = make_id_name_dict()
-	nqa_dir = os.environ["NARRATIVEQA_DIR"]
-	mimir_dir = os.environ["MIMIR_DIR"]
-	summary_dir = op.join(mimir_dir, "data", "nqa_summary_text_files")
-	full_text_dir = op.join(mimir_dir, "data", "nqa_gutenberg_corpus")
-	qaps_line_list = csv_to_list(op.join(nqa_dir, "qaps.csv"))
+	summary_dir = op.join(data_dir, "nqa_summary_text_files")
+	full_text_dir = op.join(data_dir, "nqa_gutenberg_corpus")
+	qaps_line_list = csv_to_list(op.join(data_dir, "narrativeqa_qas.csv"))
 
 	qa_dict_valid = make_qa_dict_valid(qaps_line_list)
 	
@@ -75,9 +68,9 @@ if __name__ == "__main__":
 	qa_dict_filtered = filter_qa_dict(qa_dict_valid, base_qc, ["PER"]) #Get only the people
 
 	print(qa_dict_filtered)
+	print("Exact match on summaries: {} percent".format(exact_match(tf_idf_model, qa_dict_filtered, summary_dir)))
 	
-	print("Exact match on full texts: {} percent".format(exact_match(tf_idf_model, qa_dict_filtered, full_text_dir)))
-	#print("Exact match on summaries: {} percent".format(exact_match(tf_idf_model, qa_dict_filtered, summary_dir)))
+	#print("Exact match on full texts: {} percent".format(exact_match(tf_idf_model, qa_dict_filtered, full_text_dir)))
 	import pdb; pdb.set_trace()
 
 	

@@ -1,13 +1,10 @@
 # Runs the dialogue system using the command line for input/output
-import context
-
 from state_machine import DialogueStateMachine
 from config import STATES, TRANSITIONS
 
 if __name__ == '__main__':
   # Create State-based dialogue instance
   dsm = DialogueStateMachine(STATES, TRANSITIONS, STATES[0], STATES[-1])
-  context.init()
 
   persist_dialogue = True
 

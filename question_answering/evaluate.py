@@ -27,7 +27,7 @@ def filter_qa_dict(qa_dict, classifier, categories):
 	return(filtered_dict)
 
 
-def exact_match(model, qa_dict_valid, summary_dir):
+def exact_match(model, qa_dict_valid, summary_dir, pause=False):
 	correct_ans_file = open("correct_answers.txt","w+")
 	wrong_ans_file = open("incorrect_answers.txt","w+")
 	correct = 0
@@ -36,12 +36,14 @@ def exact_match(model, qa_dict_valid, summary_dir):
 		question = k
 		summary_filepath = op.join(summary_dir, "valid", value[0])
 		reference_answers = [tokenize(a) for a in value[1]]
-		reference_answers = [[t for t in a if t not in string.punctuation] for a in reference_answers] 
+		reference_answers = [[t.lower() for t in a if t not in string.punctuation] for a in reference_answers] 
 		model_output = model.evaluate_question(question, summary_filepath)
 		print("question {} of {}".format(n_questions+1, len(qa_dict_valid)))
 		print(question)
 		print(reference_answers)
 		print(model_output)	
+		if pause == True:
+			input()
 		if tokenize(model_output) in reference_answers:
 			correct += 1
 			correct_ans_file.write(k + str(reference_answers) + model_output + summary_filepath +" "+"\n")

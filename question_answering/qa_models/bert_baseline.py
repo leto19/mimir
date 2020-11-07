@@ -7,7 +7,7 @@ import numpy as np
 import datetime
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 import transformers
-from transformers import AutoTokenizer, AutoModelForQuestionAnswering, BertForQuestionAnswering, BertTokenizer
+from transformers import AutoTokenizer, AutoModelForQuestionAnswering, BertForQuestionAnswering, BertTokenizer, DistilBertTokenizer, DistilBertForQuestionAnswering
 import tensorflow as tf
 from qa_models.utils import file_path_to_text
 
@@ -32,14 +32,15 @@ class BertBaseline():
 		print("we are initializing bert baseline")
 		self.valid_dir=valid_dir
 		self.valid_files=sorted(os.listdir(valid_dir))
-		self.model_id = 'bert-large-uncased-whole-word-masking-finetuned-squad'
-		self.cache_dir = op.join(mimir_dir,"question_answering","qa_models") 
+		self.model_id = 'distilbert-base-uncased-distilled-squad'
+#		self.model_id = 'bert-large-uncased-whole-word-masking-finetuned-squad'
+	#	self.cache_dir = op.join(mimir_dir,"question_answering","qa_models") 
 		print("bert model")
-		self.bert_model = BertForQuestionAnswering.from_pretrained(self.model_id, cache_dir=self.cache_dir)
+		self.bert_model = DistilBertForQuestionAnswering.from_pretrained(self.model_id)
 		print("bert model to device")
 		self.bert_model.to(device)
 		print("self.tokenizer")
-		self.tokenizer = BertTokenizer.from_pretrained(self.model_id, cache_dir=self.cache_dir)
+		self.tokenizer = DistilBertTokenizer.from_pretrained(self.model_id)
 		print("initialized")
 	
 	def evaluate_question(self, question, summary_file_path):
@@ -54,8 +55,7 @@ class BertBaseline():
 
 		token_type_ids = [0]*num_tokens_question + [1]*num_tokens_context
 
-		start_scores, end_scores = self.bert_model(torch.tensor([input_ids]),
-										 token_type_ids=torch.tensor([token_type_ids]))
+		start_scores, end_scores = self.bert_model(torch.tensor([input_ids]))
 		answer_start = torch.argmax(start_scores)
 		answer_end = torch.argmax(end_scores)
 		answer_tokens = tokens[answer_start:answer_end+1]
@@ -66,13 +66,16 @@ class BertBaseline():
 
 
 	def subword_to_whole_word(self, tokens):
+		
+		if len(tokens) == 0:
+			return("")
 
 		answer = tokens[0]		
 
 		# Select the remaining answer tokens and join them with whitespace.
-		for i in range(1,len(answer)):
+		for i in range(1,len(tokens)):
 			# If it's a subword token, then recombine it with the previous token.
-			if tokens[i][0:2] == '##':
+			if len(tokens[i]) >= 2 and tokens[i][0:2] == '##':
 				answer += tokens[i][2:]
 			# Otherwise, add a space then the token.
 			else:

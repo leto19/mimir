@@ -46,9 +46,15 @@ class BertBaseline():
 	
 		context = file_path_to_text(summary_file_path)
 		input_ids = self.tokenizer.encode(question, context, truncation='only_second')
-		tokens = tokenizer.convert_ids_to_tokens(input_ids)
+		tokens = self.tokenizer.convert_ids_to_tokens(input_ids)
 
-		start_scores, end_scores = model(torch.tensor([input_ids]),
+		sep_index = input_ids.index(self.tokenizer.sep_token_id)
+		num_tokens_question = sep_index + 1
+		num_tokens_context = len(input_ids) - num_tokens_question
+
+		token_type_ids = [0]*num_tokens_question + [1]*num_tokens_context
+
+		start_scores, end_scores = self.bert_model(torch.tensor([input_ids]),
 										 token_type_ids=torch.tensor([token_type_ids]))
 		answer_start = torch.argmax(start_scores)
 		answer_end = torch.argmax(end_scores)

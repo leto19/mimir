@@ -106,6 +106,11 @@ def get_line_list_from_file(file):
 	
 	return line_list
 
+def file_path_to_text(file):
+    line_list = get_line_list_from_file(file)
+    raw_text = " ".join([line.strip("\n") for line in line_list])
+    return(raw_text)
+
 def get_tokens_from_text(line):
 	tokens = nltk.word_tokenize(line)
 	

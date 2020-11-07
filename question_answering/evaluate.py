@@ -4,6 +4,7 @@ import argparse
 import string
 from qa_models.utils import mimir_dir, data_dir, csv_to_list, tokenize, make_id_name_dict
 from qa_models.tfidf_baseline import TFIDFModel
+from qa_models.bert_baseline import BertBaseline
 from qa_models.question_classifiers import SimpleBaseline
 parser = argparse.ArgumentParser
 
@@ -63,12 +64,17 @@ if __name__ == "__main__":
 	qa_dict_valid = make_qa_dict_valid(qaps_line_list)
 	
 	tf_idf_model = TFIDFModel()
-	base_qc= SimpleBaseline() #baseline question classifier
+	bert_model = BertBaseline()
+	
 
-	qa_dict_filtered = filter_qa_dict(qa_dict_valid, base_qc, ["PER"]) #Get only the people
+	print("Exact match on summaries: {} percent".format(exact_match(bert_model, qa_dict_valid, summary_dir)))
 
-	print(qa_dict_filtered)
-	print("Exact match on summaries: {} percent".format(exact_match(tf_idf_model, qa_dict_filtered, summary_dir)))
+
+	#base_qc= SimpleBaseline() #baseline question classifier
+
+#	qa_dict_filtered = filter_qa_dict(qa_dict_valid, base_qc, ["PER"]) #Get only the people
+
+#	print(qa_dict_filtered)
 	
 	#print("Exact match on full texts: {} percent".format(exact_match(tf_idf_model, qa_dict_filtered, full_text_dir)))
 	import pdb; pdb.set_trace()

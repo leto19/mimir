@@ -8,8 +8,9 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize 
 
 
-nqa_dir = os.environ["NARRATIVEQA_DIR"]
+#nqa_dir = os.environ["NARRATIVEQA_DIR"]
 mimir_dir = os.environ["MIMIR_DIR"]
+data_dir = op.join(mimir_dir, "data")
 
 def tokenize(sent:str):
 	return word_tokenize(sent)
@@ -48,7 +49,7 @@ def load_or_create_object(numpy_filename: str, obj: object):
 
 def make_id_name_dict():
 	id_name_dict = {}
-	docs_csv = op.join(nqa_dir, "documents.csv")
+	docs_csv = op.join(data_dir, "documents.csv")
 	docs_list = csv_to_list(docs_csv)
 	for line in docs_list[1:]:
 		print(line)
@@ -62,7 +63,7 @@ def make_id_name_dict():
 def make_name_url_dict():
 	id_name_dict = make_id_name_dict()
 	name_url_dict = {}
-	id_url_csv = op.join(nqa_dir, "id_url.csv")
+	id_url_csv = op.join(data_dir, "id_url.csv")
 	id_url_list = csv_to_list(id_url_csv)
 	for line in id_url_list[1:]:
 		try:
@@ -75,43 +76,49 @@ def make_name_url_dict():
 def levenshtein(input_sentence, target_sentence):
 	#Calculates the minimum edit distance (Levenshtein distance) between two strings (or lists)
 
-    trellis = np.zeros((len(input_sentence) + 1, len(target_sentence) + 1))
-    trellis[:,0] = np.arange(len(input_sentence)+1)
-    trellis[0,:] = np.arange(len(target_sentence)+1)
+	trellis = np.zeros((len(input_sentence) + 1, len(target_sentence) + 1))
+	trellis[:,0] = np.arange(len(input_sentence)+1)
+	trellis[0,:] = np.arange(len(target_sentence)+1)
 
-    for i in range(1, len(input_sentence) + 1):
-        w_in = input_sentence[i-1]
-        for j in range(1, len(target_sentence) +1):
-            w_t = target_sentence[j-1]
-            if w_in == w_t:
-                square_score = 0
-            else:
-                square_score = 1
-            trellis[i,j] = min(trellis[i-1,j], trellis[i-1,j-1], trellis[i,j-1]) +square_score
+	for i in range(1, len(input_sentence) + 1):
+		w_in = input_sentence[i-1]
+		for j in range(1, len(target_sentence) +1):
+			w_t = target_sentence[j-1]
+			if w_in == w_t:
+				square_score = 0
+			else:
+				square_score = 1
+			trellis[i,j] = min(trellis[i-1,j], trellis[i-1,j-1], trellis[i,j-1]) +square_score
 
-    return(trellis[-1,-1])
+	return(trellis[-1,-1])
 
 
 def download_models():
-    nltk.download('punkt')
-    nltk.download('averaged_perceptron_tagger')
-    nltk.download('maxent_ne_chunker')
-    nltk.download('words')
+	nltk.download('stopwords')
+	nltk.download('punkt')
+	nltk.download('averaged_perceptron_tagger')
+	nltk.download('maxent_ne_chunker')
+	nltk.download('words')
 
 def get_line_list_from_file(file):
-    with open(file) as f:
-        line_list = f.readlines()
-    
-    return line_list
+	with open(file) as f:
+		line_list = f.readlines()
+	
+	return line_list
+
+def file_path_to_text(file):
+    line_list = get_line_list_from_file(file)
+    raw_text = " ".join([line.strip("\n") for line in line_list])
+    return(raw_text)
 
 def get_tokens_from_text(line):
-    tokens = nltk.word_tokenize(line)
-    
-    return tokens
+	tokens = nltk.word_tokenize(line)
+	
+	return tokens
 
 def get_named_entities(tokens):
-    entities = nltk.chunk.ne_chunk(nltk.pos_tag(tokens))
-    return entities
+	entities = nltk.chunk.ne_chunk(nltk.pos_tag(tokens))
+	return entities
 
 def ne_labels_from_file(file_path):
 	line_list = get_line_list_from_file(file_path)
@@ -196,6 +203,8 @@ def ne_list_from_file(file_path):
 			if isinstance(e, nltk.tree.Tree): #it's an entity
 				ent_string = " ".join([leaf[0] for leaf in e.leaves()])
 				ent_tuple = (ent_string, e.label())
+				import pdb; pdb.set_trace()
+				
 				if ent_tuple not in entity_list:
 					entity_list.append(ent_tuple)
 	return(entity_list)
@@ -203,6 +212,7 @@ def ne_list_from_file(file_path):
 
 if __name__ == "__main__":
 
+	download_models()
+	print(ne_list_from_file(op.join(mimir_dir,"data","nqa_summary_text_files","train", "Anna Karenina")))
 	
-	print(ne_BOWs_from_file(op.join(mimir_dir,"data","nqa_summary_text_files","train", "Anna Karenina")))
 	print(BOWs_to_TFIDF(ne_BOWs_from_file(op.join(mimir_dir,"data","dune_plot.txt"))))

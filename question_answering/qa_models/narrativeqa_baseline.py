@@ -18,7 +18,7 @@ import numpy as np
 import datetime
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 #!pip install transformers
-
+import transformers
 from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 
 #tokenizer = AutoTokenizer.from_pretrained("bert-large-uncased-whole-word-masking-finetuned-squad")

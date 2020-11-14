@@ -1,3 +1,4 @@
+import re
 import os
 import os.path as op
 import numpy as np
@@ -7,6 +8,56 @@ import nltk
 nqa_dir = os.environ["NARRATIVEQA_DIR"]
 mimir_dir = os.environ["MIMIR_DIR"]
 
+data_dir = op.join(mimir_dir, "data")
+
+def remove_newline(text):
+	newline_trans = str.maketrans("", "", "\n") 
+	return(text.translate(newline_trans))
+
+def re_sub_newlines(text):
+	return (re.sub(r"(?<=\S)\n(?=\S)", lambda x: " ", text))		
+
+def newline_to_space(text):
+	newline_trans = str.maketrans("\n", " ") 
+	return(text.translate(newline_trans))
+
+#def sentence_tokenize(text): 
+#	return (re.split(r'(?<=(?<!\WMr|\WDr|Mrs|\WMs|\WSr|\WJr|.\WM|\WSt|.\..|.\s[A-Z])[\.\?\!])\s+', text)) #Just split text on "." "?" or "!" 
+							#Avoids those abbreviations ^
+
+
+
+#def return
+
+def handle_abbreviations(matchobj):	
+
+	if matchobj[1]: #If there are any abbreviations, or we are at the 
+									#end of a line, we do not split
+		return (matchobj[0])
+	else:
+		return matchobj[0] + "😠" # Our extremely arbitrary "split" token
+
+
+
+def sentence_tokenize(text):
+
+	alt_punct = str.maketrans(".?!", "。？！")
+
+	new_text = re.sub(r'".*?"', lambda x: x[0].translate(alt_punct), text) #Changes .?! inside quotation marks to
+																		#alternate chars 。？！ so we will not split
+																		#on them
+
+	abbreviations = "([\W\n\s](Mr|Mrs|Ms|Dr|Sr|Jr|M|St|Cl|No)|[.A-Za-z]*\.[.A-Za-z]*)"
+	split_punct = "[.?!]"
+	new_line = re.compile(r"[\s\n]*\n[\s]*(😠)?") # if we are at a new line, we will split anyway
+	split_re = re.compile(r"" + abbreviations + "?" + split_punct + "[\s\n]*")
+
+	new_text = re.sub(split_re, handle_abbreviations, new_text)
+	new_text = re.sub(new_line, handle_abbreviations, new_text)
+	
+	return(new_text.split("😠"))
+
+	
 def csv_to_list(csv_file_path):
 
 	line_list = []
@@ -34,6 +85,10 @@ def load_or_create_object(numpy_filename: str, obj: object):
 	else:
 		return np.load(numpy_filename, allow_pickle=True)[0]	
 		
+def extract_text_from_gutenberg(text):
+	text = re.split(r"\*\*\*.*?START.*?PROJECT GUTENBERG EBOOK.*?\*\*\*", text)[1]
+	text = re.split(r"\*\*\*.*?END.*?PROJECT GUTENBERG EBOOK.*?\*\*\*", text)[0]
+	return(text)
 
 def make_id_name_dict():
 	id_name_dict = {}

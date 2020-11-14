@@ -1,6 +1,7 @@
 import os
 import os.path as op
 import numpy as np
+import re
 import csv
 import nltk
 from collections import defaultdict
@@ -52,7 +53,6 @@ def make_id_name_dict():
 	docs_csv = op.join(data_dir, "documents.csv")
 	docs_list = csv_to_list(docs_csv)
 	for line in docs_list[1:]:
-		print(line)
 		try:
 			if line[2] == "gutenberg":
 				id_name_dict[line[0]] = line[6]
@@ -185,7 +185,8 @@ def BOWs_to_TFIDF(BOWs_dict):
 #	import pdb; pdb.set_trace()
 	return(tf_idf_dict)
 
-def ne_list_from_file(file_path):
+
+def ne_tokens_from_file(file_path, pause=False):
 	line_list = get_line_list_from_file(file_path)
 	entity_list = []
 	
@@ -193,21 +194,92 @@ def ne_list_from_file(file_path):
 		line.strip("\n")
 		t = get_tokens_from_text(line) #get tokens 
 		entities = get_named_entities(t) # get entities tree
-		print(entities)
-		stop = input("stop? y/n")
-		if stop == "y":
-			import pdb; pdb.set_trace()
+		if pause == True:
+			print(entities)
+			
+			stop = input("stop? y/n")
+			if stop == "y":
+				import pdb; pdb.set_trace()
 
 
 		for e in entities:
 			if isinstance(e, nltk.tree.Tree): #it's an entity
 				ent_string = " ".join([leaf[0] for leaf in e.leaves()])
 				ent_tuple = (ent_string, e.label())
+				
+				entity_list.append(ent_tuple)
+	return(entity_list)
+
+def list_to_dict(l:list):
+	out_dict = defaultdict(int)
+
+	for thing in l:
+		out_dict[thing] += 1
+	return(out_dict)
+
+
+def ne_list_from_file(file_path, pause=False):
+	line_list = get_line_list_from_file(file_path)
+	entity_list = []
+	
+	for line in line_list: #for each sentence in the input file 
+		line.strip("\n")
+		t = get_tokens_from_text(line) #get tokens 
+		entities = get_named_entities(t) # get entities tree
+		if pause == True:
+			print(entities)
+			
+			stop = input("stop? y/n")
+			if stop == "y":
 				import pdb; pdb.set_trace()
+
+
+		for e in entities:
+			if isinstance(e, nltk.tree.Tree): #it's an entity
+				ent_string = " ".join([leaf[0] for leaf in e.leaves()])
+				ent_tuple = (ent_string, e.label())
 				
 				if ent_tuple not in entity_list:
 					entity_list.append(ent_tuple)
 	return(entity_list)
+
+
+def extract_text_from_gutenberg(text):
+	text = re.split(r"\*\*\*.*?START.*?PROJECT GUTENBERG EBOOK.*?\*\*\*", text)[1]
+	text = re.split(r"\*\*\*.*?END.*?PROJECT GUTENBERG EBOOK.*?\*\*\*", text)[0]
+	return(text)
+
+def ne_sent_dict_from_file(file_path, pause=False):
+	full_text = file_path_to_text(file_path)
+	full_text = extract_text_from_gutenberg(full_text)
+	sentences = full_text.split(".")
+
+	entity_list = []
+
+	entity_sentence_dict = defaultdict(list)
+	
+	for sentence in sentences: #for each sentence in the input file
+		sentence.strip("\n")
+		t = get_tokens_from_text(sentence) #get tokens 
+		entities = get_named_entities(t) # get entities tree
+		if pause == True:
+			print(entities)
+			
+			stop = input("stop? y/n")
+			if stop == "y":
+				import pdb; pdb.set_trace()
+
+
+		for e in entities:
+			if isinstance(e, nltk.tree.Tree): #it's an entity
+				ent_string = " ".join([leaf[0] for leaf in e.leaves()])
+				ent_tuple = (ent_string, e.label())
+				
+				if ent_tuple not in entity_list:
+					entity_sentence_dict[ent_tuple].append(t)
+	
+	return(entity_sentence_dict)
+
 
 
 if __name__ == "__main__":

@@ -9,7 +9,7 @@ from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 import transformers
 from transformers import AutoTokenizer, AutoModelForQuestionAnswering, BertForQuestionAnswering, BertTokenizer, DistilBertTokenizer, DistilBertForQuestionAnswering
 import tensorflow as tf
-from qa_models.utils import file_path_to_text
+from utils import file_path_to_text
 
 mimir_dir = os.environ["MIMIR_DIR"]
 

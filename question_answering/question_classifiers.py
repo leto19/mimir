@@ -1,5 +1,5 @@
 import nltk
-from qa_models.utils import get_named_entities, tokenize
+from utils import get_named_entities, tokenize
 
 
 class SimpleBaseline:

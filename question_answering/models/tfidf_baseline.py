@@ -1,7 +1,7 @@
 import numpy as np
 import os
 import os.path as op
-from qa_models.utils import ne_BOWs_from_file, tokenize, remove_stopwords, BOWs_to_TFIDF
+from utils import ne_BOWs_from_file, tokenize, remove_stopwords, BOWs_to_TFIDF
 from collections import defaultdict
 from nltk.stem.porter import PorterStemmer
 

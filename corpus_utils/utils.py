@@ -4,6 +4,7 @@ import os.path as op
 import numpy as np
 import csv
 import nltk
+from nltk.corpus import stopwords 
 
 nqa_dir = os.environ["NARRATIVEQA_DIR"]
 mimir_dir = os.environ["MIMIR_DIR"]
@@ -42,6 +43,7 @@ def handle_abbreviations(matchobj):
 def sentence_tokenize(text):
 
 	alt_punct = str.maketrans(".?!", "。？！")
+	revert_punct = str.maketrans("。？！", ".?!")
 
 	new_text = re.sub(r'".*?"', lambda x: x[0].translate(alt_punct), text) #Changes .?! inside quotation marks to
 																		#alternate chars 。？！ so we will not split
@@ -54,7 +56,8 @@ def sentence_tokenize(text):
 
 	new_text = re.sub(split_re, handle_abbreviations, new_text)
 	new_text = re.sub(new_line, handle_abbreviations, new_text)
-	
+	new_text = new_text.translate(revert_punct)	
+
 	return(new_text.split("😠"))
 
 	
@@ -147,6 +150,11 @@ def get_line_list_from_file(file):
         line_list = f.readlines()
     
     return line_list
+
+
+def remove_stopwords(sent:list):
+	stop_words = set(stopwords.words("english"))
+	return ([word for word in sent if word.lower() not in stop_words])
 
 def get_tokens_from_text(line):
     tokens = nltk.word_tokenize(line)

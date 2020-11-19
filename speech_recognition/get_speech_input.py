@@ -40,6 +40,8 @@ def get_input_string(seconds=5):
     rec = KaldiRecognizer(model, 16000)
     if rec.AcceptWaveform(get_audio(seconds)):
         res = json.loads(rec.FinalResult())
+        print(rec)
+        print(res)
         print(res['text'])
         return res['text']
     else:

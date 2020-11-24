@@ -13,6 +13,17 @@ from nltk.tokenize import word_tokenize
 mimir_dir = os.environ["MIMIR_DIR"]
 data_dir = op.join(mimir_dir, "data")
 
+
+def make_qa_dict_valid(qaps_line_list, id_name_dict):
+	qa_dict_valid = {}
+	for line in qaps_line_list:
+		if line[0] in id_name_dict: #if it's a book
+			if line[1] == "valid":
+				qa_dict_valid[line[2]] = (id_name_dict[line[0]],[line[3],line[4]])
+	return(qa_dict_valid)
+
+
+
 def tokenize(sent:str):
 	return word_tokenize(sent)
 

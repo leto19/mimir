@@ -1,6 +1,8 @@
+import argparse
+import os
+import os.path as op
 import nltk
-from utils import get_named_entities, tokenize
-
+from utils import get_named_entities, tokenize,  mimir_dir, data_dir, csv_to_list, tokenize, make_id_name_dict, make_qa_dict_valid
 
 class SimpleBaseline:
 	def __init__(self):
@@ -43,3 +45,30 @@ class SimpleBaseline:
 		
 		else:
 			return("OTH")
+
+if __name__ == "__main__":
+
+	parser = argparse.ArgumentParser()
+
+	parser.add_argument("--int", action="store_true")
+	args = parser.parse_args()
+
+	baseline_qcl = SimpleBaseline()
+
+	id_name_dict = make_id_name_dict()
+	qaps_line_list = csv_to_list(op.join(data_dir, "narrativeqa_qas.csv"))
+	qa_dict_valid = make_qa_dict_valid(qaps_line_list, id_name_dict)
+	
+	if args.int:
+		while True:
+			question = input("Input a question")
+			print(baseline_qcl.classify_question(question))
+	else:
+		print(qa_dict_valid)
+		for q, a in qa_dict_valid.items():
+			os.system("clear")	
+			predicted_ans_type = baseline_qcl.classify_question(q)
+			print("Question:\n",q)
+			print("Predicted answer type:\n", predicted_ans_type)
+			print("Answers:\n",a[1][0], "/", a[1][1])	
+			input("Press any key")

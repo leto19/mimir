@@ -30,13 +30,8 @@ answer_lines = qaps_line_list[1:]
 labels_list_name = op.join(labels_dir,"labels_list_" + my_name + ".npy") #Here is where we save the labels
 labels_list = load_or_create_object(labels_list_name, [None] * len(answer_lines))
 
-continue_index = 0
-
-for i in range(len(labels_list)):
-	if labels_list[i] == None:
-		break
-	continue_index += 1
-		
+continue_index = max(np.where(labels_list != None)[0]) + 1
+	
 labels_dict = {1: "PER", 2: "ORG", 3: "LOC", 4: "DES", 5: "REA", 6: "EVN", 7: "YNQ", 8: "COR", 9: "OTH" }
 
 

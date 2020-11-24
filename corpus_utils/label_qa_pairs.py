@@ -31,7 +31,8 @@ for i in range(len(labels_list)):
 		break
 	continue_index += 1
 		
-labels_dict = {1: "PER", 2: "ORG", 3: "LOC", 4: "DES", 5: "OTH"}
+labels_dict = {1: "PER", 2: "ORG", 3: "LOC", 4: "DES", 5: "OTH", 6: "REA", 7: "EVN", 8: "YNQ"}
+
 
 start_input = input("Answer category labeller.\n\
 [s] Start labelling from next unlabelled question.\n\

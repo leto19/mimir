@@ -16,12 +16,13 @@ elif len(sys.argv) == 3:
 	MimirDir = sys.argv[1]
 	NarrativeQADir = sys.argv[2]
 
+save_directory = ""
 
 qaps_line_list = csv_to_list(op.join(NarrativeQADir, "qaps.csv"))
 header = qaps_line_list[0]
 header.append("answer type")
 answer_lines = qaps_line_list[1:]
-labels_list_name = op.join(MimirDir, "data","labels_list_tmp.npy")
+labels_list_name = op.join(save_directory,"labels_list_tmp.npy")
 labels_list = load_or_create_object(labels_list_name, [None] * len(answer_lines))
 
 continue_index = 0
@@ -31,7 +32,7 @@ for i in range(len(labels_list)):
 		break
 	continue_index += 1
 		
-labels_dict = {1: "PER", 2: "ORG", 3: "LOC", 4: "DES", 5: "OTH", 6: "REA", 7: "EVN", 8: "YNQ"}
+labels_dict = {1: "PER", 2: "ORG", 3: "LOC", 4: "DES", 5: "REA", 6: "EVN", 7: "YNQ", 8: "COR", 9: "OTH" }
 
 
 start_input = input("Answer category labeller.\n\
@@ -69,9 +70,10 @@ while (my_input != "q") and (i < len(answer_lines)-1):
 	print("Answers:")
 	print(line[3],line[4])
 	my_input = input("Select answer type:\n\
-[1]: person [2] organization [3] location [4] personal description [5] other \n\
+[1] person [2] organization [3] location [4] personal description [5] reason \n\ 
+[6] event [7] yes-no question [8] co-reference [9] other \n\
 [b] back [n] next [q] quit ")
-	if my_input in "12345":
+	if my_input in "123456789":
 		labels_list[i] =  labels_dict[int(my_input)]
 		np.save(labels_list_name, np.array([labels_list]))
 		i += 1

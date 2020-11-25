@@ -23,7 +23,7 @@ def get_audio(seconds=3):
     for i in range(0, int(FS / CHUNK * SECONDS_RECORD)):
         data = stream.read(CHUNK)
         frames.append(data)
-        print
+        print(i)
 
     stream.stop_stream()
     stream.close() 
@@ -32,7 +32,7 @@ def get_audio(seconds=3):
 
 
 
-def get_input_string(seconds=7):
+def get_input_string(seconds=5):
     """returns speech input from the user as a string
     records for the number of seconds specified, default 3"""
     SetLogLevel(-1) #Hides Kaldi outputs to terminal 
@@ -40,6 +40,8 @@ def get_input_string(seconds=7):
     rec = KaldiRecognizer(model, 16000)
     if rec.AcceptWaveform(get_audio(seconds)):
         res = json.loads(rec.FinalResult())
+        print(rec)
+        print(res)
         print(res['text'])
         return res['text']
     else:

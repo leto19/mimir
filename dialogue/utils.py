@@ -21,9 +21,9 @@ def is_question(user_utterance):
   '''
   Naive question detection - may need improving later as it some question
   types not covered (e.g. "Could the fellowship have flown the eagles to 
-  Modor?"). Although these may not be covered within the scope of our system.
+  Mordor?"). Although these may not be covered within the scope of our system.
   '''
   return (
     re.match("(who|what|where|when|how|why|whose|who's)", user_utterance) or 
-    user_utterance.startswith("is")
+    user_utterance.startswith("is|does|has")
   )

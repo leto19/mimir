@@ -10,7 +10,7 @@ S_CLARIFY = "STATE: CLARIFY" # State for filling in missing info from a question
 S_ANSWER = "STATE: ANSWER"
 S_END = "STATE: END"
 
-STATES = [S_START, S_NEUTRAL, S_CLARIFY, S_ANSWER, S_END]
+STATES = [S_START, S_CONFIRM_BOOK, S_NEUTRAL, S_CLARIFY, S_ANSWER, S_END]
 
 # The lower threshold for the cosine similarity calculations
 SIM_THRESHOLD = 0.6
@@ -25,7 +25,7 @@ TRANSITIONS = (
   # }
   {
     'src': S_START,
-    'dst': S_CLARIFY,
+    'dst': S_CONFIRM_BOOK,
     'condition': lambda x: context.is_book_present(x),
     'response': lambda: context.suggest_book()
   },
@@ -39,8 +39,8 @@ TRANSITIONS = (
     )
   },
   {
-    'src': S_CLARIFY,
-    'dst': S_CLARIFY,
+    'src': S_CONFIRM_BOOK,
+    'dst': S_CONFIRM_BOOK,
     'condition': lambda x: (
       embedding_cos_sim(x, "no") > SIM_THRESHOLD # and is not final suggestion_
       and context.is_suggested_book()
@@ -48,7 +48,7 @@ TRANSITIONS = (
     'response': lambda: context.suggest_book()
   },
   {
-    'src': S_CLARIFY,
+    'src': S_CONFIRM_BOOK,
     'dst': S_START,
     'condition': lambda x: (
       embedding_cos_sim(x, "no") > SIM_THRESHOLD
@@ -60,9 +60,9 @@ TRANSITIONS = (
     )
   },
   {
-    'src': S_CLARIFY,
+    'src': S_CONFIRM_BOOK,
     'dst': S_NEUTRAL,
-    'condition': lambda x: embedding_cos_sim(x, "yes") > SIM_THRESHOLD, # This is going to have to become a probability to allow for compariso
+    'condition': lambda x: embedding_cos_sim(x, "yes") > SIM_THRESHOLD, # This is going to have to become a probability to allow for comparison
     'response': lambda: context.confirm_book()
   },
   {

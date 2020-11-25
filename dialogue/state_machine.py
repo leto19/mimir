@@ -26,7 +26,7 @@ class DialogueStateMachine():
       "src": self.current_state,
       "dst": self.current_state,
       "condition": None,
-      "response": lambda: "Sorry, I did not understand."
+      "response": lambda: "Sorry, I don't understand."
     }
 
   def trans_state(self, transition):

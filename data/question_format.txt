@@ -1,0 +1,9 @@
+who is $NAME
+what is $GPE
+who is $NAME father
+who is $NAME mother
+does $NAME have a brother
+does $NAME have a sister
+where does $NAME live
+what happened to $NAME in $LOCATION
+who lives in $LOCATION

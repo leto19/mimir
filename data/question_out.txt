@@ -1,0 +1,161 @@
+who is Arrakis
+who is Baron
+who is Bene
+who is Chani
+who is Count
+who is Duke
+who is Esmar
+who is Gurney
+who is Harkonnen
+who is Iakin
+who is Idaho
+who is Jamis
+who is Lady
+who is Master
+who is Mentat
+who is Paul
+who is Rabban
+who is Shaddam
+who is Staban
+who is Suk
+who is Swordmaster
+who is Thufir
+who is Wellington
+who is Arrakis father
+who is Baron father
+who is Bene father
+who is Chani father
+who is Count father
+who is Duke father
+who is Esmar father
+who is Gurney father
+who is Harkonnen father
+who is Iakin father
+who is Idaho father
+who is Jamis father
+who is Lady father
+who is Master father
+who is Mentat father
+who is Paul father
+who is Rabban father
+who is Shaddam father
+who is Staban father
+who is Suk father
+who is Swordmaster father
+who is Thufir father
+who is Wellington father
+who is Arrakis mother
+who is Baron mother
+who is Bene mother
+who is Chani mother
+who is Count mother
+who is Duke mother
+who is Esmar mother
+who is Gurney mother
+who is Harkonnen mother
+who is Iakin mother
+who is Idaho mother
+who is Jamis mother
+who is Lady mother
+who is Master mother
+who is Mentat mother
+who is Paul mother
+who is Rabban mother
+who is Shaddam mother
+who is Staban mother
+who is Suk mother
+who is Swordmaster mother
+who is Thufir mother
+who is Wellington mother
+does Arrakis have a brother
+does Baron have a brother
+does Bene have a brother
+does Chani have a brother
+does Count have a brother
+does Duke have a brother
+does Esmar have a brother
+does Gurney have a brother
+does Harkonnen have a brother
+does Iakin have a brother
+does Idaho have a brother
+does Jamis have a brother
+does Lady have a brother
+does Master have a brother
+does Mentat have a brother
+does Paul have a brother
+does Rabban have a brother
+does Shaddam have a brother
+does Staban have a brother
+does Suk have a brother
+does Swordmaster have a brother
+does Thufir have a brother
+does Wellington have a brother
+does Arrakis have a sister
+does Baron have a sister
+does Bene have a sister
+does Chani have a sister
+does Count have a sister
+does Duke have a sister
+does Esmar have a sister
+does Gurney have a sister
+does Harkonnen have a sister
+does Iakin have a sister
+does Idaho have a sister
+does Jamis have a sister
+does Lady have a sister
+does Master have a sister
+does Mentat have a sister
+does Paul have a sister
+does Rabban have a sister
+does Shaddam have a sister
+does Staban have a sister
+does Suk have a sister
+does Swordmaster have a sister
+does Thufir have a sister
+does Wellington have a sister
+where does Arrakis live
+where does Baron live
+where does Bene live
+where does Chani live
+where does Count live
+where does Duke live
+where does Esmar live
+where does Gurney live
+where does Harkonnen live
+where does Iakin live
+where does Idaho live
+where does Jamis live
+where does Lady live
+where does Master live
+where does Mentat live
+where does Paul live
+where does Rabban live
+where does Shaddam live
+where does Staban live
+where does Suk live
+where does Swordmaster live
+where does Thufir live
+where does Wellington live
+what happened to Arrakis in $LOCATION
+what happened to Baron in $LOCATION
+what happened to Bene in $LOCATION
+what happened to Chani in $LOCATION
+what happened to Count in $LOCATION
+what happened to Duke in $LOCATION
+what happened to Esmar in $LOCATION
+what happened to Gurney in $LOCATION
+what happened to Harkonnen in $LOCATION
+what happened to Iakin in $LOCATION
+what happened to Idaho in $LOCATION
+what happened to Jamis in $LOCATION
+what happened to Lady in $LOCATION
+what happened to Master in $LOCATION
+what happened to Mentat in $LOCATION
+what happened to Paul in $LOCATION
+what happened to Rabban in $LOCATION
+what happened to Shaddam in $LOCATION
+what happened to Staban in $LOCATION
+what happened to Suk in $LOCATION
+what happened to Swordmaster in $LOCATION
+what happened to Thufir in $LOCATION
+what happened to Wellington in $LOCATION

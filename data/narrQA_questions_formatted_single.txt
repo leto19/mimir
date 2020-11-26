@@ -1,0 +1,2 @@
+How old is $PERSON ? 
+Where does $PERSON go to work for the $ORGANIZATION of War ? 

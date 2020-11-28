@@ -96,6 +96,8 @@ for path, subdirs, files in os.walk(root):
             baseline_text = baseline_list[baseline_index].strip()
             recognised_text = get_text(file_path)
             baseline_index+=1
+            if baseline_index ==9:
+                baseline_index = -1
             recog_list.append(recognised_text)
             wer_list.append(get_WER(baseline_text,recognised_text))
 
@@ -103,4 +105,4 @@ for path, subdirs, files in os.walk(root):
             f.write(model_name +"\n")
             for i in range(len(wer_list)):
                 f.write("%s | %s (WER: %s) \n"%(baseline_list[i].strip(),recog_list[i],wer_list[i]))
-
+            f.write("MEAN WER:" + str(numpy.mean(wer_list)))

@@ -61,9 +61,8 @@ class CosineModel():
 			with open(self.word2idx_file_path) as f_obj:
 				read_obj = f_obj.read()
 				self.word2idx = json.loads(read_obj)
-		
-		with open(self.sents_file_path) as f_obj:
-				self.sents = f_obj.readlines()
+			with open(self.sents_file_path) as f_obj:
+					self.sents = f_obj.readlines()
 		preprocessed_question = self.preprocess(question)
 		text_bows_range = list(range(len(self.text_bows)))		
 		best_sent_index = max(text_bows_range, key= lambda x: cosine_sim_dict(self.text_bows[str(x)], preprocessed_question))

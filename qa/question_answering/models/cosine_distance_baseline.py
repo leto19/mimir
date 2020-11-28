@@ -10,11 +10,14 @@ stemmer = PorterStemmer()
 
 def cosine_sim_dict(vec_1, vec_2):
 	"""Cosine similarity, for when vectors are stored as dictionaries"""
-	v1_norm = sum([np.sqrt(int(v)) for v in vec_1.values()])**2
-	v2_norm = sum([np.sqrt(int(v)) for v in vec_2.values()])**2
+	vec_1 = {int(item[0]): int(item[1]) for item in vec_1.items()} 
+	vec_2 = {int(item[0]): int(item[1]) for item in vec_2.items()} #Json is sometimes frustrating and converts dictionary keys to strings
+
+	v1_norm = np.sqrt(sum([v**2 for v in vec_1.values()]))
+	v2_norm = np.sqrt(sum([v**2 for v in vec_2.values()]))
 	
 	non_zeros = set(vec_1.keys()).intersection(set(vec_2.keys()))
-	dot_product = sum([vec_1[int(k)] * vec_2[int(k)] for k in non_zeros])
+	dot_product = sum([vec_1[k] * vec_2[k] for k in non_zeros])
 	
 	if v1_norm * v2_norm == 0:
 		return 0
@@ -33,7 +36,7 @@ class CosineModel():
 		self.text_bows = None #A dictionary containing BOW vectors (as dictionaries)
 
 	def preprocess(self, question):
-		return(pipeline([question], self.word2idx)[0][0])
+		return(self.preprocessing_pipeline(question, self.word2idx))
 
 	def set_file_path(self, sents_file_path):
 		self.sents_file_path = sents_file_path
@@ -58,25 +61,17 @@ class CosineModel():
 			with open(self.word2idx_file_path) as f_obj:
 				read_obj = f_obj.read()
 				self.word2idx = json.loads(read_obj)
-			with open(self.sents_file_path) as f_obj:
+		
+		with open(self.sents_file_path) as f_obj:
 				self.sents = f_obj.readlines()
 		preprocessed_question = self.preprocess(question)
 		text_bows_range = list(range(len(self.text_bows)))		
-		print(preprocessed_question)	
-
 		best_sent_index = max(text_bows_range, key= lambda x: cosine_sim_dict(self.text_bows[str(x)], preprocessed_question))
-		
+
 		best_sent_idxs = sorted(text_bows_range, key= lambda x: cosine_sim_dict(self.text_bows[str(x)], preprocessed_question), reverse=True)
-		print(best_sent_idxs)
-		print(np.array(self.sents)[best_sent_idxs][:10])	
 		return(self.sents[best_sent_index])
 
 
 if __name__ == "__main__":
 
-	sents_fp = op.join(mimir_dir, "preprocessed_data/sentence_tokenized/full_texts/valid/The Deerslayer.sents")
-	print(sents_fp)
-	mymodel = CosineModel()	
-	while True:
-		question = input("input a question\n")
-		print(mymodel.evaluate_question(question, sents_fp))
+	pass

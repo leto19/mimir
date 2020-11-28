@@ -1,5 +1,5 @@
 import json
-from utils import mimir_dir, remove_stopwords
+from corpus_utils.utils import mimir_dir, remove_stopwords
 from collections import defaultdict
 import os
 import os.path as op
@@ -19,13 +19,13 @@ def json_dump(obj, file_path):
 		json.dump(obj, fp)
 
 
-def sentence_to_vector(sentence, word2idx):
+def sentence_to_vector(sentence:list, word2idx):
 	""" Makes a sparse BOW vector, stored as a dictionary to save space (i.e. with no zeros)
 		e.g. if "are" is token 3 and "dogs" is token 500, the sentence "Dogs are dogs"
 		would be stored as:
 		 {3: 1, 500: 2}
 						"""
-	ids = [word2idx[word] for word in sentence]
+	ids = [word2idx.get(word,-1) for word in sentence]
 	vector = defaultdict(int)
 	for idx in ids:
 		vector[idx] += 1
@@ -43,17 +43,25 @@ def make_dictionaries(sents_list):
 
 def file_pipeline(file_path):
 	sentences = load_sentences_to_list(file_path)
-	return(pipeline(sentences))	
+	return(sents_to_vecs(sentences))
+
+def sents_to_vecs(sentences):
+	"""Name may infringe copyright :P"""
+	stemmed_sents = pipeline(sentences)
+	word2idx, idx2word = make_dictionaries(stemmed_sents)
+	BOW_vectors = {i: sentence_to_vector(sent, word2idx) for i, sent in enumerate(stemmed_sents)}
+	return(BOW_vectors, idx2word)
 
 def pipeline(sentences):
+	"""This is our full preprocessing pipeline """
 	if type(sentences) != list:
 		raise TypeError
 	tokenized_sents = [word_tokenize(s) for s in sentences]
 	no_stopwords = [remove_stopwords(s) for s in sentences]
 	stemmed_sents = [[stemmer.stem(w) for w in s] for s in tokenized_sents]
-	word2idx, idx2word = make_dictionaries(stemmed_sents)
-	BOW_vectors = {i: sentence_to_vector(sent, word2idx) for i, sent in enumerate(stemmed_sents)}
-	return(BOW_vectors, idx2word)
+	return(stemmed_sents)
+
+
 	
 if __name__ == "__main__":
 	

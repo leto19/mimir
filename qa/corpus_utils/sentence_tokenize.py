@@ -22,6 +22,19 @@ def file_to_sentence_tokens(file_path, gutenberg_text=False):
 
 if __name__ == "__main__":
 
+	in_path = op.join(data_dir, "Dracula_full_text.txt")
+	out_path = op.join(mimir_dir, "preprocessed_data", "sentence_tokenized", "Dracula_full_text.sents")
+
+	sentence_tokens = file_to_sentence_tokens(in_path, gutenberg_text=True)
+	with open(out_path, "w+") as out_file:
+		for st in sentence_tokens:
+			out_file.write(st + "\n")
+
+
+	exit(1)
+
+	#Below is loop over NQA:
+
 	in_path = op.join(data_dir, "nqa_gutenberg_corpus")	
 	out_path = op.join(mimir_dir, "preprocessed_data", "sentence_tokenized", "full_texts")
 	sets = ["train","test","valid"]

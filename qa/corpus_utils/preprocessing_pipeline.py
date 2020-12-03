@@ -65,6 +65,12 @@ def pipeline(sentences):
 	
 if __name__ == "__main__":
 	
+
+	in_path = op.join(mimir_dir, 
+
+	exit(1)
+	#Below is the loop over NQA
+
 	in_path = op.join(mimir_dir, "preprocessed_data", "sentence_tokenized", "full_texts")
 	out_path = op.join(mimir_dir, "preprocessed_data", "sentence_BOWs", "full_texts")
 	dict_path = op.join(mimir_dir, "preprocessed_data", "vocab_dicts", "full_texts")

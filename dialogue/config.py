@@ -1,7 +1,6 @@
 from utils import embedding_cos_sim, is_question
 import context
 
-
 # States
 S_START = "STATE: START"
 S_CONFIRM_BOOK = "STATE: CONFIRM BOOK" 
@@ -11,6 +10,16 @@ S_ANSWER = "STATE: ANSWER"
 S_END = "STATE: END"
 
 STATES = [S_START, S_CONFIRM_BOOK, S_NEUTRAL, S_CLARIFY, S_ANSWER, S_END]
+
+# State codes
+STATE_CODES = { # 0 = exit dialogue, 1 = persist dialogue, 2 = pass to QA (formalise this)
+  S_START: 1,
+  S_CONFIRM_BOOK: 1,
+  S_NEUTRAL: 1,
+  S_CLARIFY: 1,
+  S_ANSWER: 2,
+  S_END: 0,
+}
 
 # The lower threshold for the cosine similarity calculations
 SIM_THRESHOLD = 0.6
@@ -23,6 +32,12 @@ TRANSITIONS = (
   #   'condition':, 
   #   'response': 
   # }
+  {
+    'src': None,
+    'dst': S_START,
+    'condition': lambda x: True,
+    'response': lambda: "Hello, what book are you reading today?"
+  },
   {
     'src': S_START,
     'dst': S_CONFIRM_BOOK,

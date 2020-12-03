@@ -31,12 +31,47 @@ def newline_to_space(text):
 #def return
 
 def handle_abbreviations(matchobj):	
+	print(matchobj)
+	newlinerepl = str.maketrans("\n", " ")
+	if matchobj.group("abbrvs"): #If there are any abbreviations, or we are at the 
+									#end of a line, we do not split
+		print("no split")
+		#input()
+		out = matchobj[0]
+		if matchobj.group("trailing"):
+			out = out[:-len(matchobj.group("trailing"))]
+			out += matchobj.group("trailing").translate(newlinerepl)
+			print(matchobj)
+			print(matchobj.groups())
+			if "\n" in matchobj[0]:
+				print(matchobj.groups())
+				print(matchobj.group("trailing"))
+				this = input()
+				if this == "1":
+					import pdb; pdb.set_trace()
+	
+		return (out)
+	else:
+		print("split")
+		#input()
+		return matchobj[0] + "😠" # Our extremely arbitrary "split" token
 
+
+
+def handle_newline(matchobj):	
+	print(matchobj)
 	if matchobj[1]: #If there are any abbreviations, or we are at the 
 									#end of a line, we do not split
 		return (matchobj[0])
 	else:
+		print("split")
+		#input()
 		return matchobj[0] + "😠" # Our extremely arbitrary "split" token
+
+
+
+
+
 
 
 
@@ -49,14 +84,18 @@ def sentence_tokenize(text):
 																		#alternate chars 。？！ so we will not split
 																		#on them
 
-	abbreviations = "([\W\n\s](Mr|Mrs|Ms|Dr|Sr|Jr|M|St|Cl|No)|[.A-Za-z]*\.[.A-Za-z]*)"
-	split_punct = "[.?!]"
+#[\W\s\_]&&[^\n]
+
+	abbreviations = "(?P<abbrvs>(Mr|Mrs|Ms|Dr|Sr|Jr|M|St|Cl|No)|[\.A-Za-z]+\.[A-Za-z]+)"
+	split_punct = "[\.?!]"
 	new_line = re.compile(r"[\s\n]*\n[\s]*(😠)?") # if we are at a new line, we will split anyway
-	split_re = re.compile(r"" + abbreviations + "?" + split_punct + "[\s\n]*")
+	split_re = re.compile(r"" + abbreviations + "?" + "(?P<trailing>" + split_punct + "[\s\n]*)")
 
 	new_text = re.sub(split_re, handle_abbreviations, new_text)
-	new_text = re.sub(new_line, handle_abbreviations, new_text)
+	new_text = re.sub(new_line, handle_newline, new_text)
 	new_text = new_text.translate(revert_punct)	
+
+	print(new_text)
 
 	return(new_text.split("😠"))
 

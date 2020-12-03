@@ -4,6 +4,7 @@ import os
 import os.path as op
 from collections import defaultdict
 from nltk.stem.porter import PorterStemmer
+from qa.question_answering.models.model import Model
 
 mimir_dir = os.environ["MIMIR_DIR"]
 stemmer = PorterStemmer()
@@ -25,9 +26,10 @@ def cosine_sim_dict(vec_1, vec_2):
 	return(dot_product/(v1_norm*v2_norm))
 
 
-class CosineModel():
+class CosineModel(Model):
 	"""Just finds the sentence with the closest BOW embedding"""
-	def __init__(self, preprocessing_pipeline, tf_idf=True):
+	def __init__(self, model_id, preprocessing_pipeline, tf_idf=True):
+		Model.__init__(self, model_id)
 		self.preprocessing_pipeline = preprocessing_pipeline
 			# Pipeline is for the *question*, but should
 			# be the same as the pipeline for the *text*

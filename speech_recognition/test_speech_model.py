@@ -87,14 +87,16 @@ for path, subdirs, files in os.walk(root):
         print(folder_path)
         files = os.listdir(folder_path)
         for f in files:
-            if ".wav" not in f:
+            if not f.endswith(".wav"):
                 files.remove(f)
+        print(files)
         for f in sorted(files):
             file_path = os.path.join(folder_path, f)
             print(file_path)
 
             baseline_text = baseline_list[baseline_index].strip()
             recognised_text = get_text(file_path)
+            recognised_text = recognised_text.lower()
             baseline_index+=1
             if baseline_index ==9:
                 baseline_index = -1

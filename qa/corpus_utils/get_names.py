@@ -35,8 +35,8 @@ for line in line_list: #for each sentence in the input file
     
     for l in entities:
         if len(l) == 1: #it's an entity
-            if "%s (%s)" % ( l[0][0], l.label().lower() ) not in entity_list: #if it's not in the list
-                entity_list.append("%s (%s)" % ( l[0][0], l.label().lower() ) )
+            if "%s:%s" % ( l[0][0], l.label().lower() ) not in entity_list: #if it's not in the list
+                entity_list.append("%s:%s" % ( l[0][0], l.label().lower() ) )
 print(entity_list)
 print(entities)
-import pdb; pdb.set_trace()
+#import pdb; pdb.set_trace()

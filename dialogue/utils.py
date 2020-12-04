@@ -3,6 +3,13 @@ import re
 
 embedder = SentenceTransformer('bert-base-nli-mean-tokens')
 
+
+def bold_print(text):
+    '''
+    Prints to console in bold text, used for system responses.
+    '''
+    print('\033[1m' + text + '\033[0m')
+
 def embedding_cos_sim(user_utterance, comp_str):
   '''
   Encodes the user utterance and model answer into sentense embeddings 
@@ -13,7 +20,6 @@ def embedding_cos_sim(user_utterance, comp_str):
 
   cos_scores = util.pytorch_cos_sim(utterance_embedding, comp_embedding)[0]
   cos_scores = cos_scores.cpu()
-  print("Similarity rating: ", cos_scores)
   return cos_scores
 
 

@@ -14,6 +14,8 @@ def init():
   global confirmed_booked
   confirmed_book = None
 
+def get_confirmed_book():
+  return confirmed_book
 
 def is_book_present(user_utterance):
   '''
@@ -47,9 +49,10 @@ def is_book_present(user_utterance):
       
       global s_books
       s_books.append({ "title": book_title, "author": author_name })
-    except Exception as e: 
-      print(e)
-      print("Suggestion {} failed.".format(i+1))
+    except Exception as e:
+      pass 
+      # print(e)
+      # print("Suggestion {} failed.".format(i+1))
 
 
   if len(s_books) == 0:

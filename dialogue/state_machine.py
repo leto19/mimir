@@ -1,20 +1,22 @@
 import re 
+from dialogue.config import Transition, DialogueOption
 
-class DialogueStateMachine():
-  def __init__(self, states, transitions, start_state, end_states):
+class StateMachine():
+  def __init__(self, states, transitions, start_state, any_state):
     self.states = states
     self.transitions = transitions
-    self.current_state = start_state
-    self.end_states = end_states
+    self.start_state = start_state
+    self.current_state = None
+    self.any_state = any_state
     self.state_history = []
-    self.boldPrint("Hello, what book are you reading today?")
+    # run initialise transition
 
-
-  def boldPrint(self, text):
+  def init_trans(self):
     '''
-    Prints to console in bold text, used for system responses.
+    Performs a transition into the intial state (if there is one)
     '''
-    print('\033[1m' + text + '\033[0m')
+    t = [t for t in self.transitions if t.src == None and t.dst == self.start_state][0]
+    return self.trans_state(t)
 
 
   def get_repeat_transition(self):
@@ -22,12 +24,13 @@ class DialogueStateMachine():
     Returns a self-loop transition into the current state, used when
     no other transition condition is met. 
     '''
-    return {
-      "src": self.current_state,
-      "dst": self.current_state,
-      "condition": None,
-      "response": lambda: "Sorry, I don't understand."
-    }
+    return Transition(
+      self.current_state,
+      self.current_state,
+      DialogueOption.DA_RESPONSE,
+      None,
+      "Sorry, I don't understand."
+    )
 
   def trans_state(self, transition):
     '''
@@ -35,25 +38,20 @@ class DialogueStateMachine():
     state, true otherwise.
     '''
     self.state_history.append(self.current_state)
-    self.current_state = transition['dst']
-    self.boldPrint(transition['response']())
-    print("***{}***".format(transition['dst']))
+    self.current_state = transition.dst
 
-    if self.current_state in self.end_states:
-      print("[DIALOGUE OVER]")
-      return False
-
-    return True
+    return transition
 
   def process_input(self, text_in):
     '''
     Processes a user input, transitioning to a new state if any condition is met.
     Returns false if the state is an end state, true otherwise.
     '''
-    poss_transitions = [t for t in self.transitions if t['src'] == self.current_state]
+    poss_transitions = [t for t in self.transitions if 
+      (t.src == self.current_state or t.src == self.any_state)]
 
     for t in poss_transitions:
-      if t['condition'](text_in):
+      if t.condition(text_in):
         return self.trans_state(t)
     
     return self.trans_state(self.get_repeat_transition())

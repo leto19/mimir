@@ -32,10 +32,10 @@ else:
 	device = torch.device('cpu')
 
 class BertBaseline(Model):
-	def __init__(self, model_id, valid_dir=op.join(mimir_dir,"data","nqa_summary_text_files","valid")):
+	def __init__(self, model_id):
 		print("we are initializing bert baseline")
 		Model.__init__(self, model_id)
-		self.valid_dir=valid_dir
+		self.valid_dir= valid_dir=op.join(mimir_dir,"data","nqa_summary_text_files","valid")
 		self.valid_files=sorted(os.listdir(valid_dir))
 		self.model_id = 'distilbert-base-uncased-distilled-squad'
 #		self.model_id = 'bert-large-uncased-whole-word-masking-finetuned-squad'
@@ -48,7 +48,7 @@ class BertBaseline(Model):
 		self.tokenizer = DistilBertTokenizer.from_pretrained(self.model_id)
 		print("initialized")
 	
-	def evaluate_question(self, question, summary_file_path):
+	def answer_question(self, question, summary_file_path):
 	
 		context = file_path_to_text(summary_file_path)
 		input_ids = self.tokenizer.encode(question, context, truncation='only_second')

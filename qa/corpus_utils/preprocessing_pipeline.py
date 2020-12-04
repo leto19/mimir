@@ -1,5 +1,5 @@
 import json
-from corpus_utils.utils import mimir_dir, remove_stopwords
+from qa.corpus_utils.utils import mimir_dir, remove_stopwords
 from collections import defaultdict
 import os
 import os.path as op

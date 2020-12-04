@@ -5,6 +5,7 @@ import os.path as op
 from collections import defaultdict
 from nltk.stem.porter import PorterStemmer
 from qa.question_answering.models.model import Model
+from qa.corpus_utils.preprocessing_pipeline import pipeline
 
 mimir_dir = os.environ["MIMIR_DIR"]
 stemmer = PorterStemmer()
@@ -28,12 +29,12 @@ def cosine_sim_dict(vec_1, vec_2):
 
 class CosineModel(Model):
 	"""Just finds the sentence with the closest BOW embedding"""
-	def __init__(self, model_id, preprocessing_pipeline, tf_idf=True):
+	def __init__(self, model_id):
 		Model.__init__(self, model_id)
-		self.preprocessing_pipeline = preprocessing_pipeline
+		self.preprocessing_pipeline = pipeline
 			# Pipeline is for the *question*, but should
 			# be the same as the pipeline for the *text*
-		self.tf_idf = tf_idf
+		self.tf_idf = True if model_id.endswith('tfidf') else False
 		self.sents_file_path = None
 		self.bows_file_path = None
 		self.text_bows = None #A dictionary containing BOW vectors (as dictionaries)

@@ -9,6 +9,7 @@ from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 import transformers
 from transformers import AutoTokenizer, AutoModelForQuestionAnswering, BertForQuestionAnswering, BertTokenizer, DistilBertTokenizer, DistilBertForQuestionAnswering
 import tensorflow as tf
+from qa.question_answering.models.model import Model
 
 mimir_dir = os.environ["MIMIR_DIR"]
 
@@ -30,9 +31,10 @@ else:
 	print('No GPU available, using CPU instead')
 	device = torch.device('cpu')
 
-class BertBaseline():
-	def __init__(self, valid_dir=op.join(mimir_dir,"data","nqa_summary_text_files","valid")):
+class BertBaseline(Model):
+	def __init__(self, model_id, valid_dir=op.join(mimir_dir,"data","nqa_summary_text_files","valid")):
 		print("we are initializing bert baseline")
+		Model.__init__(self, model_id)
 		self.valid_dir=valid_dir
 		self.valid_files=sorted(os.listdir(valid_dir))
 		self.model_id = 'distilbert-base-uncased-distilled-squad'

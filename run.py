@@ -1,6 +1,7 @@
 #import speech_recognition.get_speech_input as sr
 from dialogue import init_dialogue, dialogue_input, DialogueOption, bold_print
-
+from tts.gtts import tts
+  
 
 if __name__ == '__main__':
   persist_dialogue = True
@@ -9,6 +10,7 @@ if __name__ == '__main__':
   ret = init_dialogue()
 
   bold_print(ret["response"])
+  tts(ret["response"])
 
   # While not in end_state, keep running
   while persist_dialogue:
@@ -37,6 +39,9 @@ if __name__ == '__main__':
       # if QA comp is needed, get response from QA system
       response = "*Answer*" # get from QA component
 
+    
     # use TTS component to read response out
+    tts(response)
+
     bold_print(response)
 

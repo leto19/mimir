@@ -1,5 +1,6 @@
 #import speech_recognition.get_speech_input as sr
 from dialogue import init_dialogue, dialogue_input, DialogueOption, bold_print
+from tts.gtts import tts
 from qa.question_answering.models.model import ModelController
 
 
@@ -11,6 +12,7 @@ if __name__ == '__main__':
   mc = ModelController()
 
   bold_print(ret["response"])
+  tts(ret["response"])
 
   # While not in end_state, keep running
   while persist_dialogue:
@@ -32,7 +34,7 @@ if __name__ == '__main__':
 
     elif dialogue_id == DialogueOption.BOOK_CONFIRMED:
       book_title = ret['book'] # pass to qa
-      mc.confirm_book(ret['book'])
+      mc.confirm_book(book_title)
       response = ret['response']
 
 
@@ -41,6 +43,9 @@ if __name__ == '__main__':
       #response = "*Answer*" # get from QA component
       response = mc.answer_question('bert_baseline',user_input)
 
+
     # use TTS component to read response out
+    tts(response)
+
     bold_print(response)
 

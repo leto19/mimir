@@ -11,6 +11,8 @@ Original file is located at
 
 import os
 import os.path as op
+import sys
+
 import pandas as pd
 import torch
 import time
@@ -34,7 +36,11 @@ def format_time(elapsed):
 
 #ROOT        = 'gdrive/Shared drives/CDT Mini-Project Team 1/Colab Notebooks/'
 
-mimir_dir = os.environ["MIMIR_DIR"]
+try:
+	mimir_dir = os.environ["MIMIR_DIR"]
+except KeyError:
+	print('Please set the environment variable MIMIR_DIR')
+	sys.exit(1)
 
 DATA_DIR    = op.join(mimir_dir, "data") 
 #MODELS_DIR  = op.join(mimir_dir, "models")

@@ -1,4 +1,1 @@
-model_id, class_name, parameters
-bert_baseline, BertBaseline
-cosine_distance_baseline_tfidf, CosineModel
-cosine_distance_baseline_bow, CosineModel
+bert_baseline, bert_baseline, BertBaseline

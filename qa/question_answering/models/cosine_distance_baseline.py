@@ -1,4 +1,6 @@
 import json
+import sys
+
 import numpy as np
 import os
 import os.path as op
@@ -7,7 +9,11 @@ from nltk.stem.porter import PorterStemmer
 from qa.question_answering.models.model import Model
 from qa.corpus_utils.preprocessing_pipeline import pipeline
 
-mimir_dir = os.environ["MIMIR_DIR"]
+try:
+	mimir_dir = os.environ["MIMIR_DIR"]
+except KeyError:
+	print('Please set the environment variable MIMIR_DIR')
+	sys.exit(1)
 stemmer = PorterStemmer()
 
 def cosine_sim_dict(vec_1, vec_2):

@@ -3,9 +3,13 @@ from qa.corpus_utils.utils import mimir_dir, remove_stopwords
 from collections import defaultdict
 import os
 import os.path as op
+import sys
 import numpy as np
 from nltk.tokenize import word_tokenize
 from nltk.stem.porter import PorterStemmer
+
+
+
 
 stemmer = PorterStemmer()
 
@@ -64,7 +68,7 @@ def pipeline(sentences):
 
 	
 if __name__ == "__main__":
-	
+
 
 	in_path = op.join(mimir_dir, 
 

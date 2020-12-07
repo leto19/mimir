@@ -1,7 +1,14 @@
+import sys
+import importlib
+
 from qa.question_answering.models import *
+import os
 
-
-mimir_dir = os.environ["MIMIR_DIR"]
+try:
+    mimir_dir = os.environ["MIMIR_DIR"]
+except KeyError:
+    print('Please set the environment variable MIMIR_DIR')
+    sys.exit(1)
 
 
 class Model:
@@ -14,25 +21,26 @@ class Model:
     def preprocess(self, question):
         raise NotImplementedError
 
+
 class ModelController:
     def __init__(self):
         self.models_dict = {}
-        with open('active_models.txt', 'r') as active_models_file:
+        with open('qa/question_answering/models/active_models.txt', 'r') as active_models_file:
             for line in active_models_file:
-                model_id, class_name = line.split(',')
-                self.models_dict[model_id, globals()[class_name](model_id)]
+                model_id, class_location, class_name = line.replace(' ', '').strip().split(',')
+                module = importlib.import_module('qa.question_answering.models.'+class_location)
+                model = getattr(module, class_name)
+                self.models_dict[model_id] = model(model_id)
         self.current_book = None
-        self.current_sumary = None
+        self.current_summary = None
         self.current_text = None
 
     def confirm_book(self, book_id):
         self.current_book = book_id
-        self.current_summary = open(mimir_dir + '/data/nqa_summary_text_files/train' + 'book_id'.read())
-        self.current_text = open(mimir_dir + '/data/nqa_gutenberg_corpus/train' + 'book_id'.read())
+        self.current_summary = open(mimir_dir + 'data/nqa_summary_text_files/train/' + book_id['title']).read()
+        self.current_text = open(mimir_dir + 'data/nqa_gutenberg_corpus/train/' + book_id['title']).read()
 
     def answer_question(self, model_id, question):
         model = self.models_dict.get(model_id)
-        answer = model.answer_question(question, self.current_sumary)
+        answer = model.answer_question(question, self.current_summary)
         return answer
-
-

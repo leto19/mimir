@@ -1,5 +1,7 @@
 import os
 import os.path as op
+import sys
+
 import pandas as pd
 import torch
 import time
@@ -11,7 +13,11 @@ from transformers import AutoTokenizer, AutoModelForQuestionAnswering, BertForQu
 import tensorflow as tf
 from qa.question_answering.models.model import Model
 
-mimir_dir = os.environ["MIMIR_DIR"]
+try:
+	mimir_dir = os.environ["MIMIR_DIR"]
+except KeyError:
+	print('Please set the environment variable MIMIR_DIR')
+	sys.exit(1)
 
 def file_path_to_text(file):
     line_list = get_line_list_from_file(file)
@@ -35,8 +41,8 @@ class BertBaseline(Model):
 	def __init__(self, model_id):
 		print("we are initializing bert baseline")
 		Model.__init__(self, model_id)
-		self.valid_dir= valid_dir=op.join(mimir_dir,"data","nqa_summary_text_files","valid")
-		self.valid_files=sorted(os.listdir(valid_dir))
+		#self.valid_dir= valid_dir=op.join(mimir_dir,"data","nqa_summary_text_files","valid")
+		#self.valid_files=sorted(os.listdir(valid_dir))
 		self.model_id = 'distilbert-base-uncased-distilled-squad'
 #		self.model_id = 'bert-large-uncased-whole-word-masking-finetuned-squad'
 	#	self.cache_dir = op.join(mimir_dir,"question_answering","qa_models") 
@@ -48,9 +54,8 @@ class BertBaseline(Model):
 		self.tokenizer = DistilBertTokenizer.from_pretrained(self.model_id)
 		print("initialized")
 	
-	def answer_question(self, question, summary_file_path):
-	
-		context = file_path_to_text(summary_file_path)
+	def answer_question(self, question, context):
+
 		input_ids = self.tokenizer.encode(question, context, truncation='only_second')
 		tokens = self.tokenizer.convert_ids_to_tokens(input_ids)
 

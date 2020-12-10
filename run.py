@@ -2,7 +2,7 @@
 from dialogue import init_dialogue, dialogue_input, DialogueOption, bold_print
 from tts.gtts import tts
 from qa.question_answering.models.model import ModelController
-from speech_recognition.get_speech_input import get_speech_input_string
+import auto_speech_recognition.get_speech_input as asr
 import os
 
 if __name__ == '__main__':
@@ -21,7 +21,7 @@ if __name__ == '__main__':
     #user_input = sr.get_input_string() # returns string
     user_input = input("(Press Enter↩ for ASR)\n> ")
     if user_input == "": # if the user dosn't type a question, use ASR
-      user_input = get_speech_input_string()
+      user_input = asr.get_speech_input_string_google()
       print("You said:",user_input)
     # pass user input to dialogue, which returns a response and/or a code signifying QA comp is needed (or user has chosen to exit)
     ret = dialogue_input(user_input)

@@ -10,7 +10,6 @@ except KeyError:
     print('Please set the environment variable MIMIR_DIR')
     sys.exit(1)
 
-
 class Model:
     def __init__(self, model_id: str):
         self.model_id = model_id

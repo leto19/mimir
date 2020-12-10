@@ -51,6 +51,7 @@ class StateMachine():
       (t.src == self.current_state or t.src == self.any_state)]
 
     for t in poss_transitions:
+      print(t)
       if t.condition(text_in):
         return self.trans_state(t)
     

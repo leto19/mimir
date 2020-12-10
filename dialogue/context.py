@@ -1,5 +1,16 @@
 import wikipedia, requests
 from bs4 import BeautifulSoup
+import sys, os, csv
+from difflib import SequenceMatcher
+
+
+try:
+  global mimir_dir
+  mimir_dir = os.environ["MIMIR_DIR"]
+except KeyError:
+  print('Please set the environment variable MIMIR_DIR')
+  sys.exit(1)
+
 
 def init():
   '''
@@ -14,23 +25,27 @@ def init():
   global confirmed_booked
   confirmed_book = None
 
+
 def get_confirmed_book():
   return confirmed_book
 
-def is_book_present(user_utterance):
-  '''
-  Searches for the book title on wikipedia and retrieves the top suggestions.
-  Returns true if any similar books are found on wikipedia, false otherwise. 
-  '''
-  init()
 
-  # Phrases to remove from the user utterance
-  blacklist = ["i am reading", "it is called"]
-  for n_gram in blacklist:
-    user_utterance = user_utterance.replace(n_gram, '')
-  
+def get_suggested_books_nqa(requested_book):
+  with open(mimir_dir + 'data/nqa_gutenberg_corpus/supported_books.csv', 'r') as file:
+    supported_books = list(csv.reader(file))[1:] # [0] is title, [1] is author
+    
+    similarities = []
+    for book_info in supported_books:
+      similarities.append(SequenceMatcher(None, book_info[0], requested_book).ratio())
+    
+    closest_3 = sorted(zip(supported_books, similarities), reverse=True, key=lambda x: x[1])[:3]
+    for book_info, ratio in closest_3:
+      global s_books
+      s_books.append({ "title": book_info[0], "author": book_info[1] })
+
+def get_suggested_books_wiki(requested_book):
   # Collect/store wikipedia suggestions based on utterance
-  wikipedia_suggested = wikipedia.search(user_utterance + " (novel)", results=3)
+  wikipedia_suggested = wikipedia.search(requested_book + " (novel)", results=3)
 
   #print(wikipedia_suggested)
   
@@ -46,14 +61,31 @@ def is_book_present(user_utterance):
       author_data = info_box.find(lambda t: t.text.strip() == "Author").parent.select('td')
       author_name = author_data[0].text
       book_title = title.replace(" (novel)", "").replace(" (book)", "")
-      
+  
       global s_books
       s_books.append({ "title": book_title, "author": author_name })
     except Exception as e:
       pass 
-      # print(e)
-      # print("Suggestion {} failed.".format(i+1))
+        # print(e)
+        # print("Suggestion {} failed.".format(i+1))
 
+
+def is_book_present(user_utterance, is_nqa=True):
+  '''
+  Searches for the book title in narrativeQA or on wikipedia and retrieves 
+  the top suggestions. Returns true if any similar books are found, false otherwise. 
+  '''
+  init()
+
+  # Phrases to remove from the user utterance
+  blacklist = ["i am reading", "it is called"]
+  for n_gram in blacklist:
+    user_utterance = user_utterance.replace(n_gram, '')
+  
+  if is_nqa:
+    get_suggested_books_nqa(user_utterance)
+  else:
+    get_suggested_books_wiki(user_utterance)
 
   if len(s_books) == 0:
     return False

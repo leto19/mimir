@@ -4,12 +4,16 @@ import os.path as op
 import numpy as np
 import csv
 import nltk
+import spacy
 from nltk.corpus import stopwords 
 
 nqa_dir = os.environ["NARRATIVEQA_DIR"]
 mimir_dir = os.environ["MIMIR_DIR"]
 
 data_dir = op.join(mimir_dir, "data")
+
+
+stop_words = set(stopwords.words("english"))
 
 def remove_newline(text):
 	newline_trans = str.maketrans("", "", "\n") 
@@ -118,7 +122,6 @@ def list_to_csv(csv_file_path, line_list):
 		for row in line_list:
 			csvwriter.writerow(row)
 
-
 def load_or_create_object(numpy_filename: str, obj: object):
 	if not numpy_filename.endswith(".npy"):
 		numpy_filename += ".npy"
@@ -126,7 +129,30 @@ def load_or_create_object(numpy_filename: str, obj: object):
 		return obj
 	else:
 		return np.load(numpy_filename, allow_pickle=True)[0]	
-		
+
+
+def load_or_create(numpy_filename: str, create_function, save=False):
+	"""Loads a numpy object if the path exists, or, if it doesn't, creates
+		it with create_function. If save == True, also saves the object"""
+
+	if not numpy_filename.endswith(".npy"):
+		numpy_filename += ".npy"
+	
+	if not op.exists(numpy_filename):
+		output = create_function()
+	else:
+		return np.load(numpy_filename, allow_pickle=True)[0]	
+	
+	if save == True:
+		if isinstance(output, np.ndarray):
+			np.save(numpy_filename, output)
+		elif isinstance(output, list):
+			np.save(numpy_filename, np.array(output))
+		else:
+			np.save(numpy_filename, np.array([output]))
+	
+	return(output)
+
 def extract_text_from_gutenberg(text):
 	text = re.split(r"\*\*\*.*?START.*?PROJECT GUTENBERG EBOOK.*?\*\*\*", text)[1]
 	text = re.split(r"\*\*\*.*?END.*?PROJECT GUTENBERG EBOOK.*?\*\*\*", text)[0]
@@ -195,10 +221,23 @@ def remove_stopwords(sent:list):
 	stop_words = set(stopwords.words("english"))
 	return ([word for word in sent if word.lower() not in stop_words])
 
-def get_tokens_from_text(line):
+def tokenize(line):
     tokens = nltk.word_tokenize(line)
     
     return tokens
+
+def spacy_get_entities(filepath):
+	nlp = spacy.load("en_core_web_sm")
+	line_list = get_line_list_from_file(filepath)
+	all_ents = []
+	for line in line_list:
+		processed = nlp(line)
+		for ent in processed.ents:
+			new_entity = [ent.text,ent.label_]
+			if new_entity not in all_ents:
+				all_ents.append(new_entity)
+	return(all_ents)
+
 
 def get_named_entities(tokens):
     entities = nltk.chunk.ne_chunk(nltk.pos_tag(tokens))
@@ -209,7 +248,7 @@ def ne_list_from_file(file_path):
 	entity_list = list()
 	for line in line_list: #for each sentence in the input file 
 		line.strip("\n")
-		t = get_tokens_from_text(line) #get tokens 
+		t = tokenize(line) #get tokens 
 		entities = get_named_entities(t) # get entities tree
 
 		for e in entities:

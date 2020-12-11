@@ -1,7 +1,7 @@
 import json
 
 
-with open("data/dracula_wiki_plot_entities.txt","r") as f:
+with open("data/white_fang_sum_entities.txt","r") as f:
     entities_dict = json.load(f)
 
 
@@ -32,6 +32,6 @@ for quest in questions: #for each question format
 
 print(out_list)
 
-with open("data/questions_drac_spacy.txt","w") as f:
+with open("data/questions_white_fang.txt","w") as f:
     f.writelines(out_list)
 

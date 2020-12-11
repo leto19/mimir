@@ -8,34 +8,13 @@ import json
 import pyaudio
 import numpy
 import speech_recognition as sr
+import num2words
+import re
 
-
-
-model = Model(sys.argv[1])
+#model = Model(sys.argv[1])
 #model = Model("models/vosk-model-en-us-daanzu-20200905")
 #model = Model("models/new")
 
-def get_text(audio_file):
-    wf = wave.open(audio_file, "rb")
-    if wf.getnchannels() != 1 or wf.getsampwidth() != 2 or wf.getcomptype() != "NONE":
-        print ("Audio file must be WAV format mono PCM.")
-        exit (1)
-    rec = KaldiRecognizer(model, wf.getframerate())
-
-    while True:
-        data = wf.readframes(4000)
-        if len(data) == 0:
-            break
-        if rec.AcceptWaveform(data):
-            pass
-            #print(rec.Result())
-        else:
-            pass
-            #print(rec.PartialResult())
-    #print(rec.FinalResult())
-    res = json.loads(rec.FinalResult())
-    #os.system('clear')
-    return (res['text'])
 
 def get_text_google(audio_file):
     r = sr.Recognizer()
@@ -78,7 +57,7 @@ def get_WER(r,h):
     return result
 
 
-model = Model(sys.argv[1])
+#model = Model(sys.argv[1])
 
 with open("test_data/baseline.txt") as f:
     baseline_list = f.readlines()
@@ -86,7 +65,7 @@ baseline_index = 0
 
 root = os.curdir + "/test_data/"
 #for set_num in range(len(subdirs))
-model_name = sys.argv[1].replace("models/","").replace("/","")
+model_name = "google"
 
 for path, subdirs, files in os.walk(root):
     for s in subdirs:
@@ -104,8 +83,10 @@ for path, subdirs, files in os.walk(root):
             print(file_path)
 
             baseline_text = baseline_list[baseline_index].strip()
-            recognised_text = get_text(file_path)
+            recognised_text = get_text_google(file_path)
             recognised_text = recognised_text.lower()
+            recognised_text = re.sub(r"(\d+)", lambda x: num2words.num2words(int(x.group(0))), recognised_text)
+
             baseline_index+=1
             if baseline_index ==9:
                 baseline_index = -1

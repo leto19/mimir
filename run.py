@@ -21,7 +21,7 @@ if __name__ == '__main__':
     #user_input = sr.get_input_string() # returns string
     user_input = input("(Press Enter↩ for ASR)\n> ")
     if user_input == "": # if the user dosn't type a question, use ASR
-      user_input = asr.get_speech_input_string_google()
+      user_input = asr.get_speech_input_string_google() # requires speech_recognition module
       print("You said:",user_input)
     # pass user input to dialogue, which returns a response and/or a code signifying QA comp is needed (or user has chosen to exit)
     ret = dialogue_input(user_input)

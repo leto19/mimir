@@ -45,14 +45,14 @@ def handle_abbreviations(matchobj):
 		if matchobj.group("trailing"):
 			out = out[:-len(matchobj.group("trailing"))]
 			out += matchobj.group("trailing").translate(newlinerepl)
-			print(matchobj)
-			print(matchobj.groups())
-			if "\n" in matchobj[0]:
-				print(matchobj.groups())
-				print(matchobj.group("trailing"))
-				this = input()
-				if this == "1":
-					import pdb; pdb.set_trace()
+#			print(matchobj)
+#			print(matchobj.groups())
+#			if "\n" in matchobj[0]:
+#				print(matchobj.groups())
+#				print(matchobj.group("trailing"))
+#				this = input()
+#				if this == "1":
+#					import pdb; pdb.set_trace()
 	
 		return (out)
 	else:
@@ -73,12 +73,6 @@ def handle_newline(matchobj):
 		return matchobj[0] + "😠" # Our extremely arbitrary "split" token
 
 
-
-
-
-
-
-
 def sentence_tokenize(text):
 
 	alt_punct = str.maketrans(".?!", "。？！")
@@ -90,12 +84,12 @@ def sentence_tokenize(text):
 
 #[\W\s\_]&&[^\n]
 
-	abbreviations = "(?P<abbrvs>(Mr|Mrs|Ms|Dr|Sr|Jr|M|St|Cl|No)|[\.A-Za-z]+\.[A-Za-z]+)"
+	abbreviations = "(?P<abbrvs>(Mr|Mrs|Ms|Dr|Sr|Jr|M|St|Cl|No)|[\.A-Z]+)"
 	split_punct = "[\.?!]"
-	new_line = re.compile(r"[\s\n]*\n[\s]*(😠)?") # if we are at a new line, we will split anyway
 	split_re = re.compile(r"" + abbreviations + "?" + "(?P<trailing>" + split_punct + "[\s\n]*)")
-
 	new_text = re.sub(split_re, handle_abbreviations, new_text)
+	
+	new_line = re.compile(r"[\s\n]*\n[\s]*(😠)?") # if we are at a new line, we will split anyway
 	new_text = re.sub(new_line, handle_newline, new_text)
 	new_text = new_text.translate(revert_punct)	
 
@@ -163,7 +157,6 @@ def make_id_name_dict():
 	docs_csv = op.join(mimir_dir, "data", "documents.csv")
 	docs_list = csv_to_list(docs_csv)
 	for line in docs_list[1:]:
-		print(line)
 		try:
 			if line[2] == "gutenberg":
 				id_name_dict[line[0]] = line[6]

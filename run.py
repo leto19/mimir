@@ -44,8 +44,8 @@ if __name__ == '__main__':
     elif dialogue_id == DialogueOption.QA_RESPONSE:
       # if QA comp is needed, get response from QA system
       #response = "*Answer*" # get from QA component
-      response = mc.answer_question('bert_baseline',user_input)
-
+      response = mc.answer_question('bert_baseline_summary',user_input)
+      #response = mc.answer_question('cosine_distance_tfidf_fulltext', user_input)
 
     # use TTS component to read response out
     tts(response)

@@ -8,9 +8,6 @@ import numpy as np
 from nltk.tokenize import word_tokenize
 from nltk.stem.porter import PorterStemmer
 
-
-
-
 stemmer = PorterStemmer()
 
 def load_sentences_to_list(file_path):
@@ -69,8 +66,6 @@ def pipeline(sentences):
 	
 if __name__ == "__main__":
 
-
-	in_path = op.join(mimir_dir, 
 
 	exit(1)
 	#Below is the loop over NQA

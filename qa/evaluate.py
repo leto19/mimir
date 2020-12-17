@@ -8,7 +8,7 @@ from collections import OrderedDict
 from qa.question_answering.utils import mimir_dir, data_dir, csv_to_list, tokenize, make_id_name_dict, \
 	make_qa_dict_valid
 from qa.question_answering.models.bert_baseline import BertBaseline
-from qa.question_answering.models.model import models_dict
+from qa.question_answering.models.model import ModelController, active_models
 from qa.question_answering.question_classifiers import SimpleBaseline
 from pycocoevalcap.meteor.meteor import Meteor
 from pycocoevalcap.cider.cider import Cider
@@ -43,15 +43,16 @@ def similarity_metrics(ref1_strs, ref2_strs, extracted_answers):
 		word_target_dict, word_response_dict)
 	bleu1_score, _, _, bleu4_score = bleu_score
 	bleu1_scores, _, _, bleu4_scores = bleu_scores
-	meteor_score, meteor_scores = meteor_obj.compute_score(
-		word_target_dict, word_response_dict)
+	#meteor_score, meteor_scores = meteor_obj.compute_score(
+	#	word_target_dict, word_response_dict)
 	rouge_score, rouge_scores = rouge_obj.compute_score(
 		word_target_dict, word_response_dict)
 	cider_score, cider_scores = cider_obj.compute_score(
 		word_target_dict, word_response_dict)
 
-	return bleu4_score, bleu1_score, meteor_score, rouge_score, cider_score
-
+	return bleu4_score, bleu1_score, rouge_score, cider_score
+#meteor_score, 
+ 
 
 def filter_qa_dict(qa_dict, classifier, categories):
 	""" Get only questions with a predicted answer category"""
@@ -95,18 +96,13 @@ def exact_match(model, qa_dict_valid, summary_dir, pause=False):
 
 class Evaluator():
 	def __init__(self, valid_dict, models_dict):
-		self.model_instances = {}
-		for model_id, value in models_dict.items():
-			print(value)	
-			class_location, class_name, params = value
-			module = importlib.import_module('qa.question_answering.models.'+class_location)
-			model_class = getattr(module, class_name)
-			self.model_instances[model_id] = model_class(model_id,**params)
+		self.model_controller = ModelController()
 		self.valid_dict = valid_dict
+		self.models_dict = models_dict
 
 	def evaluate_all(self):
 		results = {}
-		for model in self.model_instances:
+		for model_id in self.models_dict:
 			sorted_pairs  = sorted(list(self.valid_dict.items()))
 			questions     = [item[0] for item in sorted_pairs]
 			book_names    = [item[1][0] for item in sorted_pairs]
@@ -114,19 +110,27 @@ class Evaluator():
 			answers_1     = [item[1][1][1] for item in sorted_pairs]
 
 			extracted_answers = []
-			current_book_name = None
-
 			for i, q in enumerate(questions):
-				if book_names[i] != current_book_name:
-					context = 
-				extracted_answers.append(			
-			extracted_answers = [model.evaluate(book_names[i], questions[i]) for i in ] 
-		
-			bleu4_score, bleu1_score, meteor_score, rouge_score, cider_score = similarity_metrics(answers_0, answers_1, extracted_answers)
+				if book_names[i] in ["Mary: A Fiction", "Armageddon 2419 A.D."]:
+					extracted_answer = ""
+				else:
+					print(q)
+					self.model_controller.confirm_book({"title":book_names[i], "author": None})
+					extracted_answer = self.model_controller.answer_question(model_id, q)
+				extracted_answers.append(extracted_answer)
+				print(extracted_answer)
+				print("{} of {} done".format(i, len(questions))) 
+			print(model_id)
+			print(extracted_answers[:5])		
 
-	
+			bleu4_score, bleu1_score, rouge_score, cider_score = similarity_metrics(answers_0, answers_1, extracted_answers)
 
-			import pdb; pdb.set_trace()
+			results[model_id] = [bleu4_score, bleu1_score, rouge_score, cider_score]
+			#print(similarity_metrics(answers_0, answers_1, extracted_answers))
+		print("done")	
+		import pdb; pdb.set_trace()
+
+			#import pdb; pdb.set_trace()
 			
 			
 			#predicted_answers = [model.evaluate
@@ -142,20 +146,12 @@ if __name__ == "__main__":
 
 	full_text_dir = op.join(data_dir, "nqa_gutenberg_corpus")
 	summary_dir = op.join(data_dir, "nqa_summary_text_files")
-	#models_dict = OrderedDict({"Bert Baseline (On summaries)": (BertBaseline, summary_dir)})
 
-	#valid_dict = [["the cat is on the mat"], ["there is a cat on the mat"], ["the cat the cat on the mat"]]
 
-	evaluator = Evaluator(qa_dict_valid, models_dict)
+	evaluator = Evaluator(qa_dict_valid, active_models)
 	evaluator.evaluate_all()
-	#exit(1)
-
-	#print("***MODELS LIST***\n")
-
-	for i, k in enumerate(models_dict.keys()):
-		print(i, ":", k)
-
-	print()
+		
+	exit(1)
 
 	idx = int(input("Select the model number and press enter"))
 

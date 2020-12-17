@@ -2,7 +2,7 @@ import argparse
 import os
 import os.path as op
 import nltk
-from question_answering.utils import get_named_entities, tokenize,  mimir_dir, data_dir, csv_to_list, tokenize, make_id_name_dict, make_qa_dict_valid
+from qa.question_answering.utils import get_named_entities, tokenize,  mimir_dir, data_dir, csv_to_list, tokenize, make_id_name_dict, make_qa_dict_valid
 
 class SimpleBaseline:
 	def __init__(self):

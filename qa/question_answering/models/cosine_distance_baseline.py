@@ -42,7 +42,9 @@ class CosineModel(Model):
 			# be the same as the pipeline for the *text*
 
 	def preprocess(self, question, word2idx):
+		question_words = ["what", "where", "when", "why", "how", "who", "?"]
 		preprocessed_text = self.preprocessing_pipeline([question])[0]
+		preprocessed_text = [w for w in preprocessed_text if w not in question_words]
 		question_vector = sentence_to_vector(preprocessed_text, word2idx) 
 		return(question_vector)
 		
@@ -50,7 +52,7 @@ class CosineModel(Model):
 		preprocessed_question = self.preprocess(question, word2idx)
 		bows_range = list(range(len(bows)))		
 		best_sent_index = max(bows_range, key= lambda x: cosine_sim_dict(bows[str(x)], preprocessed_question))
-		return(self.sents[best_sent_index])
+		return(sents[best_sent_index])
 
 class CosineModelTFIDF(Model):
 	"""Just finds the sentence with the closest BOW embedding"""
@@ -61,7 +63,9 @@ class CosineModelTFIDF(Model):
 			# be the same as the pipeline for the *text*
 
 	def preprocess(self, question, word2idx, df_dict, bows):
+		question_words = ["what", "where", "when", "why", "how", "who", "?"]
 		preprocessed_text = self.preprocessing_pipeline([question])[0]
+		preprocessed_text = [w for w in preprocessed_text if w not in question_words]
 		question_vector = sentence_to_vector(preprocessed_text, word2idx)
 		idf_vector = calculate_tfidf(question_vector, df_dict, len(bows))
 		return(idf_vector)

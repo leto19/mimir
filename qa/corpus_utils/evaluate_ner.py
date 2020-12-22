@@ -4,7 +4,9 @@ import os
 import os.path as op
 import re
 from multiset import Multiset
-from utils import load_or_create, tokenize, stop_words, ne_list_from_file, spacy_get_entities
+from utils import get_line_list_from_file, load_or_create, tokenize, stop_words, ne_list_from_file, spacy_get_entity_types
+
+np.random.seed(0)
 
 #all the characters in sparknotes
 gold_standard_people = [["Dracula","Count Dracula","the Count"],["Abraham Van Helsing", "Van Helsing", "Dr. Van Helsing", "Professor Van Helsing"], ["Mina","Miss Murray", "Mina Murray", "Miss Mina Murray", "Madam Mina", "Mina Harker", "Mrs. Harker"], ["Lucy", "Lucy Westenra", "Miss Westenra"], ["Jonathan Harker", "Jonathan","Harker", "Mr. Harker"], ["Arthur Holmwood", "Lord Godalming", "Arthur", "Holmwood", "Mr. Holmwood", "Hon. Arthur Holmwood"], ["John Seward","Dr. Seward", "Dr. John Seward", "John"], ["Quincey Morris", "Mr. Quincey P. Morris", "Quincey", "Mr. Morris", "Morris"], ["Renfield", "Mr. Renfield", "R. M. Renfield"], ["Mrs. Westenra"]]
@@ -73,8 +75,9 @@ def evaluate_precision_and_recall(ner_list, gold_standard, entity_type, skip_pre
 
 	results_dict["rand_index"] = rand_index(filtered_ner_list, filtered_gold_standard)
 	flattened_ner = list(np.concatenate(ner_list))
+	np.random.shuffle(flattened_ner)
 	if not skip_precision:
-		results_dict["names_precision"] = names_precision(flattened_ner, entity_type)
+		results_dict["names_precision"] = names_precision(flattened_ner[:50], entity_type)
 	return(results_dict)
 
 def print_results(results_dict, method_code):
@@ -97,10 +100,11 @@ if __name__ == "__main__":
 
 	dracula_wiki_plot = op.join(data_dir, "dracula_wiki_plot.txt")
 	dracula_full_text = op.join(data_dir, "Dracula_full_text.txt")
-	nltk_person_list = [[ent[0]] for ent in ne_list_from_file(dracula_wiki_plot) if ent[1] == "PERSON"]
-	spacy_entities = spacy_get_entities(dracula_wiki_plot)
-	spacy_person_list = [[ent[0]] for ent in spacy_entities if ent[1] == "PERSON"]
+	nltk_person_list = [[ent[0]] for ent in ne_list_from_file(dracula_full_text) if ent[1] == "PERSON"]
 	
+	line_list = get_line_list_from_file(dracula_full_text)
+	spacy_entities = spacy_get_entities(line_list)
+	spacy_person_list = [[ent[0]] for ent in spacy_entities if ent[1] == "PERSON"]
 	nltk_results = evaluate_precision_and_recall(nltk_person_list, gold_standard_people, "person", skip_precision=skip_precision)
 	spacy_results = evaluate_precision_and_recall(spacy_person_list, gold_standard_people, "person", skip_precision=skip_precision)
 

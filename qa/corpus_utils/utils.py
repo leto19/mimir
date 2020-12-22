@@ -6,6 +6,9 @@ import csv
 import nltk
 import spacy
 from nltk.corpus import stopwords 
+from collections import defaultdict
+
+nlp = spacy.load("en_core_web_sm")
 
 nqa_dir = os.environ["NARRATIVEQA_DIR"]
 mimir_dir = os.environ["MIMIR_DIR"]
@@ -214,14 +217,39 @@ def remove_stopwords(sent:list):
 	stop_words = set(stopwords.words("english"))
 	return ([word for word in sent if word.lower() not in stop_words])
 
+
 def tokenize(line):
-    tokens = nltk.word_tokenize(line)
-    
+    tokens = nltk.word_tokenize(line)    
     return tokens
 
-def spacy_get_entities(filepath):
-	nlp = spacy.load("en_core_web_sm")
-	line_list = get_line_list_from_file(filepath)
+
+def spacy_single_line(line, return_indices = False):
+	doc = nlp.make_doc(line)
+	beams = nlp.entity.beam_parse([doc], beam_width=16, beam_density=0.0001)
+	entity_scores = defaultdict(float)
+	parses = nlp.entity.moves.get_beam_parses(beams[0])
+	for score, ents in parses:
+	#	print (score, ents)
+		for start, end, label in ents:
+			# print ("here")
+			entity_scores[(start, end, label)] += score
+	#print ('entity_scores', entity_scores)
+	best_parse = parses[0][1]
+	ents = nlp(line).ents
+	tokens = []
+	for ent in ents:
+		score = entity_scores[(ent.start, ent.end, ent.label_)]
+		if return_indices == False:
+			tokens.append(((ent.text, ent.label_),score))
+		else:
+			tokens.append(((ent.start, ent.end),(ent.text, ent.label_),score))
+	return(tokens)
+	
+def ntokens_spacy(line):
+	doc = nlp(line)
+	return(len(doc))
+
+def spacy_get_entity_types(line_list):
 	all_ents = []
 	for line in line_list:
 		processed = nlp(line)
@@ -229,6 +257,13 @@ def spacy_get_entities(filepath):
 			new_entity = [ent.text,ent.label_]
 			if new_entity not in all_ents:
 				all_ents.append(new_entity)
+	return(all_ents)
+
+
+def spacy_get_entity_tokens(line_list):
+	all_ents = []
+	for line in line_list:
+		all_ents += spacy_single_line(line)
 	return(all_ents)
 
 
@@ -254,4 +289,6 @@ def ne_list_from_file(file_path):
 
 
 if __name__ == "__main__":
-	print(ne_list_from_file(op.join(mimir_dir,"data","nqa_summary_text_files","train", "Anna Karenina")))
+
+	spacy_single_line("This is a line with the name Harry in it. He went to Anatole France.")
+	#print(ne_list_from_file(op.join(mimir_dir,"data","nqa_summary_text_files","train", "Anna Karenina")))

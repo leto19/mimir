@@ -14,6 +14,20 @@ mimir_dir = os.environ["MIMIR_DIR"]
 data_dir = op.join(mimir_dir, "data")
 
 
+def map_words_to_named_entities(obj_dict, classes = ["ORG","LOC","PERSON"]):
+
+	word2entity = {}
+
+	for ne_class in classes:
+		for idx, obj in obj_dict[ne_class].items():
+			for name in obj.name_variants:
+				word2entity[name] = idx
+
+	return(word2entity)
+
+
+
+
 def make_dataset_dict():
 	data_dir = op.join(mimir_dir, "data")
 	id_name_dict = make_id_name_dict()

@@ -22,6 +22,17 @@ summary_csv = op.join(data_dir, "summaries.csv")
 id_name_dict = make_id_name_dict()
 name_url_dict = make_name_url_dict()
 
+def make_dataset_dict():
+	data_dir = op.join(mimir_dir, "data")
+	summary_csv = op.join(data_dir, "summaries.csv")
+	summary_list = csv_to_list(summary_csv)
+	name_dataset_dict = {}
+	for row in summary_list[1:]
+		doc_id, corpus_set, _, _ = row
+		book_name = id_name_dict[doc_id]
+		name_dataset_dict[book_name] = corpus_set #Test, train, valid#
+	return name_dataset_dict
+
 if __name__ == "__main__":
 	summary_list = csv_to_list(summary_csv)
 	

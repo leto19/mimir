@@ -27,10 +27,10 @@ class Model:
 	def preprocess(self, question):
 		raise NotImplementedError
 
-active_models = {                   #module,        #class           #info source   #other parameters
-"bert_baseline_summary":		  ["bert_baseline", "BertBaseline", ["summary"],    {}],
+active_models = {                   #module,        #class           #info source(s)  #other parameters
 "cosine_distance_bow_fulltext":   ["cosine_distance_baseline", "CosineModel", 
 								   ["full_text_sents","full_text_bows","word2idx"], {"pipeline":pipeline}],
+"bert_baseline_summary":		  ["bert_baseline", "BertBaseline", ["summary"],      {}],
 "cosine_distance_tfidf_fulltext": ["cosine_distance_baseline", "CosineModelTFIDF", 
 								   ["full_text_sents","full_text_tfidf","word2idx","df_dict"], {"pipeline":pipeline}],
 #"two_stage_model":				   ["two_stage_model", "TwoStageModel", "full_text", {"preloaded_model": preloaded_model}]
@@ -75,6 +75,7 @@ class ModelController:
 		data   = [self.current_book_data[ds] for ds in model.info_source]
 		answer = model.answer_question(question, *data)
 		return answer
+
 
 if __name__ == "__main__":
 	mc = ModelController()

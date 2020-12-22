@@ -281,6 +281,7 @@ if __name__ == "__main__":
 			base_name = filename[:-6]
 			sents_list = get_line_list_from_file(op.join(in_dir, dset, filename))
 			obj_dict, ne_bows, ne_mentions_list = ner_pipeline(spacy_single_line, sents_list)
-			with open(op.join(ne_bows_dir, base_name + ".df_dict.json"), "w") as dump_path:						json.dump(ne_bows, dump_path)
-			np.save(op.join(ne_mentions_list_dir, base_name), np.array(ne_mentions_list))
-			np.save(op.join(obj_dict_dir, base_name), np.array([obj_dict]))
+			with open(op.join(ne_bows_dir, dset, base_name + ".df_dict.json"), "w") as dump_path:
+				json.dump(ne_bows, dump_path)
+			np.save(op.join(ne_mentions_list_dir, dset, base_name), np.array(ne_mentions_list))
+			np.save(op.join(obj_dict_dir, dset, base_name), np.array([obj_dict]))

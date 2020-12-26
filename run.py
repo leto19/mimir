@@ -1,26 +1,54 @@
+import argparse
 #import speech_recognition.get_speech_input as sr
 from dialogue import init_dialogue, dialogue_input, DialogueOption, bold_print
-from tts.gtts import tts
+from qa.question_answering.question_classifiers import QuestionClassifier
+from qa.corpus_utils.ner_pipeline import *
 from qa.question_answering.models.model import ModelController
-import auto_speech_recognition.get_speech_input as asr
 import os
+
+parser = argparse.ArgumentParser()
+	parser.add_argument("-v","--verbose", action="store_true") #Run in verbose mode to view 
+															#which model answers user questions
+	parser.add_argument("-s","--silent", action="store_true") #No TTS or ASR
+
+args = parser.parse_args()
+
+if not args.silent:
+	import auto_speech_recognition.get_speech_input as asr
+	from tts.gtts import tts
+
+
+class NaturalLanguageGenerator():
+	"""A placeholder Natural Language Generation class. We should figure out
+		a better place to put this """
+	def generate(self, answer_type, answer):
+		if answer == None:
+			generated_string = "Sorry, I couldn't find the answer"
+		if answer_type == "CHARLIST":
+			generated_string = "The main characters are {} and {}".format(", ".join(answer[:-1]),answer[-1])
+		else:
+			generated_string = str(answer)
+		return(generated_string)
 
 if __name__ == '__main__':
 
   persist_dialogue = True
   # Initialise dialogue + other components
   ret = init_dialogue()
-  mc = ModelController()
+  qc = QuestionClassifier()
+  mc = ModelController(verbose=args.verbose)
+  nlg = NaturalLanguageGenerator()
   os.system('clear')
   bold_print(ret["response"])
-  tts(ret["response"])
+  if not args.silent:
+    tts(ret["response"])
 
   # While not in end_state, keep running
   while persist_dialogue:
 
     #user_input = sr.get_input_string() # returns string
-    user_input = input("(Press Enter↩ for ASR)\n> ")
-    if user_input == "": # if the user dosn't type a question, use ASR
+    user_input = input("(Press Enter for ASR)\n> ")
+    if user_input == "" and not args.silent: # if the user dosn't type a question, use ASR
       user_input = asr.get_speech_input_string_google() # requires speech_recognition module
       print("You said:",user_input)
     # pass user input to dialogue, which returns a response and/or a code signifying QA comp is needed (or user has chosen to exit)
@@ -38,17 +66,18 @@ if __name__ == '__main__':
     elif dialogue_id == DialogueOption.BOOK_CONFIRMED:
       book_title = ret['book'] # pass to qa
       mc.confirm_book(book_title)
+      qc.set_data_dict(mc.current_book_data)
       response = ret['response']
-
 
     elif dialogue_id == DialogueOption.QA_RESPONSE:
       # if QA comp is needed, get response from QA system
-      #response = "*Answer*" # get from QA component
-      response = mc.answer_question('bert_baseline_summary',user_input)
-      #response = mc.answer_question('cosine_distance_tfidf_fulltext', user_input)
-
+      #response = "*Answer*" # get from QA component   
+      predicted_answer_type = qc.predict(user_input) #Currently just returns a type, but could return list of types + probabilities? 
+      returned_type, answer = mc.answer_question(predicted_answer_type, user_input) #Model selection procedure now implemented inside mc.answer_question
+      response = nlg.generate(returned_type, answer)
     # use TTS component to read response out
-    tts(response)
+    if not args.silent:
+      tts(response)
 
     bold_print(response)
 

@@ -72,6 +72,8 @@ class BertBaseline(Model):
 		answer_tokens = tokens[answer_start:answer_end+1]
 		
 		answer = self.subword_to_whole_word(answer_tokens)
+		if answer == "[CLS]":
+			return None
 		
 		return(answer)
 

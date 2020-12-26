@@ -4,9 +4,12 @@ import numpy as np
 import os
 import os.path as op
 from collections import defaultdict
-from regex_utils import all_person_regexes
-from utils import spacy_get_entity_tokens, spacy_single_line, get_line_list_from_file, ntokens_spacy
-
+try:
+	from qa.corpus_utils.regex_utils import all_person_regexes
+	from qa.corpus_utils.utils import spacy_get_entity_tokens, spacy_single_line, get_line_list_from_file, ntokens_spacy
+except:
+	from regex_utils import all_person_regexes
+	from utils import spacy_get_entity_tokens, spacy_single_line, get_line_list_from_file, ntokens_spacy
 
 def clash(dict1, dict2):
 	""" If there is a clash between two dictionaries
@@ -259,6 +262,15 @@ if __name__ == "__main__":
 	#dracula_full_text = op.join(mimir_dir, "data/dracula_wiki_plot.txt")
 	#dracula_full_text = op.join(mimir_dir, "preprocessed_data/sentence_tokenized/Dracula_full_text.sents")
 
+
+	obj_dict_dir = op.join(mimir_dir, "preprocessed_data", "obj_dicts")
+	ne_bows_dir = op.join(mimir_dir, "preprocessed_data", "ne_bows")
+	ne_mentions_list_dir = op.join(mimir_dir, "preprocessed_data", "ne_mentions")
+
+	for folder in [ne_mentions_list_dir, ne_bows_dir, obj_dict_dir]:
+		if not op.exists(folder):
+			os.mkdir(folder)
+
 	#base_name = "Dracula_wiki_plot"	
 
 	in_dir = op.join(mimir_dir, "preprocessed_data/sentence_tokenized/full_texts")
@@ -279,6 +291,8 @@ if __name__ == "__main__":
 		for i, filename in enumerate([fn for fn in os.listdir(op.join(in_dir, dset)) if fn.endswith("sents")]):
 			print("doing {} set {} of {}".format(dset, i, len(os.listdir(op.join(in_dir, dset)))))
 			base_name = filename[:-6]
+			if op.exists(op.join(ne_bows_dir, dset, base_name + ".df_dict.json")):
+				continue
 			sents_list = get_line_list_from_file(op.join(in_dir, dset, filename))
 			obj_dict, ne_bows, ne_mentions_list = ner_pipeline(spacy_single_line, sents_list)
 			with open(op.join(ne_bows_dir, dset, base_name + ".df_dict.json"), "w") as dump_path:

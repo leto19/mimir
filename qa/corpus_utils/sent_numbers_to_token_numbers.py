@@ -23,15 +23,31 @@ def line_tokens_dict(line_list):
 
 
 if __name__ == "__main__":
-	line_tokens_dict_dir = op.join(mimir_dir, "preprocessed_data", "line_tokens_dict")
+
+	sents_dir = op.join(mimir_dir, "preprocessed_data", "sentence_tokenized", "full_texts")
+	line_tokens_dict_dir = op.join(mimir_dir, "preprocessed_data", "line_tokens_dicts","full_texts")
+
+	dsets = ["test","train","valid"]
 	
 	if not op.exists(line_tokens_dict_dir):
 		os.mkdir(line_tokens_dict_dir)
 
+	for d in dsets:
+		if not op.exists(op.join(line_tokens_dict_dir,d)):
+			os.mkdir(op.join(line_tokens_dict_dir, d)) 
 
-	dracula_full_text = op.join(mimir_dir, "preprocessed_data/sentence_tokenized/Dracula_full_text.sents")
-	base_name = "Dracula_wiki_plot"
 
-	sents_list = get_line_list_from_file(dracula_full_text)
+	for d in dsets:
+		sents_path = op.join(sents_dir, d)
+		lt_path = op.join(line_tokens_dict_dir, d)
+		all_files = os.listdir(sents_path)
 
-	print(line_tokens_dict(sents_list))
+		for i, f in enumerate(all_files):
+			base_name = f[:-6]
+			if op.exists(op.join(lt_path, base_name +".npy")):
+				continue
+			sents_file = op.join(sents_path, f)
+			sents_list = get_line_list_from_file(sents_file)
+			lt_dict = line_tokens_dict(sents_list)
+			np.save(op.join(lt_path,base_name), np.array([lt_dict]))
+			print("{} {} of {}".format(d, i, len(all_files)))

@@ -34,7 +34,6 @@ def make_dataset_dict():
 	summary_csv = op.join(data_dir, "summaries.csv")
 	summary_list = csv_to_list(summary_csv)
 	name_dataset_dict = {}
-	print(id_name_dict)
 	for row in summary_list[1:]:
 		try:
 			doc_id, corpus_set, _, _ = row
@@ -113,8 +112,24 @@ def make_name_url_dict():
 			pass
 	return name_url_dict
 
+
+def map_words_to_named_entities(obj_dict, classes = ["PERSON"]):
+
+	word2entity = {}
+
+	for ne_class in set(classes)&set(obj_dict.keys()):
+		for idx, obj in obj_dict[ne_class].items():
+			for name in obj.name_variants:
+				word2entity[name] = idx
+
+	return(word2entity)
+
 def levenshtein(input_sentence, target_sentence):
 	#Calculates the minimum edit distance (Levenshtein distance) between two strings (or lists)
+	if type(input_sentence) != type(target_sentence):
+		raise TypeError("Input and target should probably be the same type. \
+Input (type {}): {} \
+Target (type {}): {}".format(type(input_sentence),input_sentence, type(target_sentence),target_sentence))
 
 	trellis = np.zeros((len(input_sentence) + 1, len(target_sentence) + 1))
 	trellis[:,0] = np.arange(len(input_sentence)+1)

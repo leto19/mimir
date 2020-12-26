@@ -22,31 +22,34 @@ def file_to_sentence_tokens(file_path, gutenberg_text=False):
 
 if __name__ == "__main__":
 
-	in_path = op.join(data_dir, "Dracula_full_text.txt")
-	out_path = op.join(mimir_dir, "preprocessed_data", "sentence_tokenized", "Dracula_full_text.sents")
+#	in_path = op.join(data_dir, "Dracula_full_text.txt")
+#	out_path = op.join(mimir_dir, "preprocessed_data", "sentence_tokenized", "Dracula_full_text.sents")
 
-	sentence_tokens = file_to_sentence_tokens(in_path, gutenberg_text=True)
-	with open(out_path, "w+") as out_file:
-		for st in sentence_tokens:
-			out_file.write(st + "\n")
+#	sentence_tokens = file_to_sentence_tokens(in_path, gutenberg_text=True)
+#	with open(out_path, "w+") as out_file:
+#		for st in sentence_tokens:
+#			out_file.write(st + "\n")
 
 
-	exit(1)
+
+#	exit(1)
 
 	#Below is loop over NQA:
 
-	in_path = op.join(data_dir, "nqa_gutenberg_corpus")	
-	out_path = op.join(mimir_dir, "preprocessed_data", "sentence_tokenized", "full_texts")
+	in_path = op.join(data_dir, "nqa_summary_text_files")	
+	out_path = op.join(mimir_dir, "preprocessed_data", "sentence_tokenized", "summaries")
 	sets = ["train","test","valid"]
 
 	with open("tokenization_log_file.txt", "w+") as log_file:  #Create a log file
 		pass 
+
+	if not op.exists(out_path):
+		os.mkdir(out_path)
 	
 	for d in sets:
 		set_path = op.join(out_path, d)
 		if not op.exists(set_path):
 			os.mkdir(set_path)
-
 
 	for d in sets:
 		set_path = op.join(in_path, d)

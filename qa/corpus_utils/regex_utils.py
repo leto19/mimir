@@ -5,9 +5,13 @@ import os
 import os.path as op
 import re
 from termcolor import cprint
-from list_of_honorifics import honorifics_dict
-from utils import load_or_create, tokenize, stop_words
-gazeteer_file = op.join(os.environ["CORPORA"],"allCountries.txt")
+try:
+	from list_of_honorifics import honorifics_dict
+	from utils import load_or_create, tokenize, stop_words
+except:
+	from qa.corpus_utils.list_of_honorifics import honorifics_dict
+	from qa.corpus_utils.utils import load_or_create, tokenize, stop_words
+#gazeteer_file = op.join(os.environ["CORPORA"],"allCountries.txt")
 dracula_file = op.join(os.environ["MIMIR_DIR"], "preprocessed_data","sentence_tokenized", "Dracula_full_text.sents")
 
 #all the characters in sparknotes

@@ -36,19 +36,23 @@ def make_tfidf_dict(bow_vecs_dict, df_dict):
 
 if __name__ == "__main__":
 
-	in_path = op.join(mimir_dir, "preprocessed_data", "sentence_BOWs", "full_texts")
-	out_path = op.join(mimir_dir, "preprocessed_data", "sentence_BOWs_TFIDF", "full_texts")
-	dict_path = op.join(mimir_dir, "preprocessed_data", "vocab_dicts", "full_texts")
-	df_dict_path = op.join(mimir_dir, "preprocessed_data", "document_frequency_dicts", "full_texts")
+	in_path = op.join(mimir_dir, "preprocessed_data", "sentence_BOWs", "summaries")
+	out_path = op.join(mimir_dir, "preprocessed_data", "sentence_BOWs_TFIDF", "summaries")
+	dict_path = op.join(mimir_dir, "preprocessed_data", "vocab_dicts", "summaries")
+	df_dict_path = op.join(mimir_dir, "preprocessed_data", "document_frequency_dicts", "summaries")
 	sets = ["valid","train","test"]
+
+	for path in [out_path, dict_path, df_dict_path]:
+		if not op.exists(path):
+			os.mkdir(path)
+		for d in sets:
+			set_path = op.join(path, d)
+			if not op.exists(set_path):
+				os.mkdir(set_path)
 
 	with open("preprocessing_log_file.txt", "w+") as log_file:	#Create a log file
 		pass 
 	
-	for d in sets:
-		set_path = op.join(out_path, d)
-		if not op.exists(set_path):
-			os.mkdir(set_path)
 
 	for d in sets:
 		set_path = op.join(in_path, d)

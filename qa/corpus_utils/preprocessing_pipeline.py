@@ -67,17 +67,23 @@ def pipeline(sentences):
 if __name__ == "__main__":
 
 
-	exit(1)
+#	exit(1)
 	#Below is the loop over NQA
 
-	in_path = op.join(mimir_dir, "preprocessed_data", "sentence_tokenized", "full_texts")
-	out_path = op.join(mimir_dir, "preprocessed_data", "sentence_BOWs", "full_texts")
-	dict_path = op.join(mimir_dir, "preprocessed_data", "vocab_dicts", "full_texts")
+	in_path = op.join(mimir_dir, "preprocessed_data", "sentence_tokenized", "summaries")
+	out_path = op.join(mimir_dir, "preprocessed_data", "sentence_BOWs", "summaries")
+	dict_path = op.join(mimir_dir, "preprocessed_data", "vocab_dicts", "summaries")
 	sets = ["valid","train","test"]
 
 	with open("preprocessing_log_file.txt", "w+") as log_file:	#Create a log file
 		pass 
 	
+	if not op.exists(out_path):
+		os.mkdir(out_path)
+	
+	if not op.exists(dict_path):
+		os.mkdir(dict_path)
+
 	for d in sets:
 		set_path = op.join(out_path, d)
 		if not op.exists(set_path):

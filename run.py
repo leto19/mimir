@@ -7,9 +7,9 @@ from qa.question_answering.models.model import ModelController
 import os
 
 parser = argparse.ArgumentParser()
-	parser.add_argument("-v","--verbose", action="store_true") #Run in verbose mode to view 
-															#which model answers user questions
-	parser.add_argument("-s","--silent", action="store_true") #No TTS or ASR
+parser.add_argument("-v","--verbose", action="store_true") #Run in verbose mode to view 
+				#which model answers user questions
+parser.add_argument("-s","--silent", action="store_true") #No TTS or ASR
 
 args = parser.parse_args()
 

@@ -14,9 +14,9 @@ parser.add_argument("-s","--silent", action="store_true") #No TTS or ASR
 args = parser.parse_args()
 
 if not args.silent:
-	import auto_speech_recognition.get_speech_input as asr
-	from tts.gtts import tts
-
+    import auto_speech_recognition.get_speech_input as asr
+    from tts.gtts import tts
+    import auto_speech_recognition.get_speech_input_g as asrg
 
 class NaturalLanguageGenerator():
 	"""A placeholder Natural Language Generation class. We should figure out
@@ -49,7 +49,7 @@ if __name__ == '__main__':
     #user_input = sr.get_input_string() # returns string
     user_input = input("(Press Enter for ASR)\n> ")
     if user_input == "" and not args.silent: # if the user dosn't type a question, use ASR
-      user_input = asr.get_speech_input_string_google() # requires speech_recognition module
+      user_input = asrg.get_speech_input_string_google() # requires speech_recognition module
       print("You said:",user_input)
     # pass user input to dialogue, which returns a response and/or a code signifying QA comp is needed (or user has chosen to exit)
     ret = dialogue_input(user_input)

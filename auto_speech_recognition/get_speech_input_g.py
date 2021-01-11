@@ -9,7 +9,10 @@ from pydub import AudioSegment
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 import wave 
-
+import numpy as np
+import noisereduce as nr
+from time import sleep
+from scipy.io import wavfile
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 class RequestError(Exception): pass
 
@@ -38,8 +41,11 @@ def get_audio(seconds=3):
 
     stream = p.open(format=pyaudio.paInt16, channels=1, rate=FS, input=True, frames_per_buffer=CHUNK)
     frames = []
-    #os.system('clear')
-    #input("press enter to continue:")
+    
+    #get a frame of noise
+    data = stream.read(CHUNK)
+    frames.append(data)
+    
     print("Listening...")
     for i in range(0, int(FS / CHUNK * SECONDS_RECORD)):
         data = stream.read(CHUNK)
@@ -55,6 +61,7 @@ def get_audio(seconds=3):
     wf.setframerate(FS)
     wf.writeframes(b''.join(frames))
     wf.close()
+    noise_reduce()
     sound = AudioSegment.from_wav("auto_speech_recognition/myfile.wav")
     sound.export("auto_speech_recognition/myfile.flac",format = "flac")
     os.remove("auto_speech_recognition/myfile.wav")
@@ -71,6 +78,7 @@ def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.fla
             "client": "chromium",
             "lang": language,
             "key": key,
+            "app": "mimir"
         }))
         request = Request(url, data=audio_data, headers={"Content-Type": "audio/x-flac; rate={}".format(16000)})
         #response = urlopen(request)
@@ -104,6 +112,18 @@ def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.fla
         if "transcript" not in best_hypothesis: raise "what did you say?"
         return best_hypothesis["transcript"]
         """
+
+def noise_reduce(in_file="auto_speech_recognition/myfile.wav",out_file="auto_speech_recognition/myfile.wav"):
+    fs, data = wavfile.read(in_file)
+    data = data.astype(np.float32, order='C') / 32768.0 #convert to 32bit float
+    
+    noisy_part = data[0:2048] #get the noisy section
+
+    reduced_noise = nr.reduce_noise(audio_clip=data, noise_clip=noisy_part)
+
+    reduced_noise = (reduced_noise* 32767).astype(np.int16) #convert back 16 bit int
+    reduced_noise = reduced_noise[1024:]
+    wavfile.write(out_file,fs,reduced_noise) 
 
 if __name__ == "__main__":
     j = json.loads(get_speech_input_string_google())

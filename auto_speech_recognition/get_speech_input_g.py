@@ -11,7 +11,10 @@ from urllib.error import URLError, HTTPError
 import wave 
 
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
+class RequestError(Exception): pass
 
+
+class UnknownValueError(Exception): pass
 def py_error_handler(filename, line, function, err, fmt):
     pass
 
@@ -19,10 +22,11 @@ c_error_handler = ERROR_HANDLER_FUNC(py_error_handler)
 
 @contextmanager
 def noalsaerr():
-    asound = cdll.LoadLibrary('libasound.so')
-    asound.snd_lib_error_set_handler(c_error_handler)
-    yield
-    asound.snd_lib_error_set_handler(None)
+    if os.name != 'nt':
+        asound = cdll.LoadLibrary('libasound.so')
+        asound.snd_lib_error_set_handler(c_error_handler)
+        yield
+        asound.snd_lib_error_set_handler(None)
 
 def get_audio(seconds=3):
     """returns a flac audio file of audio recorded from the microphone for the specified number of seconds"""
@@ -53,14 +57,14 @@ def get_audio(seconds=3):
     wf.close()
     sound = AudioSegment.from_wav("auto_speech_recognition/myfile.wav")
     sound.export("auto_speech_recognition/myfile.flac",format = "flac")
-    os.remove("auto_speech_recognition/myfile.wav")
+    #os.remove("auto_speech_recognition/myfile.wav")
 
-def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.flac",language="en-GB"):
+def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.flac",language="en-GB",show_all=True):
     #the following is adapted from speech_recognition module    
-        get_audio(5)
+        get_audio(3)
         with open(file_name,"rb") as f:
             audio_data = f.read()
-        os.remove(file_name)        
+        #os.remove(file_name)        
         key = "AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
         url = "http://www.google.com/speech-api/v2/recognize?{}".format(urlencode({
             "client": "chromium",
@@ -68,9 +72,16 @@ def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.fla
             "key": key,
         }))
         request = Request(url, data=audio_data, headers={"Content-Type": "audio/x-flac; rate={}".format(16000)})
-        response = urlopen(request)
+        #response = urlopen(request)
+        try:
+            response = urlopen(request)
+        except HTTPError as e:
+            raise RequestError("recognition request failed: {}".format(e.reason))
+        except URLError as e:
+            raise RequestError("recognition connection failed: {}".format(e.reason))
+
         response_text = response.read().decode("utf-8")
-        print("responce text:\n",response_text)
+        #print("responce text:\n",response_text)
         # ignore any blank blocks
         actual_result = []
         for line in response_text.split("\n"):
@@ -78,8 +89,11 @@ def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.fla
             result = json.loads(line)["result"]
             if len(result) != 0:
                 actual_result = result[0]
-                break
-
+                break 
+        json_result = json.dumps(result[0])
+        print("JSON RESULT:\n",json_result,type(json_result))
+        if show_all: return json_result
+        """
         if "confidence" in actual_result["alternative"]:
             # return alternative with highest confidence score
             best_hypothesis = max(actual_result["alternative"], key=lambda alternative: alternative["confidence"])
@@ -88,8 +102,9 @@ def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.fla
             best_hypothesis = actual_result["alternative"][0]
         if "transcript" not in best_hypothesis: raise "what did you say?"
         return best_hypothesis["transcript"]
-
+        """
+        
 if __name__ == "__main__":
-    print(get_speech_input_string_google())
-   
+    j = json.loads(get_speech_input_string_google())
+    print(j["alternative"][0]["transcript"])
 

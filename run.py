@@ -5,7 +5,7 @@ from qa.question_answering.question_classifiers import QuestionClassifier
 from qa.corpus_utils.ner_pipeline import *
 from qa.question_answering.models.model import ModelController
 import os
-
+import json
 parser = argparse.ArgumentParser()
 parser.add_argument("-v","--verbose", action="store_true") #Run in verbose mode to view 
 				#which model answers user questions
@@ -49,8 +49,10 @@ if __name__ == '__main__':
     #user_input = sr.get_input_string() # returns string
     user_input = input("(Press Enter for ASR)\n> ")
     if user_input == "" and not args.silent: # if the user dosn't type a question, use ASR
-      user_input = asrg.get_speech_input_string_google() # requires speech_recognition module
-      print("You said:",user_input)
+      j = json.loads(asrg.get_speech_input_string_google())
+      conf = float(j["alternative"][0]["confidence"])*100
+      user_input = j["alternative"][0]["transcript"] # requires speech_recognition module
+      print("You said %s (%s%%):"%(user_input,conf))
     # pass user input to dialogue, which returns a response and/or a code signifying QA comp is needed (or user has chosen to exit)
     ret = dialogue_input(user_input)
     dialogue_id = ret['id']

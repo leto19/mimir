@@ -57,15 +57,16 @@ def get_audio(seconds=3):
     wf.close()
     sound = AudioSegment.from_wav("auto_speech_recognition/myfile.wav")
     sound.export("auto_speech_recognition/myfile.flac",format = "flac")
-    #os.remove("auto_speech_recognition/myfile.wav")
+    os.remove("auto_speech_recognition/myfile.wav")
 
 def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.flac",language="en-GB",show_all=True):
     #the following is adapted from speech_recognition module    
-        get_audio(3)
+        get_audio(5)
         with open(file_name,"rb") as f:
             audio_data = f.read()
-        #os.remove(file_name)        
-        key = "AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
+        os.remove(file_name)        
+        #key = "AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
+        key="AIzaSyBx_4G98LdFhnapUfA3tAmqqPGWGNpAawM"
         url = "http://www.google.com/speech-api/v2/recognize?{}".format(urlencode({
             "client": "chromium",
             "lang": language,
@@ -103,7 +104,7 @@ def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.fla
         if "transcript" not in best_hypothesis: raise "what did you say?"
         return best_hypothesis["transcript"]
         """
-        
+
 if __name__ == "__main__":
     j = json.loads(get_speech_input_string_google())
     print(j["alternative"][0]["transcript"])

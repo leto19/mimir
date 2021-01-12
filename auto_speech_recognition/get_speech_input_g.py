@@ -14,10 +14,11 @@ import noisereduce as nr
 from time import sleep
 from scipy.io import wavfile
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
+from array import array
 class RequestError(Exception): pass
 
-
 class UnknownValueError(Exception): pass
+
 def py_error_handler(filename, line, function, err, fmt):
     pass
 
@@ -31,11 +32,18 @@ def noalsaerr():
         yield
         asound.snd_lib_error_set_handler(None)
 
+
+def is_silent(data):
+    "Returns 'True' if below the 'silent' threshold"
+    #print(max(data))
+    return max(data) < 500
+
 def get_audio(seconds=3):
     """returns a flac audio file of audio recorded from the microphone for the specified number of seconds"""
     FS = 16000
     CHUNK = 1024
     SECONDS_RECORD = seconds
+    
     with noalsaerr():
         p = pyaudio.PyAudio()
 
@@ -45,13 +53,29 @@ def get_audio(seconds=3):
     #get a frame of noise
     data = stream.read(CHUNK)
     frames.append(data)
-    
+    num_silent = 0
+    snd_started = False
+
     print("Listening...")
     for i in range(0, int(FS / CHUNK * SECONDS_RECORD)):
+    
         data = stream.read(CHUNK)
-        frames.append(data)
-        #print(i)
 
+        #silence detection adapted from 
+        # https://stackoverflow.com/questions/892199/detect-record-audio-in-python
+        silent = is_silent(array('h',data))
+
+        if silent and snd_started:
+            num_silent += 1
+        elif not silent and not snd_started:
+            snd_started = True
+
+        if snd_started and num_silent > 30:
+        
+            break
+        frames.append(data)
+
+    print("Working...")
     stream.stop_stream()
     stream.close() 
     p.terminate()
@@ -64,14 +88,15 @@ def get_audio(seconds=3):
     noise_reduce()
     sound = AudioSegment.from_wav("auto_speech_recognition/myfile.wav")
     sound.export("auto_speech_recognition/myfile.flac",format = "flac")
-    os.remove("auto_speech_recognition/myfile.wav")
 
-def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.flac",language="en-GB",show_all=True):
+def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.flac",language="en-GB",show_all=True,keep_files=False):
     #the following is adapted from speech_recognition module    
-        get_audio(5)
+        get_audio(10)
+        if not keep_files: os.remove("auto_speech_recognition/myfile.wav")
+
         with open(file_name,"rb") as f:
             audio_data = f.read()
-        os.remove(file_name)        
+        if not keep_files: os.remove(file_name)        
         #key = "AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
         key="AIzaSyBx_4G98LdFhnapUfA3tAmqqPGWGNpAawM"
         url = "http://www.google.com/speech-api/v2/recognize?{}".format(urlencode({
@@ -122,10 +147,14 @@ def noise_reduce(in_file="auto_speech_recognition/myfile.wav",out_file="auto_spe
     reduced_noise = nr.reduce_noise(audio_clip=data, noise_clip=noisy_part)
 
     reduced_noise = (reduced_noise* 32767).astype(np.int16) #convert back 16 bit int
-    reduced_noise = reduced_noise[1024:]
+    reduced_noise = reduced_noise[2048:] #trim the start 
     wavfile.write(out_file,fs,reduced_noise) 
 
+
+
+
+
 if __name__ == "__main__":
-    j = json.loads(get_speech_input_string_google())
+    j = json.loads(get_speech_input_string_google(keep_files=False))
     print(j["alternative"][0]["transcript"])
 

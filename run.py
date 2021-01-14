@@ -52,9 +52,12 @@ if __name__ == '__main__':
       j = json.loads(asrg.get_speech_input_string_google())
       #this json object contains the best result in "alternative"
       #with the actual text being "transcript" and the confidence % "confidence"
-      conf = float(j["alternative"][0]["confidence"])*100 #formatting
+      if "confidence" in j["alternative"][0]: 
+        conf = float(j["alternative"][0]["confidence"])*100 #formatting
+      else:
+        conf = "???"
       user_input = j["alternative"][0]["transcript"]
-      print("You said %s (%s%%):"%(user_input,conf))
+      print("You said: '%s' (%s%%):"%(user_input,conf))
     # pass user input to dialogue, which returns a response and/or a code signifying QA comp is needed (or user has chosen to exit)
     ret = dialogue_input(user_input)
     dialogue_id = ret['id']

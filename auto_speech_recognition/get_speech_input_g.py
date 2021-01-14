@@ -36,7 +36,7 @@ def noalsaerr():
 def is_silent(data):
     "Returns 'True' if below the 'silent' threshold"
     #print(max(data))
-    return max(data) < 500
+    return max(data) < 400
 
 def get_audio(seconds=3):
     """returns a flac audio file of audio recorded from the microphone for the specified number of seconds"""
@@ -53,9 +53,10 @@ def get_audio(seconds=3):
     #get a frame of noise
     data = stream.read(CHUNK)
     frames.append(data)
+
     num_silent = 0
     snd_started = False
-
+    sleep(0.5)
     print("Listening...")
     for i in range(0, int(FS / CHUNK * SECONDS_RECORD)):
     
@@ -71,8 +72,8 @@ def get_audio(seconds=3):
             snd_started = True
 
         if snd_started and num_silent > 30:
-        
             break
+
         frames.append(data)
 
     print("Working...")
@@ -85,8 +86,8 @@ def get_audio(seconds=3):
     wf.setframerate(FS)
     wf.writeframes(b''.join(frames))
     wf.close()
-    noise_reduce()
-    sound = AudioSegment.from_wav("auto_speech_recognition/myfile.wav")
+    noise_reduce() #reduce noise in file
+    sound = AudioSegment.from_wav("auto_speech_recognition/myfile.wav") #convert to flac 
     sound.export("auto_speech_recognition/myfile.flac",format = "flac")
 
 def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.flac",language="en-GB",show_all=True,keep_files=False):
@@ -123,7 +124,9 @@ def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.fla
             result = json.loads(line)["result"]
             if len(result) != 0:
                 actual_result = result[0]
-                break 
+                break
+        if len(result) == 0:
+            return '{"alternative":[{"transcript":"ERROR","confidence":0.0}]}'
         json_result = json.dumps(result[0])
         print("JSON RESULT:\n",json_result,type(json_result))
         if show_all: return json_result
@@ -138,16 +141,13 @@ def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.fla
         return best_hypothesis["transcript"]
         """
 
-def noise_reduce(in_file="auto_speech_recognition/myfile.wav",out_file="auto_speech_recognition/myfile.wav"):
-    fs, data = wavfile.read(in_file)
+def noise_reduce(in_file="auto_speech_recognition/myfile.wav",out_file="auto_speech_recognition/myfile2.wav"):
+    fs, data = wavfile.read(in_file) # read in the file data 
     data = data.astype(np.float32, order='C') / 32768.0 #convert to 32bit float
-    
     noisy_part = data[0:2048] #get the noisy section
-
     reduced_noise = nr.reduce_noise(audio_clip=data, noise_clip=noisy_part)
-
-    reduced_noise = (reduced_noise* 32767).astype(np.int16) #convert back 16 bit int
-    reduced_noise = reduced_noise[2048:] #trim the start 
+    reduced_noise = (reduced_noise* 32767).astype(np.int16, order='C') #convert back 16 bit int
+    #reduced_noise = reduced_noise[2048:] #trim the start 
     wavfile.write(out_file,fs,reduced_noise) 
 
 
@@ -155,6 +155,6 @@ def noise_reduce(in_file="auto_speech_recognition/myfile.wav",out_file="auto_spe
 
 
 if __name__ == "__main__":
-    j = json.loads(get_speech_input_string_google(keep_files=False))
+    j = json.loads(get_speech_input_string_google(keep_files=True))
     print(j["alternative"][0]["transcript"])
 

@@ -1,13 +1,13 @@
 import json
 import sys
-
 import numpy as np
 import os
 import os.path as op
 from collections import defaultdict
 from nltk.stem.porter import PorterStemmer
 from qa.question_answering.models.model import Model
-from qa.corpus_utils.preprocessing_pipeline import pipeline
+from qa.corpus_utils.preprocessing_pipeline import pipeline, sentence_to_vector
+from qa.corpus_utils.BOWs_to_TFIDF_BOWs import calculate_tfidf
 
 try:
 	mimir_dir = os.environ["MIMIR_DIR"]
@@ -35,66 +35,48 @@ def cosine_sim_dict(vec_1, vec_2):
 
 class CosineModel(Model):
 	"""Just finds the sentence with the closest BOW embedding"""
-	def __init__(self, model_id):
-		Model.__init__(self, model_id)
+	def __init__(self, *args, **kwargs):
+		super().__init__(*args)
 		self.preprocessing_pipeline = pipeline
 			# Pipeline is for the *question*, but should
 			# be the same as the pipeline for the *text*
-		self.tf_idf = True if model_id.endswith('tfidf') else False
-		self.sents_file_path = None
-		self.bows_file_path = None
-		self.text_bows = None #A dictionary containing BOW vectors (as dictionaries)
 
-	def preprocess(self, question):
-		if self.tf_idf:
-			return(self.preprocessing_pipeline(question, self.word2idx, self.df_dict, len(self.text_bows)))
-		else:
-			return(self.preprocessing_pipeline(question, self.word2idx))
-
-	def set_file_path(self, sents_file_path):
-		self.sents_file_path = sents_file_path
-		file_path_split = sents_file_path.split("/")
-		root = op.join(*file_path_split[:-4])
-		dset = file_path_split[-2]
-		base_name = file_path_split[-1].split(".")[0]
-		if self.tf_idf:
-			self.bows_file_path = op.join("/",root, "sentence_BOWs_TFIDF", "full_texts", dset, base_name + ".bows.json")
-			self.df_dict_file_path = op.join("/",root, "document_frequency_dicts", "full_texts", dset, base_name + ".df_dict.json")
-		else:
-			self.bows_file_path = op.join("/",root, "sentence_BOWs", "full_texts", dset, base_name + ".bows.json")
-		self.word2idx_file_path = op.join("/", root, "vocab_dicts", "full_texts", dset, base_name + ".vocab.json")
-
-
-	def set_bows_file(self, text_bows):
-		self.text_bows = text_bows
+	def preprocess(self, question, word2idx):
+		question_words = ["what", "where", "when", "why", "how", "who", "?"]
+		preprocessed_text = self.preprocessing_pipeline([question])[0]
+		preprocessed_text = [w for w in preprocessed_text if w not in question_words]
+		question_vector = sentence_to_vector(preprocessed_text, word2idx) 
+		return(question_vector)
 		
+	def answer_question(self, question, sents, bows, word2idx):
+		preprocessed_question = self.preprocess(question, word2idx)
+		bows_range = list(range(len(bows)))		
+		best_sent_index = max(bows_range, key= lambda x: cosine_sim_dict(bows[str(x)], preprocessed_question))
+		return(sents[best_sent_index])
 
-	def evaluate_question(self, question, sents_file_path):
-		if sents_file_path != self.sents_file_path:
-			self.set_file_path(sents_file_path)
-			if self.tf_idf:
-				with open(self.df_dict_file_path) as f_obj:
-					read_obj = f_obj.read()
-					df_dict = json.loads(read_obj)
-					self.df_dict = {int(k): v for k, v in df_dict.items()}
-			with open(self.bows_file_path) as f_obj:
-				read_obj = f_obj.read()
-				self.text_bows = json.loads(read_obj)
-			with open(self.word2idx_file_path) as f_obj:
-				read_obj = f_obj.read()
-				self.word2idx = json.loads(read_obj)
-			with open(self.sents_file_path) as f_obj:
-				self.sents = f_obj.readlines()
-		preprocessed_question = self.preprocess(question)
-		text_bows_range = list(range(len(self.text_bows)))		
-		best_sent_index = max(text_bows_range, key= lambda x: cosine_sim_dict(self.text_bows[str(x)], preprocessed_question))
+class CosineModelTFIDF(Model):
+	"""Just finds the sentence with the closest BOW embedding"""
+	def __init__(self, *args, **kwargs):
+		super().__init__(*args)
+		self.preprocessing_pipeline = pipeline
+			# Pipeline is for the *question*, but should
+			# be the same as the pipeline for the *text*
 
-		best_sent_idxs = sorted(text_bows_range, key= lambda x: cosine_sim_dict(self.text_bows[str(x)], preprocessed_question), reverse=True)
-		best_sents = np.array(self.sents)[best_sent_idxs[:5]]
-		for i, sent in enumerate(best_sents):
-			print(i+1,". ", sent) 
-		return(self.sents[best_sent_index])
+	def preprocess(self, question, word2idx, df_dict, bows):
+		question_words = ["what", "where", "when", "why", "how", "who", "?"]
+		preprocessed_text = self.preprocessing_pipeline([question])[0]
+		preprocessed_text = [w for w in preprocessed_text if w not in question_words]
+		question_vector = sentence_to_vector(preprocessed_text, word2idx)
+		idf_vector = calculate_tfidf(question_vector, df_dict, len(bows))
+		return(idf_vector)
 
+	def answer_question(self, question, sents, bows, word2idx, df_dict):
+		preprocessed_question = self.preprocess(question, word2idx, df_dict, bows)
+		bows_range = list(range(len(bows)))		
+		best_sent_index = max(bows_range, key= lambda x: cosine_sim_dict(bows[str(x)], preprocessed_question))
+		#best_sent_inds = sorted(bows_range, key= lambda x: cosine_sim_dict(bows[str(x)], preprocessed_question, reversed=True))[:5]
+		#import pdb; pdb.set_trace()		
+		return(sents[best_sent_index])
 
 if __name__ == "__main__":
 

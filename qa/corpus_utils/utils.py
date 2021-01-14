@@ -6,8 +6,10 @@ import csv
 import nltk
 import spacy
 from nltk.corpus import stopwords 
+from collections import defaultdict
 
-nqa_dir = os.environ["NARRATIVEQA_DIR"]
+nlp = spacy.load("en_core_web_sm")
+
 mimir_dir = os.environ["MIMIR_DIR"]
 
 data_dir = op.join(mimir_dir, "data")
@@ -45,14 +47,14 @@ def handle_abbreviations(matchobj):
 		if matchobj.group("trailing"):
 			out = out[:-len(matchobj.group("trailing"))]
 			out += matchobj.group("trailing").translate(newlinerepl)
-			print(matchobj)
-			print(matchobj.groups())
-			if "\n" in matchobj[0]:
-				print(matchobj.groups())
-				print(matchobj.group("trailing"))
-				this = input()
-				if this == "1":
-					import pdb; pdb.set_trace()
+#			print(matchobj)
+#			print(matchobj.groups())
+#			if "\n" in matchobj[0]:
+#				print(matchobj.groups())
+#				print(matchobj.group("trailing"))
+#				this = input()
+#				if this == "1":
+#					import pdb; pdb.set_trace()
 	
 		return (out)
 	else:
@@ -73,12 +75,6 @@ def handle_newline(matchobj):
 		return matchobj[0] + "😠" # Our extremely arbitrary "split" token
 
 
-
-
-
-
-
-
 def sentence_tokenize(text):
 
 	alt_punct = str.maketrans(".?!", "。？！")
@@ -90,12 +86,12 @@ def sentence_tokenize(text):
 
 #[\W\s\_]&&[^\n]
 
-	abbreviations = "(?P<abbrvs>(Mr|Mrs|Ms|Dr|Sr|Jr|M|St|Cl|No)|[\.A-Za-z]+\.[A-Za-z]+)"
+	abbreviations = "(?P<abbrvs>(Mr|Mrs|Ms|Dr|Sr|Jr|M|St|Cl|No)|[\.A-Z]+)"
 	split_punct = "[\.?!]"
-	new_line = re.compile(r"[\s\n]*\n[\s]*(😠)?") # if we are at a new line, we will split anyway
 	split_re = re.compile(r"" + abbreviations + "?" + "(?P<trailing>" + split_punct + "[\s\n]*)")
-
 	new_text = re.sub(split_re, handle_abbreviations, new_text)
+	
+	new_line = re.compile(r"[\s\n]*\n[\s]*(😠)?") # if we are at a new line, we will split anyway
 	new_text = re.sub(new_line, handle_newline, new_text)
 	new_text = new_text.translate(revert_punct)	
 
@@ -163,7 +159,6 @@ def make_id_name_dict():
 	docs_csv = op.join(mimir_dir, "data", "documents.csv")
 	docs_list = csv_to_list(docs_csv)
 	for line in docs_list[1:]:
-		print(line)
 		try:
 			if line[2] == "gutenberg":
 				id_name_dict[line[0]] = line[6]
@@ -187,48 +182,73 @@ def make_name_url_dict():
 def levenshtein(input_sentence, target_sentence):
 	#Calculates the minimum edit distance (Levenshtein distance) between two strings (or lists)
 
-    trellis = np.zeros((len(input_sentence) + 1, len(target_sentence) + 1))
-    trellis[:,0] = np.arange(len(input_sentence)+1)
-    trellis[0,:] = np.arange(len(target_sentence)+1)
+	trellis = np.zeros((len(input_sentence) + 1, len(target_sentence) + 1))
+	trellis[:,0] = np.arange(len(input_sentence)+1)
+	trellis[0,:] = np.arange(len(target_sentence)+1)
 
-    for i in range(1, len(input_sentence) + 1):
-        w_in = input_sentence[i-1]
-        for j in range(1, len(target_sentence) +1):
-            w_t = target_sentence[j-1]
-            if w_in == w_t:
-                square_score = 0
-            else:
-                square_score = 1
-            trellis[i,j] = min(trellis[i-1,j], trellis[i-1,j-1], trellis[i,j-1]) +square_score
+	for i in range(1, len(input_sentence) + 1):
+		w_in = input_sentence[i-1]
+		for j in range(1, len(target_sentence) +1):
+			w_t = target_sentence[j-1]
+			if w_in == w_t:
+				square_score = 0
+			else:
+				square_score = 1
+			trellis[i,j] = min(trellis[i-1,j], trellis[i-1,j-1], trellis[i,j-1]) +square_score
 
-    return(trellis[-1,-1])
+	return(trellis[-1,-1])
 
 
 def download_models():
-    nltk.download('punkt')
-    nltk.download('averaged_perceptron_tagger')
-    nltk.download('maxent_ne_chunker')
-    nltk.download('words')
+	nltk.download('punkt')
+	nltk.download('averaged_perceptron_tagger')
+	nltk.download('maxent_ne_chunker')
+	nltk.download('words')
 
 def get_line_list_from_file(file):
-    with open(file) as f:
-        line_list = f.readlines()
-    
-    return line_list
+	with open(file) as f:
+		line_list = f.readlines()
+	
+	return line_list
 
 
 def remove_stopwords(sent:list):
 	stop_words = set(stopwords.words("english"))
 	return ([word for word in sent if word.lower() not in stop_words])
 
-def tokenize(line):
-    tokens = nltk.word_tokenize(line)
-    
-    return tokens
 
-def spacy_get_entities(filepath):
-	nlp = spacy.load("en_core_web_sm")
-	line_list = get_line_list_from_file(filepath)
+def tokenize(line):
+	tokens = nltk.word_tokenize(line)	 
+	return tokens
+
+
+def spacy_single_line(line, return_indices = False):
+	doc = nlp.make_doc(line)
+	beams = nlp.entity.beam_parse([doc], beam_width=16, beam_density=0.0001)
+	entity_scores = defaultdict(float)
+	parses = nlp.entity.moves.get_beam_parses(beams[0])
+	for score, ents in parses:
+	#	print (score, ents)
+		for start, end, label in ents:
+			# print ("here")
+			entity_scores[(start, end, label)] += score
+	#print ('entity_scores', entity_scores)
+	best_parse = parses[0][1]
+	ents = nlp(line).ents
+	tokens = []
+	for ent in ents:
+		score = entity_scores[(ent.start, ent.end, ent.label_)]
+		if return_indices == False:
+			tokens.append(((ent.text, ent.label_),score))
+		else:
+			tokens.append(((ent.start, ent.end),(ent.text, ent.label_),score))
+	return(tokens)
+	
+def ntokens_spacy(line):
+	doc = nlp(line)
+	return(len(doc))
+
+def spacy_get_entity_types(line_list):
 	all_ents = []
 	for line in line_list:
 		processed = nlp(line)
@@ -239,9 +259,16 @@ def spacy_get_entities(filepath):
 	return(all_ents)
 
 
+def spacy_get_entity_tokens(line_list):
+	all_ents = []
+	for line in line_list:
+		all_ents += spacy_single_line(line)
+	return(all_ents)
+
+
 def get_named_entities(tokens):
-    entities = nltk.chunk.ne_chunk(nltk.pos_tag(tokens))
-    return entities
+	entities = nltk.chunk.ne_chunk(nltk.pos_tag(tokens))
+	return entities
 
 def ne_list_from_file(file_path):
 	line_list = get_line_list_from_file(file_path)
@@ -261,4 +288,8 @@ def ne_list_from_file(file_path):
 
 
 if __name__ == "__main__":
-	print(ne_list_from_file(op.join(mimir_dir,"data","nqa_summary_text_files","train", "Anna Karenina")))
+	sents = "\n".join(get_line_list_from_file(op.join(mimir_dir,"preprocessed_data","sentence_tokenized","summaries","train", "Anna Karenina.sents")))
+
+	spacy_single_line(sents)
+#	spacy_single_line("This is a line with the name Harry in it. He went to Anatole France.")
+	#print(ne_list_from_file(op.join(mimir_dir,"data","nqa_summary_text_files","train", "Anna Karenina")))

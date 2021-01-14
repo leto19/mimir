@@ -38,9 +38,10 @@ else:
 	device = torch.device('cpu')
 
 class BertBaseline(Model):
-	def __init__(self, model_id):
+	def __init__(self, *args, **kwargs):
 		print("we are initializing bert baseline")
-		Model.__init__(self, model_id)
+		super().__init__(*args, **kwargs)
+		#Model.__init__(self, model_id, info_source, **params)
 		#self.valid_dir= valid_dir=op.join(mimir_dir,"data","nqa_summary_text_files","valid")
 		#self.valid_files=sorted(os.listdir(valid_dir))
 		self.model_id = 'distilbert-base-uncased-distilled-squad'
@@ -71,6 +72,8 @@ class BertBaseline(Model):
 		answer_tokens = tokens[answer_start:answer_end+1]
 		
 		answer = self.subword_to_whole_word(answer_tokens)
+		if answer == "[CLS]":
+			return None
 		
 		return(answer)
 
@@ -108,4 +111,8 @@ class BertBaseline(Model):
 
 			if id == tokenizer.sep_token_id:
 				print('')
+
+if __name__ == "__main__":
+	bb = BertBaseline("bert_baseline")
+	import pdb; pdb.set_trace()
 

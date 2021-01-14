@@ -17,16 +17,15 @@ def convert_to_int(json_dict):
 	return(out_dict)
 
 def make_document_frequency_dict(bows_dict):
-	print(bows_dict)
 	all_words_idxs = set([sl for l in [sub_dict.keys() for sub_dict in list(bows_dict.values())] for sl in l])
 	df_dict = {idx: len([bow for bow in bows_dict.values() if idx in bow]) for idx in all_words_idxs}
 	return(df_dict)
 
 def calculate_tfidf(bow, df_dict, N):
 	"""N is N 'documents', or in this case, sentences"""
-	idf_bow = {k: v*np.log(N/df_dict[k]) for k,v in bow.items()}
+	df_dict = {int(k):int(v) for k, v in df_dict.items()}
+	idf_bow = {k: v*np.log(N/df_dict[k]) for k,v in bow.items() if k != -1}
 	return(idf_bow)
-
 
 def make_tfidf_dict(bow_vecs_dict, df_dict):
 	tf_idf_dict = {}
@@ -37,19 +36,23 @@ def make_tfidf_dict(bow_vecs_dict, df_dict):
 
 if __name__ == "__main__":
 
-	in_path = op.join(mimir_dir, "preprocessed_data", "sentence_BOWs", "full_texts")
-	out_path = op.join(mimir_dir, "preprocessed_data", "sentence_BOWs_TFIDF", "full_texts")
-	dict_path = op.join(mimir_dir, "preprocessed_data", "vocab_dicts", "full_texts")
-	df_dict_path = op.join(mimir_dir, "preprocessed_data", "document_frequency_dicts", "full_texts")
+	in_path = op.join(mimir_dir, "preprocessed_data", "sentence_BOWs", "summaries")
+	out_path = op.join(mimir_dir, "preprocessed_data", "sentence_BOWs_TFIDF", "summaries")
+	dict_path = op.join(mimir_dir, "preprocessed_data", "vocab_dicts", "summaries")
+	df_dict_path = op.join(mimir_dir, "preprocessed_data", "document_frequency_dicts", "summaries")
 	sets = ["valid","train","test"]
+
+	for path in [out_path, dict_path, df_dict_path]:
+		if not op.exists(path):
+			os.mkdir(path)
+		for d in sets:
+			set_path = op.join(path, d)
+			if not op.exists(set_path):
+				os.mkdir(set_path)
 
 	with open("preprocessing_log_file.txt", "w+") as log_file:	#Create a log file
 		pass 
 	
-	for d in sets:
-		set_path = op.join(out_path, d)
-		if not op.exists(set_path):
-			os.mkdir(set_path)
 
 	for d in sets:
 		set_path = op.join(in_path, d)
@@ -71,10 +74,3 @@ if __name__ == "__main__":
 			
 			with open(op.join(df_dict_path, d, base_name + ".df_dict.json"), "w") as dump_path:			
 				json.dump(df_dict, dump_path)
-
-			#for word in sorted(word2idx, key= lambda x: df_dict[word2idx[x]]):
-			#	print(word, df_dict[word2idx[word]])
-	#		bow_vectors, idx2word = file_pipeline(op.join(set_path, f))
-	#		base_name = f.split(".")[0]
-	#		json_dump(bow_vectors, op.join(out_path, d, base_name + ".bows.json"))
-	#		json_dump(idx2word, op.join(dict_path, d, base_name + ".vocab.json"))

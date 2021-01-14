@@ -14,6 +14,36 @@ mimir_dir = os.environ["MIMIR_DIR"]
 data_dir = op.join(mimir_dir, "data")
 
 
+def map_words_to_named_entities(obj_dict, classes = ["ORG","LOC","PERSON"]):
+
+	word2entity = {}
+
+	for ne_class in classes:
+		for idx, obj in obj_dict[ne_class].items():
+			for name in obj.name_variants:
+				word2entity[name] = idx
+
+	return(word2entity)
+
+
+
+
+def make_dataset_dict():
+	data_dir = op.join(mimir_dir, "data")
+	id_name_dict = make_id_name_dict()
+	summary_csv = op.join(data_dir, "summaries.csv")
+	summary_list = csv_to_list(summary_csv)
+	name_dataset_dict = {}
+	for row in summary_list[1:]:
+		try:
+			doc_id, corpus_set, _, _ = row
+			book_name = id_name_dict[doc_id]
+			name_dataset_dict[book_name] = corpus_set #Test, train, valid#
+		except KeyError:
+			pass
+	return name_dataset_dict
+
+
 def make_qa_dict_valid(qaps_line_list, id_name_dict):
 	qa_dict_valid = {}
 	for line in qaps_line_list:
@@ -82,8 +112,24 @@ def make_name_url_dict():
 			pass
 	return name_url_dict
 
+
+def map_words_to_named_entities(obj_dict, classes = ["PERSON"]):
+
+	word2entity = {}
+
+	for ne_class in set(classes)&set(obj_dict.keys()):
+		for idx, obj in obj_dict[ne_class].items():
+			for name in obj.name_variants:
+				word2entity[name] = idx
+
+	return(word2entity)
+
 def levenshtein(input_sentence, target_sentence):
 	#Calculates the minimum edit distance (Levenshtein distance) between two strings (or lists)
+	if type(input_sentence) != type(target_sentence):
+		raise TypeError("Input and target should probably be the same type. \
+Input (type {}): {} \
+Target (type {}): {}".format(type(input_sentence),input_sentence, type(target_sentence),target_sentence))
 
 	trellis = np.zeros((len(input_sentence) + 1, len(target_sentence) + 1))
 	trellis[:,0] = np.arange(len(input_sentence)+1)
@@ -293,6 +339,8 @@ def ne_sent_dict_from_file(file_path, pause=False):
 
 if __name__ == "__main__":
 
+	print(make_dataset_dict())
+	exit(1)
 	download_models()
 	print(ne_list_from_file(op.join(mimir_dir,"data","nqa_summary_text_files","train", "Anna Karenina")))
 	

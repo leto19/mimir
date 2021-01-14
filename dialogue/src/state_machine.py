@@ -1,5 +1,5 @@
 import re 
-from dialogue.config import Transition, DialogueOption
+from .config import Transition, DialogueOption
 
 class StateMachine():
   def __init__(self, states, transitions, start_state, any_state):
@@ -51,7 +51,6 @@ class StateMachine():
       (t.src == self.current_state or t.src == self.any_state)]
 
     for t in poss_transitions:
-      print(t)
       if t.condition(text_in):
         return self.trans_state(t)
     

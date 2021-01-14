@@ -30,6 +30,5 @@ def is_question(user_utterance):
   Mordor?"). Although these may not be covered within the scope of our system.
   '''
   return (
-    re.match("(who|what|where|when|how|why|whose|who's)", user_utterance) or 
-    user_utterance.startswith("is|does|has")
+    re.match("(who|what|where|which|when|how|why|whose|who's|is|does|has|in what|whom)", user_utterance)
   )

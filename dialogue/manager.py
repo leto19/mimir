@@ -1,7 +1,4 @@
-from dialogue.state_machine import StateMachine
-from dialogue.config import States, TRANSITIONS, DialogueOption
-from dialogue.context import get_confirmed_book
-
+from .src import StateMachine, States, TRANSITIONS, DialogueOption, get_confirmed_book
 
 global DSM
 

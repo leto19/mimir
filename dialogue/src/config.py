@@ -1,5 +1,5 @@
-from dialogue.utils import embedding_cos_sim, is_question
-import dialogue.context as context
+from .utils import embedding_cos_sim, is_question
+import dialogue.src.context as context
 from enum import Enum
 
 # Dialogue Options Enum
@@ -68,7 +68,7 @@ STATE_TRANSITIONS = [
     States.CONFIRM_BOOK,
     DialogueOption.DA_RESPONSE,
     lambda x: (
-      embedding_cos_sim(x, "no") > SIM_THRESHOLD # and is not final suggestion_
+      embedding_cos_sim(x, "no") > SIM_THRESHOLD 
       and context.is_suggested_book()
     ),
     lambda: context.suggest_book()

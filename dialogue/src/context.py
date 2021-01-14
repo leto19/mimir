@@ -3,13 +3,15 @@ from bs4 import BeautifulSoup
 import sys, os, csv
 from difflib import SequenceMatcher
 
-
 try:
   global mimir_dir
   mimir_dir = os.environ["MIMIR_DIR"]
 except KeyError:
   print('Please set the environment variable MIMIR_DIR')
   sys.exit(1)
+
+
+MIN_TITLE_SIMILARITY = 0.5
 
 
 def init():
@@ -39,9 +41,13 @@ def get_suggested_books_nqa(requested_book):
       similarities.append(SequenceMatcher(None, book_info[0], requested_book).ratio())
     
     closest_3 = sorted(zip(supported_books, similarities), reverse=True, key=lambda x: x[1])[:3]
+
+    closest_3 = [x for x in closest_3 if x[1] > MIN_TITLE_SIMILARITY]
+
     for book_info, ratio in closest_3:
       global s_books
       s_books.append({ "title": book_info[0], "author": book_info[1] })
+
 
 def get_suggested_books_wiki(requested_book):
   # Collect/store wikipedia suggestions based on utterance

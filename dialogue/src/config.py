@@ -61,7 +61,8 @@ STATE_TRANSITIONS = [
     States.ENTRY,
     DialogueOption.DA_RESPONSE,
     lambda x: not context.is_book_present(x),
-    "I'm sorry, I cannot find the book you're looking for. Is there another book you'd like to try?"
+    "I'm sorry, I cannot find the book you're looking for, it may not be currently supported. " + 
+    "Is there another book you'd like to try?"
   ),
   Transition(        
     States.CONFIRM_BOOK,
@@ -81,7 +82,8 @@ STATE_TRANSITIONS = [
       embedding_cos_sim(x, "no") > SIM_THRESHOLD
       and not context.is_suggested_book()
     ),
-    "I'm sorry, I cannot find the book you're looking for. Is there another book you'd like to try?"
+    "I'm sorry, I cannot find the book you're looking for, it may not be currently supported. " + 
+    "Is there another book you'd like to try?"  
   ),
   Transition(        
     States.CONFIRM_BOOK,

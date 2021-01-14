@@ -1,7 +1,8 @@
 # Runs the dialogue system using the command line for input/output
-from dialogue.state_machine import StateMachine
-from dialogue.config import States, TRANSITIONS, DialogueOption
-from dialogue.utils import bold_print
+# from dialogue.state_machine import StateMachine
+# from dialogue.config import States, TRANSITIONS, DialogueOption
+# from dialogue.utils import bold_print
+from .src import StateMachine, States, TRANSITIONS, DialogueOption, bold_print
 
 
 if __name__ == '__main__':

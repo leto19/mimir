@@ -37,16 +37,6 @@ def get_text(audio_file):
     #os.system('clear')
     return (res['text'])
 
-def get_text_google(audio_file):
-    r = sr.Recognizer()
-    with sr.AudioFile(audio_file) as source:
-        audio = r.record(source)
-    try:
-        return r.recognize_google(audio)
-    except sr.UnknownValueError:
-        return "???"
-
-
 def get_WER(r,h):
     """
     Adapted from:

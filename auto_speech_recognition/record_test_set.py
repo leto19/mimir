@@ -6,6 +6,7 @@ import zipfile
 from get_speech_input import get_audio
 from shutil import rmtree
 from time import sleep
+import getpass
 def record_test_set():
     try:
         # Create target Directory
@@ -27,7 +28,7 @@ def record_test_set():
         os.system('clear')
   
 def zip_test_set(folder="auto_speech_recognition/audio_temp"):
-    zipf = zipfile.ZipFile('test_set.zip', 'w', zipfile.ZIP_DEFLATED)
+    zipf = zipfile.ZipFile('test_set_%s.zip'% getpass.getuser(), 'w', zipfile.ZIP_DEFLATED)
     for root, dirs, files in os.walk(folder):
         for file in files:
             zipf.write(os.path.join(root, file), os.path.relpath(os.path.join(root, file), os.path.join(folder, '..')))

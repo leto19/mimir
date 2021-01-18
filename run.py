@@ -14,9 +14,8 @@ parser.add_argument("-s","--silent", action="store_true") #No TTS or ASR
 args = parser.parse_args()
 
 if not args.silent:
-    import auto_speech_recognition.get_speech_input as asr
     from tts.gtts import tts
-    import auto_speech_recognition.get_speech_input_g as asrg
+    import auto_speech_recognition.get_speech_input as asrg
 
 class NaturalLanguageGenerator():
 	"""A placeholder Natural Language Generation class. We should figure out

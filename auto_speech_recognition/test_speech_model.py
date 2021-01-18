@@ -80,11 +80,11 @@ def get_WER(r,h):
 
 model = Model(sys.argv[1])
 
-with open("test_data/baseline.txt") as f:
+with open("test_data2/baseline.txt") as f:
     baseline_list = f.readlines()
 baseline_index = 0
 
-root = os.curdir + "/test_data/"
+root = os.curdir + "/test_data2/"
 #for set_num in range(len(subdirs))
 model_name = sys.argv[1].replace("models/","").replace("/","")
 
@@ -112,7 +112,7 @@ for path, subdirs, files in os.walk(root):
             recog_list.append(recognised_text)
             wer_list.append(get_WER(baseline_text,recognised_text))
 
-        with open("test_data/%s/%s.txt"%(s,model_name+"_results") ,"w") as f:
+        with open("test_data2/%s/%s.txt"%(s,model_name+"_results") ,"w") as f:
             f.write(model_name +"\n")
             for i in range(len(wer_list)):
                 f.write("%s | %s (WER: %s) \n"%(baseline_list[i].strip(),recog_list[i],wer_list[i]))

@@ -4,6 +4,7 @@ from dialogue import init_dialogue, dialogue_input, DialogueOption, bold_print
 from qa.question_answering.question_classifiers import QuestionClassifier
 from qa.corpus_utils.ner_pipeline import *
 from qa.question_answering.models.model import ModelController
+from auto_speech_recognition.corprus_creation.log_inputs import log_inputs
 import os
 import json
 parser = argparse.ArgumentParser()
@@ -54,10 +55,14 @@ if __name__ == '__main__':
       if "confidence" in j["alternative"][0]: 
         conf = float(j["alternative"][0]["confidence"])*100 #formatting
       else:
-        conf = "???"
+        conf = "???"# sanity :-) 
       user_input = j["alternative"][0]["transcript"]
       print("You said: '%s' (%s%%):"%(user_input,conf))
+      log_inputs(user_input,"s")
+    else:
+      log_inputs(user_input,"t")
     # pass user input to dialogue, which returns a response and/or a code signifying QA comp is needed (or user has chosen to exit)
+    
     ret = dialogue_input(user_input)
     dialogue_id = ret['id']
 

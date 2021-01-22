@@ -16,7 +16,7 @@ from time import sleep
 from scipy.io import wavfile
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 from array import array
-import subprocess
+
 class RequestError(Exception): pass
 
 class UnknownValueError(Exception): pass
@@ -38,7 +38,7 @@ def noalsaerr():
 def is_silent(data):
     "Returns 'True' if below the 'silent' threshold"
     #print(max(data))
-    return max(data) < 400
+    return max(data) < 500
 
 def get_audio(seconds=3,out_file="auto_speech_recognition/myfile.wav"):
     """returns a wav audio file of audio recorded from the microphone for the specified number of seconds"""
@@ -103,7 +103,6 @@ def get_speech_input_string_vosk(seconds=10):
     os.remove("auto_speech_recognition/myfile.wav")
     model = Model("%s"%os.environ["MIMIR_DIR"]+MODEL_PATH)
     rec = KaldiRecognizer(model, 16000)
-    print(len(data))
     if rec.AcceptWaveform(data):
         res = json.loads(rec.FinalResult())
         #print(rec)
@@ -182,7 +181,8 @@ def noise_reduce(in_file="auto_speech_recognition/myfile.wav",out_file="auto_spe
 
 
 if __name__ == "__main__":
-    #j = json.loads(get_speech_input_string_google(keep_files=True))
-    print(get_speech_input_string_vosk())
-    #print(j["alternative"][0]["transcript"])
+    j = json.loads(get_speech_input_string_google(keep_files=True))
+    
+    print(j["alternative"][0]["transcript"])
 
+    #print(get_speech_input_string_vosk())

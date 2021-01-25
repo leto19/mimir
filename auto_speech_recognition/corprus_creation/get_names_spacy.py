@@ -34,5 +34,5 @@ for entity in doc.ents: #build entity dictionary
 print(entity_dictionary)
 print(entity_dictionary.keys())
 
-with open("data/%s_entities.txt"%(sys.argv[1].replace(".txt","").replace("data/","")),"w") as f:
+with open("data/asr_entity_files/%s_entities.txt"%(sys.argv[1].replace(".txt","").replace("data/nqa_summary_text_files/train/","")),"w") as f:
     f.write(json.dumps(entity_dictionary,cls=SetEncoder))

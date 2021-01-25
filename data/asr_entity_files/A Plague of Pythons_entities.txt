@@ -1,0 +1,1 @@
+{"DATE": ["Some two years", "years"], "GPE": ["Hawaii", "San Francisco"], "PERSON": ["Chandler", "Kauai", "Rosalie Pan", "Khalil Gibran", "Hawaii Chandler", "Prophet", "Rosalie"], "NORP": ["Hoaxer"], "CARDINAL": ["one"], "LOC": ["Earth"], "FAC": ["Broadway"]}

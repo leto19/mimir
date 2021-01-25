@@ -1,0 +1,1 @@
+{"GPE": ["Peru", "Koku"], "CARDINAL": ["two"], "ORG": ["Blakeson & Grinder"], "PERSON": ["Swyington Bumper", "Damon", "Titus", "Job Titus", "cinchona bark", "Rimac", "Tom Swift", "Bumper", "Tom"], "FAC": ["the Panama Canal"]}

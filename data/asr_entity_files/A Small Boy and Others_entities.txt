@@ -1,0 +1,1 @@
+{"ORDINAL": ["first"], "PERSON": ["Alice", "Charles Dickens", "James", "Thackeray", "William", "William Thackeray"], "NORP": ["American"], "WORK_OF_ART": ["Crinoline"], "ORG": ["Napoleonic"], "DATE": ["later years"]}

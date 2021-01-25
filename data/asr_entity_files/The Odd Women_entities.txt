@@ -1,0 +1,1 @@
+{"PERSON": ["Monica Madden", "Widdowson", "Beavis", "Barfoot", "Mary", "Virginia Madden", "Alice", "Monica", "Bevis", "Rhoda", "Madden", "Mary Barfoot", "Edmund Widdowson", "Everard Barfoot", "Mary Barfoot's"], "GPE": ["Widdowson", "Clevedon", "Barfoot", "Virginia", "Northumberland", "London"], "ORG": ["Rhoda", "Everard"], "ORDINAL": ["first"], "DATE": ["months"]}

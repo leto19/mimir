@@ -1,0 +1,1 @@
+{"PERSON": ["Gabriel Nash", "Madame Carre", "Julia", "Basil Dashwood", "Julia Dallow", "Nick", "Miriam", "Peter", "Carteret", "Peter Sherringham", "Nick Dormer", "Biddy Dormer", "Juliet", "Miriam Rooth"], "NORP": ["French", "British"], "ORG": ["Nick and Julia", "Parliament", "Nick", "Oxford", "Nick's"], "GPE": ["London", "Paris"], "CARDINAL": ["two"], "LOC": ["Central America"]}

@@ -1,0 +1,1 @@
+{"ORG": ["The Universal House of Justice", "the Universal House of Justice", "Baha\u2019u\u2019llah", "the United Nations"], "ORDINAL": ["first"], "GPE": ["Statement"], "PERSON": ["Baha\u2019i"]}

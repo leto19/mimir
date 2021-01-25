@@ -1,0 +1,1 @@
+{"CARDINAL": ["three", "two", "half", "Three"], "PERSON": ["Palamon", "Theseus", "yokels", "Gerald", "Thebes", "Morris", "Hippolyta"], "GPE": ["Emilia", "Diana", "Athens"], "ORG": ["Emilia", "Palamon", "Creon of Thebes", "Creon"], "NORP": ["Athenian", "Thebans"], "LOC": ["Venus", "Mars"]}

@@ -1,0 +1,1 @@
+{"PERSON": ["Mac\u00edas", "Luis Cervantes", "Demetrio Mac\u00edas", "Camila", "Azuela", "Cervantes", "G\u00fcero Margarito", "Federales"], "EVENT": ["the Mexican Revolution"], "NORP": ["Mexican"]}

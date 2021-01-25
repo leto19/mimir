@@ -1,0 +1,1 @@
+{"DATE": ["ten-year-old", "a number of years"], "LOC": ["Earth"], "PERSON": ["Tanna Tuva", "Sun"], "GPE": ["Brookhaven", "Los Alamos", "Argonne", "Congo"], "FAC": ["Great Slave Lake"]}

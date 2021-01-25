@@ -1,0 +1,1 @@
+{"PERSON": ["Tom Brangwen", "Anton Skrebensky", "Rainbow", "Will", "Ursula", "Brangwen", "Anna", "Tom"], "CARDINAL": ["one", "two", "three"], "GPE": ["Lydia", "England", "Skrebensky", "Derbyshire", "Nottinghamshire", "Britain"], "DATE": ["the 1840s to 1905", "roughly 65 years"], "NORP": ["Polish", "Brangwens", "British"], "ORDINAL": ["first"], "LOC": ["Truth", "Earth", "earth"]}

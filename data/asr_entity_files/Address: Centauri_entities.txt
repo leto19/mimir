@@ -1,0 +1,1 @@
+{"ORDINAL": ["first"], "LOC": ["Mars", "Earth"], "FAC": ["the Star Victory", "Proxima Centauri"], "DATE": ["a year", "a few days"], "GPE": ["Alpha Centauri"]}

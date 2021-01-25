@@ -1,0 +1,1 @@
+{"DATE": ["June 1642", "Election Day", "several years", "Several days later"], "GPE": ["Puritan", "Boston"], "PERSON": ["Chillingworth", "John Wilson", "Hester", "Pearl", "Arthur Dimmesdale", "Roger Chillingworth", "Dimmesdale", "Hester Prynne"], "TIME": ["One evening", "three hours"], "ORG": ["Wilson", "Dimmesdale"], "LOC": ["Europe"]}

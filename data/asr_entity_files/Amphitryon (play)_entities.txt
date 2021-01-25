@@ -1,0 +1,1 @@
+{"PERSON": ["Alcmena", "Thebes", "Amphitryon", "Hercules", "Amphyitryon"], "ORG": ["Mercury"], "GPE": ["Alcmena", "Sosia", "Amphitryon\u00e2\u0080\u0099s"], "LOC": ["Jupiter"], "TIME": ["The following morning"], "CARDINAL": ["One"]}

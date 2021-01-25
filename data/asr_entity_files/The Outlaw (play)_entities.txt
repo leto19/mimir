@@ -1,0 +1,1 @@
+{"GPE": ["Gunl\u00f6d", "Odin", "Iceland", "Sweden", "Norway", "Viking", "Thorfinn"], "CARDINAL": ["two"], "ORDINAL": ["fourth", "third"], "QUANTITY": ["two"], "PERSON": ["Gunl\u00f6d", "Gunnar", "Valgerd", "Thorfinn"], "DATE": ["years"], "ORG": ["Gunnar", "Thorfinn"], "NORP": ["Christian"], "TIME": ["that night"]}

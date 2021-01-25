@@ -1,0 +1,1 @@
+{"GPE": ["New York", "Tina", "Holland"], "CARDINAL": ["two"], "NORP": ["American", "Americans"], "PERSON": ["Con", "Watson", "Sherlock Holmes", "Van Damm", "Burgomaster", "Gretchen", "Kid", "Doris van Damm", "Flora"], "LOC": ["Europe"], "DATE": ["one day"], "WORK_OF_ART": ["Loved But Me"], "ORG": ["Kid", "Innkeeper"]}

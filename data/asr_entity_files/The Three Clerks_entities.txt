@@ -1,0 +1,1 @@
+{"CARDINAL": ["two", "three"], "PERSON": ["Thames", "Harry Norman", "Gertrude Woodward", "Charley", "Linda", "Gertrude", "Alaric Tudor", "Katie", "Harry", "Harry falls", "Charley Tudor", "Undy Scott", "Alaric"], "ORG": ["Internal Navigation", "Parliament", "the Weights and Measures Office"], "ORDINAL": ["second"], "GPE": ["London"], "NORP": ["Irish"]}

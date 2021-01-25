@@ -1,0 +1,1 @@
+{"PERSON": ["Polly", "Fanny Shaw", "Fanny", "Trix", "Ned", "Tom", "Polly Milton"], "DATE": ["14-year-old", "the next six years"], "ORDINAL": ["first"], "ORG": ["Shaws"], "LOC": ["West"]}

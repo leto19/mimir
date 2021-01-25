@@ -1,0 +1,1 @@
+{"CARDINAL": ["two", "one", "five"], "PERSON": ["Friedrich Schiller", "Franz", "Karl", "Franz Moor", "Johann Anton Leisewitz"], "ORG": ["Franz", "the Bohemian Forest"], "GPE": ["Sturm", "Drang"], "NORP": ["German"], "WORK_OF_ART": ["Julius of Tarent"], "DATE": ["1774"]}

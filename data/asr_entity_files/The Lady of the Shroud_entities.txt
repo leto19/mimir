@@ -1,0 +1,1 @@
+{"PERSON": ["Rupert", "Teuta", "Rupert Saint Leger"], "QUANTITY": ["more than one million pounds"], "DATE": ["a year"], "WORK_OF_ART": ["the Land of the Blue Mountains"], "NORP": ["South American", "Turkish", "Dalmatian", "Turks", "Orthodox"], "TIME": ["night", "one night", "One wet night", "before morning"], "GPE": ["Teuta", "America"], "ORG": ["Voivode"]}

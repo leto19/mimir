@@ -1,0 +1,1 @@
+{"LOC": ["Earth", "Walam Olum"], "ORDINAL": ["first"], "FAC": ["the Great Manitou", "Great Manitou"], "PERSON": ["Turtle", "Creator", "John Burns"], "NORP": ["Talegawi"], "GPE": ["Talamatan", "Rafinesque"], "ORG": ["Talamatan"], "WORK_OF_ART": ["Fragment: On the History of the Linapis"], "CARDINAL": ["one"]}

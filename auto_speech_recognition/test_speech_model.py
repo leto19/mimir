@@ -8,7 +8,7 @@ import json
 import pyaudio
 import numpy
 import speech_recognition as sr
-
+from get_speech_input import pre_emph
 
 
 model = Model(sys.argv[1])
@@ -16,7 +16,11 @@ model = Model(sys.argv[1])
 #model = Model("models/new")
 
 def get_text(audio_file):
+    #pre_emph(audio_file,"emthed.wav")
+    #wf = wave.open("emthed.wav", "rb")
+    #os.remove("emthed.wav")
     wf = wave.open(audio_file, "rb")
+
     if wf.getnchannels() != 1 or wf.getsampwidth() != 2 or wf.getcomptype() != "NONE":
         print ("Audio file must be WAV format mono PCM.")
         exit (1)

@@ -16,7 +16,7 @@ from time import sleep
 from scipy.io import wavfile
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 from array import array
-
+import aubio
 class RequestError(Exception): pass
 
 class UnknownValueError(Exception): pass
@@ -90,13 +90,15 @@ def get_audio(seconds=3,out_file="auto_speech_recognition/myfile.wav"):
     wf.writeframes(b''.join(frames))
     wf.close()
     noise_reduce(in_file=out_file,out_file=out_file) #reduce noise in file
-  
+    pre_emph(out_file) #do pre empathsis
+    os.rename(out_file.replace(".wav","_preempth.wav"), out_file) #replace old file with pre-emph'd version
 
 def get_speech_input_string_vosk(seconds=10):
     """returns speech input from the user as a string
     records for the number of seconds specified, default 3"""
     SetLogLevel(-1) #Hides Kaldi outputs to terminal 
     MODEL_PATH = "auto_speech_recognition/live_models/tdnn_1d_sp_chain_online"
+    MODEL_PATH = "auto_speech_recognition/models/all"
     get_audio(seconds)
     wf = wave.open("auto_speech_recognition/myfile.wav", 'rb')
     data = wf.readframes(10000000)
@@ -119,8 +121,8 @@ def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.fla
         get_audio(10)
         sound = AudioSegment.from_wav("auto_speech_recognition/myfile.wav") #convert to flac 
         sound.export("auto_speech_recognition/myfile.flac",format = "flac")
-        if not keep_files: os.remove("auto_speech_recognition/myfile.wav")
-
+        if not keep_files: 
+            os.remove("auto_speech_recognition/myfile.wav")
         with open(file_name,"rb") as f:
             audio_data = f.read()
         if not keep_files: os.remove(file_name)        
@@ -176,8 +178,30 @@ def noise_reduce(in_file="auto_speech_recognition/myfile.wav",out_file="auto_spe
     #reduced_noise = reduced_noise[2048:] #trim the start 
     wavfile.write(out_file,fs,reduced_noise) 
 
+def pre_emph(in_file,out_file=""):
+    if out_file == "":
+        out_file = in_file.replace(".wav","_preempth.wav")
 
+    s = aubio.source(in_file)
+    Fs = s.samplerate
 
+    filt = aubio.digital_filter(3)
+    filt.set_biquad(-1.700724,0.7029382,0.2380952,-0.1718791,-0.0442981)
+    #filt.set_biquad(1.0,0.99289462847423215,0.73908439754585875,0.93117565229670540,0.0)
+    out = aubio.sink(out_file,Fs)
+
+    total_frames = 0
+    while True:
+        samples, read = s()
+        # filter samples
+        filtered_samples = filt(samples)
+        # write to sink
+        out(filtered_samples, read)
+        # count frames read
+        total_frames += read
+        # end of file reached
+        if read < s.hop_size:
+            break
 
 
 if __name__ == "__main__":

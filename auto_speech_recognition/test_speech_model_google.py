@@ -22,7 +22,7 @@ def get_text_google(audio_file):
         audio = r.record(source)
     try:
         return r.recognize_google(audio)
-    except sr.UnknownValueError:
+    except sr.UnknownValueError:    
         return "???"
 
 

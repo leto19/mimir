@@ -1,0 +1,4 @@
+all3
+where is green gables | where is green gables (WER: 0.0, CA: 100.0%) 
+MEAN WER:0.0
+MEAN CA:100.0

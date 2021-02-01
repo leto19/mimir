@@ -16,10 +16,13 @@ model = Model(sys.argv[1])
 #model = Model("models/new")
 
 def get_text(audio_file):
-    #pre_emph(audio_file,"emthed.wav")
-    #wf = wave.open("emthed.wav", "rb")
-    #os.remove("emthed.wav")
-    wf = wave.open(audio_file, "rb")
+    pre_emph(audio_file,"emthed.wav")
+    #pre_emph("emthed.wav","emthed2.wav")
+    wf = wave.open("emthed.wav", "rb")
+    #os.remove("emthed2.wav")
+    os.remove("emthed.wav")
+
+    #wf = wave.open(audio_file, "rb")
 
     if wf.getnchannels() != 1 or wf.getsampwidth() != 2 or wf.getcomptype() != "NONE":
         print ("Audio file must be WAV format mono PCM.")
@@ -98,7 +101,7 @@ for path, subdirs, files in os.walk(root):
         print(folder_path)
         files = os.listdir(folder_path)
         for f in files:
-            if not f.endswith(".wav"):
+            if not f.endswith(".wav"):  
                 files.remove(f)
         print(files)
         for f in sorted(files):

@@ -109,8 +109,8 @@ def get_speech_input_string_vosk(seconds=10):
         res = json.loads(rec.FinalResult())
         #print(rec)
         #print(res)
-        #print(res['text'])
-        return res['text'].lower()
+        print(res['text'])
+        return res['text'].lower().replace("[noise]","")
     else:
         print("Didn't hear anything...")
         return "NONE"
@@ -169,6 +169,9 @@ def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.fla
         return best_hypothesis["transcript"]
         """
 
+
+## SIGNAL PROCESSING 
+
 def noise_reduce(in_file="auto_speech_recognition/myfile.wav",out_file="auto_speech_recognition/myfile.wav"):
     fs, data = wavfile.read(in_file) # read in the file data 
     data = data.astype(np.float32, order='C') / 32768.0 #convert to 32bit float
@@ -186,8 +189,22 @@ def pre_emph(in_file,out_file=""):
     Fs = s.samplerate
 
     filt = aubio.digital_filter(3)
-    filt.set_biquad(-1.700724,0.7029382,0.2380952,-0.1718791,-0.0442981)
+    z1 = -np.exp(-1.0/(Fs*0.000075))
+    p1 = 1 +z1
+    
+    a1 = p1
+    a2 = 0
+    b0 = 1.0
+    b1 = z1
+    b2 = 1.0
+
+    filt.set_biquad(-1.700724,0.7029382,0.2380952,-0.1718791,-0.0442981) #magic numbers do not touch
+    
     #filt.set_biquad(1.0,0.99289462847423215,0.73908439754585875,0.93117565229670540,0.0)
+    #filt.set_biquad(1,-1.700724,0.7029382,-0.7218922,-0.1860521) #magic numbers do not touch
+    #filt.set_biquad(b0,b1,b2,a1,a2) #magic numbers do not touch
+    #filt.set_biquad(0.2513790015131591,0.5027580030263182,0.2513790015131591,-0.17124071441396285,0.1767567204665992) #magic numbers do not touch
+    
     out = aubio.sink(out_file,Fs)
 
     total_frames = 0

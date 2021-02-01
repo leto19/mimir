@@ -16,7 +16,7 @@ def record_test_set():
     baseline_index = 0
     os.system('clear')
     for q in baseline_list:
-        print("Please say '%s'\n(Press Enter to continue)"%q.replace("\n",""))
+        print("Please say '%s'\n(Press Enter to continue)"%q.split("|")[0].strip().replace("\n",""))
         input()
         out_name = "auto_speech_recognition/audio_temp/q%s.wav" % baseline_index
         get_audio(seconds= 10,out_file=out_name)

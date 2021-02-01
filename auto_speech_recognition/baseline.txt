@@ -1,10 +1,10 @@
-white fang
-anne of green gables
-yes that's right
-where is green gables
-who is anne's best friend
-what happens to gilbert
-what happens to white fang's mother 
-who is weedon scott
-who does the she wolf kill
-exit
+white fang | white fang
+anne of green gables | anne,green gables
+yes that's right | yes 
+where is green gables | where, green gables
+who is anne's best friend | who, anne, best friend
+what happens to gilbert | what happens, gilbert
+what happens to white fang's mother | what happens, white fang, mother
+who is weedon scott | who, weedon scott
+who does the she wolf kill | who, she wolf, kill 
+exit | exit 

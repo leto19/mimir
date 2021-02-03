@@ -12,6 +12,7 @@ import transformers
 from transformers import AutoTokenizer, AutoModelForQuestionAnswering, BertForQuestionAnswering, BertTokenizer, DistilBertTokenizer, DistilBertForQuestionAnswering
 import tensorflow as tf
 from qa.question_answering.models.model import Model
+from qa.question_answering.utils import get_line_list_from_file
 
 try:
 	mimir_dir = os.environ["MIMIR_DIR"]

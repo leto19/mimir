@@ -56,6 +56,7 @@ active_models = {                   #module,        #class           #info sourc
 "cosine_distance_bow_fulltext":   ["cosine_distance_baseline", "CosineModel", 
 					["full_text_sents","full_text_bows","word2idx"], {"pipeline":pipeline}],
 "bert_baseline": ["bert_baseline", "BertBaseline", ["summary"], {}],
+"distilbert_squad_nqa": ["distilbert_squad_nqa", "DistilBertSquadNQA", ["summary"], {}],
 "attribute_model_fulltext": ["attribute_model", "AttributeModel", ["word2entity","obj_dict"], {}],
 "character_list_model": ["character_list_model", "CharacterListModel", ["obj_dict"], {}]
 }
@@ -137,7 +138,7 @@ class ModelController:
 		if ans_type_pred != None:
 			if answer == None: #Backoff
 				self.print_if_verbose("{} failed to find answer. Trying backoff model...".format(self.model_code))
-				self.select_model("bert_baseline_summary")
+				self.select_model("bert_baseline")
 				answer = self.model.answer_question(question, *self.data)
 				final_answer_type = "bert string"
 				if answer == None:

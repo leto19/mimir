@@ -1,5 +1,8 @@
 import json
-from qa.corpus_utils.utils import mimir_dir, remove_stopwords
+try:
+	from qa.corpus_utils.utils import mimir_dir, remove_stopwords
+except:
+	from utils import mimir_dir, remove_stopwords
 from collections import defaultdict
 import os
 import os.path as op
@@ -49,8 +52,11 @@ def file_pipeline(file_path):
 def sents_to_vecs(sentences):
 	"""Name may infringe copyright :P"""
 	stemmed_sents = pipeline(sentences)
-	word2idx, idx2word = make_dictionaries(stemmed_sents)
-	BOW_vectors = {i: sentence_to_vector(sent, word2idx) for i, sent in enumerate(stemmed_sents)}
+	return(s2v(stemmed_sents))
+
+def s2v(sentences):
+	word2idx, idx2word = make_dictionaries(sentences)
+	BOW_vectors = {i: sentence_to_vector(sent, word2idx) for i, sent in enumerate(sentences)}
 	return(BOW_vectors, idx2word)
 
 def pipeline(sentences):
@@ -58,7 +64,7 @@ def pipeline(sentences):
 	if type(sentences) != list:
 		raise TypeError
 	tokenized_sents = [word_tokenize(s) for s in sentences]
-	no_stopwords = [remove_stopwords(s) for s in sentences]
+	#tokenized_sents = [remove_stopwords(s) for s in sentences]
 	stemmed_sents = [[stemmer.stem(w) for w in s] for s in tokenized_sents]
 	return(stemmed_sents)
 

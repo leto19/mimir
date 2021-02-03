@@ -5,7 +5,6 @@ import os.path as op
 import nltk
 try:
 	from qa.question_answering.utils import get_named_entities, tokenize,  mimir_dir, data_dir, csv_to_list, tokenize, make_id_name_dict, make_qa_dict_valid, levenshtein
-	from qa.question_answering.models.closest_ne_model import map_words_to_named_entities
 except:
 
 	from utils import get_named_entities, tokenize,  mimir_dir, data_dir, csv_to_list, tokenize, make_id_name_dict, make_qa_dict_valid, levenshtein
@@ -17,25 +16,41 @@ def in_lowercased(question, word):
 		return True
 	return False
 
+
+def map_words_to_named_entities(obj_dict, classes = ["ORG","LOC","PERSON"]):
+
+    word2entity = {}
+
+    for ne_class in set(classes)&set(obj_dict.keys()):
+        for obj in obj_dict[ne_class]:
+            for name in obj.name_variants:
+                word2entity[name] = obj
+
+    return(word2entity)
+
 def in_named_entities(question, pattern):
 	raise NotImplementedError
 
-def replace_nes_with_type(string, word2entity, obj_dict):
+def replace_nes_with_type(string, word2entity, keep_punct=False):
 	"""Replaces named entities in a string with their NE type.
 	We do not in fact use any NE algorithm here, just the lists of entities 
 	that have been found by running NER over texts"""
 
 	removepunct = str.maketrans("","","?!.,-")
 	
-	string = string.lower().translate(removepunct)
+	string = string.lower()
+
+	if not keep_punct:
+		string = string.translate(removepunct)
 
 	nes_longest_first = sorted(word2entity.keys(), key = lambda x: len(x), reverse=True)
 
+	nes_longest_first = [ne for ne in nes_longest_first if not ne.endswith("'s")]
+
 	for ne in nes_longest_first:
 		if ne.lower() in string:
-			for ne_class, sub_dict in obj_dict.items():
-				if word2entity[ne] in sub_dict:
-					string = re.sub(ne.lower(), ne_class, string)
+			ne_class = word2entity[ne].class_string
+			string = re.sub(r"\b" + ne.lower() + r"\b", ne_class, string)
 
 	return string
 	
@@ -92,7 +107,7 @@ class QuestionClassifier():
 		"""Iterates through the categories in self.patterns list in order;
 			once one is matched, returns that category."""
 		for match_function, category in self.patterns_list:
-			preprocessed_question = replace_nes_with_type(question, self.word2entity, self.obj_dict)
+			preprocessed_question = replace_nes_with_type(question, self.word2entity)
 			if match_function(preprocessed_question):
 				return category
 		
@@ -100,8 +115,8 @@ class QuestionClassifier():
 
 	def set_data_dict(self, data_dict):
 		self.data_dict = data_dict
-		self.obj_dict = data_dict["full_text_obj_dict"]
-		self.word2entity = map_words_to_named_entities(self.obj_dict)
+		self.obj_dict = data_dict["obj_dict"]
+		self.word2entity = map_words_to_named_entities(self.obj_dict, classes=["PERSON", "LOC", "ORG"])
 
 class SimpleBaseline:
 	def __init__(self):

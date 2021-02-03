@@ -37,11 +37,10 @@ def newline_to_space(text):
 #def return
 
 def handle_abbreviations(matchobj):	
-	print(matchobj)
+	#print(matchobj)
 	newlinerepl = str.maketrans("\n", " ")
 	if matchobj.group("abbrvs"): #If there are any abbreviations, or we are at the 
 									#end of a line, we do not split
-		print("no split")
 		#input()
 		out = matchobj[0]
 		if matchobj.group("trailing"):
@@ -58,19 +57,19 @@ def handle_abbreviations(matchobj):
 	
 		return (out)
 	else:
-		print("split")
+	#	print("split")
 		#input()
 		return matchobj[0] + "😠" # Our extremely arbitrary "split" token
 
 
 
 def handle_newline(matchobj):	
-	print(matchobj)
+	#print(matchobj)
 	if matchobj[1]: #If there are any abbreviations, or we are at the 
 									#end of a line, we do not split
 		return (matchobj[0])
 	else:
-		print("split")
+	#	print("split")
 		#input()
 		return matchobj[0] + "😠" # Our extremely arbitrary "split" token
 
@@ -95,7 +94,7 @@ def sentence_tokenize(text):
 	new_text = re.sub(new_line, handle_newline, new_text)
 	new_text = new_text.translate(revert_punct)	
 
-	print(new_text)
+	#print(new_text)
 
 	return(new_text.split("😠"))
 

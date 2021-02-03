@@ -107,7 +107,7 @@ class ModelController:
 	def print_if_verbose(self, string):
 		if self.verbose:
 			print(string)
-
+	
 	def answer_question(self, ans_type_pred, question):		
 		final_answer_type = ans_type_pred
 

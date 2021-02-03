@@ -1,3 +1,4 @@
+import numpy as np
 import string # to get a list of punctuation
 import sys
 import os
@@ -23,7 +24,7 @@ def similarity_metrics(ref1_strs, ref2_strs, extracted_answers):
 	for argument in [ref1_strs, ref2_strs, extracted_answers]:
 		if type(argument[0]) != str:
 			raise TypeError("""
-		All arguments passed to similarity_metrics must be  
+		All arguments passed to similarity_metrics must be	
 		lists of untokenized sentences, e.g. 
 			["The cat sat on the mat", 
 			 "The man ate the hotdog", ...]""")
@@ -86,45 +87,47 @@ class Evaluator():
 		self.model_controller = ModelController()
 		self.valid_dict = valid_dict
 		self.models_dict = models_dict
+		sorted_pairs  = sorted(list(self.valid_dict.items()))
+		self.questions	   = [item[0] for item in sorted_pairs]
+		self.book_names    = [item[1][0] for item in sorted_pairs]
+		self.answers_1	   = [item[1][1][1] for item in sorted_pairs]
+		self.answers_0	   = [item[1][1][0] for item in sorted_pairs]
+
+	def answer_all_questions(self, model_id):
+		mc = self.model_controller
+		extracted_answers = []
+		questions = self.questions
+		last_book = None	
+
+		for i, q in enumerate(questions):
+			print("evaluating q {} of {}".format(i+1, len(questions)))
+			os.system('clear')
+			book = self.book_names[i]
+			if book != last_book:
+				mc.confirm_book({"title":book, "author": None})
+				mc.select_model(model_id) #This is to load in the book data
+			extracted_answer = mc.model.answer_question(q, *mc.data)
+			extracted_answers.append(extracted_answer)
+			last_book = book
+		return(extracted_answers)
+
+	def score(self, extracted_answers):
+		bleu4_score, bleu1_score, rouge_score, cider_score, accuracy_score = similarity_metrics(self.answers_0, self.answers_1, extracted_answers)
+		return(bleu4_score, bleu1_score, rouge_score, cider_score, accuracy_score) 
+
+	def evaluate_model(self, model_id):
+		extracted_answers = self.answer_all_questions(model_id)
+		scores = self.score(self, extracted_answers)
+		return(scores)		
 
 	def evaluate_all(self):
 		results = {}
 		for model_id in self.models_dict:
-			sorted_pairs  = sorted(list(self.valid_dict.items()))
-			questions     = [item[0] for item in sorted_pairs]
-			book_names    = [item[1][0] for item in sorted_pairs]
-			answers_0     = [item[1][1][0] for item in sorted_pairs]
-			answers_1     = [item[1][1][1] for item in sorted_pairs]
 
-			extracted_answers = []
-			for i, q in enumerate(questions):
-				if book_names[i] in ["Mary: A Fiction", "Armageddon 2419 A.D."]:
-					extracted_answer = ""
-				else:
-					print(q)
-					self.model_controller.confirm_book({"title":book_names[i], "author": None})
-					extracted_answer = self.model_controller.answer_question(model_id, q)
-				extracted_answers.append(extracted_answer)
-				print(extracted_answer)
-				print("{} of {} done".format(i, len(questions))) 
-			print(model_id)
-			print(extracted_answers[:5])		
-
-			bleu4_score, bleu1_score, rouge_score, cider_score, accuracy_score = similarity_metrics(answers_0, answers_1, extracted_answers)
-
+			bleu4_score, bleu1_score, rouge_score, cider_score, accuracy_score = similarity_metrics(self.answers_0, self.answers_1, extracted_answers)
 			results[model_id] = [bleu4_score, bleu1_score, rouge_score, cider_score, accuracy_score]
-			#print(similarity_metrics(answers_0, answers_1, extracted_answers))
-		import numpy as np
-		np.save("results.npy", np.array([results]))
-		print("done")	
-		import pdb; pdb.set_trace()
-
-			#import pdb; pdb.set_trace()
-			
-			
-			#predicted_answers = [model.evaluate
-						
-			#results = similarity_metrics(model, valid_dict)	
+		
+		return results
 
 
 if __name__ == "__main__":
@@ -132,10 +135,6 @@ if __name__ == "__main__":
 	id_name_dict = make_id_name_dict()	# Dictionary of book IDs by name
 	qaps_line_list = csv_to_list(op.join(data_dir, "narrativeqa_qas.csv"))
 	qa_dict_valid = make_qa_dict_valid(qaps_line_list, id_name_dict)  # Questions and answers from validation set
-
-	full_text_dir = op.join(data_dir, "nqa_gutenberg_corpus")
-	summary_dir = op.join(data_dir, "nqa_summary_text_files")
-
 
 	evaluator = Evaluator(qa_dict_valid, active_models)
 	evaluator.evaluate_all()
@@ -149,3 +148,6 @@ if __name__ == "__main__":
 	model_instance = model()
 
 	print("Exact match on summaries: {} percent".format(exact_match(model_instance, qa_dict_valid, directory)))
+
+#summary_dir = op.join(data_dir, "nqa_summary_text_files")
+#full_text_dir = op.join(data_dir, "nqa_gutenberg_corpus")

@@ -48,7 +48,7 @@ class DistilBertSquadNQA(Model):
         print("we are initializing distilbert finetuned on SQuAD and NQA")
         super().__init__(*args, **kwargs)
         self.model_id = 'distilbert-squad-nqa'
-        model_dir = 'question_answering/models/' + self.model_id
+        model_dir = 'qa/question_answering/models/' + self.model_id
         self.model = DistilBertForQuestionAnswering.from_pretrained(model_dir)
         self.model.to(device)
         self.tokenizer = DistilBertTokenizer.from_pretrained(model_dir)
@@ -56,16 +56,24 @@ class DistilBertSquadNQA(Model):
 
     def answer_question(self, question, context):
         encodings = self.tokenizer(question, context, truncation='only_second', padding='max_length', return_tensors='pt')
-        inputs = encodings['input_ids'].to(device)
-        tokens = [self.tokenizer.convert_ids_to_tokens(inputs.tolist()[0])]
+        inputs = encodings['input_ids'].reshape(-1).to(device)
+        tokens = self.tokenizer.convert_ids_to_tokens(inputs.tolist())
+        #print('inputs:', inputs[:10])
+        #print('tokens:', tokens[:10])
 
-        outputs = self.model(inputs)
-        start_scores = outputs.start_logits
-        end_scores = outputs.end_logits
+        outputs = self.model(inputs.reshape(1,-1))
+        #print('outputs:', outputs[0][0][:10])
+        start_scores = outputs.start_logits.reshape(-1)
+        end_scores = outputs.end_logits.reshape(-1)
+        #print('start_scores:', start_scores[:10])
+        #print('end_scores:', end_scores[:10])
 
         answer_start = torch.argmax(start_scores)
-        answer_end = answer_start + torch.argmax(end_scores[0][answer_start:])
+        #print('answer_start:', answer_start)
+        answer_end = answer_start + torch.argmax(end_scores[answer_start:])
+        #print('answer_end:', answer_end)
         answer_tokens = tokens[answer_start:answer_end + 1]
+        #print('answer_tokens:', answer_tokens)
 
         answer = self.subword_to_whole_word(answer_tokens)
         if answer == "[CLS]" or answer == "[SEP]":

@@ -100,7 +100,8 @@ class Evaluator():
 		last_book = None	
 
 		for i, q in enumerate(questions):
-			print("evaluating q {} of {}".format(i+1, len(questions)))
+			if i < 10 or (i < 100 and (i+1) % 10 == 0) or (i+1) % 100 == 0:
+				print("evaluating q {} of {}".format(i+1, len(questions)))
 			os.system('clear')
 			book = self.book_names[i]
 			if book != last_book:

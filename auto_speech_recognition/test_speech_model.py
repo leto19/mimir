@@ -8,7 +8,7 @@ import json
 import pyaudio
 import numpy
 import speech_recognition as sr
-from get_speech_input import pre_emph
+from get_speech_input import noise_reduce
 
 
 model = Model(sys.argv[1])
@@ -16,13 +16,13 @@ model = Model(sys.argv[1])
 #model = Model("models/new")
 
 def get_text(audio_file):
-    pre_emph(audio_file,"emthed.wav")
+   # pre_emph(audio_file,"emthed.wav")
     #pre_emph("emthed.wav","emthed2.wav")
-    wf = wave.open("emthed.wav", "rb")
+    #wf = wave.open("emthed.wav", "rb")
     #os.remove("emthed2.wav")
-    os.remove("emthed.wav")
+    #os.remove("emthed.wav")
 
-    #wf = wave.open(audio_file, "rb")
+    wf = wave.open(audio_file, "rb")
 
     if wf.getnchannels() != 1 or wf.getsampwidth() != 2 or wf.getcomptype() != "NONE":
         print ("Audio file must be WAV format mono PCM.")
@@ -84,15 +84,17 @@ def get_concept_accuracy(string,concept_list):
 
 model = Model(sys.argv[1])
 
-with open("test_data2/baseline.txt") as f:
+with open("%s/baseline.txt"%sys.argv[2].split("/")[0]) as f:
     baseline_list = f.readlines()
 baseline_index = 0
 
-root = os.curdir + "/test_data2/"
+root = os.curdir + "/"+ sys.argv[2] +"/"
+print(root)
 #for set_num in range(len(subdirs))
 model_name = sys.argv[1].replace("models/","").replace("/","")
 
 for path, subdirs, files in os.walk(root):
+    print(subdirs)
     for s in subdirs:
         wer_list = list()
         ca_list = list()
@@ -100,18 +102,20 @@ for path, subdirs, files in os.walk(root):
         folder_path = os.path.join(path,s)
         print(folder_path)
         files = os.listdir(folder_path)
-        for f in files:
-            if not f.endswith(".wav"):  
-                files.remove(f)
-        print(files)
-        for f in sorted(files):
+        wavs = list()
+        for f in files:    
+            if f.endswith(".wav"):
+               wavs.append(f)
+        print(wavs)
+        for f in sorted(wavs):
             file_path = os.path.join(folder_path, f)
             print(file_path)
-
+            noise_reduce(file_path,file_path.replace(".wav","_rn.wav"))
             baseline_text = baseline_list[baseline_index].split("|")[0].strip()
             baseline_concepts = baseline_list[baseline_index].split("|")[1].strip().split(",")
-            recognised_text = get_text(file_path)
-            recognised_text = recognised_text.lower()
+            recognised_text = get_text(file_path.replace(".wav","_rn.wav"))
+            os.remove(file_path.replace(".wav","_rn.wav"))
+            recognised_text = recognised_text.lower().replace("[noise]","").replace("<unk>","")
             baseline_index+=1
             if baseline_index ==9:
                 baseline_index = -1
@@ -119,7 +123,7 @@ for path, subdirs, files in os.walk(root):
             wer_list.append(get_WER(baseline_text,recognised_text))
             ca_list.append(get_concept_accuracy(recognised_text,baseline_concepts))
 
-        with open("test_data2/%s/%s.txt"%(s,model_name+"_results") ,"w") as f:
+        with open("%s/%s/%s.txt"%(sys.argv[2],s,model_name+"_results") ,"w") as f:
             f.write(model_name +"\n")
             for i in range(len(wer_list)):
                 f.write("%s | %s (WER: %s, CA: %s%%) \n"%(baseline_list[i].split("|")[0].strip(),recog_list[i],wer_list[i],ca_list[i]))

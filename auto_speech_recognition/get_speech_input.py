@@ -89,27 +89,29 @@ def get_audio(seconds=3,out_file="auto_speech_recognition/myfile.wav"):
     wf.setframerate(FS)
     wf.writeframes(b''.join(frames))
     wf.close()
-    noise_reduce(in_file=out_file,out_file=out_file) #reduce noise in file
-    pre_emph(out_file) #do pre empathsis
-    os.rename(out_file.replace(".wav","_preempth.wav"), out_file) #replace old file with pre-emph'd version
+    #reduce noise in file
+    #pre_emph(out_file) #do pre empathsis
+    #os.rename(out_file.replace(".wav","_preempth.wav"), out_file) #replace old file with pre-emph'd version
 
 def get_speech_input_string_vosk(seconds=10):
     """returns speech input from the user as a string
     records for the number of seconds specified, default 3"""
     SetLogLevel(-1) #Hides Kaldi outputs to terminal 
-    MODEL_PATH = "auto_speech_recognition/live_models/tdnn_1d_sp_chain_online"
-    MODEL_PATH = "auto_speech_recognition/models/all"
+    MODEL_PATH = "auto_speech_recognition/models/all3"
     get_audio(seconds)
-    wf = wave.open("auto_speech_recognition/myfile.wav", 'rb')
+    noise_reduce(in_file="auto_speech_recognition/myfile.wav",out_file="auto_speech_recognition/myfile_nr.wav") 
+    wf = wave.open("auto_speech_recognition/myfile_nr.wav", 'rb')
     data = wf.readframes(10000000)
     os.remove("auto_speech_recognition/myfile.wav")
+    os.remove("auto_speech_recognition/myfile_nr.wav")
+
     model = Model("%s"%os.environ["MIMIR_DIR"]+MODEL_PATH)
     rec = KaldiRecognizer(model, 16000)
     if rec.AcceptWaveform(data):
         res = json.loads(rec.FinalResult())
         #print(rec)
         #print(res)
-        print(res['text'])
+        #print(res['text'])
         return res['text'].lower().replace("[noise]","")
     else:
         print("Didn't hear anything...")
@@ -200,10 +202,10 @@ def pre_emph(in_file,out_file=""):
 
     filt.set_biquad(-1.700724,0.7029382,0.2380952,-0.1718791,-0.0442981) #magic numbers do not touch
     
-    #filt.set_biquad(1.0,0.99289462847423215,0.73908439754585875,0.93117565229670540,0.0)
+    #filt.set_biquad(1.0,0847423215,0.73908439754585875,0.93117565229670540,0.0)
     #filt.set_biquad(1,-1.700724,0.7029382,-0.7218922,-0.1860521) #magic numbers do not touch
     #filt.set_biquad(b0,b1,b2,a1,a2) #magic numbers do not touch
-    #filt.set_biquad(0.2513790015131591,0.5027580030263182,0.2513790015131591,-0.17124071441396285,0.1767567204665992) #magic numbers do not touch
+    #filt.set_biquad(0.2513790015131591,0.5027580030263182,0.251379001.992894625131591,-0.17124071441396285,0.1767567204665992) #magic numbers do not touch
     
     out = aubio.sink(out_file,Fs)
 
@@ -222,8 +224,8 @@ def pre_emph(in_file,out_file=""):
 
 
 if __name__ == "__main__":
-    j = json.loads(get_speech_input_string_google(keep_files=True))
+    #j = json.loads(get_speech_input_string_google(keep_files=True))
     
-    print(j["alternative"][0]["transcript"])
+    #print(j["alternative"][0]["transcript"])
 
-    #print(get_speech_input_string_vosk())
+    print(get_speech_input_string_vosk())

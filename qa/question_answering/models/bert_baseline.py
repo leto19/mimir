@@ -67,9 +67,9 @@ class BertBaseline(Model):
 
 		token_type_ids = [0]*num_tokens_question + [1]*num_tokens_context
 
-		start_scores, end_scores = self.bert_model(torch.tensor([input_ids]))
-		answer_start = torch.argmax(start_scores)
-		answer_end = torch.argmax(end_scores)
+		output = self.bert_model(torch.tensor([input_ids]))
+		answer_start = torch.argmax(output.start_logits)
+		answer_end = torch.argmax(output.end_logits)
 		answer_tokens = tokens[answer_start:answer_end+1]
 		
 		answer = self.subword_to_whole_word(answer_tokens)

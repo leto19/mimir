@@ -1,19 +1,551 @@
-who lives in Branksome
-who lives in Kurrachee
-who lives in India
-who lives in the Hole of Cree
-who is Heatherstone
-who is Rufus Smith
-who is John Berthier Heatherstone
-who is John Fothergill West
-who is Gabriel
-who lives in West
+What does Heatherstone do upon meeting Heatherstone 
+What does Heatherstone do upon meeting Rufus Smith 
+What does Heatherstone do upon meeting John Berthier Heatherstone 
+What does Heatherstone do upon meeting John Fothergill West 
+What does Heatherstone do upon meeting Gabriel 
+What does Rufus Smith do upon meeting Heatherstone 
+What does Rufus Smith do upon meeting Rufus Smith 
+What does Rufus Smith do upon meeting John Berthier Heatherstone 
+What does Rufus Smith do upon meeting John Fothergill West 
+What does Rufus Smith do upon meeting Gabriel 
+What does John Berthier Heatherstone do upon meeting Heatherstone 
+What does John Berthier Heatherstone do upon meeting Rufus Smith 
+What does John Berthier Heatherstone do upon meeting John Berthier Heatherstone 
+What does John Berthier Heatherstone do upon meeting John Fothergill West 
+What does John Berthier Heatherstone do upon meeting Gabriel 
+What does John Fothergill West do upon meeting Heatherstone 
+What does John Fothergill West do upon meeting Rufus Smith 
+What does John Fothergill West do upon meeting John Berthier Heatherstone 
+What does John Fothergill West do upon meeting John Fothergill West 
+What does John Fothergill West do upon meeting Gabriel 
+What does Gabriel do upon meeting Heatherstone 
+What does Gabriel do upon meeting Rufus Smith 
+What does Gabriel do upon meeting John Berthier Heatherstone 
+What does Gabriel do upon meeting John Fothergill West 
+What does Gabriel do upon meeting Gabriel 
+Why does Emily write to Heatherstone
+Why does Emily write to Rufus Smith
+Why does Emily write to John Berthier Heatherstone
+Why does Emily write to John Fothergill West
+Why does Emily write to Gabriel
+How did Cloomber Hall think forty years would compare with the previous one
+How did Cloomber Hall think his days would compare with the previous one
+How did Cloomber Hall think forty years ago would compare with the previous one
+How did Cloomber Hall think October would compare with the previous one
+How did Cloomber Hall think many years would compare with the previous one
+How did the English East India Company think forty years would compare with the previous one
+How did the English East India Company think his days would compare with the previous one
+How did the English East India Company think forty years ago would compare with the previous one
+How did the English East India Company think October would compare with the previous one
+How did the English East India Company think many years would compare with the previous one
+How did General Heatherstone think forty years would compare with the previous one
+How did General Heatherstone think his days would compare with the previous one
+How did General Heatherstone think forty years ago would compare with the previous one
+How did General Heatherstone think October would compare with the previous one
+How did General Heatherstone think many years would compare with the previous one
+How did the Indian Army think forty years would compare with the previous one
+How did the Indian Army think his days would compare with the previous one
+How did the Indian Army think forty years ago would compare with the previous one
+How did the Indian Army think October would compare with the previous one
+How did the Indian Army think many years would compare with the previous one
+What did Cloomber Hall do with the dead body of the creature who raised him
+What did the English East India Company do with the dead body of the creature who raised him
+What did General Heatherstone do with the dead body of the creature who raised him
+What did the Indian Army do with the dead body of the creature who raised him
+Why did nobody believe Heatherstone about being possessed
+Why did nobody believe Rufus Smith about being possessed
+Why did nobody believe John Berthier Heatherstone about being possessed
+Why did nobody believe John Fothergill West about being possessed
+Why did nobody believe Gabriel about being possessed
+What town did Heatherstone grow up in 
+What town did Rufus Smith grow up in 
+What town did John Berthier Heatherstone grow up in 
+What town did John Fothergill West grow up in 
+What town did Gabriel grow up in 
+Who takes Cloomber Hall prisoner
+Who takes the English East India Company prisoner
+Who takes General Heatherstone prisoner
+Who takes the Indian Army prisoner
+What may be the fifth reason for Heatherstone percieved exuberance
+What may be the fifth reason for Rufus Smith percieved exuberance
+What may be the fifth reason for John Berthier Heatherstone percieved exuberance
+What may be the fifth reason for John Fothergill West percieved exuberance
+What may be the fifth reason for Gabriel percieved exuberance
+What are the two submarines named which are searching for the treasure
+What are the three submarines named which are searching for the treasure
+Why do Branksome and Heatherstone travel to Branksome
+Why do Branksome and Heatherstone travel to Kurrachee
+Why do Branksome and Heatherstone travel to India
+Why do Branksome and Heatherstone travel to the Hole of Cree
+Why do Branksome and Rufus Smith travel to Branksome
+Why do Branksome and Rufus Smith travel to Kurrachee
+Why do Branksome and Rufus Smith travel to India
+Why do Branksome and Rufus Smith travel to the Hole of Cree
+Why do Branksome and John Berthier Heatherstone travel to Branksome
+Why do Branksome and John Berthier Heatherstone travel to Kurrachee
+Why do Branksome and John Berthier Heatherstone travel to India
+Why do Branksome and John Berthier Heatherstone travel to the Hole of Cree
+Why do Branksome and John Fothergill West travel to Branksome
+Why do Branksome and John Fothergill West travel to Kurrachee
+Why do Branksome and John Fothergill West travel to India
+Why do Branksome and John Fothergill West travel to the Hole of Cree
+Why do Branksome and Gabriel travel to Branksome
+Why do Branksome and Gabriel travel to Kurrachee
+Why do Branksome and Gabriel travel to India
+Why do Branksome and Gabriel travel to the Hole of Cree
+Why do Kurrachee and Heatherstone travel to Branksome
+Why do Kurrachee and Heatherstone travel to Kurrachee
+Why do Kurrachee and Heatherstone travel to India
+Why do Kurrachee and Heatherstone travel to the Hole of Cree
+Why do Kurrachee and Rufus Smith travel to Branksome
+Why do Kurrachee and Rufus Smith travel to Kurrachee
+Why do Kurrachee and Rufus Smith travel to India
+Why do Kurrachee and Rufus Smith travel to the Hole of Cree
+Why do Kurrachee and John Berthier Heatherstone travel to Branksome
+Why do Kurrachee and John Berthier Heatherstone travel to Kurrachee
+Why do Kurrachee and John Berthier Heatherstone travel to India
+Why do Kurrachee and John Berthier Heatherstone travel to the Hole of Cree
+Why do Kurrachee and John Fothergill West travel to Branksome
+Why do Kurrachee and John Fothergill West travel to Kurrachee
+Why do Kurrachee and John Fothergill West travel to India
+Why do Kurrachee and John Fothergill West travel to the Hole of Cree
+Why do Kurrachee and Gabriel travel to Branksome
+Why do Kurrachee and Gabriel travel to Kurrachee
+Why do Kurrachee and Gabriel travel to India
+Why do Kurrachee and Gabriel travel to the Hole of Cree
+Why do India and Heatherstone travel to Branksome
+Why do India and Heatherstone travel to Kurrachee
+Why do India and Heatherstone travel to India
+Why do India and Heatherstone travel to the Hole of Cree
+Why do India and Rufus Smith travel to Branksome
+Why do India and Rufus Smith travel to Kurrachee
+Why do India and Rufus Smith travel to India
+Why do India and Rufus Smith travel to the Hole of Cree
+Why do India and John Berthier Heatherstone travel to Branksome
+Why do India and John Berthier Heatherstone travel to Kurrachee
+Why do India and John Berthier Heatherstone travel to India
+Why do India and John Berthier Heatherstone travel to the Hole of Cree
+Why do India and John Fothergill West travel to Branksome
+Why do India and John Fothergill West travel to Kurrachee
+Why do India and John Fothergill West travel to India
+Why do India and John Fothergill West travel to the Hole of Cree
+Why do India and Gabriel travel to Branksome
+Why do India and Gabriel travel to Kurrachee
+Why do India and Gabriel travel to India
+Why do India and Gabriel travel to the Hole of Cree
+Why do the Hole of Cree and Heatherstone travel to Branksome
+Why do the Hole of Cree and Heatherstone travel to Kurrachee
+Why do the Hole of Cree and Heatherstone travel to India
+Why do the Hole of Cree and Heatherstone travel to the Hole of Cree
+Why do the Hole of Cree and Rufus Smith travel to Branksome
+Why do the Hole of Cree and Rufus Smith travel to Kurrachee
+Why do the Hole of Cree and Rufus Smith travel to India
+Why do the Hole of Cree and Rufus Smith travel to the Hole of Cree
+Why do the Hole of Cree and John Berthier Heatherstone travel to Branksome
+Why do the Hole of Cree and John Berthier Heatherstone travel to Kurrachee
+Why do the Hole of Cree and John Berthier Heatherstone travel to India
+Why do the Hole of Cree and John Berthier Heatherstone travel to the Hole of Cree
+Why do the Hole of Cree and John Fothergill West travel to Branksome
+Why do the Hole of Cree and John Fothergill West travel to Kurrachee
+Why do the Hole of Cree and John Fothergill West travel to India
+Why do the Hole of Cree and John Fothergill West travel to the Hole of Cree
+Why do the Hole of Cree and Gabriel travel to Branksome
+Why do the Hole of Cree and Gabriel travel to Kurrachee
+Why do the Hole of Cree and Gabriel travel to India
+Why do the Hole of Cree and Gabriel travel to the Hole of Cree
+How does West emotionally deal with becoming wealthy
+What happened to Cloomber Hall according to Cloomber Hall
+What happened to Cloomber Hall according to the English East India Company
+What happened to Cloomber Hall according to General Heatherstone
+What happened to Cloomber Hall according to the Indian Army
+What happened to the English East India Company according to Cloomber Hall
+What happened to the English East India Company according to the English East India Company
+What happened to the English East India Company according to General Heatherstone
+What happened to the English East India Company according to the Indian Army
+What happened to General Heatherstone according to Cloomber Hall
+What happened to General Heatherstone according to the English East India Company
+What happened to General Heatherstone according to General Heatherstone
+What happened to General Heatherstone according to the Indian Army
+What happened to the Indian Army according to Cloomber Hall
+What happened to the Indian Army according to the English East India Company
+What happened to the Indian Army according to General Heatherstone
+What happened to the Indian Army according to the Indian Army
+Why doesn't Heatherstone begin the trip with Cloomber Hall
+Why doesn't Heatherstone begin the trip with the English East India Company
+Why doesn't Heatherstone begin the trip with General Heatherstone
+Why doesn't Heatherstone begin the trip with the Indian Army
+Why doesn't Rufus Smith begin the trip with Cloomber Hall
+Why doesn't Rufus Smith begin the trip with the English East India Company
+Why doesn't Rufus Smith begin the trip with General Heatherstone
+Why doesn't Rufus Smith begin the trip with the Indian Army
+Why doesn't John Berthier Heatherstone begin the trip with Cloomber Hall
+Why doesn't John Berthier Heatherstone begin the trip with the English East India Company
+Why doesn't John Berthier Heatherstone begin the trip with General Heatherstone
+Why doesn't John Berthier Heatherstone begin the trip with the Indian Army
+Why doesn't John Fothergill West begin the trip with Cloomber Hall
+Why doesn't John Fothergill West begin the trip with the English East India Company
+Why doesn't John Fothergill West begin the trip with General Heatherstone
+Why doesn't John Fothergill West begin the trip with the Indian Army
+Why doesn't Gabriel begin the trip with Cloomber Hall
+Why doesn't Gabriel begin the trip with the English East India Company
+Why doesn't Gabriel begin the trip with General Heatherstone
+Why doesn't Gabriel begin the trip with the Indian Army
+Who did the invisible monster turn out to be
+How do Heatherstone and Heatherstone die
+How do Heatherstone and Rufus Smith die
+How do Heatherstone and John Berthier Heatherstone die
+How do Heatherstone and John Fothergill West die
+How do Heatherstone and Gabriel die
+How do Rufus Smith and Heatherstone die
+How do Rufus Smith and Rufus Smith die
+How do Rufus Smith and John Berthier Heatherstone die
+How do Rufus Smith and John Fothergill West die
+How do Rufus Smith and Gabriel die
+How do John Berthier Heatherstone and Heatherstone die
+How do John Berthier Heatherstone and Rufus Smith die
+How do John Berthier Heatherstone and John Berthier Heatherstone die
+How do John Berthier Heatherstone and John Fothergill West die
+How do John Berthier Heatherstone and Gabriel die
+How do John Fothergill West and Heatherstone die
+How do John Fothergill West and Rufus Smith die
+How do John Fothergill West and John Berthier Heatherstone die
+How do John Fothergill West and John Fothergill West die
+How do John Fothergill West and Gabriel die
+How do Gabriel and Heatherstone die
+How do Gabriel and Rufus Smith die
+How do Gabriel and John Berthier Heatherstone die
+How do Gabriel and John Fothergill West die
+How do Gabriel and Gabriel die
+Who are the two characters that are playing dice for the crews' and the mariner's souls
+Who are the three characters that are playing dice for the crews' and the mariner's souls
+How many generations of the Heatherstone family are there 
+How many generations of the Rufus Smith family are there 
+How many generations of the John Berthier Heatherstone family are there 
+How many generations of the John Fothergill West family are there 
+How many generations of the Gabriel family are there 
+Why was Heatherstone from her master's home
+Why was Rufus Smith from her master's home
+Why was John Berthier Heatherstone from her master's home
+Why was John Fothergill West from her master's home
+Why was Gabriel from her master's home
 what is Cloomber Hall
 what is the English East India Company
 what is General Heatherstone
 what is the Indian Army
+What time is it when Branksome says goodbye to the Cloomber Hall and returns from the Garden of Death
+What time is it when Branksome says goodbye to the the English East India Company and returns from the Garden of Death
+What time is it when Branksome says goodbye to the General Heatherstone and returns from the Garden of Death
+What time is it when Branksome says goodbye to the the Indian Army and returns from the Garden of Death
+What time is it when Kurrachee says goodbye to the Cloomber Hall and returns from the Garden of Death
+What time is it when Kurrachee says goodbye to the the English East India Company and returns from the Garden of Death
+What time is it when Kurrachee says goodbye to the General Heatherstone and returns from the Garden of Death
+What time is it when Kurrachee says goodbye to the the Indian Army and returns from the Garden of Death
+What time is it when India says goodbye to the Cloomber Hall and returns from the Garden of Death
+What time is it when India says goodbye to the the English East India Company and returns from the Garden of Death
+What time is it when India says goodbye to the General Heatherstone and returns from the Garden of Death
+What time is it when India says goodbye to the the Indian Army and returns from the Garden of Death
+What time is it when the Hole of Cree says goodbye to the Cloomber Hall and returns from the Garden of Death
+What time is it when the Hole of Cree says goodbye to the the English East India Company and returns from the Garden of Death
+What time is it when the Hole of Cree says goodbye to the General Heatherstone and returns from the Garden of Death
+What time is it when the Hole of Cree says goodbye to the the Indian Army and returns from the Garden of Death
+What does Heatherstone want to do to Cloomber Hall and Cloomber Hall
+What does Heatherstone want to do to Cloomber Hall and the English East India Company
+What does Heatherstone want to do to Cloomber Hall and General Heatherstone
+What does Heatherstone want to do to Cloomber Hall and the Indian Army
+What does Heatherstone want to do to the English East India Company and Cloomber Hall
+What does Heatherstone want to do to the English East India Company and the English East India Company
+What does Heatherstone want to do to the English East India Company and General Heatherstone
+What does Heatherstone want to do to the English East India Company and the Indian Army
+What does Heatherstone want to do to General Heatherstone and Cloomber Hall
+What does Heatherstone want to do to General Heatherstone and the English East India Company
+What does Heatherstone want to do to General Heatherstone and General Heatherstone
+What does Heatherstone want to do to General Heatherstone and the Indian Army
+What does Heatherstone want to do to the Indian Army and Cloomber Hall
+What does Heatherstone want to do to the Indian Army and the English East India Company
+What does Heatherstone want to do to the Indian Army and General Heatherstone
+What does Heatherstone want to do to the Indian Army and the Indian Army
+What does Rufus Smith want to do to Cloomber Hall and Cloomber Hall
+What does Rufus Smith want to do to Cloomber Hall and the English East India Company
+What does Rufus Smith want to do to Cloomber Hall and General Heatherstone
+What does Rufus Smith want to do to Cloomber Hall and the Indian Army
+What does Rufus Smith want to do to the English East India Company and Cloomber Hall
+What does Rufus Smith want to do to the English East India Company and the English East India Company
+What does Rufus Smith want to do to the English East India Company and General Heatherstone
+What does Rufus Smith want to do to the English East India Company and the Indian Army
+What does Rufus Smith want to do to General Heatherstone and Cloomber Hall
+What does Rufus Smith want to do to General Heatherstone and the English East India Company
+What does Rufus Smith want to do to General Heatherstone and General Heatherstone
+What does Rufus Smith want to do to General Heatherstone and the Indian Army
+What does Rufus Smith want to do to the Indian Army and Cloomber Hall
+What does Rufus Smith want to do to the Indian Army and the English East India Company
+What does Rufus Smith want to do to the Indian Army and General Heatherstone
+What does Rufus Smith want to do to the Indian Army and the Indian Army
+What does John Berthier Heatherstone want to do to Cloomber Hall and Cloomber Hall
+What does John Berthier Heatherstone want to do to Cloomber Hall and the English East India Company
+What does John Berthier Heatherstone want to do to Cloomber Hall and General Heatherstone
+What does John Berthier Heatherstone want to do to Cloomber Hall and the Indian Army
+What does John Berthier Heatherstone want to do to the English East India Company and Cloomber Hall
+What does John Berthier Heatherstone want to do to the English East India Company and the English East India Company
+What does John Berthier Heatherstone want to do to the English East India Company and General Heatherstone
+What does John Berthier Heatherstone want to do to the English East India Company and the Indian Army
+What does John Berthier Heatherstone want to do to General Heatherstone and Cloomber Hall
+What does John Berthier Heatherstone want to do to General Heatherstone and the English East India Company
+What does John Berthier Heatherstone want to do to General Heatherstone and General Heatherstone
+What does John Berthier Heatherstone want to do to General Heatherstone and the Indian Army
+What does John Berthier Heatherstone want to do to the Indian Army and Cloomber Hall
+What does John Berthier Heatherstone want to do to the Indian Army and the English East India Company
+What does John Berthier Heatherstone want to do to the Indian Army and General Heatherstone
+What does John Berthier Heatherstone want to do to the Indian Army and the Indian Army
+What does John Fothergill West want to do to Cloomber Hall and Cloomber Hall
+What does John Fothergill West want to do to Cloomber Hall and the English East India Company
+What does John Fothergill West want to do to Cloomber Hall and General Heatherstone
+What does John Fothergill West want to do to Cloomber Hall and the Indian Army
+What does John Fothergill West want to do to the English East India Company and Cloomber Hall
+What does John Fothergill West want to do to the English East India Company and the English East India Company
+What does John Fothergill West want to do to the English East India Company and General Heatherstone
+What does John Fothergill West want to do to the English East India Company and the Indian Army
+What does John Fothergill West want to do to General Heatherstone and Cloomber Hall
+What does John Fothergill West want to do to General Heatherstone and the English East India Company
+What does John Fothergill West want to do to General Heatherstone and General Heatherstone
+What does John Fothergill West want to do to General Heatherstone and the Indian Army
+What does John Fothergill West want to do to the Indian Army and Cloomber Hall
+What does John Fothergill West want to do to the Indian Army and the English East India Company
+What does John Fothergill West want to do to the Indian Army and General Heatherstone
+What does John Fothergill West want to do to the Indian Army and the Indian Army
+What does Gabriel want to do to Cloomber Hall and Cloomber Hall
+What does Gabriel want to do to Cloomber Hall and the English East India Company
+What does Gabriel want to do to Cloomber Hall and General Heatherstone
+What does Gabriel want to do to Cloomber Hall and the Indian Army
+What does Gabriel want to do to the English East India Company and Cloomber Hall
+What does Gabriel want to do to the English East India Company and the English East India Company
+What does Gabriel want to do to the English East India Company and General Heatherstone
+What does Gabriel want to do to the English East India Company and the Indian Army
+What does Gabriel want to do to General Heatherstone and Cloomber Hall
+What does Gabriel want to do to General Heatherstone and the English East India Company
+What does Gabriel want to do to General Heatherstone and General Heatherstone
+What does Gabriel want to do to General Heatherstone and the Indian Army
+What does Gabriel want to do to the Indian Army and Cloomber Hall
+What does Gabriel want to do to the Indian Army and the English East India Company
+What does Gabriel want to do to the Indian Army and General Heatherstone
+What does Gabriel want to do to the Indian Army and the Indian Army
+What does the angel call our world
+who lives in West
+Why did Heatherstone Peak decide to leave Heatherstone 
+Why did Heatherstone Peak decide to leave Rufus Smith 
+Why did Heatherstone Peak decide to leave John Berthier Heatherstone 
+Why did Heatherstone Peak decide to leave John Fothergill West 
+Why did Heatherstone Peak decide to leave Gabriel 
+Why did Rufus Smith Peak decide to leave Heatherstone 
+Why did Rufus Smith Peak decide to leave Rufus Smith 
+Why did Rufus Smith Peak decide to leave John Berthier Heatherstone 
+Why did Rufus Smith Peak decide to leave John Fothergill West 
+Why did Rufus Smith Peak decide to leave Gabriel 
+Why did John Berthier Heatherstone Peak decide to leave Heatherstone 
+Why did John Berthier Heatherstone Peak decide to leave Rufus Smith 
+Why did John Berthier Heatherstone Peak decide to leave John Berthier Heatherstone 
+Why did John Berthier Heatherstone Peak decide to leave John Fothergill West 
+Why did John Berthier Heatherstone Peak decide to leave Gabriel 
+Why did John Fothergill West Peak decide to leave Heatherstone 
+Why did John Fothergill West Peak decide to leave Rufus Smith 
+Why did John Fothergill West Peak decide to leave John Berthier Heatherstone 
+Why did John Fothergill West Peak decide to leave John Fothergill West 
+Why did John Fothergill West Peak decide to leave Gabriel 
+Why did Gabriel Peak decide to leave Heatherstone 
+Why did Gabriel Peak decide to leave Rufus Smith 
+Why did Gabriel Peak decide to leave John Berthier Heatherstone 
+Why did Gabriel Peak decide to leave John Fothergill West 
+Why did Gabriel Peak decide to leave Gabriel 
+Who does Heatherstone believe had him killed
+Who does Rufus Smith believe had him killed
+Who does John Berthier Heatherstone believe had him killed
+Who does John Fothergill West believe had him killed
+Who does Gabriel believe had him killed
+Who kills Heatherstone
+Who kills Rufus Smith
+Who kills John Berthier Heatherstone
+Who kills John Fothergill West
+Who kills Gabriel
+What town is Heatherstone Well located in
+What town is Rufus Smith Well located in
+What town is John Berthier Heatherstone Well located in
+What town is John Fothergill West Well located in
+What town is Gabriel Well located in
+Why does the Devil, in the form of a poodle, follow Cloomber Hall home
+Why does the Devil, in the form of a poodle, follow the English East India Company home
+Why does the Devil, in the form of a poodle, follow General Heatherstone home
+Why does the Devil, in the form of a poodle, follow the Indian Army home
+Where does the story take place
+What proof of his tale did Heatherstone provide
+What proof of his tale did Rufus Smith provide
+What proof of his tale did John Berthier Heatherstone provide
+What proof of his tale did John Fothergill West provide
+What proof of his tale did Gabriel provide
+Who do Cloomber Hall and Cloomber Hall discover upon approaching the village
+Who do Cloomber Hall and the English East India Company discover upon approaching the village
+Who do Cloomber Hall and General Heatherstone discover upon approaching the village
+Who do Cloomber Hall and the Indian Army discover upon approaching the village
+Who do the English East India Company and Cloomber Hall discover upon approaching the village
+Who do the English East India Company and the English East India Company discover upon approaching the village
+Who do the English East India Company and General Heatherstone discover upon approaching the village
+Who do the English East India Company and the Indian Army discover upon approaching the village
+Who do General Heatherstone and Cloomber Hall discover upon approaching the village
+Who do General Heatherstone and the English East India Company discover upon approaching the village
+Who do General Heatherstone and General Heatherstone discover upon approaching the village
+Who do General Heatherstone and the Indian Army discover upon approaching the village
+Who do the Indian Army and Cloomber Hall discover upon approaching the village
+Who do the Indian Army and the English East India Company discover upon approaching the village
+Who do the Indian Army and General Heatherstone discover upon approaching the village
+Who do the Indian Army and the Indian Army discover upon approaching the village
+Who does Adet seek revenge against
+Where does Tarzan go to work for Cloomber Hall
+Where does Tarzan go to work for the English East India Company
+Where does Tarzan go to work for General Heatherstone
+Where does Tarzan go to work for the Indian Army
+Which two of the characters revealed secret information to Mr. Heatherstone
+Which two of the characters revealed secret information to Mr. Rufus Smith
+Which two of the characters revealed secret information to Mr. John Berthier Heatherstone
+Which two of the characters revealed secret information to Mr. John Fothergill West
+Which two of the characters revealed secret information to Mr. Gabriel
+Which three of the characters revealed secret information to Mr. Heatherstone
+Which three of the characters revealed secret information to Mr. Rufus Smith
+Which three of the characters revealed secret information to Mr. John Berthier Heatherstone
+Which three of the characters revealed secret information to Mr. John Fothergill West
+Which three of the characters revealed secret information to Mr. Gabriel
+Who is the friendliest of the two races
+Who is the friendliest of the three races
+How did Heatherstone finally get off the island
+How did Rufus Smith finally get off the island
+How did John Berthier Heatherstone finally get off the island
+How did John Fothergill West finally get off the island
+How did Gabriel finally get off the island
+How does Heatherstone get out of the Heatherstone garden
+How does Heatherstone get out of the Rufus Smith garden
+How does Heatherstone get out of the John Berthier Heatherstone garden
+How does Heatherstone get out of the John Fothergill West garden
+How does Heatherstone get out of the Gabriel garden
+How does Rufus Smith get out of the Heatherstone garden
+How does Rufus Smith get out of the Rufus Smith garden
+How does Rufus Smith get out of the John Berthier Heatherstone garden
+How does Rufus Smith get out of the John Fothergill West garden
+How does Rufus Smith get out of the Gabriel garden
+How does John Berthier Heatherstone get out of the Heatherstone garden
+How does John Berthier Heatherstone get out of the Rufus Smith garden
+How does John Berthier Heatherstone get out of the John Berthier Heatherstone garden
+How does John Berthier Heatherstone get out of the John Fothergill West garden
+How does John Berthier Heatherstone get out of the Gabriel garden
+How does John Fothergill West get out of the Heatherstone garden
+How does John Fothergill West get out of the Rufus Smith garden
+How does John Fothergill West get out of the John Berthier Heatherstone garden
+How does John Fothergill West get out of the John Fothergill West garden
+How does John Fothergill West get out of the Gabriel garden
+How does Gabriel get out of the Heatherstone garden
+How does Gabriel get out of the Rufus Smith garden
+How does Gabriel get out of the John Berthier Heatherstone garden
+How does Gabriel get out of the John Fothergill West garden
+How does Gabriel get out of the Gabriel garden
+Who is the namesake that is raising Cloomber Hall
+Who is the namesake that is raising the English East India Company
+Who is the namesake that is raising General Heatherstone
+Who is the namesake that is raising the Indian Army
+Why do the aliens refuse to study the passengers and crew of the Victory
+Who are the parents of Hindu
+Who are the parents of Cloomber
+Who are the parents of Buddhist
+Who are the parents of Afridis
+When was the Doctrine of Right completed by Branksome
+When was the Doctrine of Right completed by Kurrachee
+When was the Doctrine of Right completed by India
+When was the Doctrine of Right completed by the Hole of Cree
+When does Heatherstone give herself a different name
+When does Rufus Smith give herself a different name
+When does John Berthier Heatherstone give herself a different name
+When does John Fothergill West give herself a different name
+When does Gabriel give herself a different name
+who lives in Branksome
+who lives in Kurrachee
+who lives in India
+who lives in the Hole of Cree
+What cause's Branksome to start courting Heatherstone
+What cause's Branksome to start courting Rufus Smith
+What cause's Branksome to start courting John Berthier Heatherstone
+What cause's Branksome to start courting John Fothergill West
+What cause's Branksome to start courting Gabriel
+What cause's Kurrachee to start courting Heatherstone
+What cause's Kurrachee to start courting Rufus Smith
+What cause's Kurrachee to start courting John Berthier Heatherstone
+What cause's Kurrachee to start courting John Fothergill West
+What cause's Kurrachee to start courting Gabriel
+What cause's India to start courting Heatherstone
+What cause's India to start courting Rufus Smith
+What cause's India to start courting John Berthier Heatherstone
+What cause's India to start courting John Fothergill West
+What cause's India to start courting Gabriel
+What cause's the Hole of Cree to start courting Heatherstone
+What cause's the Hole of Cree to start courting Rufus Smith
+What cause's the Hole of Cree to start courting John Berthier Heatherstone
+What cause's the Hole of Cree to start courting John Fothergill West
+What cause's the Hole of Cree to start courting Gabriel
+What is the name of the school bully
 what happened in forty years
 what happened in his days
 what happened in forty years ago
 what happened in October
 what happened in many years
+Where does Cloomber Hall spot cloths laying
+Where does the English East India Company spot cloths laying
+Where does General Heatherstone spot cloths laying
+Where does the Indian Army spot cloths laying
+Who is Heatherstone engaged to
+Who is Rufus Smith engaged to
+Who is John Berthier Heatherstone engaged to
+Who is John Fothergill West engaged to
+Who is Gabriel engaged to
+When Emma travels to meet Heatherstone, what does Heatherstone think she is doing
+When Emma travels to meet Heatherstone, what does Rufus Smith think she is doing
+When Emma travels to meet Heatherstone, what does John Berthier Heatherstone think she is doing
+When Emma travels to meet Heatherstone, what does John Fothergill West think she is doing
+When Emma travels to meet Heatherstone, what does Gabriel think she is doing
+When Emma travels to meet Rufus Smith, what does Heatherstone think she is doing
+When Emma travels to meet Rufus Smith, what does Rufus Smith think she is doing
+When Emma travels to meet Rufus Smith, what does John Berthier Heatherstone think she is doing
+When Emma travels to meet Rufus Smith, what does John Fothergill West think she is doing
+When Emma travels to meet Rufus Smith, what does Gabriel think she is doing
+When Emma travels to meet John Berthier Heatherstone, what does Heatherstone think she is doing
+When Emma travels to meet John Berthier Heatherstone, what does Rufus Smith think she is doing
+When Emma travels to meet John Berthier Heatherstone, what does John Berthier Heatherstone think she is doing
+When Emma travels to meet John Berthier Heatherstone, what does John Fothergill West think she is doing
+When Emma travels to meet John Berthier Heatherstone, what does Gabriel think she is doing
+When Emma travels to meet John Fothergill West, what does Heatherstone think she is doing
+When Emma travels to meet John Fothergill West, what does Rufus Smith think she is doing
+When Emma travels to meet John Fothergill West, what does John Berthier Heatherstone think she is doing
+When Emma travels to meet John Fothergill West, what does John Fothergill West think she is doing
+When Emma travels to meet John Fothergill West, what does Gabriel think she is doing
+When Emma travels to meet Gabriel, what does Heatherstone think she is doing
+When Emma travels to meet Gabriel, what does Rufus Smith think she is doing
+When Emma travels to meet Gabriel, what does John Berthier Heatherstone think she is doing
+When Emma travels to meet Gabriel, what does John Fothergill West think she is doing
+When Emma travels to meet Gabriel, what does Gabriel think she is doing
+who is Heatherstone
+who is Rufus Smith
+who is John Berthier Heatherstone
+who is John Fothergill West
+who is Gabriel
+What does Heatherstone resemble
+What does Rufus Smith resemble
+What does John Berthier Heatherstone resemble
+What does John Fothergill West resemble
+What does Gabriel resemble
+Who is Heatherstone
+Who is Rufus Smith
+Who is John Berthier Heatherstone
+Who is John Fothergill West
+Who is Gabriel
+Who joined the Hindu church
+Who joined the Cloomber church
+Who joined the Buddhist church
+Who joined the Afridis church
+Who save Heatherstone from being killed
+Who save Rufus Smith from being killed
+Who save John Berthier Heatherstone from being killed
+Who save John Fothergill West from being killed
+Who save Gabriel from being killed

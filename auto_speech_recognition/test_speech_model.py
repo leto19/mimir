@@ -9,7 +9,7 @@ import pyaudio
 import numpy
 import speech_recognition as sr
 from get_speech_input import noise_reduce
-
+from noise_reduction.noise_reduction import noise_reduction
 
 model = Model(sys.argv[1])
 #model = Model("models/vosk-model-en-us-daanzu-20200905")
@@ -21,7 +21,7 @@ def get_text(audio_file):
     #wf = wave.open("emthed.wav", "rb")
     #os.remove("emthed2.wav")
     #os.remove("emthed.wav")
-
+    
     wf = wave.open(audio_file, "rb")
 
     if wf.getnchannels() != 1 or wf.getsampwidth() != 2 or wf.getcomptype() != "NONE":
@@ -110,11 +110,13 @@ for path, subdirs, files in os.walk(root):
         for f in sorted(wavs):
             file_path = os.path.join(folder_path, f)
             print(file_path)
-            noise_reduce(file_path,file_path.replace(".wav","_rn.wav"))
+            #noise_reduce(file_path,file_path.replace(".wav","_rn.wav"))
+            file_path_nr = file_path.replace(".wav","_rn.wav")
+            noise_reduction(file_path,file_path_nr)            
             baseline_text = baseline_list[baseline_index].split("|")[0].strip()
             baseline_concepts = baseline_list[baseline_index].split("|")[1].strip().split(",")
-            recognised_text = get_text(file_path.replace(".wav","_rn.wav"))
-            os.remove(file_path.replace(".wav","_rn.wav"))
+            recognised_text = get_text(file_path_nr)
+            os.remove(file_path_nr)
             recognised_text = recognised_text.lower().replace("[noise]","").replace("<unk>","")
             baseline_index+=1
             if baseline_index ==9:

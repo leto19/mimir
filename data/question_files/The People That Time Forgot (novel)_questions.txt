@@ -1,15 +1,929 @@
-who lives in Caprona
-who lives in Tomar
-who lives in Antarctic island
-who lives in Caspak
-who lives in Toreador
-who lives in Galu village
-what is Galu
-what is Ajor
-what is Du
-what is Billings
-what is the Band-lu
+What did Galu do with the dead body of the creature who raised him
+What did Ajor do with the dead body of the creature who raised him
+What did Du do with the dead body of the creature who raised him
+What did Billings do with the dead body of the creature who raised him
+What did the Band-lu do with the dead body of the creature who raised him
 what is Cenozoic
+Who is Galus
+Who is Bowen Tyler
+Who is Ajor
+Who is Du
+Who is Caprona
+Who is Tyler
+Who is Lys La Rue
+Who is Kro-lu
+Who is So-al
+Who is Tom Billings
+Who is Chal-az
+Who is Bowen J. Tyler
+Who is Sto-lu
+Who is Mesozoic
+Who are the three characters that are playing dice for the crews' and the mariner's souls
+What are the three submarines named which are searching for the treasure
+Who takes Galu prisoner
+Who takes Ajor prisoner
+Who takes Du prisoner
+Who takes Billings prisoner
+Who takes the Band-lu prisoner
+When Emma travels to meet Galus, what does Galus think she is doing
+When Emma travels to meet Galus, what does Bowen Tyler think she is doing
+When Emma travels to meet Galus, what does Ajor think she is doing
+When Emma travels to meet Galus, what does Du think she is doing
+When Emma travels to meet Galus, what does Caprona think she is doing
+When Emma travels to meet Galus, what does Tyler think she is doing
+When Emma travels to meet Galus, what does Lys La Rue think she is doing
+When Emma travels to meet Galus, what does Kro-lu think she is doing
+When Emma travels to meet Galus, what does So-al think she is doing
+When Emma travels to meet Galus, what does Tom Billings think she is doing
+When Emma travels to meet Galus, what does Chal-az think she is doing
+When Emma travels to meet Galus, what does Bowen J. Tyler think she is doing
+When Emma travels to meet Galus, what does Sto-lu think she is doing
+When Emma travels to meet Galus, what does Mesozoic think she is doing
+When Emma travels to meet Bowen Tyler, what does Galus think she is doing
+When Emma travels to meet Bowen Tyler, what does Bowen Tyler think she is doing
+When Emma travels to meet Bowen Tyler, what does Ajor think she is doing
+When Emma travels to meet Bowen Tyler, what does Du think she is doing
+When Emma travels to meet Bowen Tyler, what does Caprona think she is doing
+When Emma travels to meet Bowen Tyler, what does Tyler think she is doing
+When Emma travels to meet Bowen Tyler, what does Lys La Rue think she is doing
+When Emma travels to meet Bowen Tyler, what does Kro-lu think she is doing
+When Emma travels to meet Bowen Tyler, what does So-al think she is doing
+When Emma travels to meet Bowen Tyler, what does Tom Billings think she is doing
+When Emma travels to meet Bowen Tyler, what does Chal-az think she is doing
+When Emma travels to meet Bowen Tyler, what does Bowen J. Tyler think she is doing
+When Emma travels to meet Bowen Tyler, what does Sto-lu think she is doing
+When Emma travels to meet Bowen Tyler, what does Mesozoic think she is doing
+When Emma travels to meet Ajor, what does Galus think she is doing
+When Emma travels to meet Ajor, what does Bowen Tyler think she is doing
+When Emma travels to meet Ajor, what does Ajor think she is doing
+When Emma travels to meet Ajor, what does Du think she is doing
+When Emma travels to meet Ajor, what does Caprona think she is doing
+When Emma travels to meet Ajor, what does Tyler think she is doing
+When Emma travels to meet Ajor, what does Lys La Rue think she is doing
+When Emma travels to meet Ajor, what does Kro-lu think she is doing
+When Emma travels to meet Ajor, what does So-al think she is doing
+When Emma travels to meet Ajor, what does Tom Billings think she is doing
+When Emma travels to meet Ajor, what does Chal-az think she is doing
+When Emma travels to meet Ajor, what does Bowen J. Tyler think she is doing
+When Emma travels to meet Ajor, what does Sto-lu think she is doing
+When Emma travels to meet Ajor, what does Mesozoic think she is doing
+When Emma travels to meet Du, what does Galus think she is doing
+When Emma travels to meet Du, what does Bowen Tyler think she is doing
+When Emma travels to meet Du, what does Ajor think she is doing
+When Emma travels to meet Du, what does Du think she is doing
+When Emma travels to meet Du, what does Caprona think she is doing
+When Emma travels to meet Du, what does Tyler think she is doing
+When Emma travels to meet Du, what does Lys La Rue think she is doing
+When Emma travels to meet Du, what does Kro-lu think she is doing
+When Emma travels to meet Du, what does So-al think she is doing
+When Emma travels to meet Du, what does Tom Billings think she is doing
+When Emma travels to meet Du, what does Chal-az think she is doing
+When Emma travels to meet Du, what does Bowen J. Tyler think she is doing
+When Emma travels to meet Du, what does Sto-lu think she is doing
+When Emma travels to meet Du, what does Mesozoic think she is doing
+When Emma travels to meet Caprona, what does Galus think she is doing
+When Emma travels to meet Caprona, what does Bowen Tyler think she is doing
+When Emma travels to meet Caprona, what does Ajor think she is doing
+When Emma travels to meet Caprona, what does Du think she is doing
+When Emma travels to meet Caprona, what does Caprona think she is doing
+When Emma travels to meet Caprona, what does Tyler think she is doing
+When Emma travels to meet Caprona, what does Lys La Rue think she is doing
+When Emma travels to meet Caprona, what does Kro-lu think she is doing
+When Emma travels to meet Caprona, what does So-al think she is doing
+When Emma travels to meet Caprona, what does Tom Billings think she is doing
+When Emma travels to meet Caprona, what does Chal-az think she is doing
+When Emma travels to meet Caprona, what does Bowen J. Tyler think she is doing
+When Emma travels to meet Caprona, what does Sto-lu think she is doing
+When Emma travels to meet Caprona, what does Mesozoic think she is doing
+When Emma travels to meet Tyler, what does Galus think she is doing
+When Emma travels to meet Tyler, what does Bowen Tyler think she is doing
+When Emma travels to meet Tyler, what does Ajor think she is doing
+When Emma travels to meet Tyler, what does Du think she is doing
+When Emma travels to meet Tyler, what does Caprona think she is doing
+When Emma travels to meet Tyler, what does Tyler think she is doing
+When Emma travels to meet Tyler, what does Lys La Rue think she is doing
+When Emma travels to meet Tyler, what does Kro-lu think she is doing
+When Emma travels to meet Tyler, what does So-al think she is doing
+When Emma travels to meet Tyler, what does Tom Billings think she is doing
+When Emma travels to meet Tyler, what does Chal-az think she is doing
+When Emma travels to meet Tyler, what does Bowen J. Tyler think she is doing
+When Emma travels to meet Tyler, what does Sto-lu think she is doing
+When Emma travels to meet Tyler, what does Mesozoic think she is doing
+When Emma travels to meet Lys La Rue, what does Galus think she is doing
+When Emma travels to meet Lys La Rue, what does Bowen Tyler think she is doing
+When Emma travels to meet Lys La Rue, what does Ajor think she is doing
+When Emma travels to meet Lys La Rue, what does Du think she is doing
+When Emma travels to meet Lys La Rue, what does Caprona think she is doing
+When Emma travels to meet Lys La Rue, what does Tyler think she is doing
+When Emma travels to meet Lys La Rue, what does Lys La Rue think she is doing
+When Emma travels to meet Lys La Rue, what does Kro-lu think she is doing
+When Emma travels to meet Lys La Rue, what does So-al think she is doing
+When Emma travels to meet Lys La Rue, what does Tom Billings think she is doing
+When Emma travels to meet Lys La Rue, what does Chal-az think she is doing
+When Emma travels to meet Lys La Rue, what does Bowen J. Tyler think she is doing
+When Emma travels to meet Lys La Rue, what does Sto-lu think she is doing
+When Emma travels to meet Lys La Rue, what does Mesozoic think she is doing
+When Emma travels to meet Kro-lu, what does Galus think she is doing
+When Emma travels to meet Kro-lu, what does Bowen Tyler think she is doing
+When Emma travels to meet Kro-lu, what does Ajor think she is doing
+When Emma travels to meet Kro-lu, what does Du think she is doing
+When Emma travels to meet Kro-lu, what does Caprona think she is doing
+When Emma travels to meet Kro-lu, what does Tyler think she is doing
+When Emma travels to meet Kro-lu, what does Lys La Rue think she is doing
+When Emma travels to meet Kro-lu, what does Kro-lu think she is doing
+When Emma travels to meet Kro-lu, what does So-al think she is doing
+When Emma travels to meet Kro-lu, what does Tom Billings think she is doing
+When Emma travels to meet Kro-lu, what does Chal-az think she is doing
+When Emma travels to meet Kro-lu, what does Bowen J. Tyler think she is doing
+When Emma travels to meet Kro-lu, what does Sto-lu think she is doing
+When Emma travels to meet Kro-lu, what does Mesozoic think she is doing
+When Emma travels to meet So-al, what does Galus think she is doing
+When Emma travels to meet So-al, what does Bowen Tyler think she is doing
+When Emma travels to meet So-al, what does Ajor think she is doing
+When Emma travels to meet So-al, what does Du think she is doing
+When Emma travels to meet So-al, what does Caprona think she is doing
+When Emma travels to meet So-al, what does Tyler think she is doing
+When Emma travels to meet So-al, what does Lys La Rue think she is doing
+When Emma travels to meet So-al, what does Kro-lu think she is doing
+When Emma travels to meet So-al, what does So-al think she is doing
+When Emma travels to meet So-al, what does Tom Billings think she is doing
+When Emma travels to meet So-al, what does Chal-az think she is doing
+When Emma travels to meet So-al, what does Bowen J. Tyler think she is doing
+When Emma travels to meet So-al, what does Sto-lu think she is doing
+When Emma travels to meet So-al, what does Mesozoic think she is doing
+When Emma travels to meet Tom Billings, what does Galus think she is doing
+When Emma travels to meet Tom Billings, what does Bowen Tyler think she is doing
+When Emma travels to meet Tom Billings, what does Ajor think she is doing
+When Emma travels to meet Tom Billings, what does Du think she is doing
+When Emma travels to meet Tom Billings, what does Caprona think she is doing
+When Emma travels to meet Tom Billings, what does Tyler think she is doing
+When Emma travels to meet Tom Billings, what does Lys La Rue think she is doing
+When Emma travels to meet Tom Billings, what does Kro-lu think she is doing
+When Emma travels to meet Tom Billings, what does So-al think she is doing
+When Emma travels to meet Tom Billings, what does Tom Billings think she is doing
+When Emma travels to meet Tom Billings, what does Chal-az think she is doing
+When Emma travels to meet Tom Billings, what does Bowen J. Tyler think she is doing
+When Emma travels to meet Tom Billings, what does Sto-lu think she is doing
+When Emma travels to meet Tom Billings, what does Mesozoic think she is doing
+When Emma travels to meet Chal-az, what does Galus think she is doing
+When Emma travels to meet Chal-az, what does Bowen Tyler think she is doing
+When Emma travels to meet Chal-az, what does Ajor think she is doing
+When Emma travels to meet Chal-az, what does Du think she is doing
+When Emma travels to meet Chal-az, what does Caprona think she is doing
+When Emma travels to meet Chal-az, what does Tyler think she is doing
+When Emma travels to meet Chal-az, what does Lys La Rue think she is doing
+When Emma travels to meet Chal-az, what does Kro-lu think she is doing
+When Emma travels to meet Chal-az, what does So-al think she is doing
+When Emma travels to meet Chal-az, what does Tom Billings think she is doing
+When Emma travels to meet Chal-az, what does Chal-az think she is doing
+When Emma travels to meet Chal-az, what does Bowen J. Tyler think she is doing
+When Emma travels to meet Chal-az, what does Sto-lu think she is doing
+When Emma travels to meet Chal-az, what does Mesozoic think she is doing
+When Emma travels to meet Bowen J. Tyler, what does Galus think she is doing
+When Emma travels to meet Bowen J. Tyler, what does Bowen Tyler think she is doing
+When Emma travels to meet Bowen J. Tyler, what does Ajor think she is doing
+When Emma travels to meet Bowen J. Tyler, what does Du think she is doing
+When Emma travels to meet Bowen J. Tyler, what does Caprona think she is doing
+When Emma travels to meet Bowen J. Tyler, what does Tyler think she is doing
+When Emma travels to meet Bowen J. Tyler, what does Lys La Rue think she is doing
+When Emma travels to meet Bowen J. Tyler, what does Kro-lu think she is doing
+When Emma travels to meet Bowen J. Tyler, what does So-al think she is doing
+When Emma travels to meet Bowen J. Tyler, what does Tom Billings think she is doing
+When Emma travels to meet Bowen J. Tyler, what does Chal-az think she is doing
+When Emma travels to meet Bowen J. Tyler, what does Bowen J. Tyler think she is doing
+When Emma travels to meet Bowen J. Tyler, what does Sto-lu think she is doing
+When Emma travels to meet Bowen J. Tyler, what does Mesozoic think she is doing
+When Emma travels to meet Sto-lu, what does Galus think she is doing
+When Emma travels to meet Sto-lu, what does Bowen Tyler think she is doing
+When Emma travels to meet Sto-lu, what does Ajor think she is doing
+When Emma travels to meet Sto-lu, what does Du think she is doing
+When Emma travels to meet Sto-lu, what does Caprona think she is doing
+When Emma travels to meet Sto-lu, what does Tyler think she is doing
+When Emma travels to meet Sto-lu, what does Lys La Rue think she is doing
+When Emma travels to meet Sto-lu, what does Kro-lu think she is doing
+When Emma travels to meet Sto-lu, what does So-al think she is doing
+When Emma travels to meet Sto-lu, what does Tom Billings think she is doing
+When Emma travels to meet Sto-lu, what does Chal-az think she is doing
+When Emma travels to meet Sto-lu, what does Bowen J. Tyler think she is doing
+When Emma travels to meet Sto-lu, what does Sto-lu think she is doing
+When Emma travels to meet Sto-lu, what does Mesozoic think she is doing
+When Emma travels to meet Mesozoic, what does Galus think she is doing
+When Emma travels to meet Mesozoic, what does Bowen Tyler think she is doing
+When Emma travels to meet Mesozoic, what does Ajor think she is doing
+When Emma travels to meet Mesozoic, what does Du think she is doing
+When Emma travels to meet Mesozoic, what does Caprona think she is doing
+When Emma travels to meet Mesozoic, what does Tyler think she is doing
+When Emma travels to meet Mesozoic, what does Lys La Rue think she is doing
+When Emma travels to meet Mesozoic, what does Kro-lu think she is doing
+When Emma travels to meet Mesozoic, what does So-al think she is doing
+When Emma travels to meet Mesozoic, what does Tom Billings think she is doing
+When Emma travels to meet Mesozoic, what does Chal-az think she is doing
+When Emma travels to meet Mesozoic, what does Bowen J. Tyler think she is doing
+When Emma travels to meet Mesozoic, what does Sto-lu think she is doing
+When Emma travels to meet Mesozoic, what does Mesozoic think she is doing
+What cause's Caprona to start courting Galus
+What cause's Caprona to start courting Bowen Tyler
+What cause's Caprona to start courting Ajor
+What cause's Caprona to start courting Du
+What cause's Caprona to start courting Caprona
+What cause's Caprona to start courting Tyler
+What cause's Caprona to start courting Lys La Rue
+What cause's Caprona to start courting Kro-lu
+What cause's Caprona to start courting So-al
+What cause's Caprona to start courting Tom Billings
+What cause's Caprona to start courting Chal-az
+What cause's Caprona to start courting Bowen J. Tyler
+What cause's Caprona to start courting Sto-lu
+What cause's Caprona to start courting Mesozoic
+What cause's Tomar to start courting Galus
+What cause's Tomar to start courting Bowen Tyler
+What cause's Tomar to start courting Ajor
+What cause's Tomar to start courting Du
+What cause's Tomar to start courting Caprona
+What cause's Tomar to start courting Tyler
+What cause's Tomar to start courting Lys La Rue
+What cause's Tomar to start courting Kro-lu
+What cause's Tomar to start courting So-al
+What cause's Tomar to start courting Tom Billings
+What cause's Tomar to start courting Chal-az
+What cause's Tomar to start courting Bowen J. Tyler
+What cause's Tomar to start courting Sto-lu
+What cause's Tomar to start courting Mesozoic
+What cause's Antarctic island to start courting Galus
+What cause's Antarctic island to start courting Bowen Tyler
+What cause's Antarctic island to start courting Ajor
+What cause's Antarctic island to start courting Du
+What cause's Antarctic island to start courting Caprona
+What cause's Antarctic island to start courting Tyler
+What cause's Antarctic island to start courting Lys La Rue
+What cause's Antarctic island to start courting Kro-lu
+What cause's Antarctic island to start courting So-al
+What cause's Antarctic island to start courting Tom Billings
+What cause's Antarctic island to start courting Chal-az
+What cause's Antarctic island to start courting Bowen J. Tyler
+What cause's Antarctic island to start courting Sto-lu
+What cause's Antarctic island to start courting Mesozoic
+What cause's Caspak to start courting Galus
+What cause's Caspak to start courting Bowen Tyler
+What cause's Caspak to start courting Ajor
+What cause's Caspak to start courting Du
+What cause's Caspak to start courting Caprona
+What cause's Caspak to start courting Tyler
+What cause's Caspak to start courting Lys La Rue
+What cause's Caspak to start courting Kro-lu
+What cause's Caspak to start courting So-al
+What cause's Caspak to start courting Tom Billings
+What cause's Caspak to start courting Chal-az
+What cause's Caspak to start courting Bowen J. Tyler
+What cause's Caspak to start courting Sto-lu
+What cause's Caspak to start courting Mesozoic
+What cause's Toreador to start courting Galus
+What cause's Toreador to start courting Bowen Tyler
+What cause's Toreador to start courting Ajor
+What cause's Toreador to start courting Du
+What cause's Toreador to start courting Caprona
+What cause's Toreador to start courting Tyler
+What cause's Toreador to start courting Lys La Rue
+What cause's Toreador to start courting Kro-lu
+What cause's Toreador to start courting So-al
+What cause's Toreador to start courting Tom Billings
+What cause's Toreador to start courting Chal-az
+What cause's Toreador to start courting Bowen J. Tyler
+What cause's Toreador to start courting Sto-lu
+What cause's Toreador to start courting Mesozoic
+What cause's Galu village to start courting Galus
+What cause's Galu village to start courting Bowen Tyler
+What cause's Galu village to start courting Ajor
+What cause's Galu village to start courting Du
+What cause's Galu village to start courting Caprona
+What cause's Galu village to start courting Tyler
+What cause's Galu village to start courting Lys La Rue
+What cause's Galu village to start courting Kro-lu
+What cause's Galu village to start courting So-al
+What cause's Galu village to start courting Tom Billings
+What cause's Galu village to start courting Chal-az
+What cause's Galu village to start courting Bowen J. Tyler
+What cause's Galu village to start courting Sto-lu
+What cause's Galu village to start courting Mesozoic
+What happened to Galu according to Galu
+What happened to Galu according to Ajor
+What happened to Galu according to Du
+What happened to Galu according to Billings
+What happened to Galu according to the Band-lu
+What happened to Ajor according to Galu
+What happened to Ajor according to Ajor
+What happened to Ajor according to Du
+What happened to Ajor according to Billings
+What happened to Ajor according to the Band-lu
+What happened to Du according to Galu
+What happened to Du according to Ajor
+What happened to Du according to Du
+What happened to Du according to Billings
+What happened to Du according to the Band-lu
+What happened to Billings according to Galu
+What happened to Billings according to Ajor
+What happened to Billings according to Du
+What happened to Billings according to Billings
+What happened to Billings according to the Band-lu
+What happened to the Band-lu according to Galu
+What happened to the Band-lu according to Ajor
+What happened to the Band-lu according to Du
+What happened to the Band-lu according to Billings
+What happened to the Band-lu according to the Band-lu
+Who is Galus engaged to
+Who is Bowen Tyler engaged to
+Who is Ajor engaged to
+Who is Du engaged to
+Who is Caprona engaged to
+Who is Tyler engaged to
+Who is Lys La Rue engaged to
+Who is Kro-lu engaged to
+Who is So-al engaged to
+Who is Tom Billings engaged to
+Who is Chal-az engaged to
+Who is Bowen J. Tyler engaged to
+Who is Sto-lu engaged to
+Who is Mesozoic engaged to
+What is the name of the school bully
+Who does Adet seek revenge against
+When was the Doctrine of Right completed by Caprona
+When was the Doctrine of Right completed by Tomar
+When was the Doctrine of Right completed by Antarctic island
+When was the Doctrine of Right completed by Caspak
+When was the Doctrine of Right completed by Toreador
+When was the Doctrine of Right completed by Galu village
+What does Galus do upon meeting Galus 
+What does Galus do upon meeting Bowen Tyler 
+What does Galus do upon meeting Ajor 
+What does Galus do upon meeting Du 
+What does Galus do upon meeting Caprona 
+What does Galus do upon meeting Tyler 
+What does Galus do upon meeting Lys La Rue 
+What does Galus do upon meeting Kro-lu 
+What does Galus do upon meeting So-al 
+What does Galus do upon meeting Tom Billings 
+What does Galus do upon meeting Chal-az 
+What does Galus do upon meeting Bowen J. Tyler 
+What does Galus do upon meeting Sto-lu 
+What does Galus do upon meeting Mesozoic 
+What does Bowen Tyler do upon meeting Galus 
+What does Bowen Tyler do upon meeting Bowen Tyler 
+What does Bowen Tyler do upon meeting Ajor 
+What does Bowen Tyler do upon meeting Du 
+What does Bowen Tyler do upon meeting Caprona 
+What does Bowen Tyler do upon meeting Tyler 
+What does Bowen Tyler do upon meeting Lys La Rue 
+What does Bowen Tyler do upon meeting Kro-lu 
+What does Bowen Tyler do upon meeting So-al 
+What does Bowen Tyler do upon meeting Tom Billings 
+What does Bowen Tyler do upon meeting Chal-az 
+What does Bowen Tyler do upon meeting Bowen J. Tyler 
+What does Bowen Tyler do upon meeting Sto-lu 
+What does Bowen Tyler do upon meeting Mesozoic 
+What does Ajor do upon meeting Galus 
+What does Ajor do upon meeting Bowen Tyler 
+What does Ajor do upon meeting Ajor 
+What does Ajor do upon meeting Du 
+What does Ajor do upon meeting Caprona 
+What does Ajor do upon meeting Tyler 
+What does Ajor do upon meeting Lys La Rue 
+What does Ajor do upon meeting Kro-lu 
+What does Ajor do upon meeting So-al 
+What does Ajor do upon meeting Tom Billings 
+What does Ajor do upon meeting Chal-az 
+What does Ajor do upon meeting Bowen J. Tyler 
+What does Ajor do upon meeting Sto-lu 
+What does Ajor do upon meeting Mesozoic 
+What does Du do upon meeting Galus 
+What does Du do upon meeting Bowen Tyler 
+What does Du do upon meeting Ajor 
+What does Du do upon meeting Du 
+What does Du do upon meeting Caprona 
+What does Du do upon meeting Tyler 
+What does Du do upon meeting Lys La Rue 
+What does Du do upon meeting Kro-lu 
+What does Du do upon meeting So-al 
+What does Du do upon meeting Tom Billings 
+What does Du do upon meeting Chal-az 
+What does Du do upon meeting Bowen J. Tyler 
+What does Du do upon meeting Sto-lu 
+What does Du do upon meeting Mesozoic 
+What does Caprona do upon meeting Galus 
+What does Caprona do upon meeting Bowen Tyler 
+What does Caprona do upon meeting Ajor 
+What does Caprona do upon meeting Du 
+What does Caprona do upon meeting Caprona 
+What does Caprona do upon meeting Tyler 
+What does Caprona do upon meeting Lys La Rue 
+What does Caprona do upon meeting Kro-lu 
+What does Caprona do upon meeting So-al 
+What does Caprona do upon meeting Tom Billings 
+What does Caprona do upon meeting Chal-az 
+What does Caprona do upon meeting Bowen J. Tyler 
+What does Caprona do upon meeting Sto-lu 
+What does Caprona do upon meeting Mesozoic 
+What does Tyler do upon meeting Galus 
+What does Tyler do upon meeting Bowen Tyler 
+What does Tyler do upon meeting Ajor 
+What does Tyler do upon meeting Du 
+What does Tyler do upon meeting Caprona 
+What does Tyler do upon meeting Tyler 
+What does Tyler do upon meeting Lys La Rue 
+What does Tyler do upon meeting Kro-lu 
+What does Tyler do upon meeting So-al 
+What does Tyler do upon meeting Tom Billings 
+What does Tyler do upon meeting Chal-az 
+What does Tyler do upon meeting Bowen J. Tyler 
+What does Tyler do upon meeting Sto-lu 
+What does Tyler do upon meeting Mesozoic 
+What does Lys La Rue do upon meeting Galus 
+What does Lys La Rue do upon meeting Bowen Tyler 
+What does Lys La Rue do upon meeting Ajor 
+What does Lys La Rue do upon meeting Du 
+What does Lys La Rue do upon meeting Caprona 
+What does Lys La Rue do upon meeting Tyler 
+What does Lys La Rue do upon meeting Lys La Rue 
+What does Lys La Rue do upon meeting Kro-lu 
+What does Lys La Rue do upon meeting So-al 
+What does Lys La Rue do upon meeting Tom Billings 
+What does Lys La Rue do upon meeting Chal-az 
+What does Lys La Rue do upon meeting Bowen J. Tyler 
+What does Lys La Rue do upon meeting Sto-lu 
+What does Lys La Rue do upon meeting Mesozoic 
+What does Kro-lu do upon meeting Galus 
+What does Kro-lu do upon meeting Bowen Tyler 
+What does Kro-lu do upon meeting Ajor 
+What does Kro-lu do upon meeting Du 
+What does Kro-lu do upon meeting Caprona 
+What does Kro-lu do upon meeting Tyler 
+What does Kro-lu do upon meeting Lys La Rue 
+What does Kro-lu do upon meeting Kro-lu 
+What does Kro-lu do upon meeting So-al 
+What does Kro-lu do upon meeting Tom Billings 
+What does Kro-lu do upon meeting Chal-az 
+What does Kro-lu do upon meeting Bowen J. Tyler 
+What does Kro-lu do upon meeting Sto-lu 
+What does Kro-lu do upon meeting Mesozoic 
+What does So-al do upon meeting Galus 
+What does So-al do upon meeting Bowen Tyler 
+What does So-al do upon meeting Ajor 
+What does So-al do upon meeting Du 
+What does So-al do upon meeting Caprona 
+What does So-al do upon meeting Tyler 
+What does So-al do upon meeting Lys La Rue 
+What does So-al do upon meeting Kro-lu 
+What does So-al do upon meeting So-al 
+What does So-al do upon meeting Tom Billings 
+What does So-al do upon meeting Chal-az 
+What does So-al do upon meeting Bowen J. Tyler 
+What does So-al do upon meeting Sto-lu 
+What does So-al do upon meeting Mesozoic 
+What does Tom Billings do upon meeting Galus 
+What does Tom Billings do upon meeting Bowen Tyler 
+What does Tom Billings do upon meeting Ajor 
+What does Tom Billings do upon meeting Du 
+What does Tom Billings do upon meeting Caprona 
+What does Tom Billings do upon meeting Tyler 
+What does Tom Billings do upon meeting Lys La Rue 
+What does Tom Billings do upon meeting Kro-lu 
+What does Tom Billings do upon meeting So-al 
+What does Tom Billings do upon meeting Tom Billings 
+What does Tom Billings do upon meeting Chal-az 
+What does Tom Billings do upon meeting Bowen J. Tyler 
+What does Tom Billings do upon meeting Sto-lu 
+What does Tom Billings do upon meeting Mesozoic 
+What does Chal-az do upon meeting Galus 
+What does Chal-az do upon meeting Bowen Tyler 
+What does Chal-az do upon meeting Ajor 
+What does Chal-az do upon meeting Du 
+What does Chal-az do upon meeting Caprona 
+What does Chal-az do upon meeting Tyler 
+What does Chal-az do upon meeting Lys La Rue 
+What does Chal-az do upon meeting Kro-lu 
+What does Chal-az do upon meeting So-al 
+What does Chal-az do upon meeting Tom Billings 
+What does Chal-az do upon meeting Chal-az 
+What does Chal-az do upon meeting Bowen J. Tyler 
+What does Chal-az do upon meeting Sto-lu 
+What does Chal-az do upon meeting Mesozoic 
+What does Bowen J. Tyler do upon meeting Galus 
+What does Bowen J. Tyler do upon meeting Bowen Tyler 
+What does Bowen J. Tyler do upon meeting Ajor 
+What does Bowen J. Tyler do upon meeting Du 
+What does Bowen J. Tyler do upon meeting Caprona 
+What does Bowen J. Tyler do upon meeting Tyler 
+What does Bowen J. Tyler do upon meeting Lys La Rue 
+What does Bowen J. Tyler do upon meeting Kro-lu 
+What does Bowen J. Tyler do upon meeting So-al 
+What does Bowen J. Tyler do upon meeting Tom Billings 
+What does Bowen J. Tyler do upon meeting Chal-az 
+What does Bowen J. Tyler do upon meeting Bowen J. Tyler 
+What does Bowen J. Tyler do upon meeting Sto-lu 
+What does Bowen J. Tyler do upon meeting Mesozoic 
+What does Sto-lu do upon meeting Galus 
+What does Sto-lu do upon meeting Bowen Tyler 
+What does Sto-lu do upon meeting Ajor 
+What does Sto-lu do upon meeting Du 
+What does Sto-lu do upon meeting Caprona 
+What does Sto-lu do upon meeting Tyler 
+What does Sto-lu do upon meeting Lys La Rue 
+What does Sto-lu do upon meeting Kro-lu 
+What does Sto-lu do upon meeting So-al 
+What does Sto-lu do upon meeting Tom Billings 
+What does Sto-lu do upon meeting Chal-az 
+What does Sto-lu do upon meeting Bowen J. Tyler 
+What does Sto-lu do upon meeting Sto-lu 
+What does Sto-lu do upon meeting Mesozoic 
+What does Mesozoic do upon meeting Galus 
+What does Mesozoic do upon meeting Bowen Tyler 
+What does Mesozoic do upon meeting Ajor 
+What does Mesozoic do upon meeting Du 
+What does Mesozoic do upon meeting Caprona 
+What does Mesozoic do upon meeting Tyler 
+What does Mesozoic do upon meeting Lys La Rue 
+What does Mesozoic do upon meeting Kro-lu 
+What does Mesozoic do upon meeting So-al 
+What does Mesozoic do upon meeting Tom Billings 
+What does Mesozoic do upon meeting Chal-az 
+What does Mesozoic do upon meeting Bowen J. Tyler 
+What does Mesozoic do upon meeting Sto-lu 
+What does Mesozoic do upon meeting Mesozoic 
+What does Galus want to do to Galu and Galu
+What does Galus want to do to Galu and Ajor
+What does Galus want to do to Galu and Du
+What does Galus want to do to Galu and Billings
+What does Galus want to do to Galu and the Band-lu
+What does Galus want to do to Ajor and Galu
+What does Galus want to do to Ajor and Ajor
+What does Galus want to do to Ajor and Du
+What does Galus want to do to Ajor and Billings
+What does Galus want to do to Ajor and the Band-lu
+What does Galus want to do to Du and Galu
+What does Galus want to do to Du and Ajor
+What does Galus want to do to Du and Du
+What does Galus want to do to Du and Billings
+What does Galus want to do to Du and the Band-lu
+What does Galus want to do to Billings and Galu
+What does Galus want to do to Billings and Ajor
+What does Galus want to do to Billings and Du
+What does Galus want to do to Billings and Billings
+What does Galus want to do to Billings and the Band-lu
+What does Galus want to do to the Band-lu and Galu
+What does Galus want to do to the Band-lu and Ajor
+What does Galus want to do to the Band-lu and Du
+What does Galus want to do to the Band-lu and Billings
+What does Galus want to do to the Band-lu and the Band-lu
+What does Bowen Tyler want to do to Galu and Galu
+What does Bowen Tyler want to do to Galu and Ajor
+What does Bowen Tyler want to do to Galu and Du
+What does Bowen Tyler want to do to Galu and Billings
+What does Bowen Tyler want to do to Galu and the Band-lu
+What does Bowen Tyler want to do to Ajor and Galu
+What does Bowen Tyler want to do to Ajor and Ajor
+What does Bowen Tyler want to do to Ajor and Du
+What does Bowen Tyler want to do to Ajor and Billings
+What does Bowen Tyler want to do to Ajor and the Band-lu
+What does Bowen Tyler want to do to Du and Galu
+What does Bowen Tyler want to do to Du and Ajor
+What does Bowen Tyler want to do to Du and Du
+What does Bowen Tyler want to do to Du and Billings
+What does Bowen Tyler want to do to Du and the Band-lu
+What does Bowen Tyler want to do to Billings and Galu
+What does Bowen Tyler want to do to Billings and Ajor
+What does Bowen Tyler want to do to Billings and Du
+What does Bowen Tyler want to do to Billings and Billings
+What does Bowen Tyler want to do to Billings and the Band-lu
+What does Bowen Tyler want to do to the Band-lu and Galu
+What does Bowen Tyler want to do to the Band-lu and Ajor
+What does Bowen Tyler want to do to the Band-lu and Du
+What does Bowen Tyler want to do to the Band-lu and Billings
+What does Bowen Tyler want to do to the Band-lu and the Band-lu
+What does Ajor want to do to Galu and Galu
+What does Ajor want to do to Galu and Ajor
+What does Ajor want to do to Galu and Du
+What does Ajor want to do to Galu and Billings
+What does Ajor want to do to Galu and the Band-lu
+What does Ajor want to do to Ajor and Galu
+What does Ajor want to do to Ajor and Ajor
+What does Ajor want to do to Ajor and Du
+What does Ajor want to do to Ajor and Billings
+What does Ajor want to do to Ajor and the Band-lu
+What does Ajor want to do to Du and Galu
+What does Ajor want to do to Du and Ajor
+What does Ajor want to do to Du and Du
+What does Ajor want to do to Du and Billings
+What does Ajor want to do to Du and the Band-lu
+What does Ajor want to do to Billings and Galu
+What does Ajor want to do to Billings and Ajor
+What does Ajor want to do to Billings and Du
+What does Ajor want to do to Billings and Billings
+What does Ajor want to do to Billings and the Band-lu
+What does Ajor want to do to the Band-lu and Galu
+What does Ajor want to do to the Band-lu and Ajor
+What does Ajor want to do to the Band-lu and Du
+What does Ajor want to do to the Band-lu and Billings
+What does Ajor want to do to the Band-lu and the Band-lu
+What does Du want to do to Galu and Galu
+What does Du want to do to Galu and Ajor
+What does Du want to do to Galu and Du
+What does Du want to do to Galu and Billings
+What does Du want to do to Galu and the Band-lu
+What does Du want to do to Ajor and Galu
+What does Du want to do to Ajor and Ajor
+What does Du want to do to Ajor and Du
+What does Du want to do to Ajor and Billings
+What does Du want to do to Ajor and the Band-lu
+What does Du want to do to Du and Galu
+What does Du want to do to Du and Ajor
+What does Du want to do to Du and Du
+What does Du want to do to Du and Billings
+What does Du want to do to Du and the Band-lu
+What does Du want to do to Billings and Galu
+What does Du want to do to Billings and Ajor
+What does Du want to do to Billings and Du
+What does Du want to do to Billings and Billings
+What does Du want to do to Billings and the Band-lu
+What does Du want to do to the Band-lu and Galu
+What does Du want to do to the Band-lu and Ajor
+What does Du want to do to the Band-lu and Du
+What does Du want to do to the Band-lu and Billings
+What does Du want to do to the Band-lu and the Band-lu
+What does Caprona want to do to Galu and Galu
+What does Caprona want to do to Galu and Ajor
+What does Caprona want to do to Galu and Du
+What does Caprona want to do to Galu and Billings
+What does Caprona want to do to Galu and the Band-lu
+What does Caprona want to do to Ajor and Galu
+What does Caprona want to do to Ajor and Ajor
+What does Caprona want to do to Ajor and Du
+What does Caprona want to do to Ajor and Billings
+What does Caprona want to do to Ajor and the Band-lu
+What does Caprona want to do to Du and Galu
+What does Caprona want to do to Du and Ajor
+What does Caprona want to do to Du and Du
+What does Caprona want to do to Du and Billings
+What does Caprona want to do to Du and the Band-lu
+What does Caprona want to do to Billings and Galu
+What does Caprona want to do to Billings and Ajor
+What does Caprona want to do to Billings and Du
+What does Caprona want to do to Billings and Billings
+What does Caprona want to do to Billings and the Band-lu
+What does Caprona want to do to the Band-lu and Galu
+What does Caprona want to do to the Band-lu and Ajor
+What does Caprona want to do to the Band-lu and Du
+What does Caprona want to do to the Band-lu and Billings
+What does Caprona want to do to the Band-lu and the Band-lu
+What does Tyler want to do to Galu and Galu
+What does Tyler want to do to Galu and Ajor
+What does Tyler want to do to Galu and Du
+What does Tyler want to do to Galu and Billings
+What does Tyler want to do to Galu and the Band-lu
+What does Tyler want to do to Ajor and Galu
+What does Tyler want to do to Ajor and Ajor
+What does Tyler want to do to Ajor and Du
+What does Tyler want to do to Ajor and Billings
+What does Tyler want to do to Ajor and the Band-lu
+What does Tyler want to do to Du and Galu
+What does Tyler want to do to Du and Ajor
+What does Tyler want to do to Du and Du
+What does Tyler want to do to Du and Billings
+What does Tyler want to do to Du and the Band-lu
+What does Tyler want to do to Billings and Galu
+What does Tyler want to do to Billings and Ajor
+What does Tyler want to do to Billings and Du
+What does Tyler want to do to Billings and Billings
+What does Tyler want to do to Billings and the Band-lu
+What does Tyler want to do to the Band-lu and Galu
+What does Tyler want to do to the Band-lu and Ajor
+What does Tyler want to do to the Band-lu and Du
+What does Tyler want to do to the Band-lu and Billings
+What does Tyler want to do to the Band-lu and the Band-lu
+What does Lys La Rue want to do to Galu and Galu
+What does Lys La Rue want to do to Galu and Ajor
+What does Lys La Rue want to do to Galu and Du
+What does Lys La Rue want to do to Galu and Billings
+What does Lys La Rue want to do to Galu and the Band-lu
+What does Lys La Rue want to do to Ajor and Galu
+What does Lys La Rue want to do to Ajor and Ajor
+What does Lys La Rue want to do to Ajor and Du
+What does Lys La Rue want to do to Ajor and Billings
+What does Lys La Rue want to do to Ajor and the Band-lu
+What does Lys La Rue want to do to Du and Galu
+What does Lys La Rue want to do to Du and Ajor
+What does Lys La Rue want to do to Du and Du
+What does Lys La Rue want to do to Du and Billings
+What does Lys La Rue want to do to Du and the Band-lu
+What does Lys La Rue want to do to Billings and Galu
+What does Lys La Rue want to do to Billings and Ajor
+What does Lys La Rue want to do to Billings and Du
+What does Lys La Rue want to do to Billings and Billings
+What does Lys La Rue want to do to Billings and the Band-lu
+What does Lys La Rue want to do to the Band-lu and Galu
+What does Lys La Rue want to do to the Band-lu and Ajor
+What does Lys La Rue want to do to the Band-lu and Du
+What does Lys La Rue want to do to the Band-lu and Billings
+What does Lys La Rue want to do to the Band-lu and the Band-lu
+What does Kro-lu want to do to Galu and Galu
+What does Kro-lu want to do to Galu and Ajor
+What does Kro-lu want to do to Galu and Du
+What does Kro-lu want to do to Galu and Billings
+What does Kro-lu want to do to Galu and the Band-lu
+What does Kro-lu want to do to Ajor and Galu
+What does Kro-lu want to do to Ajor and Ajor
+What does Kro-lu want to do to Ajor and Du
+What does Kro-lu want to do to Ajor and Billings
+What does Kro-lu want to do to Ajor and the Band-lu
+What does Kro-lu want to do to Du and Galu
+What does Kro-lu want to do to Du and Ajor
+What does Kro-lu want to do to Du and Du
+What does Kro-lu want to do to Du and Billings
+What does Kro-lu want to do to Du and the Band-lu
+What does Kro-lu want to do to Billings and Galu
+What does Kro-lu want to do to Billings and Ajor
+What does Kro-lu want to do to Billings and Du
+What does Kro-lu want to do to Billings and Billings
+What does Kro-lu want to do to Billings and the Band-lu
+What does Kro-lu want to do to the Band-lu and Galu
+What does Kro-lu want to do to the Band-lu and Ajor
+What does Kro-lu want to do to the Band-lu and Du
+What does Kro-lu want to do to the Band-lu and Billings
+What does Kro-lu want to do to the Band-lu and the Band-lu
+What does So-al want to do to Galu and Galu
+What does So-al want to do to Galu and Ajor
+What does So-al want to do to Galu and Du
+What does So-al want to do to Galu and Billings
+What does So-al want to do to Galu and the Band-lu
+What does So-al want to do to Ajor and Galu
+What does So-al want to do to Ajor and Ajor
+What does So-al want to do to Ajor and Du
+What does So-al want to do to Ajor and Billings
+What does So-al want to do to Ajor and the Band-lu
+What does So-al want to do to Du and Galu
+What does So-al want to do to Du and Ajor
+What does So-al want to do to Du and Du
+What does So-al want to do to Du and Billings
+What does So-al want to do to Du and the Band-lu
+What does So-al want to do to Billings and Galu
+What does So-al want to do to Billings and Ajor
+What does So-al want to do to Billings and Du
+What does So-al want to do to Billings and Billings
+What does So-al want to do to Billings and the Band-lu
+What does So-al want to do to the Band-lu and Galu
+What does So-al want to do to the Band-lu and Ajor
+What does So-al want to do to the Band-lu and Du
+What does So-al want to do to the Band-lu and Billings
+What does So-al want to do to the Band-lu and the Band-lu
+What does Tom Billings want to do to Galu and Galu
+What does Tom Billings want to do to Galu and Ajor
+What does Tom Billings want to do to Galu and Du
+What does Tom Billings want to do to Galu and Billings
+What does Tom Billings want to do to Galu and the Band-lu
+What does Tom Billings want to do to Ajor and Galu
+What does Tom Billings want to do to Ajor and Ajor
+What does Tom Billings want to do to Ajor and Du
+What does Tom Billings want to do to Ajor and Billings
+What does Tom Billings want to do to Ajor and the Band-lu
+What does Tom Billings want to do to Du and Galu
+What does Tom Billings want to do to Du and Ajor
+What does Tom Billings want to do to Du and Du
+What does Tom Billings want to do to Du and Billings
+What does Tom Billings want to do to Du and the Band-lu
+What does Tom Billings want to do to Billings and Galu
+What does Tom Billings want to do to Billings and Ajor
+What does Tom Billings want to do to Billings and Du
+What does Tom Billings want to do to Billings and Billings
+What does Tom Billings want to do to Billings and the Band-lu
+What does Tom Billings want to do to the Band-lu and Galu
+What does Tom Billings want to do to the Band-lu and Ajor
+What does Tom Billings want to do to the Band-lu and Du
+What does Tom Billings want to do to the Band-lu and Billings
+What does Tom Billings want to do to the Band-lu and the Band-lu
+What does Chal-az want to do to Galu and Galu
+What does Chal-az want to do to Galu and Ajor
+What does Chal-az want to do to Galu and Du
+What does Chal-az want to do to Galu and Billings
+What does Chal-az want to do to Galu and the Band-lu
+What does Chal-az want to do to Ajor and Galu
+What does Chal-az want to do to Ajor and Ajor
+What does Chal-az want to do to Ajor and Du
+What does Chal-az want to do to Ajor and Billings
+What does Chal-az want to do to Ajor and the Band-lu
+What does Chal-az want to do to Du and Galu
+What does Chal-az want to do to Du and Ajor
+What does Chal-az want to do to Du and Du
+What does Chal-az want to do to Du and Billings
+What does Chal-az want to do to Du and the Band-lu
+What does Chal-az want to do to Billings and Galu
+What does Chal-az want to do to Billings and Ajor
+What does Chal-az want to do to Billings and Du
+What does Chal-az want to do to Billings and Billings
+What does Chal-az want to do to Billings and the Band-lu
+What does Chal-az want to do to the Band-lu and Galu
+What does Chal-az want to do to the Band-lu and Ajor
+What does Chal-az want to do to the Band-lu and Du
+What does Chal-az want to do to the Band-lu and Billings
+What does Chal-az want to do to the Band-lu and the Band-lu
+What does Bowen J. Tyler want to do to Galu and Galu
+What does Bowen J. Tyler want to do to Galu and Ajor
+What does Bowen J. Tyler want to do to Galu and Du
+What does Bowen J. Tyler want to do to Galu and Billings
+What does Bowen J. Tyler want to do to Galu and the Band-lu
+What does Bowen J. Tyler want to do to Ajor and Galu
+What does Bowen J. Tyler want to do to Ajor and Ajor
+What does Bowen J. Tyler want to do to Ajor and Du
+What does Bowen J. Tyler want to do to Ajor and Billings
+What does Bowen J. Tyler want to do to Ajor and the Band-lu
+What does Bowen J. Tyler want to do to Du and Galu
+What does Bowen J. Tyler want to do to Du and Ajor
+What does Bowen J. Tyler want to do to Du and Du
+What does Bowen J. Tyler want to do to Du and Billings
+What does Bowen J. Tyler want to do to Du and the Band-lu
+What does Bowen J. Tyler want to do to Billings and Galu
+What does Bowen J. Tyler want to do to Billings and Ajor
+What does Bowen J. Tyler want to do to Billings and Du
+What does Bowen J. Tyler want to do to Billings and Billings
+What does Bowen J. Tyler want to do to Billings and the Band-lu
+What does Bowen J. Tyler want to do to the Band-lu and Galu
+What does Bowen J. Tyler want to do to the Band-lu and Ajor
+What does Bowen J. Tyler want to do to the Band-lu and Du
+What does Bowen J. Tyler want to do to the Band-lu and Billings
+What does Bowen J. Tyler want to do to the Band-lu and the Band-lu
+What does Sto-lu want to do to Galu and Galu
+What does Sto-lu want to do to Galu and Ajor
+What does Sto-lu want to do to Galu and Du
+What does Sto-lu want to do to Galu and Billings
+What does Sto-lu want to do to Galu and the Band-lu
+What does Sto-lu want to do to Ajor and Galu
+What does Sto-lu want to do to Ajor and Ajor
+What does Sto-lu want to do to Ajor and Du
+What does Sto-lu want to do to Ajor and Billings
+What does Sto-lu want to do to Ajor and the Band-lu
+What does Sto-lu want to do to Du and Galu
+What does Sto-lu want to do to Du and Ajor
+What does Sto-lu want to do to Du and Du
+What does Sto-lu want to do to Du and Billings
+What does Sto-lu want to do to Du and the Band-lu
+What does Sto-lu want to do to Billings and Galu
+What does Sto-lu want to do to Billings and Ajor
+What does Sto-lu want to do to Billings and Du
+What does Sto-lu want to do to Billings and Billings
+What does Sto-lu want to do to Billings and the Band-lu
+What does Sto-lu want to do to the Band-lu and Galu
+What does Sto-lu want to do to the Band-lu and Ajor
+What does Sto-lu want to do to the Band-lu and Du
+What does Sto-lu want to do to the Band-lu and Billings
+What does Sto-lu want to do to the Band-lu and the Band-lu
+What does Mesozoic want to do to Galu and Galu
+What does Mesozoic want to do to Galu and Ajor
+What does Mesozoic want to do to Galu and Du
+What does Mesozoic want to do to Galu and Billings
+What does Mesozoic want to do to Galu and the Band-lu
+What does Mesozoic want to do to Ajor and Galu
+What does Mesozoic want to do to Ajor and Ajor
+What does Mesozoic want to do to Ajor and Du
+What does Mesozoic want to do to Ajor and Billings
+What does Mesozoic want to do to Ajor and the Band-lu
+What does Mesozoic want to do to Du and Galu
+What does Mesozoic want to do to Du and Ajor
+What does Mesozoic want to do to Du and Du
+What does Mesozoic want to do to Du and Billings
+What does Mesozoic want to do to Du and the Band-lu
+What does Mesozoic want to do to Billings and Galu
+What does Mesozoic want to do to Billings and Ajor
+What does Mesozoic want to do to Billings and Du
+What does Mesozoic want to do to Billings and Billings
+What does Mesozoic want to do to Billings and the Band-lu
+What does Mesozoic want to do to the Band-lu and Galu
+What does Mesozoic want to do to the Band-lu and Ajor
+What does Mesozoic want to do to the Band-lu and Du
+What does Mesozoic want to do to the Band-lu and Billings
+What does Mesozoic want to do to the Band-lu and the Band-lu
+Who is the friendliest of the three races
+Who do Galu and Galu discover upon approaching the village
+Who do Galu and Ajor discover upon approaching the village
+Who do Galu and Du discover upon approaching the village
+Who do Galu and Billings discover upon approaching the village
+Who do Galu and the Band-lu discover upon approaching the village
+Who do Ajor and Galu discover upon approaching the village
+Who do Ajor and Ajor discover upon approaching the village
+Who do Ajor and Du discover upon approaching the village
+Who do Ajor and Billings discover upon approaching the village
+Who do Ajor and the Band-lu discover upon approaching the village
+Who do Du and Galu discover upon approaching the village
+Who do Du and Ajor discover upon approaching the village
+Who do Du and Du discover upon approaching the village
+Who do Du and Billings discover upon approaching the village
+Who do Du and the Band-lu discover upon approaching the village
+Who do Billings and Galu discover upon approaching the village
+Who do Billings and Ajor discover upon approaching the village
+Who do Billings and Du discover upon approaching the village
+Who do Billings and Billings discover upon approaching the village
+Who do Billings and the Band-lu discover upon approaching the village
+Who do the Band-lu and Galu discover upon approaching the village
+Who do the Band-lu and Ajor discover upon approaching the village
+Who do the Band-lu and Du discover upon approaching the village
+Who do the Band-lu and Billings discover upon approaching the village
+Who do the Band-lu and the Band-lu discover upon approaching the village
 who is Galus
 who is Bowen Tyler
 who is Ajor
@@ -24,3 +938,1431 @@ who is Chal-az
 who is Bowen J. Tyler
 who is Sto-lu
 who is Mesozoic
+Why do Caprona and Galus travel to Caprona
+Why do Caprona and Galus travel to Tomar
+Why do Caprona and Galus travel to Antarctic island
+Why do Caprona and Galus travel to Caspak
+Why do Caprona and Galus travel to Toreador
+Why do Caprona and Galus travel to Galu village
+Why do Caprona and Bowen Tyler travel to Caprona
+Why do Caprona and Bowen Tyler travel to Tomar
+Why do Caprona and Bowen Tyler travel to Antarctic island
+Why do Caprona and Bowen Tyler travel to Caspak
+Why do Caprona and Bowen Tyler travel to Toreador
+Why do Caprona and Bowen Tyler travel to Galu village
+Why do Caprona and Ajor travel to Caprona
+Why do Caprona and Ajor travel to Tomar
+Why do Caprona and Ajor travel to Antarctic island
+Why do Caprona and Ajor travel to Caspak
+Why do Caprona and Ajor travel to Toreador
+Why do Caprona and Ajor travel to Galu village
+Why do Caprona and Du travel to Caprona
+Why do Caprona and Du travel to Tomar
+Why do Caprona and Du travel to Antarctic island
+Why do Caprona and Du travel to Caspak
+Why do Caprona and Du travel to Toreador
+Why do Caprona and Du travel to Galu village
+Why do Caprona and Caprona travel to Caprona
+Why do Caprona and Caprona travel to Tomar
+Why do Caprona and Caprona travel to Antarctic island
+Why do Caprona and Caprona travel to Caspak
+Why do Caprona and Caprona travel to Toreador
+Why do Caprona and Caprona travel to Galu village
+Why do Caprona and Tyler travel to Caprona
+Why do Caprona and Tyler travel to Tomar
+Why do Caprona and Tyler travel to Antarctic island
+Why do Caprona and Tyler travel to Caspak
+Why do Caprona and Tyler travel to Toreador
+Why do Caprona and Tyler travel to Galu village
+Why do Caprona and Lys La Rue travel to Caprona
+Why do Caprona and Lys La Rue travel to Tomar
+Why do Caprona and Lys La Rue travel to Antarctic island
+Why do Caprona and Lys La Rue travel to Caspak
+Why do Caprona and Lys La Rue travel to Toreador
+Why do Caprona and Lys La Rue travel to Galu village
+Why do Caprona and Kro-lu travel to Caprona
+Why do Caprona and Kro-lu travel to Tomar
+Why do Caprona and Kro-lu travel to Antarctic island
+Why do Caprona and Kro-lu travel to Caspak
+Why do Caprona and Kro-lu travel to Toreador
+Why do Caprona and Kro-lu travel to Galu village
+Why do Caprona and So-al travel to Caprona
+Why do Caprona and So-al travel to Tomar
+Why do Caprona and So-al travel to Antarctic island
+Why do Caprona and So-al travel to Caspak
+Why do Caprona and So-al travel to Toreador
+Why do Caprona and So-al travel to Galu village
+Why do Caprona and Tom Billings travel to Caprona
+Why do Caprona and Tom Billings travel to Tomar
+Why do Caprona and Tom Billings travel to Antarctic island
+Why do Caprona and Tom Billings travel to Caspak
+Why do Caprona and Tom Billings travel to Toreador
+Why do Caprona and Tom Billings travel to Galu village
+Why do Caprona and Chal-az travel to Caprona
+Why do Caprona and Chal-az travel to Tomar
+Why do Caprona and Chal-az travel to Antarctic island
+Why do Caprona and Chal-az travel to Caspak
+Why do Caprona and Chal-az travel to Toreador
+Why do Caprona and Chal-az travel to Galu village
+Why do Caprona and Bowen J. Tyler travel to Caprona
+Why do Caprona and Bowen J. Tyler travel to Tomar
+Why do Caprona and Bowen J. Tyler travel to Antarctic island
+Why do Caprona and Bowen J. Tyler travel to Caspak
+Why do Caprona and Bowen J. Tyler travel to Toreador
+Why do Caprona and Bowen J. Tyler travel to Galu village
+Why do Caprona and Sto-lu travel to Caprona
+Why do Caprona and Sto-lu travel to Tomar
+Why do Caprona and Sto-lu travel to Antarctic island
+Why do Caprona and Sto-lu travel to Caspak
+Why do Caprona and Sto-lu travel to Toreador
+Why do Caprona and Sto-lu travel to Galu village
+Why do Caprona and Mesozoic travel to Caprona
+Why do Caprona and Mesozoic travel to Tomar
+Why do Caprona and Mesozoic travel to Antarctic island
+Why do Caprona and Mesozoic travel to Caspak
+Why do Caprona and Mesozoic travel to Toreador
+Why do Caprona and Mesozoic travel to Galu village
+Why do Tomar and Galus travel to Caprona
+Why do Tomar and Galus travel to Tomar
+Why do Tomar and Galus travel to Antarctic island
+Why do Tomar and Galus travel to Caspak
+Why do Tomar and Galus travel to Toreador
+Why do Tomar and Galus travel to Galu village
+Why do Tomar and Bowen Tyler travel to Caprona
+Why do Tomar and Bowen Tyler travel to Tomar
+Why do Tomar and Bowen Tyler travel to Antarctic island
+Why do Tomar and Bowen Tyler travel to Caspak
+Why do Tomar and Bowen Tyler travel to Toreador
+Why do Tomar and Bowen Tyler travel to Galu village
+Why do Tomar and Ajor travel to Caprona
+Why do Tomar and Ajor travel to Tomar
+Why do Tomar and Ajor travel to Antarctic island
+Why do Tomar and Ajor travel to Caspak
+Why do Tomar and Ajor travel to Toreador
+Why do Tomar and Ajor travel to Galu village
+Why do Tomar and Du travel to Caprona
+Why do Tomar and Du travel to Tomar
+Why do Tomar and Du travel to Antarctic island
+Why do Tomar and Du travel to Caspak
+Why do Tomar and Du travel to Toreador
+Why do Tomar and Du travel to Galu village
+Why do Tomar and Caprona travel to Caprona
+Why do Tomar and Caprona travel to Tomar
+Why do Tomar and Caprona travel to Antarctic island
+Why do Tomar and Caprona travel to Caspak
+Why do Tomar and Caprona travel to Toreador
+Why do Tomar and Caprona travel to Galu village
+Why do Tomar and Tyler travel to Caprona
+Why do Tomar and Tyler travel to Tomar
+Why do Tomar and Tyler travel to Antarctic island
+Why do Tomar and Tyler travel to Caspak
+Why do Tomar and Tyler travel to Toreador
+Why do Tomar and Tyler travel to Galu village
+Why do Tomar and Lys La Rue travel to Caprona
+Why do Tomar and Lys La Rue travel to Tomar
+Why do Tomar and Lys La Rue travel to Antarctic island
+Why do Tomar and Lys La Rue travel to Caspak
+Why do Tomar and Lys La Rue travel to Toreador
+Why do Tomar and Lys La Rue travel to Galu village
+Why do Tomar and Kro-lu travel to Caprona
+Why do Tomar and Kro-lu travel to Tomar
+Why do Tomar and Kro-lu travel to Antarctic island
+Why do Tomar and Kro-lu travel to Caspak
+Why do Tomar and Kro-lu travel to Toreador
+Why do Tomar and Kro-lu travel to Galu village
+Why do Tomar and So-al travel to Caprona
+Why do Tomar and So-al travel to Tomar
+Why do Tomar and So-al travel to Antarctic island
+Why do Tomar and So-al travel to Caspak
+Why do Tomar and So-al travel to Toreador
+Why do Tomar and So-al travel to Galu village
+Why do Tomar and Tom Billings travel to Caprona
+Why do Tomar and Tom Billings travel to Tomar
+Why do Tomar and Tom Billings travel to Antarctic island
+Why do Tomar and Tom Billings travel to Caspak
+Why do Tomar and Tom Billings travel to Toreador
+Why do Tomar and Tom Billings travel to Galu village
+Why do Tomar and Chal-az travel to Caprona
+Why do Tomar and Chal-az travel to Tomar
+Why do Tomar and Chal-az travel to Antarctic island
+Why do Tomar and Chal-az travel to Caspak
+Why do Tomar and Chal-az travel to Toreador
+Why do Tomar and Chal-az travel to Galu village
+Why do Tomar and Bowen J. Tyler travel to Caprona
+Why do Tomar and Bowen J. Tyler travel to Tomar
+Why do Tomar and Bowen J. Tyler travel to Antarctic island
+Why do Tomar and Bowen J. Tyler travel to Caspak
+Why do Tomar and Bowen J. Tyler travel to Toreador
+Why do Tomar and Bowen J. Tyler travel to Galu village
+Why do Tomar and Sto-lu travel to Caprona
+Why do Tomar and Sto-lu travel to Tomar
+Why do Tomar and Sto-lu travel to Antarctic island
+Why do Tomar and Sto-lu travel to Caspak
+Why do Tomar and Sto-lu travel to Toreador
+Why do Tomar and Sto-lu travel to Galu village
+Why do Tomar and Mesozoic travel to Caprona
+Why do Tomar and Mesozoic travel to Tomar
+Why do Tomar and Mesozoic travel to Antarctic island
+Why do Tomar and Mesozoic travel to Caspak
+Why do Tomar and Mesozoic travel to Toreador
+Why do Tomar and Mesozoic travel to Galu village
+Why do Antarctic island and Galus travel to Caprona
+Why do Antarctic island and Galus travel to Tomar
+Why do Antarctic island and Galus travel to Antarctic island
+Why do Antarctic island and Galus travel to Caspak
+Why do Antarctic island and Galus travel to Toreador
+Why do Antarctic island and Galus travel to Galu village
+Why do Antarctic island and Bowen Tyler travel to Caprona
+Why do Antarctic island and Bowen Tyler travel to Tomar
+Why do Antarctic island and Bowen Tyler travel to Antarctic island
+Why do Antarctic island and Bowen Tyler travel to Caspak
+Why do Antarctic island and Bowen Tyler travel to Toreador
+Why do Antarctic island and Bowen Tyler travel to Galu village
+Why do Antarctic island and Ajor travel to Caprona
+Why do Antarctic island and Ajor travel to Tomar
+Why do Antarctic island and Ajor travel to Antarctic island
+Why do Antarctic island and Ajor travel to Caspak
+Why do Antarctic island and Ajor travel to Toreador
+Why do Antarctic island and Ajor travel to Galu village
+Why do Antarctic island and Du travel to Caprona
+Why do Antarctic island and Du travel to Tomar
+Why do Antarctic island and Du travel to Antarctic island
+Why do Antarctic island and Du travel to Caspak
+Why do Antarctic island and Du travel to Toreador
+Why do Antarctic island and Du travel to Galu village
+Why do Antarctic island and Caprona travel to Caprona
+Why do Antarctic island and Caprona travel to Tomar
+Why do Antarctic island and Caprona travel to Antarctic island
+Why do Antarctic island and Caprona travel to Caspak
+Why do Antarctic island and Caprona travel to Toreador
+Why do Antarctic island and Caprona travel to Galu village
+Why do Antarctic island and Tyler travel to Caprona
+Why do Antarctic island and Tyler travel to Tomar
+Why do Antarctic island and Tyler travel to Antarctic island
+Why do Antarctic island and Tyler travel to Caspak
+Why do Antarctic island and Tyler travel to Toreador
+Why do Antarctic island and Tyler travel to Galu village
+Why do Antarctic island and Lys La Rue travel to Caprona
+Why do Antarctic island and Lys La Rue travel to Tomar
+Why do Antarctic island and Lys La Rue travel to Antarctic island
+Why do Antarctic island and Lys La Rue travel to Caspak
+Why do Antarctic island and Lys La Rue travel to Toreador
+Why do Antarctic island and Lys La Rue travel to Galu village
+Why do Antarctic island and Kro-lu travel to Caprona
+Why do Antarctic island and Kro-lu travel to Tomar
+Why do Antarctic island and Kro-lu travel to Antarctic island
+Why do Antarctic island and Kro-lu travel to Caspak
+Why do Antarctic island and Kro-lu travel to Toreador
+Why do Antarctic island and Kro-lu travel to Galu village
+Why do Antarctic island and So-al travel to Caprona
+Why do Antarctic island and So-al travel to Tomar
+Why do Antarctic island and So-al travel to Antarctic island
+Why do Antarctic island and So-al travel to Caspak
+Why do Antarctic island and So-al travel to Toreador
+Why do Antarctic island and So-al travel to Galu village
+Why do Antarctic island and Tom Billings travel to Caprona
+Why do Antarctic island and Tom Billings travel to Tomar
+Why do Antarctic island and Tom Billings travel to Antarctic island
+Why do Antarctic island and Tom Billings travel to Caspak
+Why do Antarctic island and Tom Billings travel to Toreador
+Why do Antarctic island and Tom Billings travel to Galu village
+Why do Antarctic island and Chal-az travel to Caprona
+Why do Antarctic island and Chal-az travel to Tomar
+Why do Antarctic island and Chal-az travel to Antarctic island
+Why do Antarctic island and Chal-az travel to Caspak
+Why do Antarctic island and Chal-az travel to Toreador
+Why do Antarctic island and Chal-az travel to Galu village
+Why do Antarctic island and Bowen J. Tyler travel to Caprona
+Why do Antarctic island and Bowen J. Tyler travel to Tomar
+Why do Antarctic island and Bowen J. Tyler travel to Antarctic island
+Why do Antarctic island and Bowen J. Tyler travel to Caspak
+Why do Antarctic island and Bowen J. Tyler travel to Toreador
+Why do Antarctic island and Bowen J. Tyler travel to Galu village
+Why do Antarctic island and Sto-lu travel to Caprona
+Why do Antarctic island and Sto-lu travel to Tomar
+Why do Antarctic island and Sto-lu travel to Antarctic island
+Why do Antarctic island and Sto-lu travel to Caspak
+Why do Antarctic island and Sto-lu travel to Toreador
+Why do Antarctic island and Sto-lu travel to Galu village
+Why do Antarctic island and Mesozoic travel to Caprona
+Why do Antarctic island and Mesozoic travel to Tomar
+Why do Antarctic island and Mesozoic travel to Antarctic island
+Why do Antarctic island and Mesozoic travel to Caspak
+Why do Antarctic island and Mesozoic travel to Toreador
+Why do Antarctic island and Mesozoic travel to Galu village
+Why do Caspak and Galus travel to Caprona
+Why do Caspak and Galus travel to Tomar
+Why do Caspak and Galus travel to Antarctic island
+Why do Caspak and Galus travel to Caspak
+Why do Caspak and Galus travel to Toreador
+Why do Caspak and Galus travel to Galu village
+Why do Caspak and Bowen Tyler travel to Caprona
+Why do Caspak and Bowen Tyler travel to Tomar
+Why do Caspak and Bowen Tyler travel to Antarctic island
+Why do Caspak and Bowen Tyler travel to Caspak
+Why do Caspak and Bowen Tyler travel to Toreador
+Why do Caspak and Bowen Tyler travel to Galu village
+Why do Caspak and Ajor travel to Caprona
+Why do Caspak and Ajor travel to Tomar
+Why do Caspak and Ajor travel to Antarctic island
+Why do Caspak and Ajor travel to Caspak
+Why do Caspak and Ajor travel to Toreador
+Why do Caspak and Ajor travel to Galu village
+Why do Caspak and Du travel to Caprona
+Why do Caspak and Du travel to Tomar
+Why do Caspak and Du travel to Antarctic island
+Why do Caspak and Du travel to Caspak
+Why do Caspak and Du travel to Toreador
+Why do Caspak and Du travel to Galu village
+Why do Caspak and Caprona travel to Caprona
+Why do Caspak and Caprona travel to Tomar
+Why do Caspak and Caprona travel to Antarctic island
+Why do Caspak and Caprona travel to Caspak
+Why do Caspak and Caprona travel to Toreador
+Why do Caspak and Caprona travel to Galu village
+Why do Caspak and Tyler travel to Caprona
+Why do Caspak and Tyler travel to Tomar
+Why do Caspak and Tyler travel to Antarctic island
+Why do Caspak and Tyler travel to Caspak
+Why do Caspak and Tyler travel to Toreador
+Why do Caspak and Tyler travel to Galu village
+Why do Caspak and Lys La Rue travel to Caprona
+Why do Caspak and Lys La Rue travel to Tomar
+Why do Caspak and Lys La Rue travel to Antarctic island
+Why do Caspak and Lys La Rue travel to Caspak
+Why do Caspak and Lys La Rue travel to Toreador
+Why do Caspak and Lys La Rue travel to Galu village
+Why do Caspak and Kro-lu travel to Caprona
+Why do Caspak and Kro-lu travel to Tomar
+Why do Caspak and Kro-lu travel to Antarctic island
+Why do Caspak and Kro-lu travel to Caspak
+Why do Caspak and Kro-lu travel to Toreador
+Why do Caspak and Kro-lu travel to Galu village
+Why do Caspak and So-al travel to Caprona
+Why do Caspak and So-al travel to Tomar
+Why do Caspak and So-al travel to Antarctic island
+Why do Caspak and So-al travel to Caspak
+Why do Caspak and So-al travel to Toreador
+Why do Caspak and So-al travel to Galu village
+Why do Caspak and Tom Billings travel to Caprona
+Why do Caspak and Tom Billings travel to Tomar
+Why do Caspak and Tom Billings travel to Antarctic island
+Why do Caspak and Tom Billings travel to Caspak
+Why do Caspak and Tom Billings travel to Toreador
+Why do Caspak and Tom Billings travel to Galu village
+Why do Caspak and Chal-az travel to Caprona
+Why do Caspak and Chal-az travel to Tomar
+Why do Caspak and Chal-az travel to Antarctic island
+Why do Caspak and Chal-az travel to Caspak
+Why do Caspak and Chal-az travel to Toreador
+Why do Caspak and Chal-az travel to Galu village
+Why do Caspak and Bowen J. Tyler travel to Caprona
+Why do Caspak and Bowen J. Tyler travel to Tomar
+Why do Caspak and Bowen J. Tyler travel to Antarctic island
+Why do Caspak and Bowen J. Tyler travel to Caspak
+Why do Caspak and Bowen J. Tyler travel to Toreador
+Why do Caspak and Bowen J. Tyler travel to Galu village
+Why do Caspak and Sto-lu travel to Caprona
+Why do Caspak and Sto-lu travel to Tomar
+Why do Caspak and Sto-lu travel to Antarctic island
+Why do Caspak and Sto-lu travel to Caspak
+Why do Caspak and Sto-lu travel to Toreador
+Why do Caspak and Sto-lu travel to Galu village
+Why do Caspak and Mesozoic travel to Caprona
+Why do Caspak and Mesozoic travel to Tomar
+Why do Caspak and Mesozoic travel to Antarctic island
+Why do Caspak and Mesozoic travel to Caspak
+Why do Caspak and Mesozoic travel to Toreador
+Why do Caspak and Mesozoic travel to Galu village
+Why do Toreador and Galus travel to Caprona
+Why do Toreador and Galus travel to Tomar
+Why do Toreador and Galus travel to Antarctic island
+Why do Toreador and Galus travel to Caspak
+Why do Toreador and Galus travel to Toreador
+Why do Toreador and Galus travel to Galu village
+Why do Toreador and Bowen Tyler travel to Caprona
+Why do Toreador and Bowen Tyler travel to Tomar
+Why do Toreador and Bowen Tyler travel to Antarctic island
+Why do Toreador and Bowen Tyler travel to Caspak
+Why do Toreador and Bowen Tyler travel to Toreador
+Why do Toreador and Bowen Tyler travel to Galu village
+Why do Toreador and Ajor travel to Caprona
+Why do Toreador and Ajor travel to Tomar
+Why do Toreador and Ajor travel to Antarctic island
+Why do Toreador and Ajor travel to Caspak
+Why do Toreador and Ajor travel to Toreador
+Why do Toreador and Ajor travel to Galu village
+Why do Toreador and Du travel to Caprona
+Why do Toreador and Du travel to Tomar
+Why do Toreador and Du travel to Antarctic island
+Why do Toreador and Du travel to Caspak
+Why do Toreador and Du travel to Toreador
+Why do Toreador and Du travel to Galu village
+Why do Toreador and Caprona travel to Caprona
+Why do Toreador and Caprona travel to Tomar
+Why do Toreador and Caprona travel to Antarctic island
+Why do Toreador and Caprona travel to Caspak
+Why do Toreador and Caprona travel to Toreador
+Why do Toreador and Caprona travel to Galu village
+Why do Toreador and Tyler travel to Caprona
+Why do Toreador and Tyler travel to Tomar
+Why do Toreador and Tyler travel to Antarctic island
+Why do Toreador and Tyler travel to Caspak
+Why do Toreador and Tyler travel to Toreador
+Why do Toreador and Tyler travel to Galu village
+Why do Toreador and Lys La Rue travel to Caprona
+Why do Toreador and Lys La Rue travel to Tomar
+Why do Toreador and Lys La Rue travel to Antarctic island
+Why do Toreador and Lys La Rue travel to Caspak
+Why do Toreador and Lys La Rue travel to Toreador
+Why do Toreador and Lys La Rue travel to Galu village
+Why do Toreador and Kro-lu travel to Caprona
+Why do Toreador and Kro-lu travel to Tomar
+Why do Toreador and Kro-lu travel to Antarctic island
+Why do Toreador and Kro-lu travel to Caspak
+Why do Toreador and Kro-lu travel to Toreador
+Why do Toreador and Kro-lu travel to Galu village
+Why do Toreador and So-al travel to Caprona
+Why do Toreador and So-al travel to Tomar
+Why do Toreador and So-al travel to Antarctic island
+Why do Toreador and So-al travel to Caspak
+Why do Toreador and So-al travel to Toreador
+Why do Toreador and So-al travel to Galu village
+Why do Toreador and Tom Billings travel to Caprona
+Why do Toreador and Tom Billings travel to Tomar
+Why do Toreador and Tom Billings travel to Antarctic island
+Why do Toreador and Tom Billings travel to Caspak
+Why do Toreador and Tom Billings travel to Toreador
+Why do Toreador and Tom Billings travel to Galu village
+Why do Toreador and Chal-az travel to Caprona
+Why do Toreador and Chal-az travel to Tomar
+Why do Toreador and Chal-az travel to Antarctic island
+Why do Toreador and Chal-az travel to Caspak
+Why do Toreador and Chal-az travel to Toreador
+Why do Toreador and Chal-az travel to Galu village
+Why do Toreador and Bowen J. Tyler travel to Caprona
+Why do Toreador and Bowen J. Tyler travel to Tomar
+Why do Toreador and Bowen J. Tyler travel to Antarctic island
+Why do Toreador and Bowen J. Tyler travel to Caspak
+Why do Toreador and Bowen J. Tyler travel to Toreador
+Why do Toreador and Bowen J. Tyler travel to Galu village
+Why do Toreador and Sto-lu travel to Caprona
+Why do Toreador and Sto-lu travel to Tomar
+Why do Toreador and Sto-lu travel to Antarctic island
+Why do Toreador and Sto-lu travel to Caspak
+Why do Toreador and Sto-lu travel to Toreador
+Why do Toreador and Sto-lu travel to Galu village
+Why do Toreador and Mesozoic travel to Caprona
+Why do Toreador and Mesozoic travel to Tomar
+Why do Toreador and Mesozoic travel to Antarctic island
+Why do Toreador and Mesozoic travel to Caspak
+Why do Toreador and Mesozoic travel to Toreador
+Why do Toreador and Mesozoic travel to Galu village
+Why do Galu village and Galus travel to Caprona
+Why do Galu village and Galus travel to Tomar
+Why do Galu village and Galus travel to Antarctic island
+Why do Galu village and Galus travel to Caspak
+Why do Galu village and Galus travel to Toreador
+Why do Galu village and Galus travel to Galu village
+Why do Galu village and Bowen Tyler travel to Caprona
+Why do Galu village and Bowen Tyler travel to Tomar
+Why do Galu village and Bowen Tyler travel to Antarctic island
+Why do Galu village and Bowen Tyler travel to Caspak
+Why do Galu village and Bowen Tyler travel to Toreador
+Why do Galu village and Bowen Tyler travel to Galu village
+Why do Galu village and Ajor travel to Caprona
+Why do Galu village and Ajor travel to Tomar
+Why do Galu village and Ajor travel to Antarctic island
+Why do Galu village and Ajor travel to Caspak
+Why do Galu village and Ajor travel to Toreador
+Why do Galu village and Ajor travel to Galu village
+Why do Galu village and Du travel to Caprona
+Why do Galu village and Du travel to Tomar
+Why do Galu village and Du travel to Antarctic island
+Why do Galu village and Du travel to Caspak
+Why do Galu village and Du travel to Toreador
+Why do Galu village and Du travel to Galu village
+Why do Galu village and Caprona travel to Caprona
+Why do Galu village and Caprona travel to Tomar
+Why do Galu village and Caprona travel to Antarctic island
+Why do Galu village and Caprona travel to Caspak
+Why do Galu village and Caprona travel to Toreador
+Why do Galu village and Caprona travel to Galu village
+Why do Galu village and Tyler travel to Caprona
+Why do Galu village and Tyler travel to Tomar
+Why do Galu village and Tyler travel to Antarctic island
+Why do Galu village and Tyler travel to Caspak
+Why do Galu village and Tyler travel to Toreador
+Why do Galu village and Tyler travel to Galu village
+Why do Galu village and Lys La Rue travel to Caprona
+Why do Galu village and Lys La Rue travel to Tomar
+Why do Galu village and Lys La Rue travel to Antarctic island
+Why do Galu village and Lys La Rue travel to Caspak
+Why do Galu village and Lys La Rue travel to Toreador
+Why do Galu village and Lys La Rue travel to Galu village
+Why do Galu village and Kro-lu travel to Caprona
+Why do Galu village and Kro-lu travel to Tomar
+Why do Galu village and Kro-lu travel to Antarctic island
+Why do Galu village and Kro-lu travel to Caspak
+Why do Galu village and Kro-lu travel to Toreador
+Why do Galu village and Kro-lu travel to Galu village
+Why do Galu village and So-al travel to Caprona
+Why do Galu village and So-al travel to Tomar
+Why do Galu village and So-al travel to Antarctic island
+Why do Galu village and So-al travel to Caspak
+Why do Galu village and So-al travel to Toreador
+Why do Galu village and So-al travel to Galu village
+Why do Galu village and Tom Billings travel to Caprona
+Why do Galu village and Tom Billings travel to Tomar
+Why do Galu village and Tom Billings travel to Antarctic island
+Why do Galu village and Tom Billings travel to Caspak
+Why do Galu village and Tom Billings travel to Toreador
+Why do Galu village and Tom Billings travel to Galu village
+Why do Galu village and Chal-az travel to Caprona
+Why do Galu village and Chal-az travel to Tomar
+Why do Galu village and Chal-az travel to Antarctic island
+Why do Galu village and Chal-az travel to Caspak
+Why do Galu village and Chal-az travel to Toreador
+Why do Galu village and Chal-az travel to Galu village
+Why do Galu village and Bowen J. Tyler travel to Caprona
+Why do Galu village and Bowen J. Tyler travel to Tomar
+Why do Galu village and Bowen J. Tyler travel to Antarctic island
+Why do Galu village and Bowen J. Tyler travel to Caspak
+Why do Galu village and Bowen J. Tyler travel to Toreador
+Why do Galu village and Bowen J. Tyler travel to Galu village
+Why do Galu village and Sto-lu travel to Caprona
+Why do Galu village and Sto-lu travel to Tomar
+Why do Galu village and Sto-lu travel to Antarctic island
+Why do Galu village and Sto-lu travel to Caspak
+Why do Galu village and Sto-lu travel to Toreador
+Why do Galu village and Sto-lu travel to Galu village
+Why do Galu village and Mesozoic travel to Caprona
+Why do Galu village and Mesozoic travel to Tomar
+Why do Galu village and Mesozoic travel to Antarctic island
+Why do Galu village and Mesozoic travel to Caspak
+Why do Galu village and Mesozoic travel to Toreador
+Why do Galu village and Mesozoic travel to Galu village
+How do Galus and Galus die
+How do Galus and Bowen Tyler die
+How do Galus and Ajor die
+How do Galus and Du die
+How do Galus and Caprona die
+How do Galus and Tyler die
+How do Galus and Lys La Rue die
+How do Galus and Kro-lu die
+How do Galus and So-al die
+How do Galus and Tom Billings die
+How do Galus and Chal-az die
+How do Galus and Bowen J. Tyler die
+How do Galus and Sto-lu die
+How do Galus and Mesozoic die
+How do Bowen Tyler and Galus die
+How do Bowen Tyler and Bowen Tyler die
+How do Bowen Tyler and Ajor die
+How do Bowen Tyler and Du die
+How do Bowen Tyler and Caprona die
+How do Bowen Tyler and Tyler die
+How do Bowen Tyler and Lys La Rue die
+How do Bowen Tyler and Kro-lu die
+How do Bowen Tyler and So-al die
+How do Bowen Tyler and Tom Billings die
+How do Bowen Tyler and Chal-az die
+How do Bowen Tyler and Bowen J. Tyler die
+How do Bowen Tyler and Sto-lu die
+How do Bowen Tyler and Mesozoic die
+How do Ajor and Galus die
+How do Ajor and Bowen Tyler die
+How do Ajor and Ajor die
+How do Ajor and Du die
+How do Ajor and Caprona die
+How do Ajor and Tyler die
+How do Ajor and Lys La Rue die
+How do Ajor and Kro-lu die
+How do Ajor and So-al die
+How do Ajor and Tom Billings die
+How do Ajor and Chal-az die
+How do Ajor and Bowen J. Tyler die
+How do Ajor and Sto-lu die
+How do Ajor and Mesozoic die
+How do Du and Galus die
+How do Du and Bowen Tyler die
+How do Du and Ajor die
+How do Du and Du die
+How do Du and Caprona die
+How do Du and Tyler die
+How do Du and Lys La Rue die
+How do Du and Kro-lu die
+How do Du and So-al die
+How do Du and Tom Billings die
+How do Du and Chal-az die
+How do Du and Bowen J. Tyler die
+How do Du and Sto-lu die
+How do Du and Mesozoic die
+How do Caprona and Galus die
+How do Caprona and Bowen Tyler die
+How do Caprona and Ajor die
+How do Caprona and Du die
+How do Caprona and Caprona die
+How do Caprona and Tyler die
+How do Caprona and Lys La Rue die
+How do Caprona and Kro-lu die
+How do Caprona and So-al die
+How do Caprona and Tom Billings die
+How do Caprona and Chal-az die
+How do Caprona and Bowen J. Tyler die
+How do Caprona and Sto-lu die
+How do Caprona and Mesozoic die
+How do Tyler and Galus die
+How do Tyler and Bowen Tyler die
+How do Tyler and Ajor die
+How do Tyler and Du die
+How do Tyler and Caprona die
+How do Tyler and Tyler die
+How do Tyler and Lys La Rue die
+How do Tyler and Kro-lu die
+How do Tyler and So-al die
+How do Tyler and Tom Billings die
+How do Tyler and Chal-az die
+How do Tyler and Bowen J. Tyler die
+How do Tyler and Sto-lu die
+How do Tyler and Mesozoic die
+How do Lys La Rue and Galus die
+How do Lys La Rue and Bowen Tyler die
+How do Lys La Rue and Ajor die
+How do Lys La Rue and Du die
+How do Lys La Rue and Caprona die
+How do Lys La Rue and Tyler die
+How do Lys La Rue and Lys La Rue die
+How do Lys La Rue and Kro-lu die
+How do Lys La Rue and So-al die
+How do Lys La Rue and Tom Billings die
+How do Lys La Rue and Chal-az die
+How do Lys La Rue and Bowen J. Tyler die
+How do Lys La Rue and Sto-lu die
+How do Lys La Rue and Mesozoic die
+How do Kro-lu and Galus die
+How do Kro-lu and Bowen Tyler die
+How do Kro-lu and Ajor die
+How do Kro-lu and Du die
+How do Kro-lu and Caprona die
+How do Kro-lu and Tyler die
+How do Kro-lu and Lys La Rue die
+How do Kro-lu and Kro-lu die
+How do Kro-lu and So-al die
+How do Kro-lu and Tom Billings die
+How do Kro-lu and Chal-az die
+How do Kro-lu and Bowen J. Tyler die
+How do Kro-lu and Sto-lu die
+How do Kro-lu and Mesozoic die
+How do So-al and Galus die
+How do So-al and Bowen Tyler die
+How do So-al and Ajor die
+How do So-al and Du die
+How do So-al and Caprona die
+How do So-al and Tyler die
+How do So-al and Lys La Rue die
+How do So-al and Kro-lu die
+How do So-al and So-al die
+How do So-al and Tom Billings die
+How do So-al and Chal-az die
+How do So-al and Bowen J. Tyler die
+How do So-al and Sto-lu die
+How do So-al and Mesozoic die
+How do Tom Billings and Galus die
+How do Tom Billings and Bowen Tyler die
+How do Tom Billings and Ajor die
+How do Tom Billings and Du die
+How do Tom Billings and Caprona die
+How do Tom Billings and Tyler die
+How do Tom Billings and Lys La Rue die
+How do Tom Billings and Kro-lu die
+How do Tom Billings and So-al die
+How do Tom Billings and Tom Billings die
+How do Tom Billings and Chal-az die
+How do Tom Billings and Bowen J. Tyler die
+How do Tom Billings and Sto-lu die
+How do Tom Billings and Mesozoic die
+How do Chal-az and Galus die
+How do Chal-az and Bowen Tyler die
+How do Chal-az and Ajor die
+How do Chal-az and Du die
+How do Chal-az and Caprona die
+How do Chal-az and Tyler die
+How do Chal-az and Lys La Rue die
+How do Chal-az and Kro-lu die
+How do Chal-az and So-al die
+How do Chal-az and Tom Billings die
+How do Chal-az and Chal-az die
+How do Chal-az and Bowen J. Tyler die
+How do Chal-az and Sto-lu die
+How do Chal-az and Mesozoic die
+How do Bowen J. Tyler and Galus die
+How do Bowen J. Tyler and Bowen Tyler die
+How do Bowen J. Tyler and Ajor die
+How do Bowen J. Tyler and Du die
+How do Bowen J. Tyler and Caprona die
+How do Bowen J. Tyler and Tyler die
+How do Bowen J. Tyler and Lys La Rue die
+How do Bowen J. Tyler and Kro-lu die
+How do Bowen J. Tyler and So-al die
+How do Bowen J. Tyler and Tom Billings die
+How do Bowen J. Tyler and Chal-az die
+How do Bowen J. Tyler and Bowen J. Tyler die
+How do Bowen J. Tyler and Sto-lu die
+How do Bowen J. Tyler and Mesozoic die
+How do Sto-lu and Galus die
+How do Sto-lu and Bowen Tyler die
+How do Sto-lu and Ajor die
+How do Sto-lu and Du die
+How do Sto-lu and Caprona die
+How do Sto-lu and Tyler die
+How do Sto-lu and Lys La Rue die
+How do Sto-lu and Kro-lu die
+How do Sto-lu and So-al die
+How do Sto-lu and Tom Billings die
+How do Sto-lu and Chal-az die
+How do Sto-lu and Bowen J. Tyler die
+How do Sto-lu and Sto-lu die
+How do Sto-lu and Mesozoic die
+How do Mesozoic and Galus die
+How do Mesozoic and Bowen Tyler die
+How do Mesozoic and Ajor die
+How do Mesozoic and Du die
+How do Mesozoic and Caprona die
+How do Mesozoic and Tyler die
+How do Mesozoic and Lys La Rue die
+How do Mesozoic and Kro-lu die
+How do Mesozoic and So-al die
+How do Mesozoic and Tom Billings die
+How do Mesozoic and Chal-az die
+How do Mesozoic and Bowen J. Tyler die
+How do Mesozoic and Sto-lu die
+How do Mesozoic and Mesozoic die
+Where does the story take place
+How did Galus finally get off the island
+How did Bowen Tyler finally get off the island
+How did Ajor finally get off the island
+How did Du finally get off the island
+How did Caprona finally get off the island
+How did Tyler finally get off the island
+How did Lys La Rue finally get off the island
+How did Kro-lu finally get off the island
+How did So-al finally get off the island
+How did Tom Billings finally get off the island
+How did Chal-az finally get off the island
+How did Bowen J. Tyler finally get off the island
+How did Sto-lu finally get off the island
+How did Mesozoic finally get off the island
+Why was Galus from her master's home
+Why was Bowen Tyler from her master's home
+Why was Ajor from her master's home
+Why was Du from her master's home
+Why was Caprona from her master's home
+Why was Tyler from her master's home
+Why was Lys La Rue from her master's home
+Why was Kro-lu from her master's home
+Why was So-al from her master's home
+Why was Tom Billings from her master's home
+Why was Chal-az from her master's home
+Why was Bowen J. Tyler from her master's home
+Why was Sto-lu from her master's home
+Why was Mesozoic from her master's home
+What town did Galus grow up in 
+What town did Bowen Tyler grow up in 
+What town did Ajor grow up in 
+What town did Du grow up in 
+What town did Caprona grow up in 
+What town did Tyler grow up in 
+What town did Lys La Rue grow up in 
+What town did Kro-lu grow up in 
+What town did So-al grow up in 
+What town did Tom Billings grow up in 
+What town did Chal-az grow up in 
+What town did Bowen J. Tyler grow up in 
+What town did Sto-lu grow up in 
+What town did Mesozoic grow up in 
+Who save Galus from being killed
+Who save Bowen Tyler from being killed
+Who save Ajor from being killed
+Who save Du from being killed
+Who save Caprona from being killed
+Who save Tyler from being killed
+Who save Lys La Rue from being killed
+Who save Kro-lu from being killed
+Who save So-al from being killed
+Who save Tom Billings from being killed
+Who save Chal-az from being killed
+Who save Bowen J. Tyler from being killed
+Who save Sto-lu from being killed
+Who save Mesozoic from being killed
+Who is the namesake that is raising Galu
+Who is the namesake that is raising Ajor
+Who is the namesake that is raising Du
+Who is the namesake that is raising Billings
+Who is the namesake that is raising the Band-lu
+Where does Galu spot cloths laying
+Where does Ajor spot cloths laying
+Where does Du spot cloths laying
+Where does Billings spot cloths laying
+Where does the Band-lu spot cloths laying
+What name does Cenozoic reveal to The Queen
+Why does the Devil, in the form of a poodle, follow Galu home
+Why does the Devil, in the form of a poodle, follow Ajor home
+Why does the Devil, in the form of a poodle, follow Du home
+Why does the Devil, in the form of a poodle, follow Billings home
+Why does the Devil, in the form of a poodle, follow the Band-lu home
+Why do the aliens refuse to study the passengers and crew of the Victory
+who lives in Caprona
+who lives in Tomar
+who lives in Antarctic island
+who lives in Caspak
+who lives in Toreador
+who lives in Galu village
+Why does Emily write to Galus
+Why does Emily write to Bowen Tyler
+Why does Emily write to Ajor
+Why does Emily write to Du
+Why does Emily write to Caprona
+Why does Emily write to Tyler
+Why does Emily write to Lys La Rue
+Why does Emily write to Kro-lu
+Why does Emily write to So-al
+Why does Emily write to Tom Billings
+Why does Emily write to Chal-az
+Why does Emily write to Bowen J. Tyler
+Why does Emily write to Sto-lu
+Why does Emily write to Mesozoic
+What does the angel call our world
+How does Galus get out of the Galus garden
+How does Galus get out of the Bowen Tyler garden
+How does Galus get out of the Ajor garden
+How does Galus get out of the Du garden
+How does Galus get out of the Caprona garden
+How does Galus get out of the Tyler garden
+How does Galus get out of the Lys La Rue garden
+How does Galus get out of the Kro-lu garden
+How does Galus get out of the So-al garden
+How does Galus get out of the Tom Billings garden
+How does Galus get out of the Chal-az garden
+How does Galus get out of the Bowen J. Tyler garden
+How does Galus get out of the Sto-lu garden
+How does Galus get out of the Mesozoic garden
+How does Bowen Tyler get out of the Galus garden
+How does Bowen Tyler get out of the Bowen Tyler garden
+How does Bowen Tyler get out of the Ajor garden
+How does Bowen Tyler get out of the Du garden
+How does Bowen Tyler get out of the Caprona garden
+How does Bowen Tyler get out of the Tyler garden
+How does Bowen Tyler get out of the Lys La Rue garden
+How does Bowen Tyler get out of the Kro-lu garden
+How does Bowen Tyler get out of the So-al garden
+How does Bowen Tyler get out of the Tom Billings garden
+How does Bowen Tyler get out of the Chal-az garden
+How does Bowen Tyler get out of the Bowen J. Tyler garden
+How does Bowen Tyler get out of the Sto-lu garden
+How does Bowen Tyler get out of the Mesozoic garden
+How does Ajor get out of the Galus garden
+How does Ajor get out of the Bowen Tyler garden
+How does Ajor get out of the Ajor garden
+How does Ajor get out of the Du garden
+How does Ajor get out of the Caprona garden
+How does Ajor get out of the Tyler garden
+How does Ajor get out of the Lys La Rue garden
+How does Ajor get out of the Kro-lu garden
+How does Ajor get out of the So-al garden
+How does Ajor get out of the Tom Billings garden
+How does Ajor get out of the Chal-az garden
+How does Ajor get out of the Bowen J. Tyler garden
+How does Ajor get out of the Sto-lu garden
+How does Ajor get out of the Mesozoic garden
+How does Du get out of the Galus garden
+How does Du get out of the Bowen Tyler garden
+How does Du get out of the Ajor garden
+How does Du get out of the Du garden
+How does Du get out of the Caprona garden
+How does Du get out of the Tyler garden
+How does Du get out of the Lys La Rue garden
+How does Du get out of the Kro-lu garden
+How does Du get out of the So-al garden
+How does Du get out of the Tom Billings garden
+How does Du get out of the Chal-az garden
+How does Du get out of the Bowen J. Tyler garden
+How does Du get out of the Sto-lu garden
+How does Du get out of the Mesozoic garden
+How does Caprona get out of the Galus garden
+How does Caprona get out of the Bowen Tyler garden
+How does Caprona get out of the Ajor garden
+How does Caprona get out of the Du garden
+How does Caprona get out of the Caprona garden
+How does Caprona get out of the Tyler garden
+How does Caprona get out of the Lys La Rue garden
+How does Caprona get out of the Kro-lu garden
+How does Caprona get out of the So-al garden
+How does Caprona get out of the Tom Billings garden
+How does Caprona get out of the Chal-az garden
+How does Caprona get out of the Bowen J. Tyler garden
+How does Caprona get out of the Sto-lu garden
+How does Caprona get out of the Mesozoic garden
+How does Tyler get out of the Galus garden
+How does Tyler get out of the Bowen Tyler garden
+How does Tyler get out of the Ajor garden
+How does Tyler get out of the Du garden
+How does Tyler get out of the Caprona garden
+How does Tyler get out of the Tyler garden
+How does Tyler get out of the Lys La Rue garden
+How does Tyler get out of the Kro-lu garden
+How does Tyler get out of the So-al garden
+How does Tyler get out of the Tom Billings garden
+How does Tyler get out of the Chal-az garden
+How does Tyler get out of the Bowen J. Tyler garden
+How does Tyler get out of the Sto-lu garden
+How does Tyler get out of the Mesozoic garden
+How does Lys La Rue get out of the Galus garden
+How does Lys La Rue get out of the Bowen Tyler garden
+How does Lys La Rue get out of the Ajor garden
+How does Lys La Rue get out of the Du garden
+How does Lys La Rue get out of the Caprona garden
+How does Lys La Rue get out of the Tyler garden
+How does Lys La Rue get out of the Lys La Rue garden
+How does Lys La Rue get out of the Kro-lu garden
+How does Lys La Rue get out of the So-al garden
+How does Lys La Rue get out of the Tom Billings garden
+How does Lys La Rue get out of the Chal-az garden
+How does Lys La Rue get out of the Bowen J. Tyler garden
+How does Lys La Rue get out of the Sto-lu garden
+How does Lys La Rue get out of the Mesozoic garden
+How does Kro-lu get out of the Galus garden
+How does Kro-lu get out of the Bowen Tyler garden
+How does Kro-lu get out of the Ajor garden
+How does Kro-lu get out of the Du garden
+How does Kro-lu get out of the Caprona garden
+How does Kro-lu get out of the Tyler garden
+How does Kro-lu get out of the Lys La Rue garden
+How does Kro-lu get out of the Kro-lu garden
+How does Kro-lu get out of the So-al garden
+How does Kro-lu get out of the Tom Billings garden
+How does Kro-lu get out of the Chal-az garden
+How does Kro-lu get out of the Bowen J. Tyler garden
+How does Kro-lu get out of the Sto-lu garden
+How does Kro-lu get out of the Mesozoic garden
+How does So-al get out of the Galus garden
+How does So-al get out of the Bowen Tyler garden
+How does So-al get out of the Ajor garden
+How does So-al get out of the Du garden
+How does So-al get out of the Caprona garden
+How does So-al get out of the Tyler garden
+How does So-al get out of the Lys La Rue garden
+How does So-al get out of the Kro-lu garden
+How does So-al get out of the So-al garden
+How does So-al get out of the Tom Billings garden
+How does So-al get out of the Chal-az garden
+How does So-al get out of the Bowen J. Tyler garden
+How does So-al get out of the Sto-lu garden
+How does So-al get out of the Mesozoic garden
+How does Tom Billings get out of the Galus garden
+How does Tom Billings get out of the Bowen Tyler garden
+How does Tom Billings get out of the Ajor garden
+How does Tom Billings get out of the Du garden
+How does Tom Billings get out of the Caprona garden
+How does Tom Billings get out of the Tyler garden
+How does Tom Billings get out of the Lys La Rue garden
+How does Tom Billings get out of the Kro-lu garden
+How does Tom Billings get out of the So-al garden
+How does Tom Billings get out of the Tom Billings garden
+How does Tom Billings get out of the Chal-az garden
+How does Tom Billings get out of the Bowen J. Tyler garden
+How does Tom Billings get out of the Sto-lu garden
+How does Tom Billings get out of the Mesozoic garden
+How does Chal-az get out of the Galus garden
+How does Chal-az get out of the Bowen Tyler garden
+How does Chal-az get out of the Ajor garden
+How does Chal-az get out of the Du garden
+How does Chal-az get out of the Caprona garden
+How does Chal-az get out of the Tyler garden
+How does Chal-az get out of the Lys La Rue garden
+How does Chal-az get out of the Kro-lu garden
+How does Chal-az get out of the So-al garden
+How does Chal-az get out of the Tom Billings garden
+How does Chal-az get out of the Chal-az garden
+How does Chal-az get out of the Bowen J. Tyler garden
+How does Chal-az get out of the Sto-lu garden
+How does Chal-az get out of the Mesozoic garden
+How does Bowen J. Tyler get out of the Galus garden
+How does Bowen J. Tyler get out of the Bowen Tyler garden
+How does Bowen J. Tyler get out of the Ajor garden
+How does Bowen J. Tyler get out of the Du garden
+How does Bowen J. Tyler get out of the Caprona garden
+How does Bowen J. Tyler get out of the Tyler garden
+How does Bowen J. Tyler get out of the Lys La Rue garden
+How does Bowen J. Tyler get out of the Kro-lu garden
+How does Bowen J. Tyler get out of the So-al garden
+How does Bowen J. Tyler get out of the Tom Billings garden
+How does Bowen J. Tyler get out of the Chal-az garden
+How does Bowen J. Tyler get out of the Bowen J. Tyler garden
+How does Bowen J. Tyler get out of the Sto-lu garden
+How does Bowen J. Tyler get out of the Mesozoic garden
+How does Sto-lu get out of the Galus garden
+How does Sto-lu get out of the Bowen Tyler garden
+How does Sto-lu get out of the Ajor garden
+How does Sto-lu get out of the Du garden
+How does Sto-lu get out of the Caprona garden
+How does Sto-lu get out of the Tyler garden
+How does Sto-lu get out of the Lys La Rue garden
+How does Sto-lu get out of the Kro-lu garden
+How does Sto-lu get out of the So-al garden
+How does Sto-lu get out of the Tom Billings garden
+How does Sto-lu get out of the Chal-az garden
+How does Sto-lu get out of the Bowen J. Tyler garden
+How does Sto-lu get out of the Sto-lu garden
+How does Sto-lu get out of the Mesozoic garden
+How does Mesozoic get out of the Galus garden
+How does Mesozoic get out of the Bowen Tyler garden
+How does Mesozoic get out of the Ajor garden
+How does Mesozoic get out of the Du garden
+How does Mesozoic get out of the Caprona garden
+How does Mesozoic get out of the Tyler garden
+How does Mesozoic get out of the Lys La Rue garden
+How does Mesozoic get out of the Kro-lu garden
+How does Mesozoic get out of the So-al garden
+How does Mesozoic get out of the Tom Billings garden
+How does Mesozoic get out of the Chal-az garden
+How does Mesozoic get out of the Bowen J. Tyler garden
+How does Mesozoic get out of the Sto-lu garden
+How does Mesozoic get out of the Mesozoic garden
+Which three of the characters revealed secret information to Mr. Galus
+Which three of the characters revealed secret information to Mr. Bowen Tyler
+Which three of the characters revealed secret information to Mr. Ajor
+Which three of the characters revealed secret information to Mr. Du
+Which three of the characters revealed secret information to Mr. Caprona
+Which three of the characters revealed secret information to Mr. Tyler
+Which three of the characters revealed secret information to Mr. Lys La Rue
+Which three of the characters revealed secret information to Mr. Kro-lu
+Which three of the characters revealed secret information to Mr. So-al
+Which three of the characters revealed secret information to Mr. Tom Billings
+Which three of the characters revealed secret information to Mr. Chal-az
+Which three of the characters revealed secret information to Mr. Bowen J. Tyler
+Which three of the characters revealed secret information to Mr. Sto-lu
+Which three of the characters revealed secret information to Mr. Mesozoic
+Why did Galus Peak decide to leave Galus 
+Why did Galus Peak decide to leave Bowen Tyler 
+Why did Galus Peak decide to leave Ajor 
+Why did Galus Peak decide to leave Du 
+Why did Galus Peak decide to leave Caprona 
+Why did Galus Peak decide to leave Tyler 
+Why did Galus Peak decide to leave Lys La Rue 
+Why did Galus Peak decide to leave Kro-lu 
+Why did Galus Peak decide to leave So-al 
+Why did Galus Peak decide to leave Tom Billings 
+Why did Galus Peak decide to leave Chal-az 
+Why did Galus Peak decide to leave Bowen J. Tyler 
+Why did Galus Peak decide to leave Sto-lu 
+Why did Galus Peak decide to leave Mesozoic 
+Why did Bowen Tyler Peak decide to leave Galus 
+Why did Bowen Tyler Peak decide to leave Bowen Tyler 
+Why did Bowen Tyler Peak decide to leave Ajor 
+Why did Bowen Tyler Peak decide to leave Du 
+Why did Bowen Tyler Peak decide to leave Caprona 
+Why did Bowen Tyler Peak decide to leave Tyler 
+Why did Bowen Tyler Peak decide to leave Lys La Rue 
+Why did Bowen Tyler Peak decide to leave Kro-lu 
+Why did Bowen Tyler Peak decide to leave So-al 
+Why did Bowen Tyler Peak decide to leave Tom Billings 
+Why did Bowen Tyler Peak decide to leave Chal-az 
+Why did Bowen Tyler Peak decide to leave Bowen J. Tyler 
+Why did Bowen Tyler Peak decide to leave Sto-lu 
+Why did Bowen Tyler Peak decide to leave Mesozoic 
+Why did Ajor Peak decide to leave Galus 
+Why did Ajor Peak decide to leave Bowen Tyler 
+Why did Ajor Peak decide to leave Ajor 
+Why did Ajor Peak decide to leave Du 
+Why did Ajor Peak decide to leave Caprona 
+Why did Ajor Peak decide to leave Tyler 
+Why did Ajor Peak decide to leave Lys La Rue 
+Why did Ajor Peak decide to leave Kro-lu 
+Why did Ajor Peak decide to leave So-al 
+Why did Ajor Peak decide to leave Tom Billings 
+Why did Ajor Peak decide to leave Chal-az 
+Why did Ajor Peak decide to leave Bowen J. Tyler 
+Why did Ajor Peak decide to leave Sto-lu 
+Why did Ajor Peak decide to leave Mesozoic 
+Why did Du Peak decide to leave Galus 
+Why did Du Peak decide to leave Bowen Tyler 
+Why did Du Peak decide to leave Ajor 
+Why did Du Peak decide to leave Du 
+Why did Du Peak decide to leave Caprona 
+Why did Du Peak decide to leave Tyler 
+Why did Du Peak decide to leave Lys La Rue 
+Why did Du Peak decide to leave Kro-lu 
+Why did Du Peak decide to leave So-al 
+Why did Du Peak decide to leave Tom Billings 
+Why did Du Peak decide to leave Chal-az 
+Why did Du Peak decide to leave Bowen J. Tyler 
+Why did Du Peak decide to leave Sto-lu 
+Why did Du Peak decide to leave Mesozoic 
+Why did Caprona Peak decide to leave Galus 
+Why did Caprona Peak decide to leave Bowen Tyler 
+Why did Caprona Peak decide to leave Ajor 
+Why did Caprona Peak decide to leave Du 
+Why did Caprona Peak decide to leave Caprona 
+Why did Caprona Peak decide to leave Tyler 
+Why did Caprona Peak decide to leave Lys La Rue 
+Why did Caprona Peak decide to leave Kro-lu 
+Why did Caprona Peak decide to leave So-al 
+Why did Caprona Peak decide to leave Tom Billings 
+Why did Caprona Peak decide to leave Chal-az 
+Why did Caprona Peak decide to leave Bowen J. Tyler 
+Why did Caprona Peak decide to leave Sto-lu 
+Why did Caprona Peak decide to leave Mesozoic 
+Why did Tyler Peak decide to leave Galus 
+Why did Tyler Peak decide to leave Bowen Tyler 
+Why did Tyler Peak decide to leave Ajor 
+Why did Tyler Peak decide to leave Du 
+Why did Tyler Peak decide to leave Caprona 
+Why did Tyler Peak decide to leave Tyler 
+Why did Tyler Peak decide to leave Lys La Rue 
+Why did Tyler Peak decide to leave Kro-lu 
+Why did Tyler Peak decide to leave So-al 
+Why did Tyler Peak decide to leave Tom Billings 
+Why did Tyler Peak decide to leave Chal-az 
+Why did Tyler Peak decide to leave Bowen J. Tyler 
+Why did Tyler Peak decide to leave Sto-lu 
+Why did Tyler Peak decide to leave Mesozoic 
+Why did Lys La Rue Peak decide to leave Galus 
+Why did Lys La Rue Peak decide to leave Bowen Tyler 
+Why did Lys La Rue Peak decide to leave Ajor 
+Why did Lys La Rue Peak decide to leave Du 
+Why did Lys La Rue Peak decide to leave Caprona 
+Why did Lys La Rue Peak decide to leave Tyler 
+Why did Lys La Rue Peak decide to leave Lys La Rue 
+Why did Lys La Rue Peak decide to leave Kro-lu 
+Why did Lys La Rue Peak decide to leave So-al 
+Why did Lys La Rue Peak decide to leave Tom Billings 
+Why did Lys La Rue Peak decide to leave Chal-az 
+Why did Lys La Rue Peak decide to leave Bowen J. Tyler 
+Why did Lys La Rue Peak decide to leave Sto-lu 
+Why did Lys La Rue Peak decide to leave Mesozoic 
+Why did Kro-lu Peak decide to leave Galus 
+Why did Kro-lu Peak decide to leave Bowen Tyler 
+Why did Kro-lu Peak decide to leave Ajor 
+Why did Kro-lu Peak decide to leave Du 
+Why did Kro-lu Peak decide to leave Caprona 
+Why did Kro-lu Peak decide to leave Tyler 
+Why did Kro-lu Peak decide to leave Lys La Rue 
+Why did Kro-lu Peak decide to leave Kro-lu 
+Why did Kro-lu Peak decide to leave So-al 
+Why did Kro-lu Peak decide to leave Tom Billings 
+Why did Kro-lu Peak decide to leave Chal-az 
+Why did Kro-lu Peak decide to leave Bowen J. Tyler 
+Why did Kro-lu Peak decide to leave Sto-lu 
+Why did Kro-lu Peak decide to leave Mesozoic 
+Why did So-al Peak decide to leave Galus 
+Why did So-al Peak decide to leave Bowen Tyler 
+Why did So-al Peak decide to leave Ajor 
+Why did So-al Peak decide to leave Du 
+Why did So-al Peak decide to leave Caprona 
+Why did So-al Peak decide to leave Tyler 
+Why did So-al Peak decide to leave Lys La Rue 
+Why did So-al Peak decide to leave Kro-lu 
+Why did So-al Peak decide to leave So-al 
+Why did So-al Peak decide to leave Tom Billings 
+Why did So-al Peak decide to leave Chal-az 
+Why did So-al Peak decide to leave Bowen J. Tyler 
+Why did So-al Peak decide to leave Sto-lu 
+Why did So-al Peak decide to leave Mesozoic 
+Why did Tom Billings Peak decide to leave Galus 
+Why did Tom Billings Peak decide to leave Bowen Tyler 
+Why did Tom Billings Peak decide to leave Ajor 
+Why did Tom Billings Peak decide to leave Du 
+Why did Tom Billings Peak decide to leave Caprona 
+Why did Tom Billings Peak decide to leave Tyler 
+Why did Tom Billings Peak decide to leave Lys La Rue 
+Why did Tom Billings Peak decide to leave Kro-lu 
+Why did Tom Billings Peak decide to leave So-al 
+Why did Tom Billings Peak decide to leave Tom Billings 
+Why did Tom Billings Peak decide to leave Chal-az 
+Why did Tom Billings Peak decide to leave Bowen J. Tyler 
+Why did Tom Billings Peak decide to leave Sto-lu 
+Why did Tom Billings Peak decide to leave Mesozoic 
+Why did Chal-az Peak decide to leave Galus 
+Why did Chal-az Peak decide to leave Bowen Tyler 
+Why did Chal-az Peak decide to leave Ajor 
+Why did Chal-az Peak decide to leave Du 
+Why did Chal-az Peak decide to leave Caprona 
+Why did Chal-az Peak decide to leave Tyler 
+Why did Chal-az Peak decide to leave Lys La Rue 
+Why did Chal-az Peak decide to leave Kro-lu 
+Why did Chal-az Peak decide to leave So-al 
+Why did Chal-az Peak decide to leave Tom Billings 
+Why did Chal-az Peak decide to leave Chal-az 
+Why did Chal-az Peak decide to leave Bowen J. Tyler 
+Why did Chal-az Peak decide to leave Sto-lu 
+Why did Chal-az Peak decide to leave Mesozoic 
+Why did Bowen J. Tyler Peak decide to leave Galus 
+Why did Bowen J. Tyler Peak decide to leave Bowen Tyler 
+Why did Bowen J. Tyler Peak decide to leave Ajor 
+Why did Bowen J. Tyler Peak decide to leave Du 
+Why did Bowen J. Tyler Peak decide to leave Caprona 
+Why did Bowen J. Tyler Peak decide to leave Tyler 
+Why did Bowen J. Tyler Peak decide to leave Lys La Rue 
+Why did Bowen J. Tyler Peak decide to leave Kro-lu 
+Why did Bowen J. Tyler Peak decide to leave So-al 
+Why did Bowen J. Tyler Peak decide to leave Tom Billings 
+Why did Bowen J. Tyler Peak decide to leave Chal-az 
+Why did Bowen J. Tyler Peak decide to leave Bowen J. Tyler 
+Why did Bowen J. Tyler Peak decide to leave Sto-lu 
+Why did Bowen J. Tyler Peak decide to leave Mesozoic 
+Why did Sto-lu Peak decide to leave Galus 
+Why did Sto-lu Peak decide to leave Bowen Tyler 
+Why did Sto-lu Peak decide to leave Ajor 
+Why did Sto-lu Peak decide to leave Du 
+Why did Sto-lu Peak decide to leave Caprona 
+Why did Sto-lu Peak decide to leave Tyler 
+Why did Sto-lu Peak decide to leave Lys La Rue 
+Why did Sto-lu Peak decide to leave Kro-lu 
+Why did Sto-lu Peak decide to leave So-al 
+Why did Sto-lu Peak decide to leave Tom Billings 
+Why did Sto-lu Peak decide to leave Chal-az 
+Why did Sto-lu Peak decide to leave Bowen J. Tyler 
+Why did Sto-lu Peak decide to leave Sto-lu 
+Why did Sto-lu Peak decide to leave Mesozoic 
+Why did Mesozoic Peak decide to leave Galus 
+Why did Mesozoic Peak decide to leave Bowen Tyler 
+Why did Mesozoic Peak decide to leave Ajor 
+Why did Mesozoic Peak decide to leave Du 
+Why did Mesozoic Peak decide to leave Caprona 
+Why did Mesozoic Peak decide to leave Tyler 
+Why did Mesozoic Peak decide to leave Lys La Rue 
+Why did Mesozoic Peak decide to leave Kro-lu 
+Why did Mesozoic Peak decide to leave So-al 
+Why did Mesozoic Peak decide to leave Tom Billings 
+Why did Mesozoic Peak decide to leave Chal-az 
+Why did Mesozoic Peak decide to leave Bowen J. Tyler 
+Why did Mesozoic Peak decide to leave Sto-lu 
+Why did Mesozoic Peak decide to leave Mesozoic 
+What town is Galus Well located in
+What town is Bowen Tyler Well located in
+What town is Ajor Well located in
+What town is Du Well located in
+What town is Caprona Well located in
+What town is Tyler Well located in
+What town is Lys La Rue Well located in
+What town is Kro-lu Well located in
+What town is So-al Well located in
+What town is Tom Billings Well located in
+What town is Chal-az Well located in
+What town is Bowen J. Tyler Well located in
+What town is Sto-lu Well located in
+What town is Mesozoic Well located in
+what is Galu
+what is Ajor
+what is Du
+what is Billings
+what is the Band-lu
+What time is it when Caprona says goodbye to the Galu and returns from the Garden of Death
+What time is it when Caprona says goodbye to the Ajor and returns from the Garden of Death
+What time is it when Caprona says goodbye to the Du and returns from the Garden of Death
+What time is it when Caprona says goodbye to the Billings and returns from the Garden of Death
+What time is it when Caprona says goodbye to the the Band-lu and returns from the Garden of Death
+What time is it when Tomar says goodbye to the Galu and returns from the Garden of Death
+What time is it when Tomar says goodbye to the Ajor and returns from the Garden of Death
+What time is it when Tomar says goodbye to the Du and returns from the Garden of Death
+What time is it when Tomar says goodbye to the Billings and returns from the Garden of Death
+What time is it when Tomar says goodbye to the the Band-lu and returns from the Garden of Death
+What time is it when Antarctic island says goodbye to the Galu and returns from the Garden of Death
+What time is it when Antarctic island says goodbye to the Ajor and returns from the Garden of Death
+What time is it when Antarctic island says goodbye to the Du and returns from the Garden of Death
+What time is it when Antarctic island says goodbye to the Billings and returns from the Garden of Death
+What time is it when Antarctic island says goodbye to the the Band-lu and returns from the Garden of Death
+What time is it when Caspak says goodbye to the Galu and returns from the Garden of Death
+What time is it when Caspak says goodbye to the Ajor and returns from the Garden of Death
+What time is it when Caspak says goodbye to the Du and returns from the Garden of Death
+What time is it when Caspak says goodbye to the Billings and returns from the Garden of Death
+What time is it when Caspak says goodbye to the the Band-lu and returns from the Garden of Death
+What time is it when Toreador says goodbye to the Galu and returns from the Garden of Death
+What time is it when Toreador says goodbye to the Ajor and returns from the Garden of Death
+What time is it when Toreador says goodbye to the Du and returns from the Garden of Death
+What time is it when Toreador says goodbye to the Billings and returns from the Garden of Death
+What time is it when Toreador says goodbye to the the Band-lu and returns from the Garden of Death
+What time is it when Galu village says goodbye to the Galu and returns from the Garden of Death
+What time is it when Galu village says goodbye to the Ajor and returns from the Garden of Death
+What time is it when Galu village says goodbye to the Du and returns from the Garden of Death
+What time is it when Galu village says goodbye to the Billings and returns from the Garden of Death
+What time is it when Galu village says goodbye to the the Band-lu and returns from the Garden of Death
+What does Galus resemble
+What does Bowen Tyler resemble
+What does Ajor resemble
+What does Du resemble
+What does Caprona resemble
+What does Tyler resemble
+What does Lys La Rue resemble
+What does Kro-lu resemble
+What does So-al resemble
+What does Tom Billings resemble
+What does Chal-az resemble
+What does Bowen J. Tyler resemble
+What does Sto-lu resemble
+What does Mesozoic resemble
+Where does Tarzan go to work for Galu
+Where does Tarzan go to work for Ajor
+Where does Tarzan go to work for Du
+Where does Tarzan go to work for Billings
+Where does Tarzan go to work for the Band-lu
+Why doesn't Galus begin the trip with Galu
+Why doesn't Galus begin the trip with Ajor
+Why doesn't Galus begin the trip with Du
+Why doesn't Galus begin the trip with Billings
+Why doesn't Galus begin the trip with the Band-lu
+Why doesn't Bowen Tyler begin the trip with Galu
+Why doesn't Bowen Tyler begin the trip with Ajor
+Why doesn't Bowen Tyler begin the trip with Du
+Why doesn't Bowen Tyler begin the trip with Billings
+Why doesn't Bowen Tyler begin the trip with the Band-lu
+Why doesn't Ajor begin the trip with Galu
+Why doesn't Ajor begin the trip with Ajor
+Why doesn't Ajor begin the trip with Du
+Why doesn't Ajor begin the trip with Billings
+Why doesn't Ajor begin the trip with the Band-lu
+Why doesn't Du begin the trip with Galu
+Why doesn't Du begin the trip with Ajor
+Why doesn't Du begin the trip with Du
+Why doesn't Du begin the trip with Billings
+Why doesn't Du begin the trip with the Band-lu
+Why doesn't Caprona begin the trip with Galu
+Why doesn't Caprona begin the trip with Ajor
+Why doesn't Caprona begin the trip with Du
+Why doesn't Caprona begin the trip with Billings
+Why doesn't Caprona begin the trip with the Band-lu
+Why doesn't Tyler begin the trip with Galu
+Why doesn't Tyler begin the trip with Ajor
+Why doesn't Tyler begin the trip with Du
+Why doesn't Tyler begin the trip with Billings
+Why doesn't Tyler begin the trip with the Band-lu
+Why doesn't Lys La Rue begin the trip with Galu
+Why doesn't Lys La Rue begin the trip with Ajor
+Why doesn't Lys La Rue begin the trip with Du
+Why doesn't Lys La Rue begin the trip with Billings
+Why doesn't Lys La Rue begin the trip with the Band-lu
+Why doesn't Kro-lu begin the trip with Galu
+Why doesn't Kro-lu begin the trip with Ajor
+Why doesn't Kro-lu begin the trip with Du
+Why doesn't Kro-lu begin the trip with Billings
+Why doesn't Kro-lu begin the trip with the Band-lu
+Why doesn't So-al begin the trip with Galu
+Why doesn't So-al begin the trip with Ajor
+Why doesn't So-al begin the trip with Du
+Why doesn't So-al begin the trip with Billings
+Why doesn't So-al begin the trip with the Band-lu
+Why doesn't Tom Billings begin the trip with Galu
+Why doesn't Tom Billings begin the trip with Ajor
+Why doesn't Tom Billings begin the trip with Du
+Why doesn't Tom Billings begin the trip with Billings
+Why doesn't Tom Billings begin the trip with the Band-lu
+Why doesn't Chal-az begin the trip with Galu
+Why doesn't Chal-az begin the trip with Ajor
+Why doesn't Chal-az begin the trip with Du
+Why doesn't Chal-az begin the trip with Billings
+Why doesn't Chal-az begin the trip with the Band-lu
+Why doesn't Bowen J. Tyler begin the trip with Galu
+Why doesn't Bowen J. Tyler begin the trip with Ajor
+Why doesn't Bowen J. Tyler begin the trip with Du
+Why doesn't Bowen J. Tyler begin the trip with Billings
+Why doesn't Bowen J. Tyler begin the trip with the Band-lu
+Why doesn't Sto-lu begin the trip with Galu
+Why doesn't Sto-lu begin the trip with Ajor
+Why doesn't Sto-lu begin the trip with Du
+Why doesn't Sto-lu begin the trip with Billings
+Why doesn't Sto-lu begin the trip with the Band-lu
+Why doesn't Mesozoic begin the trip with Galu
+Why doesn't Mesozoic begin the trip with Ajor
+Why doesn't Mesozoic begin the trip with Du
+Why doesn't Mesozoic begin the trip with Billings
+Why doesn't Mesozoic begin the trip with the Band-lu
+What proof of his tale did Galus provide
+What proof of his tale did Bowen Tyler provide
+What proof of his tale did Ajor provide
+What proof of his tale did Du provide
+What proof of his tale did Caprona provide
+What proof of his tale did Tyler provide
+What proof of his tale did Lys La Rue provide
+What proof of his tale did Kro-lu provide
+What proof of his tale did So-al provide
+What proof of his tale did Tom Billings provide
+What proof of his tale did Chal-az provide
+What proof of his tale did Bowen J. Tyler provide
+What proof of his tale did Sto-lu provide
+What proof of his tale did Mesozoic provide
+Who joined the Neanderthal church
+Who joined the Caspakian church
+Who did the invisible monster turn out to be
+Who does Galus believe had him killed
+Who does Bowen Tyler believe had him killed
+Who does Ajor believe had him killed
+Who does Du believe had him killed
+Who does Caprona believe had him killed
+Who does Tyler believe had him killed
+Who does Lys La Rue believe had him killed
+Who does Kro-lu believe had him killed
+Who does So-al believe had him killed
+Who does Tom Billings believe had him killed
+Who does Chal-az believe had him killed
+Who does Bowen J. Tyler believe had him killed
+Who does Sto-lu believe had him killed
+Who does Mesozoic believe had him killed
+When does Galus give herself a different name
+When does Bowen Tyler give herself a different name
+When does Ajor give herself a different name
+When does Du give herself a different name
+When does Caprona give herself a different name
+When does Tyler give herself a different name
+When does Lys La Rue give herself a different name
+When does Kro-lu give herself a different name
+When does So-al give herself a different name
+When does Tom Billings give herself a different name
+When does Chal-az give herself a different name
+When does Bowen J. Tyler give herself a different name
+When does Sto-lu give herself a different name
+When does Mesozoic give herself a different name
+Who kills Galus
+Who kills Bowen Tyler
+Who kills Ajor
+Who kills Du
+Who kills Caprona
+Who kills Tyler
+Who kills Lys La Rue
+Who kills Kro-lu
+Who kills So-al
+Who kills Tom Billings
+Who kills Chal-az
+Who kills Bowen J. Tyler
+Who kills Sto-lu
+Who kills Mesozoic
+How many generations of the Galus family are there 
+How many generations of the Bowen Tyler family are there 
+How many generations of the Ajor family are there 
+How many generations of the Du family are there 
+How many generations of the Caprona family are there 
+How many generations of the Tyler family are there 
+How many generations of the Lys La Rue family are there 
+How many generations of the Kro-lu family are there 
+How many generations of the So-al family are there 
+How many generations of the Tom Billings family are there 
+How many generations of the Chal-az family are there 
+How many generations of the Bowen J. Tyler family are there 
+How many generations of the Sto-lu family are there 
+How many generations of the Mesozoic family are there 
+Who are the parents of Neanderthal
+Who are the parents of Caspakian
+Why did nobody believe Galus about being possessed
+Why did nobody believe Bowen Tyler about being possessed
+Why did nobody believe Ajor about being possessed
+Why did nobody believe Du about being possessed
+Why did nobody believe Caprona about being possessed
+Why did nobody believe Tyler about being possessed
+Why did nobody believe Lys La Rue about being possessed
+Why did nobody believe Kro-lu about being possessed
+Why did nobody believe So-al about being possessed
+Why did nobody believe Tom Billings about being possessed
+Why did nobody believe Chal-az about being possessed
+Why did nobody believe Bowen J. Tyler about being possessed
+Why did nobody believe Sto-lu about being possessed
+Why did nobody believe Mesozoic about being possessed

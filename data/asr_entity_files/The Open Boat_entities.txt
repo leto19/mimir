@@ -1,0 +1,1 @@
+{"WORK_OF_ART": ["The Open Boat", "Bingen on the Rhine"], "CARDINAL": ["seven", "three", "four"], "ORDINAL": ["first"], "GPE": ["Billie"], "TIME": ["the night", "thirty hours"], "PERSON": ["cook", "Caroline Norton"], "ORG": ["Legion"]}

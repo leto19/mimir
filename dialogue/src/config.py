@@ -134,7 +134,7 @@ ENTRY_TRANSITION = Transition(
     States.ENTRY,
     DialogueOption.DA_RESPONSE,
     True,
-    "Hello, what book are you reading today?"
+    "Hello welcome to Mimir. What book are you reading today?"
 )
 
 # All Transitions

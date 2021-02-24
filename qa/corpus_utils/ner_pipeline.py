@@ -115,14 +115,35 @@ def first_pass(ner_function, sents_list):
 	"""
 	ne_token_list = []
 
-	for sent in sents_list:
+	for i, sent in enumerate(sents_list):
 		entities = ner_function(sent)
+
 		#print(entities)
 		#import pdb; pdb.set_trace()
 		
 		ne_token_list += entities
 
 	return(ne_token_list)
+
+def pass_2(ner_function, sents_list, filtered_type_dict, obj_list, token_threshold):
+
+	prev_tokens = 0
+
+	for i, sent in enumerate(sents_list):
+
+		entities = ner_function(sent, return_indices = True)
+		for idxs, ent, token_confidence in entities:
+			if ent in filtered_type_dict and token_confidence > token_threshold:
+				string, class_string = ent
+				for obj in obj_list:
+					if not hasattr(obj, "sents"):
+						obj.sents = []
+					if obj.class_string == class_string and string in obj.name_variants:
+						obj.sents.append(sent)
+
+	return(obj_list)
+
+
 
 def second_pass(ner_function, sents_list, filtered_type_dict, token_threshold):
 	
@@ -291,10 +312,12 @@ if __name__ == "__main__":
 		for i, filename in enumerate([fn for fn in os.listdir(op.join(in_dir, dset)) if fn.endswith("sents")]):
 			print("doing {} set {} of {}".format(dset, i, len(os.listdir(op.join(in_dir, dset)))))
 			base_name = filename[:-6]
-			if op.exists(op.join(ne_bows_dir, dset, base_name + ".df_dict.json")):
-				continue
+			#if op.exists(op.join(ne_bows_dir, dset, base_name + ".df_dict.json")):
+			#	continue
 			sents_list = get_line_list_from_file(op.join(in_dir, dset, filename))
 			obj_dict, ne_bows, ne_mentions_list = ner_pipeline(spacy_single_line, sents_list)
+			print(obj_dict, ne_bows, ne_mentions_list)
+			import pdb; pdb.set_trace()
 			with open(op.join(ne_bows_dir, dset, base_name + ".df_dict.json"), "w") as dump_path:
 				json.dump(ne_bows, dump_path)
 			np.save(op.join(ne_mentions_list_dir, dset, base_name), np.array(ne_mentions_list))

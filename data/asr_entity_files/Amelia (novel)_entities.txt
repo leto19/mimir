@@ -1,0 +1,1 @@
+{"GPE": ["London", "Newgate", "Amelia"], "DATE": ["1733"], "PERSON": ["William", "William Booth", "Matthews"], "WORK_OF_ART": ["Book II"], "ORDINAL": ["second"], "ORG": ["Booth", "the Glastonbury Waters"], "LOC": ["Booth"], "LAW": ["Chapter 1"]}

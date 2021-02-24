@@ -1,0 +1,1 @@
+{"ORG": ["Confederate", "304th New York Regiment", "Union"], "DATE": ["Eighteen-year-old"], "PERSON": ["Henry Fleming", "Henry", "Jim", "Jim Conklin"], "CARDINAL": ["One", "four", "one"], "ORDINAL": ["first", "third"], "GPE": ["Confederates"], "NORP": ["Confederates", "304th"], "PRODUCT": ["Henry"]}

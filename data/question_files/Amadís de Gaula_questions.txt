@@ -1,0 +1,1893 @@
+Who kills King Perión
+Who kills Leonorina
+Who kills Peña Pobre
+Who kills Esplandián
+Who kills Don Quixote
+Who kills Lisuarte
+Who kills Montalvo
+Who kills Arcalaús
+Who kills Rodríguez de Montalvo
+Who kills Oriana
+What does King Perión do upon meeting King Perión 
+What does King Perión do upon meeting Leonorina 
+What does King Perión do upon meeting Peña Pobre 
+What does King Perión do upon meeting Esplandián 
+What does King Perión do upon meeting Don Quixote 
+What does King Perión do upon meeting Lisuarte 
+What does King Perión do upon meeting Montalvo 
+What does King Perión do upon meeting Arcalaús 
+What does King Perión do upon meeting Rodríguez de Montalvo 
+What does King Perión do upon meeting Oriana 
+What does Leonorina do upon meeting King Perión 
+What does Leonorina do upon meeting Leonorina 
+What does Leonorina do upon meeting Peña Pobre 
+What does Leonorina do upon meeting Esplandián 
+What does Leonorina do upon meeting Don Quixote 
+What does Leonorina do upon meeting Lisuarte 
+What does Leonorina do upon meeting Montalvo 
+What does Leonorina do upon meeting Arcalaús 
+What does Leonorina do upon meeting Rodríguez de Montalvo 
+What does Leonorina do upon meeting Oriana 
+What does Peña Pobre do upon meeting King Perión 
+What does Peña Pobre do upon meeting Leonorina 
+What does Peña Pobre do upon meeting Peña Pobre 
+What does Peña Pobre do upon meeting Esplandián 
+What does Peña Pobre do upon meeting Don Quixote 
+What does Peña Pobre do upon meeting Lisuarte 
+What does Peña Pobre do upon meeting Montalvo 
+What does Peña Pobre do upon meeting Arcalaús 
+What does Peña Pobre do upon meeting Rodríguez de Montalvo 
+What does Peña Pobre do upon meeting Oriana 
+What does Esplandián do upon meeting King Perión 
+What does Esplandián do upon meeting Leonorina 
+What does Esplandián do upon meeting Peña Pobre 
+What does Esplandián do upon meeting Esplandián 
+What does Esplandián do upon meeting Don Quixote 
+What does Esplandián do upon meeting Lisuarte 
+What does Esplandián do upon meeting Montalvo 
+What does Esplandián do upon meeting Arcalaús 
+What does Esplandián do upon meeting Rodríguez de Montalvo 
+What does Esplandián do upon meeting Oriana 
+What does Don Quixote do upon meeting King Perión 
+What does Don Quixote do upon meeting Leonorina 
+What does Don Quixote do upon meeting Peña Pobre 
+What does Don Quixote do upon meeting Esplandián 
+What does Don Quixote do upon meeting Don Quixote 
+What does Don Quixote do upon meeting Lisuarte 
+What does Don Quixote do upon meeting Montalvo 
+What does Don Quixote do upon meeting Arcalaús 
+What does Don Quixote do upon meeting Rodríguez de Montalvo 
+What does Don Quixote do upon meeting Oriana 
+What does Lisuarte do upon meeting King Perión 
+What does Lisuarte do upon meeting Leonorina 
+What does Lisuarte do upon meeting Peña Pobre 
+What does Lisuarte do upon meeting Esplandián 
+What does Lisuarte do upon meeting Don Quixote 
+What does Lisuarte do upon meeting Lisuarte 
+What does Lisuarte do upon meeting Montalvo 
+What does Lisuarte do upon meeting Arcalaús 
+What does Lisuarte do upon meeting Rodríguez de Montalvo 
+What does Lisuarte do upon meeting Oriana 
+What does Montalvo do upon meeting King Perión 
+What does Montalvo do upon meeting Leonorina 
+What does Montalvo do upon meeting Peña Pobre 
+What does Montalvo do upon meeting Esplandián 
+What does Montalvo do upon meeting Don Quixote 
+What does Montalvo do upon meeting Lisuarte 
+What does Montalvo do upon meeting Montalvo 
+What does Montalvo do upon meeting Arcalaús 
+What does Montalvo do upon meeting Rodríguez de Montalvo 
+What does Montalvo do upon meeting Oriana 
+What does Arcalaús do upon meeting King Perión 
+What does Arcalaús do upon meeting Leonorina 
+What does Arcalaús do upon meeting Peña Pobre 
+What does Arcalaús do upon meeting Esplandián 
+What does Arcalaús do upon meeting Don Quixote 
+What does Arcalaús do upon meeting Lisuarte 
+What does Arcalaús do upon meeting Montalvo 
+What does Arcalaús do upon meeting Arcalaús 
+What does Arcalaús do upon meeting Rodríguez de Montalvo 
+What does Arcalaús do upon meeting Oriana 
+What does Rodríguez de Montalvo do upon meeting King Perión 
+What does Rodríguez de Montalvo do upon meeting Leonorina 
+What does Rodríguez de Montalvo do upon meeting Peña Pobre 
+What does Rodríguez de Montalvo do upon meeting Esplandián 
+What does Rodríguez de Montalvo do upon meeting Don Quixote 
+What does Rodríguez de Montalvo do upon meeting Lisuarte 
+What does Rodríguez de Montalvo do upon meeting Montalvo 
+What does Rodríguez de Montalvo do upon meeting Arcalaús 
+What does Rodríguez de Montalvo do upon meeting Rodríguez de Montalvo 
+What does Rodríguez de Montalvo do upon meeting Oriana 
+What does Oriana do upon meeting King Perión 
+What does Oriana do upon meeting Leonorina 
+What does Oriana do upon meeting Peña Pobre 
+What does Oriana do upon meeting Esplandián 
+What does Oriana do upon meeting Don Quixote 
+What does Oriana do upon meeting Lisuarte 
+What does Oriana do upon meeting Montalvo 
+What does Oriana do upon meeting Arcalaús 
+What does Oriana do upon meeting Rodríguez de Montalvo 
+What does Oriana do upon meeting Oriana 
+What town is King Perión Well located in
+What town is Leonorina Well located in
+What town is Peña Pobre Well located in
+What town is Esplandián Well located in
+What town is Don Quixote Well located in
+What town is Lisuarte Well located in
+What town is Montalvo Well located in
+What town is Arcalaús Well located in
+What town is Rodríguez de Montalvo Well located in
+What town is Oriana Well located in
+Who does Adet seek revenge against
+Why doesn't King Perión begin the trip with Insola Firme
+Why doesn't King Perión begin the trip with Lisuarte
+Why doesn't King Perión begin the trip with Urganda la Desconocida
+Why doesn't King Perión begin the trip with Urganda
+Why doesn't Leonorina begin the trip with Insola Firme
+Why doesn't Leonorina begin the trip with Lisuarte
+Why doesn't Leonorina begin the trip with Urganda la Desconocida
+Why doesn't Leonorina begin the trip with Urganda
+Why doesn't Peña Pobre begin the trip with Insola Firme
+Why doesn't Peña Pobre begin the trip with Lisuarte
+Why doesn't Peña Pobre begin the trip with Urganda la Desconocida
+Why doesn't Peña Pobre begin the trip with Urganda
+Why doesn't Esplandián begin the trip with Insola Firme
+Why doesn't Esplandián begin the trip with Lisuarte
+Why doesn't Esplandián begin the trip with Urganda la Desconocida
+Why doesn't Esplandián begin the trip with Urganda
+Why doesn't Don Quixote begin the trip with Insola Firme
+Why doesn't Don Quixote begin the trip with Lisuarte
+Why doesn't Don Quixote begin the trip with Urganda la Desconocida
+Why doesn't Don Quixote begin the trip with Urganda
+Why doesn't Lisuarte begin the trip with Insola Firme
+Why doesn't Lisuarte begin the trip with Lisuarte
+Why doesn't Lisuarte begin the trip with Urganda la Desconocida
+Why doesn't Lisuarte begin the trip with Urganda
+Why doesn't Montalvo begin the trip with Insola Firme
+Why doesn't Montalvo begin the trip with Lisuarte
+Why doesn't Montalvo begin the trip with Urganda la Desconocida
+Why doesn't Montalvo begin the trip with Urganda
+Why doesn't Arcalaús begin the trip with Insola Firme
+Why doesn't Arcalaús begin the trip with Lisuarte
+Why doesn't Arcalaús begin the trip with Urganda la Desconocida
+Why doesn't Arcalaús begin the trip with Urganda
+Why doesn't Rodríguez de Montalvo begin the trip with Insola Firme
+Why doesn't Rodríguez de Montalvo begin the trip with Lisuarte
+Why doesn't Rodríguez de Montalvo begin the trip with Urganda la Desconocida
+Why doesn't Rodríguez de Montalvo begin the trip with Urganda
+Why doesn't Oriana begin the trip with Insola Firme
+Why doesn't Oriana begin the trip with Lisuarte
+Why doesn't Oriana begin the trip with Urganda la Desconocida
+Why doesn't Oriana begin the trip with Urganda
+When was the Doctrine of Right completed by Great Britain
+When was the Doctrine of Right completed by Elisena
+When was the Doctrine of Right completed by Amadís
+When was the Doctrine of Right completed by Britain
+When was the Doctrine of Right completed by Esplandián
+When was the Doctrine of Right completed by Beltenebros
+When was the Doctrine of Right completed by Gaula
+When was the Doctrine of Right completed by England
+When was the Doctrine of Right completed by Scotland
+Why did nobody believe King Perión about being possessed
+Why did nobody believe Leonorina about being possessed
+Why did nobody believe Peña Pobre about being possessed
+Why did nobody believe Esplandián about being possessed
+Why did nobody believe Don Quixote about being possessed
+Why did nobody believe Lisuarte about being possessed
+Why did nobody believe Montalvo about being possessed
+Why did nobody believe Arcalaús about being possessed
+Why did nobody believe Rodríguez de Montalvo about being possessed
+Why did nobody believe Oriana about being possessed
+Where does the story take place
+Why was King Perión from her master's home
+Why was Leonorina from her master's home
+Why was Peña Pobre from her master's home
+Why was Esplandián from her master's home
+Why was Don Quixote from her master's home
+Why was Lisuarte from her master's home
+Why was Montalvo from her master's home
+Why was Arcalaús from her master's home
+Why was Rodríguez de Montalvo from her master's home
+Why was Oriana from her master's home
+What happened to Insola Firme according to Insola Firme
+What happened to Insola Firme according to Lisuarte
+What happened to Insola Firme according to Urganda la Desconocida
+What happened to Insola Firme according to Urganda
+What happened to Lisuarte according to Insola Firme
+What happened to Lisuarte according to Lisuarte
+What happened to Lisuarte according to Urganda la Desconocida
+What happened to Lisuarte according to Urganda
+What happened to Urganda la Desconocida according to Insola Firme
+What happened to Urganda la Desconocida according to Lisuarte
+What happened to Urganda la Desconocida according to Urganda la Desconocida
+What happened to Urganda la Desconocida according to Urganda
+What happened to Urganda according to Insola Firme
+What happened to Urganda according to Lisuarte
+What happened to Urganda according to Urganda la Desconocida
+What happened to Urganda according to Urganda
+What proof of his tale did King Perión provide
+What proof of his tale did Leonorina provide
+What proof of his tale did Peña Pobre provide
+What proof of his tale did Esplandián provide
+What proof of his tale did Don Quixote provide
+What proof of his tale did Lisuarte provide
+What proof of his tale did Montalvo provide
+What proof of his tale did Arcalaús provide
+What proof of his tale did Rodríguez de Montalvo provide
+What proof of his tale did Oriana provide
+who lives in Great Britain
+who lives in Elisena
+who lives in Amadís
+who lives in Britain
+who lives in Esplandián
+who lives in Beltenebros
+who lives in Gaula
+who lives in England
+who lives in Scotland
+What does King Perión want to do to Insola Firme and Insola Firme
+What does King Perión want to do to Insola Firme and Lisuarte
+What does King Perión want to do to Insola Firme and Urganda la Desconocida
+What does King Perión want to do to Insola Firme and Urganda
+What does King Perión want to do to Lisuarte and Insola Firme
+What does King Perión want to do to Lisuarte and Lisuarte
+What does King Perión want to do to Lisuarte and Urganda la Desconocida
+What does King Perión want to do to Lisuarte and Urganda
+What does King Perión want to do to Urganda la Desconocida and Insola Firme
+What does King Perión want to do to Urganda la Desconocida and Lisuarte
+What does King Perión want to do to Urganda la Desconocida and Urganda la Desconocida
+What does King Perión want to do to Urganda la Desconocida and Urganda
+What does King Perión want to do to Urganda and Insola Firme
+What does King Perión want to do to Urganda and Lisuarte
+What does King Perión want to do to Urganda and Urganda la Desconocida
+What does King Perión want to do to Urganda and Urganda
+What does Leonorina want to do to Insola Firme and Insola Firme
+What does Leonorina want to do to Insola Firme and Lisuarte
+What does Leonorina want to do to Insola Firme and Urganda la Desconocida
+What does Leonorina want to do to Insola Firme and Urganda
+What does Leonorina want to do to Lisuarte and Insola Firme
+What does Leonorina want to do to Lisuarte and Lisuarte
+What does Leonorina want to do to Lisuarte and Urganda la Desconocida
+What does Leonorina want to do to Lisuarte and Urganda
+What does Leonorina want to do to Urganda la Desconocida and Insola Firme
+What does Leonorina want to do to Urganda la Desconocida and Lisuarte
+What does Leonorina want to do to Urganda la Desconocida and Urganda la Desconocida
+What does Leonorina want to do to Urganda la Desconocida and Urganda
+What does Leonorina want to do to Urganda and Insola Firme
+What does Leonorina want to do to Urganda and Lisuarte
+What does Leonorina want to do to Urganda and Urganda la Desconocida
+What does Leonorina want to do to Urganda and Urganda
+What does Peña Pobre want to do to Insola Firme and Insola Firme
+What does Peña Pobre want to do to Insola Firme and Lisuarte
+What does Peña Pobre want to do to Insola Firme and Urganda la Desconocida
+What does Peña Pobre want to do to Insola Firme and Urganda
+What does Peña Pobre want to do to Lisuarte and Insola Firme
+What does Peña Pobre want to do to Lisuarte and Lisuarte
+What does Peña Pobre want to do to Lisuarte and Urganda la Desconocida
+What does Peña Pobre want to do to Lisuarte and Urganda
+What does Peña Pobre want to do to Urganda la Desconocida and Insola Firme
+What does Peña Pobre want to do to Urganda la Desconocida and Lisuarte
+What does Peña Pobre want to do to Urganda la Desconocida and Urganda la Desconocida
+What does Peña Pobre want to do to Urganda la Desconocida and Urganda
+What does Peña Pobre want to do to Urganda and Insola Firme
+What does Peña Pobre want to do to Urganda and Lisuarte
+What does Peña Pobre want to do to Urganda and Urganda la Desconocida
+What does Peña Pobre want to do to Urganda and Urganda
+What does Esplandián want to do to Insola Firme and Insola Firme
+What does Esplandián want to do to Insola Firme and Lisuarte
+What does Esplandián want to do to Insola Firme and Urganda la Desconocida
+What does Esplandián want to do to Insola Firme and Urganda
+What does Esplandián want to do to Lisuarte and Insola Firme
+What does Esplandián want to do to Lisuarte and Lisuarte
+What does Esplandián want to do to Lisuarte and Urganda la Desconocida
+What does Esplandián want to do to Lisuarte and Urganda
+What does Esplandián want to do to Urganda la Desconocida and Insola Firme
+What does Esplandián want to do to Urganda la Desconocida and Lisuarte
+What does Esplandián want to do to Urganda la Desconocida and Urganda la Desconocida
+What does Esplandián want to do to Urganda la Desconocida and Urganda
+What does Esplandián want to do to Urganda and Insola Firme
+What does Esplandián want to do to Urganda and Lisuarte
+What does Esplandián want to do to Urganda and Urganda la Desconocida
+What does Esplandián want to do to Urganda and Urganda
+What does Don Quixote want to do to Insola Firme and Insola Firme
+What does Don Quixote want to do to Insola Firme and Lisuarte
+What does Don Quixote want to do to Insola Firme and Urganda la Desconocida
+What does Don Quixote want to do to Insola Firme and Urganda
+What does Don Quixote want to do to Lisuarte and Insola Firme
+What does Don Quixote want to do to Lisuarte and Lisuarte
+What does Don Quixote want to do to Lisuarte and Urganda la Desconocida
+What does Don Quixote want to do to Lisuarte and Urganda
+What does Don Quixote want to do to Urganda la Desconocida and Insola Firme
+What does Don Quixote want to do to Urganda la Desconocida and Lisuarte
+What does Don Quixote want to do to Urganda la Desconocida and Urganda la Desconocida
+What does Don Quixote want to do to Urganda la Desconocida and Urganda
+What does Don Quixote want to do to Urganda and Insola Firme
+What does Don Quixote want to do to Urganda and Lisuarte
+What does Don Quixote want to do to Urganda and Urganda la Desconocida
+What does Don Quixote want to do to Urganda and Urganda
+What does Lisuarte want to do to Insola Firme and Insola Firme
+What does Lisuarte want to do to Insola Firme and Lisuarte
+What does Lisuarte want to do to Insola Firme and Urganda la Desconocida
+What does Lisuarte want to do to Insola Firme and Urganda
+What does Lisuarte want to do to Lisuarte and Insola Firme
+What does Lisuarte want to do to Lisuarte and Lisuarte
+What does Lisuarte want to do to Lisuarte and Urganda la Desconocida
+What does Lisuarte want to do to Lisuarte and Urganda
+What does Lisuarte want to do to Urganda la Desconocida and Insola Firme
+What does Lisuarte want to do to Urganda la Desconocida and Lisuarte
+What does Lisuarte want to do to Urganda la Desconocida and Urganda la Desconocida
+What does Lisuarte want to do to Urganda la Desconocida and Urganda
+What does Lisuarte want to do to Urganda and Insola Firme
+What does Lisuarte want to do to Urganda and Lisuarte
+What does Lisuarte want to do to Urganda and Urganda la Desconocida
+What does Lisuarte want to do to Urganda and Urganda
+What does Montalvo want to do to Insola Firme and Insola Firme
+What does Montalvo want to do to Insola Firme and Lisuarte
+What does Montalvo want to do to Insola Firme and Urganda la Desconocida
+What does Montalvo want to do to Insola Firme and Urganda
+What does Montalvo want to do to Lisuarte and Insola Firme
+What does Montalvo want to do to Lisuarte and Lisuarte
+What does Montalvo want to do to Lisuarte and Urganda la Desconocida
+What does Montalvo want to do to Lisuarte and Urganda
+What does Montalvo want to do to Urganda la Desconocida and Insola Firme
+What does Montalvo want to do to Urganda la Desconocida and Lisuarte
+What does Montalvo want to do to Urganda la Desconocida and Urganda la Desconocida
+What does Montalvo want to do to Urganda la Desconocida and Urganda
+What does Montalvo want to do to Urganda and Insola Firme
+What does Montalvo want to do to Urganda and Lisuarte
+What does Montalvo want to do to Urganda and Urganda la Desconocida
+What does Montalvo want to do to Urganda and Urganda
+What does Arcalaús want to do to Insola Firme and Insola Firme
+What does Arcalaús want to do to Insola Firme and Lisuarte
+What does Arcalaús want to do to Insola Firme and Urganda la Desconocida
+What does Arcalaús want to do to Insola Firme and Urganda
+What does Arcalaús want to do to Lisuarte and Insola Firme
+What does Arcalaús want to do to Lisuarte and Lisuarte
+What does Arcalaús want to do to Lisuarte and Urganda la Desconocida
+What does Arcalaús want to do to Lisuarte and Urganda
+What does Arcalaús want to do to Urganda la Desconocida and Insola Firme
+What does Arcalaús want to do to Urganda la Desconocida and Lisuarte
+What does Arcalaús want to do to Urganda la Desconocida and Urganda la Desconocida
+What does Arcalaús want to do to Urganda la Desconocida and Urganda
+What does Arcalaús want to do to Urganda and Insola Firme
+What does Arcalaús want to do to Urganda and Lisuarte
+What does Arcalaús want to do to Urganda and Urganda la Desconocida
+What does Arcalaús want to do to Urganda and Urganda
+What does Rodríguez de Montalvo want to do to Insola Firme and Insola Firme
+What does Rodríguez de Montalvo want to do to Insola Firme and Lisuarte
+What does Rodríguez de Montalvo want to do to Insola Firme and Urganda la Desconocida
+What does Rodríguez de Montalvo want to do to Insola Firme and Urganda
+What does Rodríguez de Montalvo want to do to Lisuarte and Insola Firme
+What does Rodríguez de Montalvo want to do to Lisuarte and Lisuarte
+What does Rodríguez de Montalvo want to do to Lisuarte and Urganda la Desconocida
+What does Rodríguez de Montalvo want to do to Lisuarte and Urganda
+What does Rodríguez de Montalvo want to do to Urganda la Desconocida and Insola Firme
+What does Rodríguez de Montalvo want to do to Urganda la Desconocida and Lisuarte
+What does Rodríguez de Montalvo want to do to Urganda la Desconocida and Urganda la Desconocida
+What does Rodríguez de Montalvo want to do to Urganda la Desconocida and Urganda
+What does Rodríguez de Montalvo want to do to Urganda and Insola Firme
+What does Rodríguez de Montalvo want to do to Urganda and Lisuarte
+What does Rodríguez de Montalvo want to do to Urganda and Urganda la Desconocida
+What does Rodríguez de Montalvo want to do to Urganda and Urganda
+What does Oriana want to do to Insola Firme and Insola Firme
+What does Oriana want to do to Insola Firme and Lisuarte
+What does Oriana want to do to Insola Firme and Urganda la Desconocida
+What does Oriana want to do to Insola Firme and Urganda
+What does Oriana want to do to Lisuarte and Insola Firme
+What does Oriana want to do to Lisuarte and Lisuarte
+What does Oriana want to do to Lisuarte and Urganda la Desconocida
+What does Oriana want to do to Lisuarte and Urganda
+What does Oriana want to do to Urganda la Desconocida and Insola Firme
+What does Oriana want to do to Urganda la Desconocida and Lisuarte
+What does Oriana want to do to Urganda la Desconocida and Urganda la Desconocida
+What does Oriana want to do to Urganda la Desconocida and Urganda
+What does Oriana want to do to Urganda and Insola Firme
+What does Oriana want to do to Urganda and Lisuarte
+What does Oriana want to do to Urganda and Urganda la Desconocida
+What does Oriana want to do to Urganda and Urganda
+Where does Insola Firme spot cloths laying
+Where does Lisuarte spot cloths laying
+Where does Urganda la Desconocida spot cloths laying
+Where does Urganda spot cloths laying
+What does the angel call our world
+Why does the Devil, in the form of a poodle, follow Insola Firme home
+Why does the Devil, in the form of a poodle, follow Lisuarte home
+Why does the Devil, in the form of a poodle, follow Urganda la Desconocida home
+Why does the Devil, in the form of a poodle, follow Urganda home
+Who save King Perión from being killed
+Who save Leonorina from being killed
+Who save Peña Pobre from being killed
+Who save Esplandián from being killed
+Who save Don Quixote from being killed
+Who save Lisuarte from being killed
+Who save Montalvo from being killed
+Who save Arcalaús from being killed
+Who save Rodríguez de Montalvo from being killed
+Who save Oriana from being killed
+How did Insola Firme think at least ten years would compare with the previous one
+How did Lisuarte think at least ten years would compare with the previous one
+How did Urganda la Desconocida think at least ten years would compare with the previous one
+How did Urganda think at least ten years would compare with the previous one
+How do King Perión and King Perión die
+How do King Perión and Leonorina die
+How do King Perión and Peña Pobre die
+How do King Perión and Esplandián die
+How do King Perión and Don Quixote die
+How do King Perión and Lisuarte die
+How do King Perión and Montalvo die
+How do King Perión and Arcalaús die
+How do King Perión and Rodríguez de Montalvo die
+How do King Perión and Oriana die
+How do Leonorina and King Perión die
+How do Leonorina and Leonorina die
+How do Leonorina and Peña Pobre die
+How do Leonorina and Esplandián die
+How do Leonorina and Don Quixote die
+How do Leonorina and Lisuarte die
+How do Leonorina and Montalvo die
+How do Leonorina and Arcalaús die
+How do Leonorina and Rodríguez de Montalvo die
+How do Leonorina and Oriana die
+How do Peña Pobre and King Perión die
+How do Peña Pobre and Leonorina die
+How do Peña Pobre and Peña Pobre die
+How do Peña Pobre and Esplandián die
+How do Peña Pobre and Don Quixote die
+How do Peña Pobre and Lisuarte die
+How do Peña Pobre and Montalvo die
+How do Peña Pobre and Arcalaús die
+How do Peña Pobre and Rodríguez de Montalvo die
+How do Peña Pobre and Oriana die
+How do Esplandián and King Perión die
+How do Esplandián and Leonorina die
+How do Esplandián and Peña Pobre die
+How do Esplandián and Esplandián die
+How do Esplandián and Don Quixote die
+How do Esplandián and Lisuarte die
+How do Esplandián and Montalvo die
+How do Esplandián and Arcalaús die
+How do Esplandián and Rodríguez de Montalvo die
+How do Esplandián and Oriana die
+How do Don Quixote and King Perión die
+How do Don Quixote and Leonorina die
+How do Don Quixote and Peña Pobre die
+How do Don Quixote and Esplandián die
+How do Don Quixote and Don Quixote die
+How do Don Quixote and Lisuarte die
+How do Don Quixote and Montalvo die
+How do Don Quixote and Arcalaús die
+How do Don Quixote and Rodríguez de Montalvo die
+How do Don Quixote and Oriana die
+How do Lisuarte and King Perión die
+How do Lisuarte and Leonorina die
+How do Lisuarte and Peña Pobre die
+How do Lisuarte and Esplandián die
+How do Lisuarte and Don Quixote die
+How do Lisuarte and Lisuarte die
+How do Lisuarte and Montalvo die
+How do Lisuarte and Arcalaús die
+How do Lisuarte and Rodríguez de Montalvo die
+How do Lisuarte and Oriana die
+How do Montalvo and King Perión die
+How do Montalvo and Leonorina die
+How do Montalvo and Peña Pobre die
+How do Montalvo and Esplandián die
+How do Montalvo and Don Quixote die
+How do Montalvo and Lisuarte die
+How do Montalvo and Montalvo die
+How do Montalvo and Arcalaús die
+How do Montalvo and Rodríguez de Montalvo die
+How do Montalvo and Oriana die
+How do Arcalaús and King Perión die
+How do Arcalaús and Leonorina die
+How do Arcalaús and Peña Pobre die
+How do Arcalaús and Esplandián die
+How do Arcalaús and Don Quixote die
+How do Arcalaús and Lisuarte die
+How do Arcalaús and Montalvo die
+How do Arcalaús and Arcalaús die
+How do Arcalaús and Rodríguez de Montalvo die
+How do Arcalaús and Oriana die
+How do Rodríguez de Montalvo and King Perión die
+How do Rodríguez de Montalvo and Leonorina die
+How do Rodríguez de Montalvo and Peña Pobre die
+How do Rodríguez de Montalvo and Esplandián die
+How do Rodríguez de Montalvo and Don Quixote die
+How do Rodríguez de Montalvo and Lisuarte die
+How do Rodríguez de Montalvo and Montalvo die
+How do Rodríguez de Montalvo and Arcalaús die
+How do Rodríguez de Montalvo and Rodríguez de Montalvo die
+How do Rodríguez de Montalvo and Oriana die
+How do Oriana and King Perión die
+How do Oriana and Leonorina die
+How do Oriana and Peña Pobre die
+How do Oriana and Esplandián die
+How do Oriana and Don Quixote die
+How do Oriana and Lisuarte die
+How do Oriana and Montalvo die
+How do Oriana and Arcalaús die
+How do Oriana and Rodríguez de Montalvo die
+How do Oriana and Oriana die
+what is Insola Firme
+what is Lisuarte
+what is Urganda la Desconocida
+what is Urganda
+How many generations of the King Perión family are there 
+How many generations of the Leonorina family are there 
+How many generations of the Peña Pobre family are there 
+How many generations of the Esplandián family are there 
+How many generations of the Don Quixote family are there 
+How many generations of the Lisuarte family are there 
+How many generations of the Montalvo family are there 
+How many generations of the Arcalaús family are there 
+How many generations of the Rodríguez de Montalvo family are there 
+How many generations of the Oriana family are there 
+Who do Insola Firme and Insola Firme discover upon approaching the village
+Who do Insola Firme and Lisuarte discover upon approaching the village
+Who do Insola Firme and Urganda la Desconocida discover upon approaching the village
+Who do Insola Firme and Urganda discover upon approaching the village
+Who do Lisuarte and Insola Firme discover upon approaching the village
+Who do Lisuarte and Lisuarte discover upon approaching the village
+Who do Lisuarte and Urganda la Desconocida discover upon approaching the village
+Who do Lisuarte and Urganda discover upon approaching the village
+Who do Urganda la Desconocida and Insola Firme discover upon approaching the village
+Who do Urganda la Desconocida and Lisuarte discover upon approaching the village
+Who do Urganda la Desconocida and Urganda la Desconocida discover upon approaching the village
+Who do Urganda la Desconocida and Urganda discover upon approaching the village
+Who do Urganda and Insola Firme discover upon approaching the village
+Who do Urganda and Lisuarte discover upon approaching the village
+Who do Urganda and Urganda la Desconocida discover upon approaching the village
+Who do Urganda and Urganda discover upon approaching the village
+What cause's Great Britain to start courting King Perión
+What cause's Great Britain to start courting Leonorina
+What cause's Great Britain to start courting Peña Pobre
+What cause's Great Britain to start courting Esplandián
+What cause's Great Britain to start courting Don Quixote
+What cause's Great Britain to start courting Lisuarte
+What cause's Great Britain to start courting Montalvo
+What cause's Great Britain to start courting Arcalaús
+What cause's Great Britain to start courting Rodríguez de Montalvo
+What cause's Great Britain to start courting Oriana
+What cause's Elisena to start courting King Perión
+What cause's Elisena to start courting Leonorina
+What cause's Elisena to start courting Peña Pobre
+What cause's Elisena to start courting Esplandián
+What cause's Elisena to start courting Don Quixote
+What cause's Elisena to start courting Lisuarte
+What cause's Elisena to start courting Montalvo
+What cause's Elisena to start courting Arcalaús
+What cause's Elisena to start courting Rodríguez de Montalvo
+What cause's Elisena to start courting Oriana
+What cause's Amadís to start courting King Perión
+What cause's Amadís to start courting Leonorina
+What cause's Amadís to start courting Peña Pobre
+What cause's Amadís to start courting Esplandián
+What cause's Amadís to start courting Don Quixote
+What cause's Amadís to start courting Lisuarte
+What cause's Amadís to start courting Montalvo
+What cause's Amadís to start courting Arcalaús
+What cause's Amadís to start courting Rodríguez de Montalvo
+What cause's Amadís to start courting Oriana
+What cause's Britain to start courting King Perión
+What cause's Britain to start courting Leonorina
+What cause's Britain to start courting Peña Pobre
+What cause's Britain to start courting Esplandián
+What cause's Britain to start courting Don Quixote
+What cause's Britain to start courting Lisuarte
+What cause's Britain to start courting Montalvo
+What cause's Britain to start courting Arcalaús
+What cause's Britain to start courting Rodríguez de Montalvo
+What cause's Britain to start courting Oriana
+What cause's Esplandián to start courting King Perión
+What cause's Esplandián to start courting Leonorina
+What cause's Esplandián to start courting Peña Pobre
+What cause's Esplandián to start courting Esplandián
+What cause's Esplandián to start courting Don Quixote
+What cause's Esplandián to start courting Lisuarte
+What cause's Esplandián to start courting Montalvo
+What cause's Esplandián to start courting Arcalaús
+What cause's Esplandián to start courting Rodríguez de Montalvo
+What cause's Esplandián to start courting Oriana
+What cause's Beltenebros to start courting King Perión
+What cause's Beltenebros to start courting Leonorina
+What cause's Beltenebros to start courting Peña Pobre
+What cause's Beltenebros to start courting Esplandián
+What cause's Beltenebros to start courting Don Quixote
+What cause's Beltenebros to start courting Lisuarte
+What cause's Beltenebros to start courting Montalvo
+What cause's Beltenebros to start courting Arcalaús
+What cause's Beltenebros to start courting Rodríguez de Montalvo
+What cause's Beltenebros to start courting Oriana
+What cause's Gaula to start courting King Perión
+What cause's Gaula to start courting Leonorina
+What cause's Gaula to start courting Peña Pobre
+What cause's Gaula to start courting Esplandián
+What cause's Gaula to start courting Don Quixote
+What cause's Gaula to start courting Lisuarte
+What cause's Gaula to start courting Montalvo
+What cause's Gaula to start courting Arcalaús
+What cause's Gaula to start courting Rodríguez de Montalvo
+What cause's Gaula to start courting Oriana
+What cause's England to start courting King Perión
+What cause's England to start courting Leonorina
+What cause's England to start courting Peña Pobre
+What cause's England to start courting Esplandián
+What cause's England to start courting Don Quixote
+What cause's England to start courting Lisuarte
+What cause's England to start courting Montalvo
+What cause's England to start courting Arcalaús
+What cause's England to start courting Rodríguez de Montalvo
+What cause's England to start courting Oriana
+What cause's Scotland to start courting King Perión
+What cause's Scotland to start courting Leonorina
+What cause's Scotland to start courting Peña Pobre
+What cause's Scotland to start courting Esplandián
+What cause's Scotland to start courting Don Quixote
+What cause's Scotland to start courting Lisuarte
+What cause's Scotland to start courting Montalvo
+What cause's Scotland to start courting Arcalaús
+What cause's Scotland to start courting Rodríguez de Montalvo
+What cause's Scotland to start courting Oriana
+Who is King Perión
+Who is Leonorina
+Who is Peña Pobre
+Who is Esplandián
+Who is Don Quixote
+Who is Lisuarte
+Who is Montalvo
+Who is Arcalaús
+Who is Rodríguez de Montalvo
+Who is Oriana
+Who are the parents of German
+Who are the parents of French
+Who are the parents of Christian
+Who are the parents of Amadís
+Who is King Perión engaged to
+Who is Leonorina engaged to
+Who is Peña Pobre engaged to
+Who is Esplandián engaged to
+Who is Don Quixote engaged to
+Who is Lisuarte engaged to
+Who is Montalvo engaged to
+Who is Arcalaús engaged to
+Who is Rodríguez de Montalvo engaged to
+Who is Oriana engaged to
+What did Insola Firme do with the dead body of the creature who raised him
+What did Lisuarte do with the dead body of the creature who raised him
+What did Urganda la Desconocida do with the dead body of the creature who raised him
+What did Urganda do with the dead body of the creature who raised him
+what happened in at least ten years
+When Emma travels to meet King Perión, what does King Perión think she is doing
+When Emma travels to meet King Perión, what does Leonorina think she is doing
+When Emma travels to meet King Perión, what does Peña Pobre think she is doing
+When Emma travels to meet King Perión, what does Esplandián think she is doing
+When Emma travels to meet King Perión, what does Don Quixote think she is doing
+When Emma travels to meet King Perión, what does Lisuarte think she is doing
+When Emma travels to meet King Perión, what does Montalvo think she is doing
+When Emma travels to meet King Perión, what does Arcalaús think she is doing
+When Emma travels to meet King Perión, what does Rodríguez de Montalvo think she is doing
+When Emma travels to meet King Perión, what does Oriana think she is doing
+When Emma travels to meet Leonorina, what does King Perión think she is doing
+When Emma travels to meet Leonorina, what does Leonorina think she is doing
+When Emma travels to meet Leonorina, what does Peña Pobre think she is doing
+When Emma travels to meet Leonorina, what does Esplandián think she is doing
+When Emma travels to meet Leonorina, what does Don Quixote think she is doing
+When Emma travels to meet Leonorina, what does Lisuarte think she is doing
+When Emma travels to meet Leonorina, what does Montalvo think she is doing
+When Emma travels to meet Leonorina, what does Arcalaús think she is doing
+When Emma travels to meet Leonorina, what does Rodríguez de Montalvo think she is doing
+When Emma travels to meet Leonorina, what does Oriana think she is doing
+When Emma travels to meet Peña Pobre, what does King Perión think she is doing
+When Emma travels to meet Peña Pobre, what does Leonorina think she is doing
+When Emma travels to meet Peña Pobre, what does Peña Pobre think she is doing
+When Emma travels to meet Peña Pobre, what does Esplandián think she is doing
+When Emma travels to meet Peña Pobre, what does Don Quixote think she is doing
+When Emma travels to meet Peña Pobre, what does Lisuarte think she is doing
+When Emma travels to meet Peña Pobre, what does Montalvo think she is doing
+When Emma travels to meet Peña Pobre, what does Arcalaús think she is doing
+When Emma travels to meet Peña Pobre, what does Rodríguez de Montalvo think she is doing
+When Emma travels to meet Peña Pobre, what does Oriana think she is doing
+When Emma travels to meet Esplandián, what does King Perión think she is doing
+When Emma travels to meet Esplandián, what does Leonorina think she is doing
+When Emma travels to meet Esplandián, what does Peña Pobre think she is doing
+When Emma travels to meet Esplandián, what does Esplandián think she is doing
+When Emma travels to meet Esplandián, what does Don Quixote think she is doing
+When Emma travels to meet Esplandián, what does Lisuarte think she is doing
+When Emma travels to meet Esplandián, what does Montalvo think she is doing
+When Emma travels to meet Esplandián, what does Arcalaús think she is doing
+When Emma travels to meet Esplandián, what does Rodríguez de Montalvo think she is doing
+When Emma travels to meet Esplandián, what does Oriana think she is doing
+When Emma travels to meet Don Quixote, what does King Perión think she is doing
+When Emma travels to meet Don Quixote, what does Leonorina think she is doing
+When Emma travels to meet Don Quixote, what does Peña Pobre think she is doing
+When Emma travels to meet Don Quixote, what does Esplandián think she is doing
+When Emma travels to meet Don Quixote, what does Don Quixote think she is doing
+When Emma travels to meet Don Quixote, what does Lisuarte think she is doing
+When Emma travels to meet Don Quixote, what does Montalvo think she is doing
+When Emma travels to meet Don Quixote, what does Arcalaús think she is doing
+When Emma travels to meet Don Quixote, what does Rodríguez de Montalvo think she is doing
+When Emma travels to meet Don Quixote, what does Oriana think she is doing
+When Emma travels to meet Lisuarte, what does King Perión think she is doing
+When Emma travels to meet Lisuarte, what does Leonorina think she is doing
+When Emma travels to meet Lisuarte, what does Peña Pobre think she is doing
+When Emma travels to meet Lisuarte, what does Esplandián think she is doing
+When Emma travels to meet Lisuarte, what does Don Quixote think she is doing
+When Emma travels to meet Lisuarte, what does Lisuarte think she is doing
+When Emma travels to meet Lisuarte, what does Montalvo think she is doing
+When Emma travels to meet Lisuarte, what does Arcalaús think she is doing
+When Emma travels to meet Lisuarte, what does Rodríguez de Montalvo think she is doing
+When Emma travels to meet Lisuarte, what does Oriana think she is doing
+When Emma travels to meet Montalvo, what does King Perión think she is doing
+When Emma travels to meet Montalvo, what does Leonorina think she is doing
+When Emma travels to meet Montalvo, what does Peña Pobre think she is doing
+When Emma travels to meet Montalvo, what does Esplandián think she is doing
+When Emma travels to meet Montalvo, what does Don Quixote think she is doing
+When Emma travels to meet Montalvo, what does Lisuarte think she is doing
+When Emma travels to meet Montalvo, what does Montalvo think she is doing
+When Emma travels to meet Montalvo, what does Arcalaús think she is doing
+When Emma travels to meet Montalvo, what does Rodríguez de Montalvo think she is doing
+When Emma travels to meet Montalvo, what does Oriana think she is doing
+When Emma travels to meet Arcalaús, what does King Perión think she is doing
+When Emma travels to meet Arcalaús, what does Leonorina think she is doing
+When Emma travels to meet Arcalaús, what does Peña Pobre think she is doing
+When Emma travels to meet Arcalaús, what does Esplandián think she is doing
+When Emma travels to meet Arcalaús, what does Don Quixote think she is doing
+When Emma travels to meet Arcalaús, what does Lisuarte think she is doing
+When Emma travels to meet Arcalaús, what does Montalvo think she is doing
+When Emma travels to meet Arcalaús, what does Arcalaús think she is doing
+When Emma travels to meet Arcalaús, what does Rodríguez de Montalvo think she is doing
+When Emma travels to meet Arcalaús, what does Oriana think she is doing
+When Emma travels to meet Rodríguez de Montalvo, what does King Perión think she is doing
+When Emma travels to meet Rodríguez de Montalvo, what does Leonorina think she is doing
+When Emma travels to meet Rodríguez de Montalvo, what does Peña Pobre think she is doing
+When Emma travels to meet Rodríguez de Montalvo, what does Esplandián think she is doing
+When Emma travels to meet Rodríguez de Montalvo, what does Don Quixote think she is doing
+When Emma travels to meet Rodríguez de Montalvo, what does Lisuarte think she is doing
+When Emma travels to meet Rodríguez de Montalvo, what does Montalvo think she is doing
+When Emma travels to meet Rodríguez de Montalvo, what does Arcalaús think she is doing
+When Emma travels to meet Rodríguez de Montalvo, what does Rodríguez de Montalvo think she is doing
+When Emma travels to meet Rodríguez de Montalvo, what does Oriana think she is doing
+When Emma travels to meet Oriana, what does King Perión think she is doing
+When Emma travels to meet Oriana, what does Leonorina think she is doing
+When Emma travels to meet Oriana, what does Peña Pobre think she is doing
+When Emma travels to meet Oriana, what does Esplandián think she is doing
+When Emma travels to meet Oriana, what does Don Quixote think she is doing
+When Emma travels to meet Oriana, what does Lisuarte think she is doing
+When Emma travels to meet Oriana, what does Montalvo think she is doing
+When Emma travels to meet Oriana, what does Arcalaús think she is doing
+When Emma travels to meet Oriana, what does Rodríguez de Montalvo think she is doing
+When Emma travels to meet Oriana, what does Oriana think she is doing
+Who takes Insola Firme prisoner
+Who takes Lisuarte prisoner
+Who takes Urganda la Desconocida prisoner
+Who takes Urganda prisoner
+who is King Perión
+who is Leonorina
+who is Peña Pobre
+who is Esplandián
+who is Don Quixote
+who is Lisuarte
+who is Montalvo
+who is Arcalaús
+who is Rodríguez de Montalvo
+who is Oriana
+Who does King Perión believe had him killed
+Who does Leonorina believe had him killed
+Who does Peña Pobre believe had him killed
+Who does Esplandián believe had him killed
+Who does Don Quixote believe had him killed
+Who does Lisuarte believe had him killed
+Who does Montalvo believe had him killed
+Who does Arcalaús believe had him killed
+Who does Rodríguez de Montalvo believe had him killed
+Who does Oriana believe had him killed
+Who joined the German church
+Who joined the French church
+Who joined the Christian church
+Who joined the Amadís church
+What town did King Perión grow up in 
+What town did Leonorina grow up in 
+What town did Peña Pobre grow up in 
+What town did Esplandián grow up in 
+What town did Don Quixote grow up in 
+What town did Lisuarte grow up in 
+What town did Montalvo grow up in 
+What town did Arcalaús grow up in 
+What town did Rodríguez de Montalvo grow up in 
+What town did Oriana grow up in 
+Why does Emily write to King Perión
+Why does Emily write to Leonorina
+Why does Emily write to Peña Pobre
+Why does Emily write to Esplandián
+Why does Emily write to Don Quixote
+Why does Emily write to Lisuarte
+Why does Emily write to Montalvo
+Why does Emily write to Arcalaús
+Why does Emily write to Rodríguez de Montalvo
+Why does Emily write to Oriana
+What time is it when Great Britain says goodbye to the Insola Firme and returns from the Garden of Death
+What time is it when Great Britain says goodbye to the Lisuarte and returns from the Garden of Death
+What time is it when Great Britain says goodbye to the Urganda la Desconocida and returns from the Garden of Death
+What time is it when Great Britain says goodbye to the Urganda and returns from the Garden of Death
+What time is it when Elisena says goodbye to the Insola Firme and returns from the Garden of Death
+What time is it when Elisena says goodbye to the Lisuarte and returns from the Garden of Death
+What time is it when Elisena says goodbye to the Urganda la Desconocida and returns from the Garden of Death
+What time is it when Elisena says goodbye to the Urganda and returns from the Garden of Death
+What time is it when Amadís says goodbye to the Insola Firme and returns from the Garden of Death
+What time is it when Amadís says goodbye to the Lisuarte and returns from the Garden of Death
+What time is it when Amadís says goodbye to the Urganda la Desconocida and returns from the Garden of Death
+What time is it when Amadís says goodbye to the Urganda and returns from the Garden of Death
+What time is it when Britain says goodbye to the Insola Firme and returns from the Garden of Death
+What time is it when Britain says goodbye to the Lisuarte and returns from the Garden of Death
+What time is it when Britain says goodbye to the Urganda la Desconocida and returns from the Garden of Death
+What time is it when Britain says goodbye to the Urganda and returns from the Garden of Death
+What time is it when Esplandián says goodbye to the Insola Firme and returns from the Garden of Death
+What time is it when Esplandián says goodbye to the Lisuarte and returns from the Garden of Death
+What time is it when Esplandián says goodbye to the Urganda la Desconocida and returns from the Garden of Death
+What time is it when Esplandián says goodbye to the Urganda and returns from the Garden of Death
+What time is it when Beltenebros says goodbye to the Insola Firme and returns from the Garden of Death
+What time is it when Beltenebros says goodbye to the Lisuarte and returns from the Garden of Death
+What time is it when Beltenebros says goodbye to the Urganda la Desconocida and returns from the Garden of Death
+What time is it when Beltenebros says goodbye to the Urganda and returns from the Garden of Death
+What time is it when Gaula says goodbye to the Insola Firme and returns from the Garden of Death
+What time is it when Gaula says goodbye to the Lisuarte and returns from the Garden of Death
+What time is it when Gaula says goodbye to the Urganda la Desconocida and returns from the Garden of Death
+What time is it when Gaula says goodbye to the Urganda and returns from the Garden of Death
+What time is it when England says goodbye to the Insola Firme and returns from the Garden of Death
+What time is it when England says goodbye to the Lisuarte and returns from the Garden of Death
+What time is it when England says goodbye to the Urganda la Desconocida and returns from the Garden of Death
+What time is it when England says goodbye to the Urganda and returns from the Garden of Death
+What time is it when Scotland says goodbye to the Insola Firme and returns from the Garden of Death
+What time is it when Scotland says goodbye to the Lisuarte and returns from the Garden of Death
+What time is it when Scotland says goodbye to the Urganda la Desconocida and returns from the Garden of Death
+What time is it when Scotland says goodbye to the Urganda and returns from the Garden of Death
+Why did King Perión Peak decide to leave King Perión 
+Why did King Perión Peak decide to leave Leonorina 
+Why did King Perión Peak decide to leave Peña Pobre 
+Why did King Perión Peak decide to leave Esplandián 
+Why did King Perión Peak decide to leave Don Quixote 
+Why did King Perión Peak decide to leave Lisuarte 
+Why did King Perión Peak decide to leave Montalvo 
+Why did King Perión Peak decide to leave Arcalaús 
+Why did King Perión Peak decide to leave Rodríguez de Montalvo 
+Why did King Perión Peak decide to leave Oriana 
+Why did Leonorina Peak decide to leave King Perión 
+Why did Leonorina Peak decide to leave Leonorina 
+Why did Leonorina Peak decide to leave Peña Pobre 
+Why did Leonorina Peak decide to leave Esplandián 
+Why did Leonorina Peak decide to leave Don Quixote 
+Why did Leonorina Peak decide to leave Lisuarte 
+Why did Leonorina Peak decide to leave Montalvo 
+Why did Leonorina Peak decide to leave Arcalaús 
+Why did Leonorina Peak decide to leave Rodríguez de Montalvo 
+Why did Leonorina Peak decide to leave Oriana 
+Why did Peña Pobre Peak decide to leave King Perión 
+Why did Peña Pobre Peak decide to leave Leonorina 
+Why did Peña Pobre Peak decide to leave Peña Pobre 
+Why did Peña Pobre Peak decide to leave Esplandián 
+Why did Peña Pobre Peak decide to leave Don Quixote 
+Why did Peña Pobre Peak decide to leave Lisuarte 
+Why did Peña Pobre Peak decide to leave Montalvo 
+Why did Peña Pobre Peak decide to leave Arcalaús 
+Why did Peña Pobre Peak decide to leave Rodríguez de Montalvo 
+Why did Peña Pobre Peak decide to leave Oriana 
+Why did Esplandián Peak decide to leave King Perión 
+Why did Esplandián Peak decide to leave Leonorina 
+Why did Esplandián Peak decide to leave Peña Pobre 
+Why did Esplandián Peak decide to leave Esplandián 
+Why did Esplandián Peak decide to leave Don Quixote 
+Why did Esplandián Peak decide to leave Lisuarte 
+Why did Esplandián Peak decide to leave Montalvo 
+Why did Esplandián Peak decide to leave Arcalaús 
+Why did Esplandián Peak decide to leave Rodríguez de Montalvo 
+Why did Esplandián Peak decide to leave Oriana 
+Why did Don Quixote Peak decide to leave King Perión 
+Why did Don Quixote Peak decide to leave Leonorina 
+Why did Don Quixote Peak decide to leave Peña Pobre 
+Why did Don Quixote Peak decide to leave Esplandián 
+Why did Don Quixote Peak decide to leave Don Quixote 
+Why did Don Quixote Peak decide to leave Lisuarte 
+Why did Don Quixote Peak decide to leave Montalvo 
+Why did Don Quixote Peak decide to leave Arcalaús 
+Why did Don Quixote Peak decide to leave Rodríguez de Montalvo 
+Why did Don Quixote Peak decide to leave Oriana 
+Why did Lisuarte Peak decide to leave King Perión 
+Why did Lisuarte Peak decide to leave Leonorina 
+Why did Lisuarte Peak decide to leave Peña Pobre 
+Why did Lisuarte Peak decide to leave Esplandián 
+Why did Lisuarte Peak decide to leave Don Quixote 
+Why did Lisuarte Peak decide to leave Lisuarte 
+Why did Lisuarte Peak decide to leave Montalvo 
+Why did Lisuarte Peak decide to leave Arcalaús 
+Why did Lisuarte Peak decide to leave Rodríguez de Montalvo 
+Why did Lisuarte Peak decide to leave Oriana 
+Why did Montalvo Peak decide to leave King Perión 
+Why did Montalvo Peak decide to leave Leonorina 
+Why did Montalvo Peak decide to leave Peña Pobre 
+Why did Montalvo Peak decide to leave Esplandián 
+Why did Montalvo Peak decide to leave Don Quixote 
+Why did Montalvo Peak decide to leave Lisuarte 
+Why did Montalvo Peak decide to leave Montalvo 
+Why did Montalvo Peak decide to leave Arcalaús 
+Why did Montalvo Peak decide to leave Rodríguez de Montalvo 
+Why did Montalvo Peak decide to leave Oriana 
+Why did Arcalaús Peak decide to leave King Perión 
+Why did Arcalaús Peak decide to leave Leonorina 
+Why did Arcalaús Peak decide to leave Peña Pobre 
+Why did Arcalaús Peak decide to leave Esplandián 
+Why did Arcalaús Peak decide to leave Don Quixote 
+Why did Arcalaús Peak decide to leave Lisuarte 
+Why did Arcalaús Peak decide to leave Montalvo 
+Why did Arcalaús Peak decide to leave Arcalaús 
+Why did Arcalaús Peak decide to leave Rodríguez de Montalvo 
+Why did Arcalaús Peak decide to leave Oriana 
+Why did Rodríguez de Montalvo Peak decide to leave King Perión 
+Why did Rodríguez de Montalvo Peak decide to leave Leonorina 
+Why did Rodríguez de Montalvo Peak decide to leave Peña Pobre 
+Why did Rodríguez de Montalvo Peak decide to leave Esplandián 
+Why did Rodríguez de Montalvo Peak decide to leave Don Quixote 
+Why did Rodríguez de Montalvo Peak decide to leave Lisuarte 
+Why did Rodríguez de Montalvo Peak decide to leave Montalvo 
+Why did Rodríguez de Montalvo Peak decide to leave Arcalaús 
+Why did Rodríguez de Montalvo Peak decide to leave Rodríguez de Montalvo 
+Why did Rodríguez de Montalvo Peak decide to leave Oriana 
+Why did Oriana Peak decide to leave King Perión 
+Why did Oriana Peak decide to leave Leonorina 
+Why did Oriana Peak decide to leave Peña Pobre 
+Why did Oriana Peak decide to leave Esplandián 
+Why did Oriana Peak decide to leave Don Quixote 
+Why did Oriana Peak decide to leave Lisuarte 
+Why did Oriana Peak decide to leave Montalvo 
+Why did Oriana Peak decide to leave Arcalaús 
+Why did Oriana Peak decide to leave Rodríguez de Montalvo 
+Why did Oriana Peak decide to leave Oriana 
+When does King Perión give herself a different name
+When does Leonorina give herself a different name
+When does Peña Pobre give herself a different name
+When does Esplandián give herself a different name
+When does Don Quixote give herself a different name
+When does Lisuarte give herself a different name
+When does Montalvo give herself a different name
+When does Arcalaús give herself a different name
+When does Rodríguez de Montalvo give herself a different name
+When does Oriana give herself a different name
+What is the name of the school bully
+Who did the invisible monster turn out to be
+What does King Perión resemble
+What does Leonorina resemble
+What does Peña Pobre resemble
+What does Esplandián resemble
+What does Don Quixote resemble
+What does Lisuarte resemble
+What does Montalvo resemble
+What does Arcalaús resemble
+What does Rodríguez de Montalvo resemble
+What does Oriana resemble
+Who is the namesake that is raising Insola Firme
+Who is the namesake that is raising Lisuarte
+Who is the namesake that is raising Urganda la Desconocida
+Who is the namesake that is raising Urganda
+Why do the aliens refuse to study the passengers and crew of the Victory
+How did King Perión finally get off the island
+How did Leonorina finally get off the island
+How did Peña Pobre finally get off the island
+How did Esplandián finally get off the island
+How did Don Quixote finally get off the island
+How did Lisuarte finally get off the island
+How did Montalvo finally get off the island
+How did Arcalaús finally get off the island
+How did Rodríguez de Montalvo finally get off the island
+How did Oriana finally get off the island
+Why do Great Britain and King Perión travel to Great Britain
+Why do Great Britain and King Perión travel to Elisena
+Why do Great Britain and King Perión travel to Amadís
+Why do Great Britain and King Perión travel to Britain
+Why do Great Britain and King Perión travel to Esplandián
+Why do Great Britain and King Perión travel to Beltenebros
+Why do Great Britain and King Perión travel to Gaula
+Why do Great Britain and King Perión travel to England
+Why do Great Britain and King Perión travel to Scotland
+Why do Great Britain and Leonorina travel to Great Britain
+Why do Great Britain and Leonorina travel to Elisena
+Why do Great Britain and Leonorina travel to Amadís
+Why do Great Britain and Leonorina travel to Britain
+Why do Great Britain and Leonorina travel to Esplandián
+Why do Great Britain and Leonorina travel to Beltenebros
+Why do Great Britain and Leonorina travel to Gaula
+Why do Great Britain and Leonorina travel to England
+Why do Great Britain and Leonorina travel to Scotland
+Why do Great Britain and Peña Pobre travel to Great Britain
+Why do Great Britain and Peña Pobre travel to Elisena
+Why do Great Britain and Peña Pobre travel to Amadís
+Why do Great Britain and Peña Pobre travel to Britain
+Why do Great Britain and Peña Pobre travel to Esplandián
+Why do Great Britain and Peña Pobre travel to Beltenebros
+Why do Great Britain and Peña Pobre travel to Gaula
+Why do Great Britain and Peña Pobre travel to England
+Why do Great Britain and Peña Pobre travel to Scotland
+Why do Great Britain and Esplandián travel to Great Britain
+Why do Great Britain and Esplandián travel to Elisena
+Why do Great Britain and Esplandián travel to Amadís
+Why do Great Britain and Esplandián travel to Britain
+Why do Great Britain and Esplandián travel to Esplandián
+Why do Great Britain and Esplandián travel to Beltenebros
+Why do Great Britain and Esplandián travel to Gaula
+Why do Great Britain and Esplandián travel to England
+Why do Great Britain and Esplandián travel to Scotland
+Why do Great Britain and Don Quixote travel to Great Britain
+Why do Great Britain and Don Quixote travel to Elisena
+Why do Great Britain and Don Quixote travel to Amadís
+Why do Great Britain and Don Quixote travel to Britain
+Why do Great Britain and Don Quixote travel to Esplandián
+Why do Great Britain and Don Quixote travel to Beltenebros
+Why do Great Britain and Don Quixote travel to Gaula
+Why do Great Britain and Don Quixote travel to England
+Why do Great Britain and Don Quixote travel to Scotland
+Why do Great Britain and Lisuarte travel to Great Britain
+Why do Great Britain and Lisuarte travel to Elisena
+Why do Great Britain and Lisuarte travel to Amadís
+Why do Great Britain and Lisuarte travel to Britain
+Why do Great Britain and Lisuarte travel to Esplandián
+Why do Great Britain and Lisuarte travel to Beltenebros
+Why do Great Britain and Lisuarte travel to Gaula
+Why do Great Britain and Lisuarte travel to England
+Why do Great Britain and Lisuarte travel to Scotland
+Why do Great Britain and Montalvo travel to Great Britain
+Why do Great Britain and Montalvo travel to Elisena
+Why do Great Britain and Montalvo travel to Amadís
+Why do Great Britain and Montalvo travel to Britain
+Why do Great Britain and Montalvo travel to Esplandián
+Why do Great Britain and Montalvo travel to Beltenebros
+Why do Great Britain and Montalvo travel to Gaula
+Why do Great Britain and Montalvo travel to England
+Why do Great Britain and Montalvo travel to Scotland
+Why do Great Britain and Arcalaús travel to Great Britain
+Why do Great Britain and Arcalaús travel to Elisena
+Why do Great Britain and Arcalaús travel to Amadís
+Why do Great Britain and Arcalaús travel to Britain
+Why do Great Britain and Arcalaús travel to Esplandián
+Why do Great Britain and Arcalaús travel to Beltenebros
+Why do Great Britain and Arcalaús travel to Gaula
+Why do Great Britain and Arcalaús travel to England
+Why do Great Britain and Arcalaús travel to Scotland
+Why do Great Britain and Rodríguez de Montalvo travel to Great Britain
+Why do Great Britain and Rodríguez de Montalvo travel to Elisena
+Why do Great Britain and Rodríguez de Montalvo travel to Amadís
+Why do Great Britain and Rodríguez de Montalvo travel to Britain
+Why do Great Britain and Rodríguez de Montalvo travel to Esplandián
+Why do Great Britain and Rodríguez de Montalvo travel to Beltenebros
+Why do Great Britain and Rodríguez de Montalvo travel to Gaula
+Why do Great Britain and Rodríguez de Montalvo travel to England
+Why do Great Britain and Rodríguez de Montalvo travel to Scotland
+Why do Great Britain and Oriana travel to Great Britain
+Why do Great Britain and Oriana travel to Elisena
+Why do Great Britain and Oriana travel to Amadís
+Why do Great Britain and Oriana travel to Britain
+Why do Great Britain and Oriana travel to Esplandián
+Why do Great Britain and Oriana travel to Beltenebros
+Why do Great Britain and Oriana travel to Gaula
+Why do Great Britain and Oriana travel to England
+Why do Great Britain and Oriana travel to Scotland
+Why do Elisena and King Perión travel to Great Britain
+Why do Elisena and King Perión travel to Elisena
+Why do Elisena and King Perión travel to Amadís
+Why do Elisena and King Perión travel to Britain
+Why do Elisena and King Perión travel to Esplandián
+Why do Elisena and King Perión travel to Beltenebros
+Why do Elisena and King Perión travel to Gaula
+Why do Elisena and King Perión travel to England
+Why do Elisena and King Perión travel to Scotland
+Why do Elisena and Leonorina travel to Great Britain
+Why do Elisena and Leonorina travel to Elisena
+Why do Elisena and Leonorina travel to Amadís
+Why do Elisena and Leonorina travel to Britain
+Why do Elisena and Leonorina travel to Esplandián
+Why do Elisena and Leonorina travel to Beltenebros
+Why do Elisena and Leonorina travel to Gaula
+Why do Elisena and Leonorina travel to England
+Why do Elisena and Leonorina travel to Scotland
+Why do Elisena and Peña Pobre travel to Great Britain
+Why do Elisena and Peña Pobre travel to Elisena
+Why do Elisena and Peña Pobre travel to Amadís
+Why do Elisena and Peña Pobre travel to Britain
+Why do Elisena and Peña Pobre travel to Esplandián
+Why do Elisena and Peña Pobre travel to Beltenebros
+Why do Elisena and Peña Pobre travel to Gaula
+Why do Elisena and Peña Pobre travel to England
+Why do Elisena and Peña Pobre travel to Scotland
+Why do Elisena and Esplandián travel to Great Britain
+Why do Elisena and Esplandián travel to Elisena
+Why do Elisena and Esplandián travel to Amadís
+Why do Elisena and Esplandián travel to Britain
+Why do Elisena and Esplandián travel to Esplandián
+Why do Elisena and Esplandián travel to Beltenebros
+Why do Elisena and Esplandián travel to Gaula
+Why do Elisena and Esplandián travel to England
+Why do Elisena and Esplandián travel to Scotland
+Why do Elisena and Don Quixote travel to Great Britain
+Why do Elisena and Don Quixote travel to Elisena
+Why do Elisena and Don Quixote travel to Amadís
+Why do Elisena and Don Quixote travel to Britain
+Why do Elisena and Don Quixote travel to Esplandián
+Why do Elisena and Don Quixote travel to Beltenebros
+Why do Elisena and Don Quixote travel to Gaula
+Why do Elisena and Don Quixote travel to England
+Why do Elisena and Don Quixote travel to Scotland
+Why do Elisena and Lisuarte travel to Great Britain
+Why do Elisena and Lisuarte travel to Elisena
+Why do Elisena and Lisuarte travel to Amadís
+Why do Elisena and Lisuarte travel to Britain
+Why do Elisena and Lisuarte travel to Esplandián
+Why do Elisena and Lisuarte travel to Beltenebros
+Why do Elisena and Lisuarte travel to Gaula
+Why do Elisena and Lisuarte travel to England
+Why do Elisena and Lisuarte travel to Scotland
+Why do Elisena and Montalvo travel to Great Britain
+Why do Elisena and Montalvo travel to Elisena
+Why do Elisena and Montalvo travel to Amadís
+Why do Elisena and Montalvo travel to Britain
+Why do Elisena and Montalvo travel to Esplandián
+Why do Elisena and Montalvo travel to Beltenebros
+Why do Elisena and Montalvo travel to Gaula
+Why do Elisena and Montalvo travel to England
+Why do Elisena and Montalvo travel to Scotland
+Why do Elisena and Arcalaús travel to Great Britain
+Why do Elisena and Arcalaús travel to Elisena
+Why do Elisena and Arcalaús travel to Amadís
+Why do Elisena and Arcalaús travel to Britain
+Why do Elisena and Arcalaús travel to Esplandián
+Why do Elisena and Arcalaús travel to Beltenebros
+Why do Elisena and Arcalaús travel to Gaula
+Why do Elisena and Arcalaús travel to England
+Why do Elisena and Arcalaús travel to Scotland
+Why do Elisena and Rodríguez de Montalvo travel to Great Britain
+Why do Elisena and Rodríguez de Montalvo travel to Elisena
+Why do Elisena and Rodríguez de Montalvo travel to Amadís
+Why do Elisena and Rodríguez de Montalvo travel to Britain
+Why do Elisena and Rodríguez de Montalvo travel to Esplandián
+Why do Elisena and Rodríguez de Montalvo travel to Beltenebros
+Why do Elisena and Rodríguez de Montalvo travel to Gaula
+Why do Elisena and Rodríguez de Montalvo travel to England
+Why do Elisena and Rodríguez de Montalvo travel to Scotland
+Why do Elisena and Oriana travel to Great Britain
+Why do Elisena and Oriana travel to Elisena
+Why do Elisena and Oriana travel to Amadís
+Why do Elisena and Oriana travel to Britain
+Why do Elisena and Oriana travel to Esplandián
+Why do Elisena and Oriana travel to Beltenebros
+Why do Elisena and Oriana travel to Gaula
+Why do Elisena and Oriana travel to England
+Why do Elisena and Oriana travel to Scotland
+Why do Amadís and King Perión travel to Great Britain
+Why do Amadís and King Perión travel to Elisena
+Why do Amadís and King Perión travel to Amadís
+Why do Amadís and King Perión travel to Britain
+Why do Amadís and King Perión travel to Esplandián
+Why do Amadís and King Perión travel to Beltenebros
+Why do Amadís and King Perión travel to Gaula
+Why do Amadís and King Perión travel to England
+Why do Amadís and King Perión travel to Scotland
+Why do Amadís and Leonorina travel to Great Britain
+Why do Amadís and Leonorina travel to Elisena
+Why do Amadís and Leonorina travel to Amadís
+Why do Amadís and Leonorina travel to Britain
+Why do Amadís and Leonorina travel to Esplandián
+Why do Amadís and Leonorina travel to Beltenebros
+Why do Amadís and Leonorina travel to Gaula
+Why do Amadís and Leonorina travel to England
+Why do Amadís and Leonorina travel to Scotland
+Why do Amadís and Peña Pobre travel to Great Britain
+Why do Amadís and Peña Pobre travel to Elisena
+Why do Amadís and Peña Pobre travel to Amadís
+Why do Amadís and Peña Pobre travel to Britain
+Why do Amadís and Peña Pobre travel to Esplandián
+Why do Amadís and Peña Pobre travel to Beltenebros
+Why do Amadís and Peña Pobre travel to Gaula
+Why do Amadís and Peña Pobre travel to England
+Why do Amadís and Peña Pobre travel to Scotland
+Why do Amadís and Esplandián travel to Great Britain
+Why do Amadís and Esplandián travel to Elisena
+Why do Amadís and Esplandián travel to Amadís
+Why do Amadís and Esplandián travel to Britain
+Why do Amadís and Esplandián travel to Esplandián
+Why do Amadís and Esplandián travel to Beltenebros
+Why do Amadís and Esplandián travel to Gaula
+Why do Amadís and Esplandián travel to England
+Why do Amadís and Esplandián travel to Scotland
+Why do Amadís and Don Quixote travel to Great Britain
+Why do Amadís and Don Quixote travel to Elisena
+Why do Amadís and Don Quixote travel to Amadís
+Why do Amadís and Don Quixote travel to Britain
+Why do Amadís and Don Quixote travel to Esplandián
+Why do Amadís and Don Quixote travel to Beltenebros
+Why do Amadís and Don Quixote travel to Gaula
+Why do Amadís and Don Quixote travel to England
+Why do Amadís and Don Quixote travel to Scotland
+Why do Amadís and Lisuarte travel to Great Britain
+Why do Amadís and Lisuarte travel to Elisena
+Why do Amadís and Lisuarte travel to Amadís
+Why do Amadís and Lisuarte travel to Britain
+Why do Amadís and Lisuarte travel to Esplandián
+Why do Amadís and Lisuarte travel to Beltenebros
+Why do Amadís and Lisuarte travel to Gaula
+Why do Amadís and Lisuarte travel to England
+Why do Amadís and Lisuarte travel to Scotland
+Why do Amadís and Montalvo travel to Great Britain
+Why do Amadís and Montalvo travel to Elisena
+Why do Amadís and Montalvo travel to Amadís
+Why do Amadís and Montalvo travel to Britain
+Why do Amadís and Montalvo travel to Esplandián
+Why do Amadís and Montalvo travel to Beltenebros
+Why do Amadís and Montalvo travel to Gaula
+Why do Amadís and Montalvo travel to England
+Why do Amadís and Montalvo travel to Scotland
+Why do Amadís and Arcalaús travel to Great Britain
+Why do Amadís and Arcalaús travel to Elisena
+Why do Amadís and Arcalaús travel to Amadís
+Why do Amadís and Arcalaús travel to Britain
+Why do Amadís and Arcalaús travel to Esplandián
+Why do Amadís and Arcalaús travel to Beltenebros
+Why do Amadís and Arcalaús travel to Gaula
+Why do Amadís and Arcalaús travel to England
+Why do Amadís and Arcalaús travel to Scotland
+Why do Amadís and Rodríguez de Montalvo travel to Great Britain
+Why do Amadís and Rodríguez de Montalvo travel to Elisena
+Why do Amadís and Rodríguez de Montalvo travel to Amadís
+Why do Amadís and Rodríguez de Montalvo travel to Britain
+Why do Amadís and Rodríguez de Montalvo travel to Esplandián
+Why do Amadís and Rodríguez de Montalvo travel to Beltenebros
+Why do Amadís and Rodríguez de Montalvo travel to Gaula
+Why do Amadís and Rodríguez de Montalvo travel to England
+Why do Amadís and Rodríguez de Montalvo travel to Scotland
+Why do Amadís and Oriana travel to Great Britain
+Why do Amadís and Oriana travel to Elisena
+Why do Amadís and Oriana travel to Amadís
+Why do Amadís and Oriana travel to Britain
+Why do Amadís and Oriana travel to Esplandián
+Why do Amadís and Oriana travel to Beltenebros
+Why do Amadís and Oriana travel to Gaula
+Why do Amadís and Oriana travel to England
+Why do Amadís and Oriana travel to Scotland
+Why do Britain and King Perión travel to Great Britain
+Why do Britain and King Perión travel to Elisena
+Why do Britain and King Perión travel to Amadís
+Why do Britain and King Perión travel to Britain
+Why do Britain and King Perión travel to Esplandián
+Why do Britain and King Perión travel to Beltenebros
+Why do Britain and King Perión travel to Gaula
+Why do Britain and King Perión travel to England
+Why do Britain and King Perión travel to Scotland
+Why do Britain and Leonorina travel to Great Britain
+Why do Britain and Leonorina travel to Elisena
+Why do Britain and Leonorina travel to Amadís
+Why do Britain and Leonorina travel to Britain
+Why do Britain and Leonorina travel to Esplandián
+Why do Britain and Leonorina travel to Beltenebros
+Why do Britain and Leonorina travel to Gaula
+Why do Britain and Leonorina travel to England
+Why do Britain and Leonorina travel to Scotland
+Why do Britain and Peña Pobre travel to Great Britain
+Why do Britain and Peña Pobre travel to Elisena
+Why do Britain and Peña Pobre travel to Amadís
+Why do Britain and Peña Pobre travel to Britain
+Why do Britain and Peña Pobre travel to Esplandián
+Why do Britain and Peña Pobre travel to Beltenebros
+Why do Britain and Peña Pobre travel to Gaula
+Why do Britain and Peña Pobre travel to England
+Why do Britain and Peña Pobre travel to Scotland
+Why do Britain and Esplandián travel to Great Britain
+Why do Britain and Esplandián travel to Elisena
+Why do Britain and Esplandián travel to Amadís
+Why do Britain and Esplandián travel to Britain
+Why do Britain and Esplandián travel to Esplandián
+Why do Britain and Esplandián travel to Beltenebros
+Why do Britain and Esplandián travel to Gaula
+Why do Britain and Esplandián travel to England
+Why do Britain and Esplandián travel to Scotland
+Why do Britain and Don Quixote travel to Great Britain
+Why do Britain and Don Quixote travel to Elisena
+Why do Britain and Don Quixote travel to Amadís
+Why do Britain and Don Quixote travel to Britain
+Why do Britain and Don Quixote travel to Esplandián
+Why do Britain and Don Quixote travel to Beltenebros
+Why do Britain and Don Quixote travel to Gaula
+Why do Britain and Don Quixote travel to England
+Why do Britain and Don Quixote travel to Scotland
+Why do Britain and Lisuarte travel to Great Britain
+Why do Britain and Lisuarte travel to Elisena
+Why do Britain and Lisuarte travel to Amadís
+Why do Britain and Lisuarte travel to Britain
+Why do Britain and Lisuarte travel to Esplandián
+Why do Britain and Lisuarte travel to Beltenebros
+Why do Britain and Lisuarte travel to Gaula
+Why do Britain and Lisuarte travel to England
+Why do Britain and Lisuarte travel to Scotland
+Why do Britain and Montalvo travel to Great Britain
+Why do Britain and Montalvo travel to Elisena
+Why do Britain and Montalvo travel to Amadís
+Why do Britain and Montalvo travel to Britain
+Why do Britain and Montalvo travel to Esplandián
+Why do Britain and Montalvo travel to Beltenebros
+Why do Britain and Montalvo travel to Gaula
+Why do Britain and Montalvo travel to England
+Why do Britain and Montalvo travel to Scotland
+Why do Britain and Arcalaús travel to Great Britain
+Why do Britain and Arcalaús travel to Elisena
+Why do Britain and Arcalaús travel to Amadís
+Why do Britain and Arcalaús travel to Britain
+Why do Britain and Arcalaús travel to Esplandián
+Why do Britain and Arcalaús travel to Beltenebros
+Why do Britain and Arcalaús travel to Gaula
+Why do Britain and Arcalaús travel to England
+Why do Britain and Arcalaús travel to Scotland
+Why do Britain and Rodríguez de Montalvo travel to Great Britain
+Why do Britain and Rodríguez de Montalvo travel to Elisena
+Why do Britain and Rodríguez de Montalvo travel to Amadís
+Why do Britain and Rodríguez de Montalvo travel to Britain
+Why do Britain and Rodríguez de Montalvo travel to Esplandián
+Why do Britain and Rodríguez de Montalvo travel to Beltenebros
+Why do Britain and Rodríguez de Montalvo travel to Gaula
+Why do Britain and Rodríguez de Montalvo travel to England
+Why do Britain and Rodríguez de Montalvo travel to Scotland
+Why do Britain and Oriana travel to Great Britain
+Why do Britain and Oriana travel to Elisena
+Why do Britain and Oriana travel to Amadís
+Why do Britain and Oriana travel to Britain
+Why do Britain and Oriana travel to Esplandián
+Why do Britain and Oriana travel to Beltenebros
+Why do Britain and Oriana travel to Gaula
+Why do Britain and Oriana travel to England
+Why do Britain and Oriana travel to Scotland
+Why do Esplandián and King Perión travel to Great Britain
+Why do Esplandián and King Perión travel to Elisena
+Why do Esplandián and King Perión travel to Amadís
+Why do Esplandián and King Perión travel to Britain
+Why do Esplandián and King Perión travel to Esplandián
+Why do Esplandián and King Perión travel to Beltenebros
+Why do Esplandián and King Perión travel to Gaula
+Why do Esplandián and King Perión travel to England
+Why do Esplandián and King Perión travel to Scotland
+Why do Esplandián and Leonorina travel to Great Britain
+Why do Esplandián and Leonorina travel to Elisena
+Why do Esplandián and Leonorina travel to Amadís
+Why do Esplandián and Leonorina travel to Britain
+Why do Esplandián and Leonorina travel to Esplandián
+Why do Esplandián and Leonorina travel to Beltenebros
+Why do Esplandián and Leonorina travel to Gaula
+Why do Esplandián and Leonorina travel to England
+Why do Esplandián and Leonorina travel to Scotland
+Why do Esplandián and Peña Pobre travel to Great Britain
+Why do Esplandián and Peña Pobre travel to Elisena
+Why do Esplandián and Peña Pobre travel to Amadís
+Why do Esplandián and Peña Pobre travel to Britain
+Why do Esplandián and Peña Pobre travel to Esplandián
+Why do Esplandián and Peña Pobre travel to Beltenebros
+Why do Esplandián and Peña Pobre travel to Gaula
+Why do Esplandián and Peña Pobre travel to England
+Why do Esplandián and Peña Pobre travel to Scotland
+Why do Esplandián and Esplandián travel to Great Britain
+Why do Esplandián and Esplandián travel to Elisena
+Why do Esplandián and Esplandián travel to Amadís
+Why do Esplandián and Esplandián travel to Britain
+Why do Esplandián and Esplandián travel to Esplandián
+Why do Esplandián and Esplandián travel to Beltenebros
+Why do Esplandián and Esplandián travel to Gaula
+Why do Esplandián and Esplandián travel to England
+Why do Esplandián and Esplandián travel to Scotland
+Why do Esplandián and Don Quixote travel to Great Britain
+Why do Esplandián and Don Quixote travel to Elisena
+Why do Esplandián and Don Quixote travel to Amadís
+Why do Esplandián and Don Quixote travel to Britain
+Why do Esplandián and Don Quixote travel to Esplandián
+Why do Esplandián and Don Quixote travel to Beltenebros
+Why do Esplandián and Don Quixote travel to Gaula
+Why do Esplandián and Don Quixote travel to England
+Why do Esplandián and Don Quixote travel to Scotland
+Why do Esplandián and Lisuarte travel to Great Britain
+Why do Esplandián and Lisuarte travel to Elisena
+Why do Esplandián and Lisuarte travel to Amadís
+Why do Esplandián and Lisuarte travel to Britain
+Why do Esplandián and Lisuarte travel to Esplandián
+Why do Esplandián and Lisuarte travel to Beltenebros
+Why do Esplandián and Lisuarte travel to Gaula
+Why do Esplandián and Lisuarte travel to England
+Why do Esplandián and Lisuarte travel to Scotland
+Why do Esplandián and Montalvo travel to Great Britain
+Why do Esplandián and Montalvo travel to Elisena
+Why do Esplandián and Montalvo travel to Amadís
+Why do Esplandián and Montalvo travel to Britain
+Why do Esplandián and Montalvo travel to Esplandián
+Why do Esplandián and Montalvo travel to Beltenebros
+Why do Esplandián and Montalvo travel to Gaula
+Why do Esplandián and Montalvo travel to England
+Why do Esplandián and Montalvo travel to Scotland
+Why do Esplandián and Arcalaús travel to Great Britain
+Why do Esplandián and Arcalaús travel to Elisena
+Why do Esplandián and Arcalaús travel to Amadís
+Why do Esplandián and Arcalaús travel to Britain
+Why do Esplandián and Arcalaús travel to Esplandián
+Why do Esplandián and Arcalaús travel to Beltenebros
+Why do Esplandián and Arcalaús travel to Gaula
+Why do Esplandián and Arcalaús travel to England
+Why do Esplandián and Arcalaús travel to Scotland
+Why do Esplandián and Rodríguez de Montalvo travel to Great Britain
+Why do Esplandián and Rodríguez de Montalvo travel to Elisena
+Why do Esplandián and Rodríguez de Montalvo travel to Amadís
+Why do Esplandián and Rodríguez de Montalvo travel to Britain
+Why do Esplandián and Rodríguez de Montalvo travel to Esplandián
+Why do Esplandián and Rodríguez de Montalvo travel to Beltenebros
+Why do Esplandián and Rodríguez de Montalvo travel to Gaula
+Why do Esplandián and Rodríguez de Montalvo travel to England
+Why do Esplandián and Rodríguez de Montalvo travel to Scotland
+Why do Esplandián and Oriana travel to Great Britain
+Why do Esplandián and Oriana travel to Elisena
+Why do Esplandián and Oriana travel to Amadís
+Why do Esplandián and Oriana travel to Britain
+Why do Esplandián and Oriana travel to Esplandián
+Why do Esplandián and Oriana travel to Beltenebros
+Why do Esplandián and Oriana travel to Gaula
+Why do Esplandián and Oriana travel to England
+Why do Esplandián and Oriana travel to Scotland
+Why do Beltenebros and King Perión travel to Great Britain
+Why do Beltenebros and King Perión travel to Elisena
+Why do Beltenebros and King Perión travel to Amadís
+Why do Beltenebros and King Perión travel to Britain
+Why do Beltenebros and King Perión travel to Esplandián
+Why do Beltenebros and King Perión travel to Beltenebros
+Why do Beltenebros and King Perión travel to Gaula
+Why do Beltenebros and King Perión travel to England
+Why do Beltenebros and King Perión travel to Scotland
+Why do Beltenebros and Leonorina travel to Great Britain
+Why do Beltenebros and Leonorina travel to Elisena
+Why do Beltenebros and Leonorina travel to Amadís
+Why do Beltenebros and Leonorina travel to Britain
+Why do Beltenebros and Leonorina travel to Esplandián
+Why do Beltenebros and Leonorina travel to Beltenebros
+Why do Beltenebros and Leonorina travel to Gaula
+Why do Beltenebros and Leonorina travel to England
+Why do Beltenebros and Leonorina travel to Scotland
+Why do Beltenebros and Peña Pobre travel to Great Britain
+Why do Beltenebros and Peña Pobre travel to Elisena
+Why do Beltenebros and Peña Pobre travel to Amadís
+Why do Beltenebros and Peña Pobre travel to Britain
+Why do Beltenebros and Peña Pobre travel to Esplandián
+Why do Beltenebros and Peña Pobre travel to Beltenebros
+Why do Beltenebros and Peña Pobre travel to Gaula
+Why do Beltenebros and Peña Pobre travel to England
+Why do Beltenebros and Peña Pobre travel to Scotland
+Why do Beltenebros and Esplandián travel to Great Britain
+Why do Beltenebros and Esplandián travel to Elisena
+Why do Beltenebros and Esplandián travel to Amadís
+Why do Beltenebros and Esplandián travel to Britain
+Why do Beltenebros and Esplandián travel to Esplandián
+Why do Beltenebros and Esplandián travel to Beltenebros
+Why do Beltenebros and Esplandián travel to Gaula
+Why do Beltenebros and Esplandián travel to England
+Why do Beltenebros and Esplandián travel to Scotland
+Why do Beltenebros and Don Quixote travel to Great Britain
+Why do Beltenebros and Don Quixote travel to Elisena
+Why do Beltenebros and Don Quixote travel to Amadís
+Why do Beltenebros and Don Quixote travel to Britain
+Why do Beltenebros and Don Quixote travel to Esplandián
+Why do Beltenebros and Don Quixote travel to Beltenebros
+Why do Beltenebros and Don Quixote travel to Gaula
+Why do Beltenebros and Don Quixote travel to England
+Why do Beltenebros and Don Quixote travel to Scotland
+Why do Beltenebros and Lisuarte travel to Great Britain
+Why do Beltenebros and Lisuarte travel to Elisena
+Why do Beltenebros and Lisuarte travel to Amadís
+Why do Beltenebros and Lisuarte travel to Britain
+Why do Beltenebros and Lisuarte travel to Esplandián
+Why do Beltenebros and Lisuarte travel to Beltenebros
+Why do Beltenebros and Lisuarte travel to Gaula
+Why do Beltenebros and Lisuarte travel to England
+Why do Beltenebros and Lisuarte travel to Scotland
+Why do Beltenebros and Montalvo travel to Great Britain
+Why do Beltenebros and Montalvo travel to Elisena
+Why do Beltenebros and Montalvo travel to Amadís
+Why do Beltenebros and Montalvo travel to Britain
+Why do Beltenebros and Montalvo travel to Esplandián
+Why do Beltenebros and Montalvo travel to Beltenebros
+Why do Beltenebros and Montalvo travel to Gaula
+Why do Beltenebros and Montalvo travel to England
+Why do Beltenebros and Montalvo travel to Scotland
+Why do Beltenebros and Arcalaús travel to Great Britain
+Why do Beltenebros and Arcalaús travel to Elisena
+Why do Beltenebros and Arcalaús travel to Amadís
+Why do Beltenebros and Arcalaús travel to Britain
+Why do Beltenebros and Arcalaús travel to Esplandián
+Why do Beltenebros and Arcalaús travel to Beltenebros
+Why do Beltenebros and Arcalaús travel to Gaula
+Why do Beltenebros and Arcalaús travel to England
+Why do Beltenebros and Arcalaús travel to Scotland
+Why do Beltenebros and Rodríguez de Montalvo travel to Great Britain
+Why do Beltenebros and Rodríguez de Montalvo travel to Elisena
+Why do Beltenebros and Rodríguez de Montalvo travel to Amadís
+Why do Beltenebros and Rodríguez de Montalvo travel to Britain
+Why do Beltenebros and Rodríguez de Montalvo travel to Esplandián
+Why do Beltenebros and Rodríguez de Montalvo travel to Beltenebros
+Why do Beltenebros and Rodríguez de Montalvo travel to Gaula
+Why do Beltenebros and Rodríguez de Montalvo travel to England
+Why do Beltenebros and Rodríguez de Montalvo travel to Scotland
+Why do Beltenebros and Oriana travel to Great Britain
+Why do Beltenebros and Oriana travel to Elisena
+Why do Beltenebros and Oriana travel to Amadís
+Why do Beltenebros and Oriana travel to Britain
+Why do Beltenebros and Oriana travel to Esplandián
+Why do Beltenebros and Oriana travel to Beltenebros
+Why do Beltenebros and Oriana travel to Gaula
+Why do Beltenebros and Oriana travel to England
+Why do Beltenebros and Oriana travel to Scotland
+Why do Gaula and King Perión travel to Great Britain
+Why do Gaula and King Perión travel to Elisena
+Why do Gaula and King Perión travel to Amadís
+Why do Gaula and King Perión travel to Britain
+Why do Gaula and King Perión travel to Esplandián
+Why do Gaula and King Perión travel to Beltenebros
+Why do Gaula and King Perión travel to Gaula
+Why do Gaula and King Perión travel to England
+Why do Gaula and King Perión travel to Scotland
+Why do Gaula and Leonorina travel to Great Britain
+Why do Gaula and Leonorina travel to Elisena
+Why do Gaula and Leonorina travel to Amadís
+Why do Gaula and Leonorina travel to Britain
+Why do Gaula and Leonorina travel to Esplandián
+Why do Gaula and Leonorina travel to Beltenebros
+Why do Gaula and Leonorina travel to Gaula
+Why do Gaula and Leonorina travel to England
+Why do Gaula and Leonorina travel to Scotland
+Why do Gaula and Peña Pobre travel to Great Britain
+Why do Gaula and Peña Pobre travel to Elisena
+Why do Gaula and Peña Pobre travel to Amadís
+Why do Gaula and Peña Pobre travel to Britain
+Why do Gaula and Peña Pobre travel to Esplandián
+Why do Gaula and Peña Pobre travel to Beltenebros
+Why do Gaula and Peña Pobre travel to Gaula
+Why do Gaula and Peña Pobre travel to England
+Why do Gaula and Peña Pobre travel to Scotland
+Why do Gaula and Esplandián travel to Great Britain
+Why do Gaula and Esplandián travel to Elisena
+Why do Gaula and Esplandián travel to Amadís
+Why do Gaula and Esplandián travel to Britain
+Why do Gaula and Esplandián travel to Esplandián
+Why do Gaula and Esplandián travel to Beltenebros
+Why do Gaula and Esplandián travel to Gaula
+Why do Gaula and Esplandián travel to England
+Why do Gaula and Esplandián travel to Scotland
+Why do Gaula and Don Quixote travel to Great Britain
+Why do Gaula and Don Quixote travel to Elisena
+Why do Gaula and Don Quixote travel to Amadís
+Why do Gaula and Don Quixote travel to Britain
+Why do Gaula and Don Quixote travel to Esplandián
+Why do Gaula and Don Quixote travel to Beltenebros
+Why do Gaula and Don Quixote travel to Gaula
+Why do Gaula and Don Quixote travel to England
+Why do Gaula and Don Quixote travel to Scotland
+Why do Gaula and Lisuarte travel to Great Britain
+Why do Gaula and Lisuarte travel to Elisena
+Why do Gaula and Lisuarte travel to Amadís
+Why do Gaula and Lisuarte travel to Britain
+Why do Gaula and Lisuarte travel to Esplandián
+Why do Gaula and Lisuarte travel to Beltenebros
+Why do Gaula and Lisuarte travel to Gaula
+Why do Gaula and Lisuarte travel to England
+Why do Gaula and Lisuarte travel to Scotland
+Why do Gaula and Montalvo travel to Great Britain
+Why do Gaula and Montalvo travel to Elisena
+Why do Gaula and Montalvo travel to Amadís
+Why do Gaula and Montalvo travel to Britain
+Why do Gaula and Montalvo travel to Esplandián
+Why do Gaula and Montalvo travel to Beltenebros
+Why do Gaula and Montalvo travel to Gaula
+Why do Gaula and Montalvo travel to England
+Why do Gaula and Montalvo travel to Scotland
+Why do Gaula and Arcalaús travel to Great Britain
+Why do Gaula and Arcalaús travel to Elisena
+Why do Gaula and Arcalaús travel to Amadís
+Why do Gaula and Arcalaús travel to Britain
+Why do Gaula and Arcalaús travel to Esplandián
+Why do Gaula and Arcalaús travel to Beltenebros
+Why do Gaula and Arcalaús travel to Gaula
+Why do Gaula and Arcalaús travel to England
+Why do Gaula and Arcalaús travel to Scotland
+Why do Gaula and Rodríguez de Montalvo travel to Great Britain
+Why do Gaula and Rodríguez de Montalvo travel to Elisena
+Why do Gaula and Rodríguez de Montalvo travel to Amadís
+Why do Gaula and Rodríguez de Montalvo travel to Britain
+Why do Gaula and Rodríguez de Montalvo travel to Esplandián
+Why do Gaula and Rodríguez de Montalvo travel to Beltenebros
+Why do Gaula and Rodríguez de Montalvo travel to Gaula
+Why do Gaula and Rodríguez de Montalvo travel to England
+Why do Gaula and Rodríguez de Montalvo travel to Scotland
+Why do Gaula and Oriana travel to Great Britain
+Why do Gaula and Oriana travel to Elisena
+Why do Gaula and Oriana travel to Amadís
+Why do Gaula and Oriana travel to Britain
+Why do Gaula and Oriana travel to Esplandián
+Why do Gaula and Oriana travel to Beltenebros
+Why do Gaula and Oriana travel to Gaula
+Why do Gaula and Oriana travel to England
+Why do Gaula and Oriana travel to Scotland
+Why do England and King Perión travel to Great Britain
+Why do England and King Perión travel to Elisena
+Why do England and King Perión travel to Amadís
+Why do England and King Perión travel to Britain
+Why do England and King Perión travel to Esplandián
+Why do England and King Perión travel to Beltenebros
+Why do England and King Perión travel to Gaula
+Why do England and King Perión travel to England
+Why do England and King Perión travel to Scotland
+Why do England and Leonorina travel to Great Britain
+Why do England and Leonorina travel to Elisena
+Why do England and Leonorina travel to Amadís
+Why do England and Leonorina travel to Britain
+Why do England and Leonorina travel to Esplandián
+Why do England and Leonorina travel to Beltenebros
+Why do England and Leonorina travel to Gaula
+Why do England and Leonorina travel to England
+Why do England and Leonorina travel to Scotland
+Why do England and Peña Pobre travel to Great Britain
+Why do England and Peña Pobre travel to Elisena
+Why do England and Peña Pobre travel to Amadís
+Why do England and Peña Pobre travel to Britain
+Why do England and Peña Pobre travel to Esplandián
+Why do England and Peña Pobre travel to Beltenebros
+Why do England and Peña Pobre travel to Gaula
+Why do England and Peña Pobre travel to England
+Why do England and Peña Pobre travel to Scotland
+Why do England and Esplandián travel to Great Britain
+Why do England and Esplandián travel to Elisena
+Why do England and Esplandián travel to Amadís
+Why do England and Esplandián travel to Britain
+Why do England and Esplandián travel to Esplandián
+Why do England and Esplandián travel to Beltenebros
+Why do England and Esplandián travel to Gaula
+Why do England and Esplandián travel to England
+Why do England and Esplandián travel to Scotland
+Why do England and Don Quixote travel to Great Britain
+Why do England and Don Quixote travel to Elisena
+Why do England and Don Quixote travel to Amadís
+Why do England and Don Quixote travel to Britain
+Why do England and Don Quixote travel to Esplandián
+Why do England and Don Quixote travel to Beltenebros
+Why do England and Don Quixote travel to Gaula
+Why do England and Don Quixote travel to England
+Why do England and Don Quixote travel to Scotland
+Why do England and Lisuarte travel to Great Britain
+Why do England and Lisuarte travel to Elisena
+Why do England and Lisuarte travel to Amadís
+Why do England and Lisuarte travel to Britain
+Why do England and Lisuarte travel to Esplandián
+Why do England and Lisuarte travel to Beltenebros
+Why do England and Lisuarte travel to Gaula
+Why do England and Lisuarte travel to England
+Why do England and Lisuarte travel to Scotland
+Why do England and Montalvo travel to Great Britain
+Why do England and Montalvo travel to Elisena
+Why do England and Montalvo travel to Amadís
+Why do England and Montalvo travel to Britain
+Why do England and Montalvo travel to Esplandián
+Why do England and Montalvo travel to Beltenebros
+Why do England and Montalvo travel to Gaula
+Why do England and Montalvo travel to England
+Why do England and Montalvo travel to Scotland
+Why do England and Arcalaús travel to Great Britain
+Why do England and Arcalaús travel to Elisena
+Why do England and Arcalaús travel to Amadís
+Why do England and Arcalaús travel to Britain
+Why do England and Arcalaús travel to Esplandián
+Why do England and Arcalaús travel to Beltenebros
+Why do England and Arcalaús travel to Gaula
+Why do England and Arcalaús travel to England
+Why do England and Arcalaús travel to Scotland
+Why do England and Rodríguez de Montalvo travel to Great Britain
+Why do England and Rodríguez de Montalvo travel to Elisena
+Why do England and Rodríguez de Montalvo travel to Amadís
+Why do England and Rodríguez de Montalvo travel to Britain
+Why do England and Rodríguez de Montalvo travel to Esplandián
+Why do England and Rodríguez de Montalvo travel to Beltenebros
+Why do England and Rodríguez de Montalvo travel to Gaula
+Why do England and Rodríguez de Montalvo travel to England
+Why do England and Rodríguez de Montalvo travel to Scotland
+Why do England and Oriana travel to Great Britain
+Why do England and Oriana travel to Elisena
+Why do England and Oriana travel to Amadís
+Why do England and Oriana travel to Britain
+Why do England and Oriana travel to Esplandián
+Why do England and Oriana travel to Beltenebros
+Why do England and Oriana travel to Gaula
+Why do England and Oriana travel to England
+Why do England and Oriana travel to Scotland
+Why do Scotland and King Perión travel to Great Britain
+Why do Scotland and King Perión travel to Elisena
+Why do Scotland and King Perión travel to Amadís
+Why do Scotland and King Perión travel to Britain
+Why do Scotland and King Perión travel to Esplandián
+Why do Scotland and King Perión travel to Beltenebros
+Why do Scotland and King Perión travel to Gaula
+Why do Scotland and King Perión travel to England
+Why do Scotland and King Perión travel to Scotland
+Why do Scotland and Leonorina travel to Great Britain
+Why do Scotland and Leonorina travel to Elisena
+Why do Scotland and Leonorina travel to Amadís
+Why do Scotland and Leonorina travel to Britain
+Why do Scotland and Leonorina travel to Esplandián
+Why do Scotland and Leonorina travel to Beltenebros
+Why do Scotland and Leonorina travel to Gaula
+Why do Scotland and Leonorina travel to England
+Why do Scotland and Leonorina travel to Scotland
+Why do Scotland and Peña Pobre travel to Great Britain
+Why do Scotland and Peña Pobre travel to Elisena
+Why do Scotland and Peña Pobre travel to Amadís
+Why do Scotland and Peña Pobre travel to Britain
+Why do Scotland and Peña Pobre travel to Esplandián
+Why do Scotland and Peña Pobre travel to Beltenebros
+Why do Scotland and Peña Pobre travel to Gaula
+Why do Scotland and Peña Pobre travel to England
+Why do Scotland and Peña Pobre travel to Scotland
+Why do Scotland and Esplandián travel to Great Britain
+Why do Scotland and Esplandián travel to Elisena
+Why do Scotland and Esplandián travel to Amadís
+Why do Scotland and Esplandián travel to Britain
+Why do Scotland and Esplandián travel to Esplandián
+Why do Scotland and Esplandián travel to Beltenebros
+Why do Scotland and Esplandián travel to Gaula
+Why do Scotland and Esplandián travel to England
+Why do Scotland and Esplandián travel to Scotland
+Why do Scotland and Don Quixote travel to Great Britain
+Why do Scotland and Don Quixote travel to Elisena
+Why do Scotland and Don Quixote travel to Amadís
+Why do Scotland and Don Quixote travel to Britain
+Why do Scotland and Don Quixote travel to Esplandián
+Why do Scotland and Don Quixote travel to Beltenebros
+Why do Scotland and Don Quixote travel to Gaula
+Why do Scotland and Don Quixote travel to England
+Why do Scotland and Don Quixote travel to Scotland
+Why do Scotland and Lisuarte travel to Great Britain
+Why do Scotland and Lisuarte travel to Elisena
+Why do Scotland and Lisuarte travel to Amadís
+Why do Scotland and Lisuarte travel to Britain
+Why do Scotland and Lisuarte travel to Esplandián
+Why do Scotland and Lisuarte travel to Beltenebros
+Why do Scotland and Lisuarte travel to Gaula
+Why do Scotland and Lisuarte travel to England
+Why do Scotland and Lisuarte travel to Scotland
+Why do Scotland and Montalvo travel to Great Britain
+Why do Scotland and Montalvo travel to Elisena
+Why do Scotland and Montalvo travel to Amadís
+Why do Scotland and Montalvo travel to Britain
+Why do Scotland and Montalvo travel to Esplandián
+Why do Scotland and Montalvo travel to Beltenebros
+Why do Scotland and Montalvo travel to Gaula
+Why do Scotland and Montalvo travel to England
+Why do Scotland and Montalvo travel to Scotland
+Why do Scotland and Arcalaús travel to Great Britain
+Why do Scotland and Arcalaús travel to Elisena
+Why do Scotland and Arcalaús travel to Amadís
+Why do Scotland and Arcalaús travel to Britain
+Why do Scotland and Arcalaús travel to Esplandián
+Why do Scotland and Arcalaús travel to Beltenebros
+Why do Scotland and Arcalaús travel to Gaula
+Why do Scotland and Arcalaús travel to England
+Why do Scotland and Arcalaús travel to Scotland
+Why do Scotland and Rodríguez de Montalvo travel to Great Britain
+Why do Scotland and Rodríguez de Montalvo travel to Elisena
+Why do Scotland and Rodríguez de Montalvo travel to Amadís
+Why do Scotland and Rodríguez de Montalvo travel to Britain
+Why do Scotland and Rodríguez de Montalvo travel to Esplandián
+Why do Scotland and Rodríguez de Montalvo travel to Beltenebros
+Why do Scotland and Rodríguez de Montalvo travel to Gaula
+Why do Scotland and Rodríguez de Montalvo travel to England
+Why do Scotland and Rodríguez de Montalvo travel to Scotland
+Why do Scotland and Oriana travel to Great Britain
+Why do Scotland and Oriana travel to Elisena
+Why do Scotland and Oriana travel to Amadís
+Why do Scotland and Oriana travel to Britain
+Why do Scotland and Oriana travel to Esplandián
+Why do Scotland and Oriana travel to Beltenebros
+Why do Scotland and Oriana travel to Gaula
+Why do Scotland and Oriana travel to England
+Why do Scotland and Oriana travel to Scotland
+Where does Tarzan go to work for Insola Firme
+Where does Tarzan go to work for Lisuarte
+Where does Tarzan go to work for Urganda la Desconocida
+Where does Tarzan go to work for Urganda
+How does King Perión get out of the King Perión garden
+How does King Perión get out of the Leonorina garden
+How does King Perión get out of the Peña Pobre garden
+How does King Perión get out of the Esplandián garden
+How does King Perión get out of the Don Quixote garden
+How does King Perión get out of the Lisuarte garden
+How does King Perión get out of the Montalvo garden
+How does King Perión get out of the Arcalaús garden
+How does King Perión get out of the Rodríguez de Montalvo garden
+How does King Perión get out of the Oriana garden
+How does Leonorina get out of the King Perión garden
+How does Leonorina get out of the Leonorina garden
+How does Leonorina get out of the Peña Pobre garden
+How does Leonorina get out of the Esplandián garden
+How does Leonorina get out of the Don Quixote garden
+How does Leonorina get out of the Lisuarte garden
+How does Leonorina get out of the Montalvo garden
+How does Leonorina get out of the Arcalaús garden
+How does Leonorina get out of the Rodríguez de Montalvo garden
+How does Leonorina get out of the Oriana garden
+How does Peña Pobre get out of the King Perión garden
+How does Peña Pobre get out of the Leonorina garden
+How does Peña Pobre get out of the Peña Pobre garden
+How does Peña Pobre get out of the Esplandián garden
+How does Peña Pobre get out of the Don Quixote garden
+How does Peña Pobre get out of the Lisuarte garden
+How does Peña Pobre get out of the Montalvo garden
+How does Peña Pobre get out of the Arcalaús garden
+How does Peña Pobre get out of the Rodríguez de Montalvo garden
+How does Peña Pobre get out of the Oriana garden
+How does Esplandián get out of the King Perión garden
+How does Esplandián get out of the Leonorina garden
+How does Esplandián get out of the Peña Pobre garden
+How does Esplandián get out of the Esplandián garden
+How does Esplandián get out of the Don Quixote garden
+How does Esplandián get out of the Lisuarte garden
+How does Esplandián get out of the Montalvo garden
+How does Esplandián get out of the Arcalaús garden
+How does Esplandián get out of the Rodríguez de Montalvo garden
+How does Esplandián get out of the Oriana garden
+How does Don Quixote get out of the King Perión garden
+How does Don Quixote get out of the Leonorina garden
+How does Don Quixote get out of the Peña Pobre garden
+How does Don Quixote get out of the Esplandián garden
+How does Don Quixote get out of the Don Quixote garden
+How does Don Quixote get out of the Lisuarte garden
+How does Don Quixote get out of the Montalvo garden
+How does Don Quixote get out of the Arcalaús garden
+How does Don Quixote get out of the Rodríguez de Montalvo garden
+How does Don Quixote get out of the Oriana garden
+How does Lisuarte get out of the King Perión garden
+How does Lisuarte get out of the Leonorina garden
+How does Lisuarte get out of the Peña Pobre garden
+How does Lisuarte get out of the Esplandián garden
+How does Lisuarte get out of the Don Quixote garden
+How does Lisuarte get out of the Lisuarte garden
+How does Lisuarte get out of the Montalvo garden
+How does Lisuarte get out of the Arcalaús garden
+How does Lisuarte get out of the Rodríguez de Montalvo garden
+How does Lisuarte get out of the Oriana garden
+How does Montalvo get out of the King Perión garden
+How does Montalvo get out of the Leonorina garden
+How does Montalvo get out of the Peña Pobre garden
+How does Montalvo get out of the Esplandián garden
+How does Montalvo get out of the Don Quixote garden
+How does Montalvo get out of the Lisuarte garden
+How does Montalvo get out of the Montalvo garden
+How does Montalvo get out of the Arcalaús garden
+How does Montalvo get out of the Rodríguez de Montalvo garden
+How does Montalvo get out of the Oriana garden
+How does Arcalaús get out of the King Perión garden
+How does Arcalaús get out of the Leonorina garden
+How does Arcalaús get out of the Peña Pobre garden
+How does Arcalaús get out of the Esplandián garden
+How does Arcalaús get out of the Don Quixote garden
+How does Arcalaús get out of the Lisuarte garden
+How does Arcalaús get out of the Montalvo garden
+How does Arcalaús get out of the Arcalaús garden
+How does Arcalaús get out of the Rodríguez de Montalvo garden
+How does Arcalaús get out of the Oriana garden
+How does Rodríguez de Montalvo get out of the King Perión garden
+How does Rodríguez de Montalvo get out of the Leonorina garden
+How does Rodríguez de Montalvo get out of the Peña Pobre garden
+How does Rodríguez de Montalvo get out of the Esplandián garden
+How does Rodríguez de Montalvo get out of the Don Quixote garden
+How does Rodríguez de Montalvo get out of the Lisuarte garden
+How does Rodríguez de Montalvo get out of the Montalvo garden
+How does Rodríguez de Montalvo get out of the Arcalaús garden
+How does Rodríguez de Montalvo get out of the Rodríguez de Montalvo garden
+How does Rodríguez de Montalvo get out of the Oriana garden
+How does Oriana get out of the King Perión garden
+How does Oriana get out of the Leonorina garden
+How does Oriana get out of the Peña Pobre garden
+How does Oriana get out of the Esplandián garden
+How does Oriana get out of the Don Quixote garden
+How does Oriana get out of the Lisuarte garden
+How does Oriana get out of the Montalvo garden
+How does Oriana get out of the Arcalaús garden
+How does Oriana get out of the Rodríguez de Montalvo garden
+How does Oriana get out of the Oriana garden

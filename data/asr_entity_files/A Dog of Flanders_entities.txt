@@ -1,0 +1,1 @@
+{"DATE": ["One day", "19th century", "the age of two"], "GPE": ["Belgium", "Antwerp"], "PERSON": ["Nello", "Jehann Daas", "Nicholas Cogez", "Nicholas"], "PRODUCT": ["Ardennes"], "ORG": ["Nello", "Patrasche", "The Descent of the Cross"], "TIME": ["The next morning", "each morning", "the night of Christmas Eve"], "ORDINAL": ["first"], "MONEY": ["200 francs"]}

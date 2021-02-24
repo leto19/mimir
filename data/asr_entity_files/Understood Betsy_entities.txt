@@ -1,0 +1,1 @@
+{"PERSON": ["Abigail", "Elizabeth Ann", "Harriet", "Henry", "Frances", "Putney", "Betsy", "Ann"], "DATE": ["9-year-old"], "GPE": ["Putneys", "Vermont"]}

@@ -1,0 +1,1 @@
+{"PERSON": ["Charlotte", "Weimar", "Albert", "Werther", "Wilhelm"], "GPE": ["Wahlheim", "Wetzlar", "Charlotte", "Garbenheim"], "DATE": ["the next few months", "eleven years", "Every day", "weekly"], "CARDINAL": ["two", "one"], "NORP": ["Ossian"], "TIME": ["twelve hours later"]}

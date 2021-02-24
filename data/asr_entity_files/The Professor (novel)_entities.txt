@@ -1,0 +1,1 @@
+{"PERSON": ["William Crimsworth", "Mlle", "William", "Edward", "Frances", "Reuter", "Charles", "M. Pelet", "Hunsden"], "ORDINAL": ["first"], "GPE": ["England", "William", "Belgium"], "ORG": ["M. Pelet"], "CARDINAL": ["one", "two"], "LANGUAGE": ["English"]}

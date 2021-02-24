@@ -1,0 +1,1 @@
+{"PERSON": ["Edward Malone", "John Roxton", "Summerlee", "Sumatra", "Challenger"], "CARDINAL": ["five", "three", "only one"], "WORK_OF_ART": ["The Lost World"], "GPE": ["London"], "LOC": ["Challenger", "Earth"], "TIME": ["earlier in"], "NORP": ["Victorian"], "ORG": ["Doyle"]}

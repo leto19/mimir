@@ -1,0 +1,1 @@
+{"PERSON": ["Cobb", "Tom Cobb", "Louise Derrick", "Emmeline Mumford", "Louise", "Sutton"], "GPE": ["Clarence Mumford", "London"], "DATE": ["two-year-old", "several weeks"], "CARDINAL": ["two", "half"], "ORG": ["Cobb", "Clarence", "Cecily", "Bowling", "Mumfords"], "NORP": ["Cecily"], "PRODUCT": ["Cobb"]}

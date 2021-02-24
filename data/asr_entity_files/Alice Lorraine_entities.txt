@@ -1,0 +1,1 @@
+{"DATE": ["the early years of the 19th century", "Hilary", "the day"], "PERSON": ["Alice", "Roland Lorraine", "Hilary", "Mabel", "Chapman"], "GPE": ["Kentish", "Spain", "Badajos", "London"], "NORP": ["Spanish", "Kentish"], "TIME": ["the hour"], "QUANTITY": ["a mile"]}

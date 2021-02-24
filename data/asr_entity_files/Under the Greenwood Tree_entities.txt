@@ -1,0 +1,1 @@
+{"ORG": ["Mellstock"], "PERSON": ["Dick", "Dewy", "Day", "smitten", "Fancy", "William", "Maybold", "Fancy Day", "Hardy", "Dick falls", "Dick Dewy", "Reuben Dewy"], "GPE": ["Mellstock village", "Reuben"], "DATE": ["Sunday", "Christmas Eve", "The next day"], "ORDINAL": ["first"], "CARDINAL": ["two"]}

@@ -1,0 +1,1 @@
+{"CARDINAL": ["one", "three", "five"], "ORDINAL": ["first", "second", "third"], "NORP": ["Byronic", "Russian", "Ossetian"], "LOC": ["Caucasus"], "PERSON": ["Pechorin", "Maxim Maximych's", "Caucasus", "Grushnitsky", "Grigory Alexandrovich Pechorin", "Princess Mary", "Maxim Maximych"], "GPE": ["Captain"], "WORK_OF_ART": ["A Hero of Our Time"]}

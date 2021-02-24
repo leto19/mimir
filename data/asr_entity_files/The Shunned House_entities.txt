@@ -1,0 +1,1 @@
+{"DATE": ["many years", "the next day", "over one hundred years"], "PERSON": ["Elihu Whipple", "Crookes", "Harris", "Whipple"], "FAC": ["Benefit Street"], "TIME": ["the night"], "LANGUAGE": ["French"], "CARDINAL": ["six", "two"], "QUANTITY": ["four barrels", "half and two feet"], "ORDINAL": ["fourth"]}

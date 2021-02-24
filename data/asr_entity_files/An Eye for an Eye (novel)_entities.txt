@@ -1,0 +1,1 @@
+{"PERSON": ["Kate", "Fred realizes", "Jack", "Fred", "Fred Neville", "Scroope Manor", "Earl", "O\u2019Hara"], "GPE": ["Moher", "Scroope", "woos", "Ireland", "western Ireland"], "TIME": ["evening"], "FAC": ["the Earl of Scroope"], "NORP": ["Fred", "English"], "ORG": ["Countess of Scroope"]}

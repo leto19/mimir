@@ -1,0 +1,1 @@
+{"PERSON": ["John Patterson", "Mahina", "Patterson"], "GPE": ["Kenya", "East Africa"], "CARDINAL": ["One", "3", "six", "two", "one", "Two"], "ORDINAL": ["first", "second", "third"], "FAC": ["the camp hospital"], "NORP": ["British", "Sikhs"], "LOC": ["Africa", "East India"], "DATE": ["some years", "the year"], "QUANTITY": ["A couple of hundred yards"]}

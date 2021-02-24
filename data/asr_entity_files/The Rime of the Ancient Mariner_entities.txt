@@ -1,0 +1,1 @@
+{"GPE": ["Antarctic"], "PERSON": ["Devil", "Twas", "Coleridge", "loveth", "Lyrical Ballads", "mariner"], "DATE": ["1800", "seven days", "a-day", "the years"], "CARDINAL": ["prayeth", "One", "two"], "TIME": ["mariner", "nights", "the next morning"], "ORG": ["mariner"], "ORDINAL": ["second"]}

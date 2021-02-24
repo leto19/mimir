@@ -1,0 +1,1 @@
+{"PERSON": ["Goody", "Hackee", "A. A. Milne", "Timmy Tiptoes", "Chippy Hackee", "Timmy", "bush"], "DATE": ["several days", "another week", "the coming winter"], "CARDINAL": ["three", "One", "half", "two"], "ORG": ["Chippy"], "GPE": ["Winnie"]}

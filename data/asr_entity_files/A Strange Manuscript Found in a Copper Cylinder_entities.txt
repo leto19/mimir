@@ -1,0 +1,1 @@
+{"PERSON": ["Samuel Butler", "Charlotte Perkins Gilman's", "Thomas More's", "Herland", "Adam"], "NORP": ["Kosekin", "Western", "British"], "GPE": ["Tasmania"], "CARDINAL": ["four", "one"], "LANGUAGE": ["Hebrew"], "DATE": ["the next year", "19th century"]}

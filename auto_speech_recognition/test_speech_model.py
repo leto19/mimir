@@ -8,15 +8,22 @@ import json
 import pyaudio
 import numpy
 import speech_recognition as sr
-
-
+from get_speech_input import noise_reduce
+from noise_reduction.noise_reduction import noise_reduction
 
 model = Model(sys.argv[1])
 #model = Model("models/vosk-model-en-us-daanzu-20200905")
 #model = Model("models/new")
 
 def get_text(audio_file):
+   # pre_emph(audio_file,"emthed.wav")
+    #pre_emph("emthed.wav","emthed2.wav")
+    #wf = wave.open("emthed.wav", "rb")
+    #os.remove("emthed2.wav")
+    #os.remove("emthed.wav")
+    
     wf = wave.open(audio_file, "rb")
+
     if wf.getnchannels() != 1 or wf.getsampwidth() != 2 or wf.getcomptype() != "NONE":
         print ("Audio file must be WAV format mono PCM.")
         exit (1)
@@ -36,16 +43,6 @@ def get_text(audio_file):
     res = json.loads(rec.FinalResult())
     #os.system('clear')
     return (res['text'])
-
-def get_text_google(audio_file):
-    r = sr.Recognizer()
-    with sr.AudioFile(audio_file) as source:
-        audio = r.record(source)
-    try:
-        return r.recognize_google(audio)
-    except sr.UnknownValueError:
-        return "???"
-
 
 def get_WER(r,h):
     """
@@ -77,43 +74,60 @@ def get_WER(r,h):
     print("WER:",result)
     return result
 
+def get_concept_accuracy(string,concept_list):
+    con_counter = 0
+    for con in concept_list:
+        if con in string:
+            con_counter +=1
+    print("%s/%s (%s%%)" %(con_counter,len(concept_list),(con_counter/len(concept_list))*100))
+    return (con_counter/len(concept_list))*100
 
 model = Model(sys.argv[1])
 
-with open("test_data/baseline.txt") as f:
+with open("%s/baseline.txt"%sys.argv[2].split("/")[0]) as f:
     baseline_list = f.readlines()
 baseline_index = 0
 
-root = os.curdir + "/test_data/"
+root = os.curdir + "/"+ sys.argv[2] +"/"
+print(root)
 #for set_num in range(len(subdirs))
 model_name = sys.argv[1].replace("models/","").replace("/","")
 
 for path, subdirs, files in os.walk(root):
+    print(subdirs)
     for s in subdirs:
         wer_list = list()
+        ca_list = list()
         recog_list = list()
         folder_path = os.path.join(path,s)
         print(folder_path)
         files = os.listdir(folder_path)
-        for f in files:
-            if not f.endswith(".wav"):
-                files.remove(f)
-        print(files)
-        for f in sorted(files):
+        wavs = list()
+        for f in files:    
+            if f.endswith(".wav"):
+               wavs.append(f)
+        print(wavs)
+        for f in sorted(wavs):
             file_path = os.path.join(folder_path, f)
             print(file_path)
-
-            baseline_text = baseline_list[baseline_index].strip()
-            recognised_text = get_text(file_path)
-            recognised_text = recognised_text.lower()
+            #noise_reduce(file_path,file_path.replace(".wav","_rn.wav"))
+            file_path_nr = file_path.replace(".wav","_rn.wav")
+            noise_reduction(file_path,file_path_nr)            
+            baseline_text = baseline_list[baseline_index].split("|")[0].strip()
+            baseline_concepts = baseline_list[baseline_index].split("|")[1].strip().split(",")
+            recognised_text = get_text(file_path_nr)
+            os.remove(file_path_nr)
+            recognised_text = recognised_text.lower().replace("[noise]","").replace("<unk>","")
             baseline_index+=1
             if baseline_index ==9:
                 baseline_index = -1
             recog_list.append(recognised_text)
             wer_list.append(get_WER(baseline_text,recognised_text))
+            ca_list.append(get_concept_accuracy(recognised_text,baseline_concepts))
 
-        with open("test_data/%s/%s.txt"%(s,model_name+"_results") ,"w") as f:
+        with open("%s/%s/%s.txt"%(sys.argv[2],s,model_name+"_results") ,"w") as f:
             f.write(model_name +"\n")
             for i in range(len(wer_list)):
-                f.write("%s | %s (WER: %s) \n"%(baseline_list[i].strip(),recog_list[i],wer_list[i]))
-            f.write("MEAN WER:" + str(numpy.mean(wer_list)))
+                f.write("%s | %s (WER: %s, CA: %s%%) \n"%(baseline_list[i].split("|")[0].strip(),recog_list[i],wer_list[i],ca_list[i]))
+            f.write("MEAN WER:" + str(numpy.mean(wer_list))+"\n")
+            f.write("MEAN CA:" + str(numpy.mean(ca_list)))

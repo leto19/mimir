@@ -1,0 +1,1 @@
+{"PERSON": ["Cassandra", "Grandfather Warren", "Desmond", "Ben", "Stoddard", "Veronica", "Ben Somers", "Charles", "Surrey", "Rosville", "Cassandra Morgeson"], "NORP": ["American"], "GPE": ["Rosville", "Cassandra", "Spain", "Surrey", "Boston", "Belem"], "LOC": ["Veronica", "New England"], "ORG": ["Barmouth"], "CARDINAL": ["eighteen", "252"], "DATE": ["Two years"]}

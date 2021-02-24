@@ -47,3 +47,7 @@ coverage.x
 
 #misc
 speech_recognition/models
+**/dialogue/notebooks/*
+**/dialogue/models
+
+

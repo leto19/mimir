@@ -8,6 +8,10 @@ from qa.question_answering.models.model import ModelController
 from auto_speech_recognition.corprus_creation.log_inputs import log_inputs
 import os
 import json
+
+
+print("loading asr model...")
+
 parser = argparse.ArgumentParser()
 parser.add_argument("-v","--verbose", action="store_true") #Run in verbose mode to view 
 				#which model answers user questions
@@ -18,6 +22,9 @@ args = parser.parse_args()
 if not args.silent:
     from tts.gtts import tts
     import auto_speech_recognition.get_speech_input as asrg
+    from vosk import Model
+    print("loading asr model...")
+    asr_model = Model("%s"%os.environ["MIMIR_DIR"]+"auto_speech_recognition/models/all3")
 
 class NaturalLanguageGenerator():
 	"""A placeholder Natural Language Generation class. We should figure out
@@ -47,10 +54,10 @@ if __name__ == '__main__':
   # While not in end_state, keep running
   while persist_dialogue:
 
-    #user_input = sr.get_input_string() # returns string
     user_input = input("(Press Enter for ASR)\n> ")
     if user_input == "" and not args.silent: # if the user dosn't type a question, use ASR
-      j = json.loads(asrg.get_speech_input_string_google())
+      """
+      j = json.loads(asrg.get_speech_input_string_vosk())
       #this json object contains the best result in "alternative"
       #with the actual text being "transcript" and the confidence % "confidence"
       if "confidence" in j["alternative"][0]: 
@@ -59,6 +66,11 @@ if __name__ == '__main__':
         conf = "???"# sanity :-) 
       user_input = j["alternative"][0]["transcript"]
       print("You said: '%s' (%s%%):"%(user_input,conf))
+
+      """
+      user_input = asrg.get_speech_input_string_vosk(model=asr_model)
+      print("You said: '%s'"%(user_input))
+
       log_inputs(user_input,"s")
     else:
       log_inputs(user_input,"t")

@@ -1,14 +1,14 @@
 import numpy as np
 import math
-from estimate_snrs import estimate_snrs
-from init_noise_tracker_ideal_vad import init_noise_tracker_ideal_vad
-from lookup_gains_in_table import lookup_gain_in_table
+from . estimate_snrs import estimate_snrs
+from  . init_noise_tracker_ideal_vad import init_noise_tracker_ideal_vad
+from . lookup_gains_in_table import lookup_gain_in_table
 
 def algorithm(noisy, parameters):
     # where noisy is an ndarray of audio and parameters is a dictionary
     MIN_GAIN = parameters['min_gain']
     ALPHA = parameters['alpha']
-    SNR_LOW_LIM = parameters['snr_low_lim']
+    SNR_LOW_LIM = parameters['snr_low_lim'] 
     g_mag = parameters['g_mag']
     frLen = parameters['frLen']
     fShift = parameters['fShift']
@@ -73,3 +73,4 @@ def algorithm(noisy, parameters):
         shat[indices] = shat[indices] + synWin * np.real(np.fft.ifft(to_concat))
 
     return shat
+

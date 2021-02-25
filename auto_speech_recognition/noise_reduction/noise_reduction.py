@@ -1,10 +1,8 @@
 import numpy as np
-import sys
-from scipy.io import wavfile
-from algorithm import algorithm
+from . algorithm import algorithm
 import soundfile as sf
 
-def nosie_reduction(in_file,out_file,fs):
+def noise_reduction(in_file,out_file):
 
     parameters = dict()
     parameters['fs'] = 16000
@@ -17,14 +15,17 @@ def nosie_reduction(in_file,out_file,fs):
     parameters['snr_low_lim'] = 2.2204e-16
     s,fs = sf.read(in_file)
     y = s
-    gamma = 1
-    nu = 0.6
-    #g_dft, g_mag, g_mag2 = tabulate_gain_functions(gamma, nu)
-    g_mag = np.load("gain.npy")
+    # gamma = 1
+    # nu = 0.6
+    # g_dft, g_mag, g_mag2 = tabulate_gain_functions(gamma, nu)
+    g_mag = np.load("auto_speech_recognition/noise_reduction/gain.npy")
     parameters['g_mag'] = g_mag
     shat = algorithm(y, parameters)
     #shat = float2pcm(shat)
     #wavfile.write("out.wav",fs,shat)
     sf.write(out_file,shat,fs)
-    print("done!")
-    
+    #print("done!")
+
+if __name__ == '__main__':
+    import sys
+    noise_reduction(sys.argv[1], sys.argv[2])

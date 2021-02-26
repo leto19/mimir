@@ -51,6 +51,9 @@ speech_recognition/models
 **/dialogue/notebooks/fastText/
 **/dialogue/notebooks/rnn_model/
 **/dialogue/notebooks/models.py
-**/dialogue/models
+**/dialogue/models/fastText
+**/dialogue/models/encoder
+**/dialogue/models/qc_rnn_model
+**/dialogue/models/qc_rnn_model.zip
 
 

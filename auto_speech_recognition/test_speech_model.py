@@ -8,8 +8,8 @@ import json
 import pyaudio
 import numpy
 import speech_recognition as sr
-from get_speech_input import noise_reduce
-from noise_reduction.noise_reduction import noise_reduction
+#from get_speech_input import noise_reduce
+from noise_reduction.noise_reduction import *
 
 model = Model(sys.argv[1])
 #model = Model("models/vosk-model-en-us-daanzu-20200905")

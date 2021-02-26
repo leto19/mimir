@@ -17,6 +17,8 @@ from scipy.io import wavfile
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 from array import array
 import aubio
+from auto_speech_recognition.noise_reduction.noise_reduction import *
+
 class RequestError(Exception): pass
 
 class UnknownValueError(Exception): pass
@@ -93,25 +95,28 @@ def get_audio(seconds=3,out_file="auto_speech_recognition/myfile.wav"):
     #pre_emph(out_file) #do pre empathsis
     #os.rename(out_file.replace(".wav","_preempth.wav"), out_file) #replace old file with pre-emph'd version
 
-def get_speech_input_string_vosk(seconds=10):
+def get_speech_input_string_vosk(seconds=10,model=None):
     """returns speech input from the user as a string
     records for the number of seconds specified, default 3"""
     SetLogLevel(-1) #Hides Kaldi outputs to terminal 
-    MODEL_PATH = "auto_speech_recognition/models/all3"
+    if model == None:
+        MODEL_PATH = "auto_speech_recognition/models/all3"
+        model = Model("%s"%os.environ["MIMIR_DIR"]+MODEL_PATH)
+
     get_audio(seconds)
-    noise_reduce(in_file="auto_speech_recognition/myfile.wav",out_file="auto_speech_recognition/myfile_nr.wav") 
+    #noise_reduce(in_file="auto_speech_recognition/myfile.wav",out_file="auto_speech_recognition/myfile_nr.wav") 
+    noise_reduction("auto_speech_recognition/myfile.wav", "auto_speech_recognition/myfile_nr.wav")
     wf = wave.open("auto_speech_recognition/myfile_nr.wav", 'rb')
-    data = wf.readframes(10000000)
+    data = wf.readframes(10000000) # Hmm
     os.remove("auto_speech_recognition/myfile.wav")
     os.remove("auto_speech_recognition/myfile_nr.wav")
 
-    model = Model("%s"%os.environ["MIMIR_DIR"]+MODEL_PATH)
-    rec = KaldiRecognizer(model, 16000)
+    rec = KaldiRecognizer(model, 16000) 
     if rec.AcceptWaveform(data):
         res = json.loads(rec.FinalResult())
         #print(rec)
         #print(res)
-        #print(res['text'])
+        print(res['text'])
         return res['text'].lower().replace("[noise]","")
     else:
         print("Didn't hear anything...")
@@ -173,7 +178,7 @@ def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.fla
 
 
 ## SIGNAL PROCESSING 
-
+"""
 def noise_reduce(in_file="auto_speech_recognition/myfile.wav",out_file="auto_speech_recognition/myfile.wav"):
     fs, data = wavfile.read(in_file) # read in the file data 
     data = data.astype(np.float32, order='C') / 32768.0 #convert to 32bit float
@@ -221,7 +226,7 @@ def pre_emph(in_file,out_file=""):
         # end of file reached
         if read < s.hop_size:
             break
-
+"""
 
 if __name__ == "__main__":
     #j = json.loads(get_speech_input_string_google(keep_files=True))

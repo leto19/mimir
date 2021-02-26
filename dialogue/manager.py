@@ -26,6 +26,7 @@ def dialogue_input(user_utterance):
   global DSM
   transition = DSM.process_input(user_utterance)
   
+  question_cls = None
   # If the input is a question, classify the question
   if (transition.dialogue_id == DialogueOption.QA_RESPONSE):
     question_cls = QUEST_CLS.classify(user_utterance) 
@@ -34,7 +35,7 @@ def dialogue_input(user_utterance):
   retDict = {
     "id": transition.dialogue_id,
     "response": transition.response(),
-    "cls": question_cls if question_cls else None,
+    "cls": question_cls,
   }
 
   if (transition.dialogue_id == DialogueOption.BOOK_CONFIRMED):

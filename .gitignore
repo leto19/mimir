@@ -44,7 +44,7 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.x
-
+question_answering/models/distilbert-squad-nqa
 #misc
 speech_recognition/models
 **/dialogue/notebooks/encoder/
@@ -57,3 +57,14 @@ speech_recognition/models
 **/dialogue/models/qc_rnn_model.zip
 
 
+auto_speech_recognition/models
+auto_speech_recognition/live_models
+auto_speech_recognition/test_data
+auto_speech_recognition/test_data2
+auto_speech_recognition/wn_data
+auto_speech_recognition/audio_temp
+auto_speech_recognition/*_data
+auto_speech_recognition/noise_files
+
+test_set.zip
+test_set_*.zip

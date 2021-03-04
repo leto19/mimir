@@ -50,5 +50,6 @@ class QuestionClassifier():
     enc_q = self.infersent.encode(np.array([question_text]), tokenize=True)
     reshaped = np.array([x.reshape(1, 4096) for x in enc_q])
     tf_test = tf.convert_to_tensor(reshaped)
+    print(tf_test.shape)
     pred = self.model(tf_test)
     return np.argmax(pred)

@@ -34,6 +34,6 @@ for line in line_list: #for each question in the input file
 quest_list = list(filter(None,quest_list))
 print(quest_list)
 
-with open("data/narrQA_questions_formatted_spacy.txt","w+") as f:
+with open("data/survey_qs_formatted.txt","w+") as f:
     f.writelines(quest_list)
 

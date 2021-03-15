@@ -1,4 +1,0 @@
-distilbert_squad_nqa, distilbert_squad_nqa, DistilBertSquadNQA
-bert_baseline, bert_baseline, BertBaseline
-cosine_distance_baseline_tfidf, cosine_distance_baseline, CosineModel
-cosine_distance_baseline_bow, cosine_distance_baseline, CosineModel

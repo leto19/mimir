@@ -14,7 +14,7 @@ def make_ent2idx(summary, word2ent):
 				ent2idx[ent] = idx
 	return(ent2idx)
 
-keywords = get_keywords(question)
+#keywords = get_keywords(question)
 
 def get_entidx_feat(word, word2ent, ent2idx):
 	ent = word2ent.get(word,0)

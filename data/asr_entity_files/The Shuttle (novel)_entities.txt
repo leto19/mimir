@@ -1,1 +1,0 @@
-{"PERSON": ["Nigel", "Betty", "Rosalie Vanderpoel", "Bettina", "Mount Dunstan", "Nigel Anstruthers", "Rosalie", "G. Seldon"], "GPE": ["England", "Nigel", "New York", "Bettina"], "ORG": ["Stornham Court", "Rosy"], "NORP": ["English", "American"], "DATE": ["Many years later", "a decade"], "LOC": ["Mount Dunstan"], "FAC": ["Rosalie at Stornham Court"]}

@@ -1,1 +1,0 @@
-{"GPE": ["Nafai", "Elemak", "Genesis", "Basilica", "Volemak"], "LOC": ["Basilica", "Earth"], "CARDINAL": ["Only one", "two"], "PERSON": ["Elemak", "Rasa", "Oversoul"], "NORP": ["Hebrew"], "ORG": ["character - Shedemei", "Oversoul"]}

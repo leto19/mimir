@@ -1,1 +1,0 @@
-{"ORG": ["Mayfield"], "PERSON": ["Ken Maddox", "Ken"], "LOC": ["Earth"], "DATE": ["the coming winter", "the next four months", "The next day"], "TIME": ["the first night"], "GPE": ["Berkeley", "Mayfield"], "NORP": ["Mayfield"], "CARDINAL": ["One"]}

@@ -1,1 +1,0 @@
-{"PERSON": ["Soudan", "Hilliard Hartley", "Dervish", "Kitchener"], "LANGUAGE": ["English"], "GPE": ["Egypt", "Cairo", "Dervishes"], "NORP": ["Arabic"], "FAC": ["Hicks Pasha"], "WORK_OF_ART": ["Gregory"], "DATE": ["Years"], "ORG": ["Gregory"]}

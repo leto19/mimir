@@ -1,1 +1,0 @@
-{"PERSON": ["Ferdinand", "Mistaking Ferdinand"], "GPE": ["Ferdinand", "Madrid"], "CARDINAL": ["five", "One"], "WORK_OF_ART": ["Ferdinand the Fierce"]}

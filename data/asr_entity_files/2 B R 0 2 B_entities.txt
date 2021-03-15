@@ -1,1 +1,0 @@
-{"GPE": ["the United States"], "CARDINAL": ["only one", "three", "forty million", "two"], "FAC": ["the Chicago Lying-In Hospital"], "PERSON": ["Hitz", "Edward K. Wehling", "Leora Duncan", "Benjamin Hitz"], "ORG": ["the Service Division of the Federal Bureau of Termination", "the Bureau", "Wehling"], "WORK_OF_ART": ["Wehling"], "DATE": ["about two hundred years old"]}

@@ -1,1 +1,0 @@
-{"LOC": ["Earth"], "PERSON": ["Larry O'Keefe", "Yolara", "Dweller", "Goodwin", "Lakla"], "CARDINAL": ["only three"], "NORP": ["half-American", "half-Irish"], "GPE": ["O'Keefe"]}

@@ -1,1 +1,0 @@
-{"DATE": ["day", "a few years", "the end of the day"], "GPE": ["Patagonia", "London", "Albion", "England"], "LOC": ["Kensington Gardens", "Gardens"], "PERSON": ["Barrie", "Peter Pan"], "WORK_OF_ART": ["Lock-Out Time"], "ORDINAL": ["third"], "CARDINAL": ["two"], "LAW": ["chapter 24"]}

@@ -1,1 +1,0 @@
-{"PERSON": ["Wangel", "Hilde", "Ellida", "Arnholm"], "GPE": ["West Norway", "Bolette"], "CARDINAL": ["two"], "NORP": ["Ellida\u00e2\u0080\u0099s"], "WORK_OF_ART": ["Bolette\u00e2\u0080\u0099s"], "DATE": ["Some years earlier"]}

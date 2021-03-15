@@ -1,1 +1,0 @@
-{"ORG": ["Apollo", "Admetus", "Thanatos (Death"], "GPE": ["Pherae", "Velestino", "Magnesia", "Alcestis"], "NORP": ["Admetus"], "ORDINAL": ["first"], "PERSON": ["Thanatos", "Heracles"], "CARDINAL": ["two", "fifteen"], "WORK_OF_ART": ["The King"], "TIME": ["earlier that morning"], "DATE": ["three days"]}

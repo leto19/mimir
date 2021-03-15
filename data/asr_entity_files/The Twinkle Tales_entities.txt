@@ -1,1 +1,0 @@
-{"PERSON": ["Chubbins", "Melga", "Prince Mud-Turtle", "Prairie-Dog Town", "Woodchuck", "Jim Crow", "Policeman Bluejay", "Jim"], "ORG": ["Twinkle", "Chubbins", "Baum"], "CARDINAL": ["One", "two", "one"], "WORK_OF_ART": ["The Discontented Gopher", "Corrugated Giant"], "FAC": ["Sugar-Loaf Mountain"]}

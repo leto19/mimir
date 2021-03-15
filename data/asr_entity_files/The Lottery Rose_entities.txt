@@ -1,1 +1,0 @@
-{"PERSON": ["Paul", "Sims", "Alice", "Timothy", "Harper", "Mary Angela", "Collier", "Robin", "Sister Mary Angela", "Molly Harper", "Georgie Burgess", "Georgie", "bush"], "DATE": ["seven and a half years old", "the next day"], "GPE": ["Wonderland", "Alice", "Tampa", "Florida"], "NORP": ["Catholic"], "TIME": ["night", "The next morning"], "LAW": ["the Mad Hatter"]}

@@ -1,1 +1,0 @@
-{"CARDINAL": ["two", "one"], "ORDINAL": ["second", "first"], "PERSON": ["Sherlock Holmes", "Raffles", "Bunny"], "GPE": ["Raffles", "England", "Society", "West End"], "WORK_OF_ART": ["A Thief in the Night", "The Amateur Cracksman", "The Black Mask"], "EVENT": ["the Boer War"], "FAC": ["the Reichenbach Falls", "Bond Street"]}

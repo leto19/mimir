@@ -1,1 +1,0 @@
-{"LOC": ["the Appalachian Mountains"], "CARDINAL": ["two"], "ORG": ["Tollivers"], "PERSON": ["Geologist Hale", "Devil Judd Tolliver", "Hale", "Devil John\" Wesley Wright", "John Hale"], "GPE": ["Wise County", "Virginia", "Kentucky", "Letcher County"], "DATE": ["100 years", "June"], "NORP": ["clans"], "PRODUCT": ["Hale"]}

@@ -1,1 +1,0 @@
-{"ORG": ["Blanche", "Strickland", "Strickland's"], "GPE": ["Tahiti", "London", "Paris", "Strickland"], "DATE": ["a few years", "late 19th or early 20th century"], "NORP": ["Dutch", "Stroeve", "French"], "PERSON": ["Dirk Stroeve"], "ORDINAL": ["first"], "CARDINAL": ["two", "one"], "LOC": ["Marseilles"]}

@@ -1,6 +1,0 @@
-who is $PERSON
-what is $ORG
-what is $PRODUCT
-what happened in $DATE
-who lives in $GPE
-who lives in $LOC

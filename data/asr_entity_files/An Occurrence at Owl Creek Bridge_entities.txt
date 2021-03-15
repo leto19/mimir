@@ -1,1 +1,0 @@
-{"PERSON": ["Peyton Farquhar", "Farquhar"], "DATE": ["mid-thirties", "all day"], "GPE": ["Farquhar", "Alabama"], "EVENT": ["the American Civil War"], "CARDINAL": ["Six"], "TIME": ["one evening", "that night", "The next morning"], "ORG": ["Union", "Confederacy"], "FAC": ["the Owl Creek"], "QUANTITY": ["30 miles"], "ORDINAL": ["third"]}

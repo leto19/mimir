@@ -1,1 +1,0 @@
-{"WORK_OF_ART": ["The Runaway Skyscraper"], "PERSON": ["Arthur Chamberlain"], "GPE": ["Manhattan", "Chamberlain"], "FAC": ["the Metropolitan Tower"], "DATE": ["several thousand years", "Two weeks later", "pre-Columbian", "several weeks"], "CARDINAL": ["2000-odd"], "ORDINAL": ["first"]}

@@ -1,1 +1,0 @@
-{"PERSON": ["Caroline Abbott", "Harriet", "Lilia Herriton", "Lilia", "Philip", "Caroline", "Harriet kidnaps", "Herritons", "Gino", "Monteriano"], "NORP": ["Englishman", "Italian", "Lilia"], "GPE": ["Caroline", "England", "Italy"], "LOC": ["Gino"], "ORG": ["Phillip"], "CARDINAL": ["two"]}

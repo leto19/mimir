@@ -1,1 +1,0 @@
-{"ORDINAL": ["first"], "ORG": ["Renaissance", "Machiavelli", "the Discourses on Livy"], "NORP": ["Italian", "republican"], "PERSON": ["Gilbert", "Cyrus the Great", "Xenophon", "Machiavelli", "Tacitus"], "GPE": ["republics"], "CARDINAL": ["one", "two", "1938:19\u00e2\u0080\u009323", "1", "2"], "LAW": ["Chapter 2"], "WORK_OF_ART": ["un-Aristotelian", "Aristotle's Politics"]}

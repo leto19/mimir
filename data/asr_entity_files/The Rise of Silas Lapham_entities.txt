@@ -1,1 +1,0 @@
-{"PERSON": ["Corey", "Rogers", "Tom Corey", "Bromfield Corey", "Penelope", "Silas Lapham", "Silas Lapham's", "Lapham", "Irene", "Milton K. Rogers"], "LOC": ["Back Bay"], "GPE": ["Lapham", "Irene"], "ORG": ["Laphams"], "FAC": ["Beacon Street"]}

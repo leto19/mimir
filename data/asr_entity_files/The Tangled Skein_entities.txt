@@ -1,1 +1,0 @@
-{"PERSON": ["Queen Mary", "Wessex", "Cardinal de Moreno", "Lady Ursula Glynde", "Mary", "Don Mignel", "Philip", "Marquis de Saurez", "Ursula", "Queen", "Lady Ursula", "Robert d\u2019Esclade"], "ORDINAL": ["fifth"], "GPE": ["Spain", "England"], "ORG": ["Cardinal", "Philip II"], "NORP": ["Eminence"]}

@@ -1,1 +1,0 @@
-{"LOC": ["the Carpathian Mountains", "Central Europe"], "GPE": ["Hamburg", "England", "America"], "ORDINAL": ["first"], "LANGUAGE": ["English"], "PERSON": ["Yanko", "Amy Foster", "Little John", "Swaffer", "Amy", "Johnny"], "ORG": ["Goorall"], "DATE": ["Several months later"], "TIME": ["Next morning"]}

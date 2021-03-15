@@ -1,1 +1,0 @@
-{"PERSON": ["Kaiser Wilhelm II", "Robert Erskine Childers's"], "ORG": ["Imperial", "the House of Hohenzollern"], "GPE": ["London", "Kaiser"], "NORP": ["British", "German", "European"], "WORK_OF_ART": ["The Riddle of the Sands"], "DATE": ["the beginning of the 20th century", "1903"], "EVENT": ["the Great War"], "LANGUAGE": ["English"], "LOC": ["Hyde Park"], "CARDINAL": ["one"]}

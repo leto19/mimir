@@ -1,1 +1,0 @@
-{"PERSON": ["Incas", "Manco Capac", "Louie", "Donald Duck", "Glomgold", "Dewey", "Scrooge McDuck", "Huey", "Flintheart Glomgold", "Scrooge"], "NORP": ["Barks", "Incan"], "CARDINAL": ["one", "about one", "two"], "ORG": ["Manco Capac", "Inca", "Incan"], "ORDINAL": ["first"], "LOC": ["the Andes mountains"], "GPE": ["Cuzco"], "DATE": ["A week later", "several days ago"]}

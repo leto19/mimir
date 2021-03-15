@@ -1,1 +1,0 @@
-{"PERSON": ["Tabitha Twitchit", "Tom", "Moppet", "Samuel Whiskers", "Kittens", "Twitchit", "Ribby", "Anna Maria", "Mittens", "Tom Kitten", "John Joiner"], "CARDINAL": ["two"], "GPE": ["Tabitha Twitchit"], "FAC": ["Farmer Potatoes"]}

@@ -1,1 +1,0 @@
-{"PERSON": ["Nils Holgersson", "Nils"], "WORK_OF_ART": ["Bible"], "GPE": ["Stockholm", "Halland", "Sweden", "Nils", "Scania"], "PRODUCT": ["Nils"], "CARDINAL": ["one"], "LOC": ["the King of Sweden"], "LAW": ["chapter 53"], "NORP": ["Swedish"]}

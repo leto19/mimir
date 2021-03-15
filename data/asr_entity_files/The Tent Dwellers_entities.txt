@@ -1,1 +1,0 @@
-{"DATE": ["three-week", "this day"], "PERSON": ["Breck", "Nova Scotia"], "ORG": ["Eddie"], "ORDINAL": ["first"], "GPE": ["mosquitos", "Kejimkujik Park"], "LOC": ["the Tobeatic Wilderness Area", "New England", "Nova Scotia"], "NORP": ["Paine"]}

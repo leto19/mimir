@@ -1,1 +1,0 @@
-{"WORK_OF_ART": ["Prince Prospero"], "CARDINAL": ["seven", "1,000", "six"], "PRODUCT": ["the Red Death"], "TIME": ["midnight", "each hour", "half an hour", "One night"], "PERSON": ["Prospero"], "ORDINAL": ["first", "seventh"], "ORG": ["the Red Death", "Darkness and Decay"]}

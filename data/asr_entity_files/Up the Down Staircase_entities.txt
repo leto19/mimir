@@ -1,1 +1,0 @@
-{"PERSON": ["Sylvia Barrett", "Sylvia"], "LANGUAGE": ["English"], "DATE": ["the mid-1960s", "her first year"], "GPE": ["Sylvia"], "NORP": ["American"]}

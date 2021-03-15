@@ -3,9 +3,9 @@ import json
 import numpy as np
 import os
 import os.path as op
-from qa.corpus_utils.preprocessing_pipeline import *
-from qa.corpus_utils import ner_pipeline
-from qa.corpus_utils.ner_pipeline import *
+#from qa.corpus_utils.preprocessing_pipeline import *
+#from qa.corpus_utils import ner_pipeline
+#from qa.corpus_utils.ner_pipeline import *
 from qa.question_answering.utils import make_dataset_dict, map_words_to_named_entities
 from qa.question_answering.models import *
 
@@ -53,12 +53,8 @@ class Model:
 # Use data sources in: "author", "title", "summary", "full_text_bows", "full_text_sents", "obj_list", "obj_dict", "word2entity"
 
 active_models = {                   #module,        #class           #info source(s)  #other parameters
-"cosine_distance_bow_fulltext":   ["cosine_distance_baseline", "CosineModel", 
-					["full_text_sents","full_text_bows","word2idx"], {"pipeline":pipeline}],
 "bert_baseline": ["bert_baseline", "BertBaseline", ["summary"], {}],
 "distilbert_squad_nqa": ["distilbert_squad_nqa", "DistilBertSquadNQA", ["summary"], {}],
-"attribute_model_fulltext": ["attribute_model", "AttributeModel", ["word2entity","obj_dict"], {}],
-"character_list_model": ["character_list_model", "CharacterListModel", ["obj_dict"], {}]
 }
 
 
@@ -86,13 +82,13 @@ class ModelController:
 		data_dict["author"] = book_id["author"]
 
 		data_dict["title"] = title
-		data_dict["summary"] = open(op.join(mimir_dir,"data/nqa_summary_text_files", dset, title)).read()
-		data_dict["full_text_bows"] = load_np_pickle(op.join(ft_dir, "bows", dset, title))
-		data_dict["full_text_sents"] = open(op.join(ft_dir, "sent_tokenized", dset, title)).readlines()
-		data_dict["obj_list"] = obj_list = load_np_pickle(op.join(ft_dir, "ne_obj_lists", dset, title))
-		obj_types = set([obj.class_string for obj in obj_list])
-		data_dict["obj_dict"] = obj_dict = {otype: [obj for obj in obj_list if obj.class_string == otype] for otype in obj_types}
-		data_dict["word2entity"] = map_words_to_named_entities(obj_dict)
+		data_dict["summary"] = open(op.join(mimir_dir,"nqa_summary_text_files", dset, title)).read()
+#		data_dict["full_text_bows"] = load_np_pickle(op.join(ft_dir, "bows", dset, title))
+#		data_dict["full_text_sents"] = open(op.join(ft_dir, "sent_tokenized", dset, title)).readlines()
+#		data_dict["obj_list"] = obj_list = load_np_pickle(op.join(ft_dir, "ne_obj_lists", dset, title))
+#		obj_types = set([obj.class_string for obj in obj_list])
+#		data_dict["obj_dict"] = obj_dict = {otype: [obj for obj in obj_list if obj.class_string == otype] for otype in obj_types}
+#		data_dict["word2entity"] = map_words_to_named_entities(obj_dict)
 		return(data_dict)
 			
 	def confirm_book(self, book_id):

@@ -11,7 +11,7 @@ from nltk.tokenize import word_tokenize
 
 #nqa_dir = os.environ["NARRATIVEQA_DIR"]
 mimir_dir = os.environ["MIMIR_DIR"]
-data_dir = op.join(mimir_dir, "data")
+data_dir = op.join(mimir_dir, "nqa_summary_text_files")
 
 
 def map_words_to_named_entities(obj_dict, classes = ["ORG","LOC","PERSON"]):

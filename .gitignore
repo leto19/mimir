@@ -46,7 +46,7 @@ nosetests.xml
 coverage.x
 
 #misc
-speech_recognition/models
+auto_speech_recognition/models
 **/dialogue/notebooks/encoder/
 **/dialogue/notebooks/fastText/
 **/dialogue/notebooks/rnn_model/
@@ -56,6 +56,12 @@ speech_recognition/models
 **/dialogue/models/encoder
 **/dialogue/models/qc_rnn_model
 **/dialogue/models/qc_rnn_model.zip
+auto_speech_recognition/live_models/
+auto_speech_recognition/models/
+auto_speech_recognition/noise_files/*
+auto_speech_recognition/pn_data/
+auto_speech_recognition/test_data3/
+auto_speech_recognition/wn_data/
 
 
 

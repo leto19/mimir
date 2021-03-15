@@ -61,11 +61,12 @@ speech_recognition/models
 auto_speech_recognition/models
 auto_speech_recognition/live_models
 auto_speech_recognition/test_data
-auto_speech_recognition/test_data2
+auto_speech_recognition/test_data3
+auto_speech_recognition/test_data3
 auto_speech_recognition/wn_data
 auto_speech_recognition/audio_temp
 auto_speech_recognition/*_data
 auto_speech_recognition/noise_files
-
+auto_speech_recognition/*/*.wav
 test_set.zip
 test_set_*.zip

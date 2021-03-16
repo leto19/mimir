@@ -1,3 +1,5 @@
+import os
+os.environ["MIMIR_DIR"] = "./"
 import argparse
 #import speech_recognition.get_speech_input as sr
 from dialogue import init_dialogue, dialogue_input, DialogueOption, bold_print
@@ -5,10 +7,7 @@ from qa.question_answering.question_classifiers import QuestionClassifier
 #from qa.corpus_utils import ner_pipeline
 #from qa.corpus_utils.ner_pipeline import *
 from qa.question_answering.models.model import ModelController
-from auto_speech_recognition.corprus_creation.log_inputs import log_inputs
-import os
 import json
-
 
 print("loading asr model...")
 

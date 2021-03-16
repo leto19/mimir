@@ -62,6 +62,6 @@ auto_speech_recognition/noise_files/*
 auto_speech_recognition/pn_data/
 auto_speech_recognition/test_data3/
 auto_speech_recognition/wn_data/
-
-
+models/*/
+.vscode/
 

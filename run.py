@@ -23,7 +23,7 @@ if not args.silent:
     import auto_speech_recognition.get_speech_input as asrg
     from vosk import Model
     print("loading asr model...")
-    asr_model = Model("%s"%os.environ["MIMIR_DIR"]+"models/all3")
+    asr_model = Model("%s"%os.environ["MIMIR_DIR"]+"models/all")
 
 class NaturalLanguageGenerator():
 	"""A placeholder Natural Language Generation class. We should figure out

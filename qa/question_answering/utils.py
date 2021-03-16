@@ -29,7 +29,6 @@ def map_words_to_named_entities(obj_dict, classes = ["ORG","LOC","PERSON"]):
 
 
 def make_dataset_dict():
-	data_dir = op.join(mimir_dir, "data")
 	id_name_dict = make_id_name_dict()
 	summary_csv = op.join(data_dir, "summaries.csv")
 	summary_list = csv_to_list(summary_csv)

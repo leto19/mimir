@@ -1,4 +1,4 @@
-pip install wikipedia vosk pyaudio pydub spacy gtts scipy noisereduce wave aubio
+pip install wikipedia vosk pyaudio pydub spacy gtts scipy noisereduce wave 
 python -m spacy download en_core_web_sm #Download spaCy model
 
 

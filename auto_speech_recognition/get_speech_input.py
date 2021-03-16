@@ -16,7 +16,6 @@ from time import sleep
 from scipy.io import wavfile
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 from array import array
-import aubio
 from auto_speech_recognition.noise_reduction.noise_reduction import *
 
 class RequestError(Exception): pass

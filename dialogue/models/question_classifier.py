@@ -41,7 +41,7 @@ class QuestionClassifier():
 
     #self.model = tf.keras.models.load_model('./dialogue/models/rnn_model')
     #print(self.model.summary())
-    self.model = tf.saved_model.load('./dialogue/models/qc_rnn_model')
+    self.model = tf.saved_model.load('./models/qc_rnn_model')
 
     print("RNN Model loaded")
 

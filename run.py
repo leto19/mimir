@@ -110,4 +110,3 @@ if __name__ == '__main__':
       tts(response)
 
     bold_print(response)
-

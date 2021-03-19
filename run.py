@@ -95,8 +95,7 @@ if __name__ == '__main__':
     elif dialogue_id == DialogueOption.QA_RESPONSE:
       # if QA comp is needed, get response from QA system
       #response = "*Answer*" # get from QA component   
-      returned_type, answer = mc.answer_question(user_input) #Model selection procedure now implemented inside mc.answer_question
-      response = nlg.generate(returned_type, answer)
+      response = mc.answer_question(user_input) #Model selection procedure now implemented inside mc.answer_question
     # use TTS component to read response out
     if not args.silent:
       tts(response)

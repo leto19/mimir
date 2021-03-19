@@ -47,7 +47,7 @@ class T5(Model):
         print("initialized")
 
     def answer_question(self, question, context):
-        question_input_ids = tokenizer.encode('question: ' + q + '\t' + 'context: ' + c, max_length=1024, padding='max_length', truncation=True, return_tensors='pt')
+        question_input_ids = self.tokenizer.encode('question: ' + question + '\t' + 'context: ' + context, max_length=1024, padding='max_length', truncation=True, return_tensors='pt')
         input_ids = torch.tensor(question_input_ids).to(device)
 
         output_ids = self.model.generate(input_ids,
@@ -57,7 +57,8 @@ class T5(Model):
                                     max_length=50,
                                     early_stopping=False)
 
-        answer = self.tokenizer.decode(output_ids, skip_special_tokens=True)
+
+        answer = self.tokenizer.decode(output_ids[0], skip_special_tokens=True)
 
         return answer
 

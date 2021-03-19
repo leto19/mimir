@@ -44,14 +44,15 @@ if __name__ == '__main__':
   # Initialise dialogue + other components
   ret = init_dialogue()
   qc = QuestionClassifier()
+  print(args.distilbert)
   if args.distilbert:
 	  mc = ModelController(verbose=args.verbose,model_id="distilbert")
   else:
 	  mc = ModelController(verbose=args.verbose)
 
-  mc = ModelController(verbose=args.verbose)
+  #mc = ModelController(verbose=args.verbose)
   nlg = NaturalLanguageGenerator()
-  os.system('clear')
+  #os.system('clear')
   bold_print(ret["response"])
   if not args.silent:
     tts(ret["response"])

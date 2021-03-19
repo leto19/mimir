@@ -34,7 +34,7 @@ echo "downloading ${filename}"
 curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id=${fileid}" > /dev/null
 curl -Lb ./cookie "https://drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=${fileid}" -o models/${filename}
 unzip models/${filename} -d models
-mv models/T5_base_finetuned/epoch1 models/t5
+mv models/T5_base_finetuned/epoch1 models/T5
 rm -rf models/T5_base_finetuned
 rm models/${filename}
 

@@ -39,8 +39,8 @@ class T5(Model):
     def __init__(self, *args, **kwargs):
         print("we are initializing T5")
         super().__init__(*args, **kwargs)
-        self.model_id = 'distilbert'
-        model_dir = '/models/' + self.model_id
+        self.model_id = 'T5'
+        model_dir = './models/' + self.model_id
         self.model = T5ForConditionalGeneration.from_pretrained(model_dir)
         self.model.to(device)
         self.tokenizer = T5Tokenizer.from_pretrained(model_dir)

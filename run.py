@@ -36,8 +36,9 @@ class NaturalLanguageGenerator():
 		else:
 			generated_string = str(answer)
 		return(generated_string)
-os.system('play -nq -t alsa synth 0.5 sine 293.66')
-os.system('play -nq -t alsa synth 0.7 sine 261.63')
+if not args.silent:
+	os.system('play -nq -t alsa synth 0.5 sine 293.66')
+	os.system('play -nq -t alsa synth 0.7 sine 261.63')
 if __name__ == '__main__':
   persist_dialogue = True
   # Initialise dialogue + other components

@@ -92,6 +92,7 @@ if __name__ == '__main__':
       response = ret['response']
 
       persist_dialogue = False
+      response = ret['response']
 
     elif dialogue_id == DialogueOption.DA_RESPONSE:
       response = ret['response']

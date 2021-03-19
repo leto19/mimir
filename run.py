@@ -8,8 +8,7 @@ from qa.question_answering.question_classifiers import QuestionClassifier
 #from qa.corpus_utils.ner_pipeline import *
 from qa.question_answering.models.model import ModelController
 import json
-os.system('play -nq -t alsa synth 0.5 sine 293.66')
-os.system('play -nq -t alsa synth 0.7 sine 261.63')
+
 print("loading asr model...")
 
 parser = argparse.ArgumentParser()
@@ -37,7 +36,8 @@ class NaturalLanguageGenerator():
 		else:
 			generated_string = str(answer)
 		return(generated_string)
-
+os.system('play -nq -t alsa synth 0.5 sine 293.66')
+os.system('play -nq -t alsa synth 0.7 sine 261.63')
 if __name__ == '__main__':
 
   persist_dialogue = True

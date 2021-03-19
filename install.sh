@@ -1,4 +1,5 @@
-pip install wikipedia vosk pyaudio pydub spacy gtts scipy noisereduce wave transformers
+pip install wikipedia vosk pyaudio pydub spacy gtts scipy wave torch 
+transformers
 python -m spacy download en_core_web_sm #Download spaCy model
 
 

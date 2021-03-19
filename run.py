@@ -14,6 +14,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-v","--verbose", action="store_true") #Run in verbose mode to view 
 				#which model answers user questions
 parser.add_argument("-s","--silent", action="store_true") #No TTS or ASR
+parser.add_argument("-d","--distilbert", action="store_true") #No TTS or ASR
 
 args = parser.parse_args()
 
@@ -38,11 +39,15 @@ class NaturalLanguageGenerator():
 os.system('play -nq -t alsa synth 0.5 sine 293.66')
 os.system('play -nq -t alsa synth 0.7 sine 261.63')
 if __name__ == '__main__':
-
   persist_dialogue = True
   # Initialise dialogue + other components
   ret = init_dialogue()
   qc = QuestionClassifier()
+  if args.distilbert:
+	  mc = ModelController(verbose=args.verbose,model_id="distilbert")
+  else:
+	  mc = ModelController(verbose=args.verbose)
+
   mc = ModelController(verbose=args.verbose)
   nlg = NaturalLanguageGenerator()
   os.system('clear')

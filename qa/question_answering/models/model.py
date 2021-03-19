@@ -61,7 +61,7 @@ active_models = {  # module,        #class           #info source(s)  #other par
 
 
 class ModelController:
-    def __init__(self, verbose=False):
+    def __init__(self, verbose=False,model_id="T5"):
         self.verbose = verbose
         self.models_dict = {}
         for model_id, model_spec in active_models.items():
@@ -71,7 +71,7 @@ class ModelController:
             self.models_dict[model_id] = model_class(model_id, info_source, **params)
         self.current_book = None
         self.current_book_data = None
-
+        self.model_id = model_id
     def get_book_data_dict(self, book_id):
         ft_dir = op.join(mimir_dir, "preprocessed_data", "full_texts")
 
@@ -106,7 +106,8 @@ class ModelController:
             print(string)
 
     def answer_question(self, question):
-        self.select_model("distilbert")
+        #self.select_model("distilbert")
+        self.select_model(self.model_id)
         answer = self.model.answer_question(question, *self.data)
         return answer
 

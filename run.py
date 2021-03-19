@@ -9,7 +9,6 @@ from qa.question_answering.question_classifiers import QuestionClassifier
 from qa.question_answering.models.model import ModelController
 import json
 
-print("loading asr model...")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-v","--verbose", action="store_true") #Run in verbose mode to view 
@@ -68,7 +67,9 @@ if __name__ == '__main__':
       print("You said: '%s' (%s%%):"%(user_input,conf))
 
       """
+      os.system('play -nq -t alsa synth 0.5 sine 293.66')
       user_input = asrg.get_speech_input_string_vosk(model=asr_model)
+      os.system('play -nq -t alsa synth 0.7 sine 261.63')
       print("You said: '%s'"%(user_input))
 
       #log_inputs(user_input,"s")
@@ -95,7 +96,7 @@ if __name__ == '__main__':
     elif dialogue_id == DialogueOption.QA_RESPONSE:
       # if QA comp is needed, get response from QA system
       #response = "*Answer*" # get from QA component   
-      returned_type, answer = mc.answer_question(user_input) #Model selection procedure now implemented inside mc.answer_question
+      answer = mc.answer_question(user_input) #Model selection procedure now implemented inside mc.answer_question
       response = nlg.generate(returned_type, answer)
     # use TTS component to read response out
     if not args.silent:

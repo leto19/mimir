@@ -90,14 +90,12 @@ if __name__ == '__main__':
     elif dialogue_id == DialogueOption.BOOK_CONFIRMED:
       book_title = ret['book'] # pass to qa
       mc.confirm_book(book_title)
-      qc.set_data_dict(mc.current_book_data)
       response = ret['response']
 
     elif dialogue_id == DialogueOption.QA_RESPONSE:
       # if QA comp is needed, get response from QA system
       #response = "*Answer*" # get from QA component   
-      predicted_answer_type = qc.predict(user_input) #Currently just returns a type, but could return list of types + probabilities? 
-      returned_type, answer = mc.answer_question(predicted_answer_type, user_input) #Model selection procedure now implemented inside mc.answer_question
+      returned_type, answer = mc.answer_question(user_input) #Model selection procedure now implemented inside mc.answer_question
       response = nlg.generate(returned_type, answer)
     # use TTS component to read response out
     if not args.silent:

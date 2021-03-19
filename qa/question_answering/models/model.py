@@ -106,7 +106,7 @@ class ModelController:
             print(string)
 
     def answer_question(self, question):
-        self.select_model("T5")
+        self.select_model("distilbert")
         answer = self.model.answer_question(question, *self.data)
         return answer
 

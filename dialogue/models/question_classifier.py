@@ -18,7 +18,7 @@ class QuestionClassifier():
   def __init__(self):
     xtrain = []
 
-    with open("./data/question_classification/trec_train.txt", 'rb') as f:
+    with open("./dialogue/models/data/trec_train.txt", 'rb') as f:
       questions = [x.decode('utf8').strip() for x in f.readlines()]
       for q in questions:
           splt = q.replace("\n", "").split(":")
@@ -41,7 +41,7 @@ class QuestionClassifier():
 
     #self.model = tf.keras.models.load_model('./dialogue/models/rnn_model')
     #print(self.model.summary())
-    self.model = tf.saved_model.load('./models/qc_rnn_model')
+    self.model = tf.saved_model.load('./models/rnn_model')
 
     print("RNN Model loaded")
 

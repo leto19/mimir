@@ -33,7 +33,7 @@ def get_confirmed_book():
 
 
 def get_suggested_books_nqa(requested_book):
-  with open(mimir_dir + 'data/nqa_gutenberg_corpus/supported_books.csv', 'r') as file:
+  with open(mimir_dir + 'nqa_summary_text_files/supported_books.csv', 'r') as file:
     supported_books = list(csv.reader(file))[1:] # [0] is title, [1] is author
     
     similarities = []

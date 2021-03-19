@@ -83,6 +83,8 @@ if __name__ == '__main__':
     response = None 
 
     if dialogue_id == DialogueOption.EXIT:
+      response = ret['response']
+
       persist_dialogue = False
 
     elif dialogue_id == DialogueOption.DA_RESPONSE:

@@ -8,7 +8,8 @@ from qa.question_answering.question_classifiers import QuestionClassifier
 #from qa.corpus_utils.ner_pipeline import *
 from qa.question_answering.models.model import ModelController
 import json
-
+os.system('play -nq -t alsa synth 0.5 sine 293.66')
+os.system('play -nq -t alsa synth 0.7 sine 261.63')
 print("loading asr model...")
 
 parser = argparse.ArgumentParser()
@@ -70,9 +71,9 @@ if __name__ == '__main__':
       user_input = asrg.get_speech_input_string_vosk(model=asr_model)
       print("You said: '%s'"%(user_input))
 
-      log_inputs(user_input,"s")
-    else:
-      log_inputs(user_input,"t")
+      #log_inputs(user_input,"s")
+    #else:
+      #log_inputs(user_input,"t")
     # pass user input to dialogue, which returns a response and/or a code signifying QA comp is needed (or user has chosen to exit)
     
     ret = dialogue_input(user_input)

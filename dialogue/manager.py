@@ -1,5 +1,4 @@
 from .src import StateMachine, States, TRANSITIONS, DialogueOption, get_confirmed_book
-from .models import QuestionClassifier
 
 global DSM
 

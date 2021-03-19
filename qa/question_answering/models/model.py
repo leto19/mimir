@@ -104,46 +104,10 @@ class ModelController:
 		if self.verbose:
 			print(string)
 	
-	def answer_question(self, ans_type_pred, question):		
-		final_answer_type = ans_type_pred
-
-		if ans_type_pred.endswith("ATTR"):
-			self.select_model("attribute_model_fulltext")
-			ans_type = ans_type_pred[:-4]
-			answer = self.model.answer_question(question, *self.data, attribute=ans_type)
-
-		elif ans_type_pred == "CHARLIST":
-			self.select_model("character_list_model")
-			answer = self.model.answer_question(question, *self.data, n=4)
-
-		elif ans_type_pred == "MAINCHAR":
-			self.select_model("character_list_model")
-			answer = self.model.answer_question(question, *self.data, n=1)
-
-		else:	
-			self.select_model("bert_baseline")
-			answer = self.model.answer_question(question, *self.data)		
-			final_answer_type = "bert string"
-
-		if ans_type_pred == None:
-			if answer == None:
-				self.print_if_verbose("{} failed to find answer".format(self.model_code))
-			else:
-				self.print_if_verbose("Answer found by {}".format(self.model_code))	
-		
-		if ans_type_pred != None:
-			if answer == None: #Backoff
-				self.print_if_verbose("{} failed to find answer. Trying backoff model...".format(self.model_code))
-				self.select_model("bert_baseline")
-				answer = self.model.answer_question(question, *self.data)
-				final_answer_type = "bert string"
-				if answer == None:
-					self.print_if_verbose("Backoff model {} failed to find answer".format(self.model_code))
-					final_answer_type = "no answer"
-			if answer != None:
-				self.print_if_verbose("Answer found by {}".format(self.model_code))	
-
-		return final_answer_type, answer
+	def answer_question(self, question):
+			self.select_model("T5")
+			answer = self.model.answer_question(question, *self.data)
+		return answer
 
 
 if __name__ == "__main__":

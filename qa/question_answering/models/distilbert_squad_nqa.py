@@ -2,15 +2,10 @@ import os
 import os.path as op
 import sys
 
-import pandas as pd
 import torch
-import time
-import numpy as np
 import datetime
-from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 import transformers
-from transformers import AutoTokenizer, AutoModelForQuestionAnswering, BertForQuestionAnswering, BertTokenizer, \
-    DistilBertTokenizer, DistilBertForQuestionAnswering
+from transformers import DistilBertTokenizer, DistilBertForQuestionAnswering
 import tensorflow as tf
 from qa.question_answering.models.model import Model
 from qa.question_answering.utils import get_line_list_from_file
@@ -45,7 +40,7 @@ else:
 
 class DistilBertSquadNQA(Model):
     def __init__(self, *args, **kwargs):
-        print("we are initializing distilbert finetuned on SQuAD and NQA")
+        print("we are initializing distilbert")
         super().__init__(*args, **kwargs)
         self.model_id = 'distilbert-squad-nqa'
         model_dir = 'qa/question_answering/models/' + self.model_id

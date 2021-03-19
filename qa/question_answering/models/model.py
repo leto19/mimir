@@ -53,8 +53,8 @@ class Model:
 # Use data sources in: "author", "title", "summary", "full_text_bows", "full_text_sents", "obj_list", "obj_dict", "word2entity"
 
 active_models = {                   #module,        #class           #info source(s)  #other parameters
-"bert_baseline": ["bert_baseline", "BertBaseline", ["summary"], {}],
-"distilbert_squad_nqa": ["distilbert_squad_nqa", "DistilBertSquadNQA", ["summary"], {}],
+"T5": ["T5", "T5", ["summary"], {}],
+"distilbert": ["distilbert", "DistilBert", ["summary"], {}],
 }
 
 

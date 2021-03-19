@@ -40,7 +40,7 @@ class DistilBert(Model):
         print("we are initializing distilbert")
         super().__init__(*args, **kwargs)
         self.model_id = 'distilbert'
-        model_dir = '/models/' + self.model_id
+        model_dir = './models/' + self.model_id
         self.model = DistilBertForQuestionAnswering.from_pretrained(model_dir)
         self.model.to(device)
         self.tokenizer = DistilBertTokenizer.from_pretrained(model_dir)

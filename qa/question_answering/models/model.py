@@ -65,7 +65,7 @@ class ModelController:
 		self.models_dict = {}
 		for model_id, model_spec in active_models.items():
 			class_location, class_name, info_source, params = model_spec
-			module = importlib.import_module('qa.question_answering.models.'+class_location)
+			module = importlib.import_module('models.'+class_location)
 			model_class = getattr(module, class_name)
 			self.models_dict[model_id] = model_class(model_id, info_source, **params)
 		self.current_book = None

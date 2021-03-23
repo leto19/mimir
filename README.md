@@ -13,30 +13,4 @@ to have to look away from the book and certainly not to type
 anything. The Companion will speak its answers.
 
 ## Requirements
-### Speech Recognition
-Uses Vosk and pyaudio pip packages:
-```
-pip install vosk pyaudio
-```
-model directories go in 'speech_recognition/models'
-
-[Models for Vosk can be obtained here](https://alphacephei.com/vosk/models)
-
-### NER
-Uses the python module nltk (http://www.nltk.org/):
-```
-pip install nltk
-```
-## Running 
-### Speech Recognition
-
-Run get_speech_input.py:
-```    
-python3 get_speech_input.py models/model-directory-here
-```
-To get mic input as a string in other locations:
-```
-import speech_recognition.get_speech_input as sr
-
-string = sr.get_input_string()
-```
+All Python package and model requriements can be satisified by running the installer BASH script, ```install.sh```

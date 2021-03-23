@@ -115,7 +115,7 @@ def get_speech_input_string_vosk(seconds=10,model=None):
         res = json.loads(rec.FinalResult())
         #print(rec)
         #print(res)
-        print(res['text'])
+        #print(res['text'])
         return res['text'].lower().replace("[noise]","")
     else:
         print("Didn't hear anything...")

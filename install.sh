@@ -31,5 +31,6 @@ mv models/T5_base_finetuned/epoch1 models/T5
 rm -rf models/T5_base_finetuned
 rm models/${filename}
 
+export PATH="$PATH:."
 
 rm cookie 

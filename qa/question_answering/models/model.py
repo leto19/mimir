@@ -61,13 +61,13 @@ class ModelController:
 
         # Use data sources in: "author", "title", "summary", "full_text_bows", "full_text_sents", "obj_list", "obj_dict", "word2entity"
         active_models = {}
-        if model_id is "T5":
+        if model_id == "T5":
             active_models["T5"] = ["T5", "T5", ["summary"], {}]
         elif model_id == "distilbert":
             active_models["distilbert"] = ["distilbert", "DistilBert", ["summary"], {}]
         else:
             raise ValueError("Bad model id passed")
-
+        print(active_models)
         for model_id, model_spec in active_models.items():
             class_location, class_name, info_source, params = model_spec
             module = importlib.import_module('qa.question_answering.models.' + class_location)

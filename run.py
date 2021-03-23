@@ -52,7 +52,7 @@ if __name__ == '__main__':
 
   #mc = ModelController(verbose=args.verbose)
   nlg = NaturalLanguageGenerator()
-  #os.system('clear')
+  os.system('clear')
   bold_print(ret["response"])
   if not args.silent:
     tts(ret["response"])

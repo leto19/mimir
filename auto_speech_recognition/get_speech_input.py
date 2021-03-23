@@ -125,6 +125,7 @@ def get_speech_input_string_vosk(seconds=10,model=None):
 def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.flac",language="en-GB",show_all=True,keep_files=False):
     #the following is adapted from speech_recognition module    
         get_audio(10)
+        noise_reduction("auto_speech_recognition/myfile.wav", "auto_speech_recognition/myfile.wav")
         sound = AudioSegment.from_wav("auto_speech_recognition/myfile.wav") #convert to flac 
         sound.export("auto_speech_recognition/myfile.flac",format = "flac")
         if not keep_files: 
@@ -162,7 +163,7 @@ def get_speech_input_string_google(file_name="auto_speech_recognition/myfile.fla
         if len(result) == 0:
             return '{"alternative":[{"transcript":"ERROR","confidence":0.0}]}'
         json_result = json.dumps(result[0])
-        print("JSON RESULT:\n",json_result,type(json_result))
+        #print("JSON RESULT:\n",json_result,type(json_result))
         if show_all: return json_result
         """
         if "confidence" in actual_result["alternative"]:

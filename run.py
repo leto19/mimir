@@ -12,10 +12,10 @@ import json
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-v","--verbose", action="store_true") #Run in verbose mode to view 
-				#which model answers user questions
+				
 parser.add_argument("-s","--silent", action="store_true") #No TTS or ASR
-parser.add_argument("-d","--distilbert", action="store_true") #No TTS or ASR
-
+parser.add_argument("-d","--distilbert", action="store_true") #which model answers user question
+parser.add_argument("-g","--google",action="store_true") #use google for ASR
 args = parser.parse_args()
 
 if not args.silent:
@@ -59,25 +59,27 @@ if __name__ == '__main__':
 
   # While not in end_state, keep running
   while persist_dialogue:
-
+    #print(args )
     user_input = input("(Press Enter for ASR)\n> ")
+  
     if user_input == "" and not args.silent: # if the user dosn't type a question, use ASR
-      """
-      j = json.loads(asrg.get_speech_input_string_vosk())
-      #this json object contains the best result in "alternative"
-      #with the actual text being "transcript" and the confidence % "confidence"
-      if "confidence" in j["alternative"][0]: 
-        conf = float(j["alternative"][0]["confidence"])*100 #formatting
+      if args.google:
+        os.system('play -nq -t alsa synth 0.5 sine 293.66')
+        j = json.loads(asrg.get_speech_input_string_google())
+        os.system('play -nq -t alsa synth 0.7 sine 261.63')
+        #this json object contains the best result in "alternative"
+        #with the actual text being "transcript" and the confidence % "confidence"
+        if "confidence" in j["alternative"][0]: 
+          conf = float(j["alternative"][0]["confidence"])*100 #formatting
+        else:
+          conf = "???"# sanity :-) 
+        user_input = j["alternative"][0]["transcript"]
+        print("You said: '%s' (%s%%):"%(user_input,conf))
       else:
-        conf = "???"# sanity :-) 
-      user_input = j["alternative"][0]["transcript"]
-      print("You said: '%s' (%s%%):"%(user_input,conf))
-
-      """
-      os.system('play -nq -t alsa synth 0.5 sine 293.66')
-      user_input = asrg.get_speech_input_string_vosk(model=asr_model)
-      os.system('play -nq -t alsa synth 0.7 sine 261.63')
-      print("You said: '%s'"%(user_input))
+        os.system('play -nq -t alsa synth 0.5 sine 293.66')
+        user_input = asrg.get_speech_input_string_vosk(model=asr_model)
+        os.system('play -nq -t alsa synth 0.7 sine 261.63')
+        print("You said: '%s'"%(user_input))
 
       #log_inputs(user_input,"s")
     #else:

@@ -14,3 +14,11 @@ anything. The Companion will speak its answers.
 
 ## Requirements
 All Python package and model requriements can be satisified by running the installer BASH script, ```install.sh```
+
+
+## Usage
+
+Program can be run using ```./mimir``` after installation. The following command line options are available:
+- ```-g```, ```--google``` - use Google API for ASR (slower but more accurate)
+- ```-d```, ```--distilbert``` - use Distilbert for QA (default is T5)
+- ```-s```, ```--silent``` - Don't use ASR or TTS 

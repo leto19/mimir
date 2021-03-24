@@ -37,8 +37,8 @@ class NaturalLanguageGenerator():
 			generated_string = str(answer)
 		return(generated_string)
 if not args.silent:
-	os.system('play -nq -t alsa synth 0.5 sine 293.66')
-	os.system('play -nq -t alsa synth 0.7 sine 261.63')
+	os.system('play -nq -t -v 0.5 alsa synth 0.5 sine 293.66')
+	os.system('play -nq -t -v 0.5 alsa synth 0.7 sine 261.63')
 if __name__ == '__main__':
   persist_dialogue = True
   # Initialise dialogue + other components
@@ -64,9 +64,9 @@ if __name__ == '__main__':
   
     if user_input == "" and not args.silent: # if the user dosn't type a question, use ASR
       if args.google:
-        os.system('play -nq -t alsa synth 0.5 sine 293.66')
+        os.system('play -nq -t -v 0.5 alsa synth 0.5 sine 293.66')
         j = json.loads(asrg.get_speech_input_string_google())
-        os.system('play -nq -t alsa synth 0.7 sine 261.63')
+        os.system('play -nq -t -v 0.5 alsa synth 0.7 sine 261.63')
         #this json object contains the best result in "alternative"
         #with the actual text being "transcript" and the confidence % "confidence"
         if "confidence" in j["alternative"][0]: 
@@ -114,3 +114,4 @@ if __name__ == '__main__':
       tts(response)
 
     bold_print(response)
+    os.system('clear')

@@ -1,4 +1,4 @@
-# Mimir (Mini Project)
+# Mimir (Team 2 Mini Project)
 __Context:__ you are reading a bulky novel, or a biography, or indeed anything that has a complicated story to tell.
 
 __Challenge:__ design, build and evaluate software capable of
@@ -18,7 +18,8 @@ All Python package and model requriements can be satisified by running the insta
 
 ## Usage
 
-Program can be run using ```./mimir``` after installation. The following command line options are available:
-- ```-g```, ```--google``` - use Google API for ASR (slower but more accurate)
-- ```-d```, ```--distilbert``` - use Distilbert for QA (default is T5)
-- ```-s```, ```--silent``` - Don't use ASR or TTS 
+Program can be run using ```./mimir``` after installation. The following command line launch options are available:
+* ```-g```, ```--google``` - use Google API for ASR (slower but more accurate)
+* ```-d```, ```--distilbert``` - use Distilbert model for QA (default is T5)
+* ```-s```, ```--silent``` - Don't use ASR or TTS 
+* ```-v```, ```--verbose``` - Verbose logging for QA

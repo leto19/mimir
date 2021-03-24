@@ -22,10 +22,9 @@ args = parser.parse_args()
 if not args.silent:
     from tts.gtts import tts
     import auto_speech_recognition.get_speech_input as asrg
-    if not args.google:
-      from vosk import Model
-      print("loading asr model...")
-      asr_model = Model("%s"%os.environ["MIMIR_DIR"]+"models/all")
+    from vosk import Model
+    print("loading asr model...")
+    asr_model = Model("%s"%os.environ["MIMIR_DIR"]+"models/all")
 
 class NaturalLanguageGenerator():
 	"""A placeholder Natural Language Generation class. We should figure out
@@ -66,9 +65,9 @@ if __name__ == '__main__':
   
     if user_input == "" and not args.silent: # if the user dosn't type a question, use ASR
       if args.google:
-        os.system('play -nq -t alsa synth 0.5 sine 293.66')
+        os.system('play -nq -t alsa synth 0.5 sine 293.66 -vol 0.3')
         j = json.loads(asrg.get_speech_input_string_google())
-        os.system('play -nq -t alsa synth 0.7 sine 261.63')
+        os.system('play -nq -t  alsa synth 0.7 sine 261.63 -vol 0.3')
         #this json object contains the best result in "alternative"
         #with the actual text being "transcript" and the confidence % "confidence"
         if "confidence" in j["alternative"][0]: 
@@ -78,9 +77,9 @@ if __name__ == '__main__':
         user_input = j["alternative"][0]["transcript"]
         print("You said: '%s' (%s%%):"%(user_input,conf))
       else:
-        os.system('play -nq -t alsa synth 0.5 sine 293.66')
+        os.system('play -nq  -t alsa synth 0.5 sine 293.66')
         user_input = asrg.get_speech_input_string_vosk(model=asr_model)
-        os.system('play -nq -t alsa synth 0.7 sine 261.63')
+        os.system('play -nq  -t alsa synth 0.7 sine 261.63')
         print("You said: '%s'"%(user_input))
 
       #log_inputs(user_input,"s")
@@ -116,3 +115,4 @@ if __name__ == '__main__':
       tts(response)
 
     bold_print(response)
+    #os.system('clear')

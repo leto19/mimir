@@ -15,6 +15,7 @@ def lookup_gain_in_table(G, a_post, a_priori, a_post_range, a_priori_range, step
     lookup = Ia_priori.astype('int')+ ((Ia_post.astype('int')) * len(G[:,1]) )
    
     lookup[lookup >8280] = 8280 # it's gonna be 1 anyway so its ok
+    lookup[lookup<0] = 0
     f = np.unravel_index(lookup, (91, 91))
     f0 = f[0]
     f1 = f[1]

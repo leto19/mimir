@@ -20,7 +20,7 @@ parser.add_argument("-g","--google",action="store_true") #use google for ASR
 args = parser.parse_args()
 
 if not args.silent:
-    from tts.gtts import tts
+    from tts.gtts_run import tts
     import auto_speech_recognition.get_speech_input as asrg
     from vosk import Model
     print("loading asr model...")
@@ -37,6 +37,8 @@ class NaturalLanguageGenerator():
 		else:
 			generated_string = str(answer)
 		return(generated_string)
+
+    
 if not args.silent:
 	os.system('play -nq -t alsa synth 0.5 sine 293.66')
 	os.system('play -nq -t alsa synth 0.7 sine 261.63')

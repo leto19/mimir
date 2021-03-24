@@ -1,4 +1,4 @@
-from gtts import gTTS 
+from gtts import gTTS
 from pydub import AudioSegment
 from pydub.playback import play
 import os
@@ -28,3 +28,7 @@ def tts(text):
     res = AudioSegment.from_mp3("response.mp3")
     play(res)
     os.remove("response.mp3")
+
+if __name__ == "__main__":
+  import sys
+  tts(sys.argv[1])

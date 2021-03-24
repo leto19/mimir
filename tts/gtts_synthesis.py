@@ -28,3 +28,4 @@ def tts(text):
     res = AudioSegment.from_mp3("response.mp3")
     play(res)
     os.remove("response.mp3")
+    

@@ -1,5 +1,5 @@
 pip install wikipedia vosk pyaudio pydub spacy gtts scipy wave torch pysndfx
-transformers
+transformers sentence_transformers soundfile noisereduce
 python -m spacy download en_core_web_sm #Download spaCy model
 
 

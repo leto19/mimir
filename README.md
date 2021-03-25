@@ -18,7 +18,7 @@ You may also need to install [sox](http://sox.sourceforge.net/sox.html) for the 
 ```
 sudo apt-get install sox
 ```
-
+This software is was developed and tested on Ubuntu Linux but is (in theory) platform independent - we recommend using the [Windows Subsytem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps) to run th program from Windows.  
 ## Usage
 
 Program can be run using ```./mimir``` after installation. The following command line launch options are available:

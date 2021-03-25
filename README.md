@@ -13,8 +13,11 @@ to have to look away from the book and certainly not to type
 anything. The Companion will speak its answers.
 
 ## Requirements
-All Python package and model requriements can be satisified by running the installer BASH script, ```install.sh```
-
+All Python package and model requriements can be satisified by running the installer BASH script, ```install.sh```\
+You may also need to install [sox](http://sox.sourceforge.net/sox.html) for the ASR and TTS to work:
+```
+sudo apt-get install sox
+```
 
 ## Usage
 

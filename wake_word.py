@@ -10,6 +10,11 @@ ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 import wave
 import mimir_hf
 import gc
+from qa.question_answering.question_classifiers import QuestionClassifier
+from qa.question_answering.models.model import ModelController
+
+
+
 def py_error_handler(filename, line, function, err, fmt):
     pass
 
@@ -27,7 +32,8 @@ def is_silent(data):
     #print(max(data))
     return max(data) < 500
         
-def listen():
+def listen(mc):
+    
 
     FS = 16000
     CHUNK = 1024
@@ -88,10 +94,11 @@ def listen():
     p.terminate()
      #a little hacky but  it works 
     
-    mimir_hf.run()
+    mimir_hf.run(mc)
     print("going back to wake word mode...")
-    listen()
+    listen(mc)
     gc.collect()
+
 def recognise(in_audio,model):
     SetLogLevel(-1) #Hides Kaldi outputs to terminal 
 
@@ -107,6 +114,7 @@ def recognise(in_audio,model):
     else:
         #print("Didn't hear anything...")
         return "NONE"
-
+mc = ModelController()
 if __name__ == '__main__':
-    listen()
+    listen(mc)
+    exit()

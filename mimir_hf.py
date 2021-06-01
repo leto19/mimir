@@ -9,7 +9,7 @@ from qa.question_answering.question_classifiers import QuestionClassifier
 #from qa.corpus_utils.ner_pipeline import *
 from qa.question_answering.models.model import ModelController
 import json
-
+import gc
 
 
 parser = argparse.ArgumentParser()
@@ -46,17 +46,19 @@ if not args.silent:
 	os.system('play -nq -t alsa synth 0.5 sine 293.66')
 	os.system('play -nq -t alsa synth 0.7 sine 261.63')
 #if __name__ == '__main__':
-def run():
+def run(mc):
   persist_dialogue = True
   # Initialise dialogue + other components
   ret = init_dialogue()
-  qc = QuestionClassifier()
+  #qc = QuestionClassifier()
+  """
   print(args.distilbert)
+
   if args.distilbert:
 	  mc = ModelController(verbose=args.verbose,model_id="distilbert")
   else:
 	  mc = ModelController(verbose=args.verbose)
-
+  """
   #mc = ModelController(verbose=args.verbose)
   nlg = NaturalLanguageGenerator()
   os.system('clear')

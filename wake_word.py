@@ -8,6 +8,8 @@ import os
 from array import array
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 import wave
+import mimir_hf
+import gc
 def py_error_handler(filename, line, function, err, fmt):
     pass
 
@@ -84,12 +86,12 @@ def listen():
     stream.stop_stream()
     stream.close() 
     p.terminate()
-    import mimir_hf #a little hacky but  it works 
-    del mimir_hf
-
+     #a little hacky but  it works 
+    
+    mimir_hf.run()
     print("going back to wake word mode...")
-
     listen()
+    gc.collect()
 def recognise(in_audio,model):
     SetLogLevel(-1) #Hides Kaldi outputs to terminal 
 

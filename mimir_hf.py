@@ -11,6 +11,7 @@ from qa.question_answering.models.model import ModelController
 import json
 
 
+
 parser = argparse.ArgumentParser()
 parser.add_argument("-v","--verbose", action="store_true") #Run in verbose mode to view 
 				
@@ -45,7 +46,7 @@ if not args.silent:
 	os.system('play -nq -t alsa synth 0.5 sine 293.66')
 	os.system('play -nq -t alsa synth 0.7 sine 261.63')
 #if __name__ == '__main__':
-if True:
+def run():
   persist_dialogue = True
   # Initialise dialogue + other components
   ret = init_dialogue()
@@ -100,8 +101,8 @@ if True:
 
     if dialogue_id == DialogueOption.EXIT:
       response = ret['response']
-      import gc
-      gc.collect()
+      exit_flag = True
+
       persist_dialogue = False
       response = ret['response']
 
@@ -120,6 +121,6 @@ if True:
     # use TTS component to read response out
     if not args.silent:
       tts(response)
-
     bold_print(response)
-    #os.system('clear')
+  #EXIT HERE 
+   

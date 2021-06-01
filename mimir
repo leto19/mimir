@@ -119,3 +119,5 @@ if __name__ == '__main__':
 
     bold_print(response)
     #os.system('clear')
+  #EXITING - OTHERWISE WE HAVE MEMORY ISSUES 
+  exit()

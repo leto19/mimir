@@ -39,7 +39,7 @@ class StateMachine():
     '''
     self.state_history.append(self.current_state)
     self.current_state = transition.dst
-    print(transition)
+    #print(transition)
     return transition
 
   def process_input(self, text_in):

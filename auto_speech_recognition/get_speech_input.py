@@ -21,6 +21,7 @@ from auto_speech_recognition.noise_reduction.noise_reduction import *
 class RequestError(Exception): pass
 
 class UnknownValueError(Exception): pass
+ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 
 def py_error_handler(filename, line, function, err, fmt):
     pass

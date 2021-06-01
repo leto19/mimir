@@ -18,7 +18,9 @@ parser.add_argument("-s","--silent", action="store_true") #No TTS or ASR
 parser.add_argument("-d","--distilbert", action="store_true") #which model answers user question
 parser.add_argument("-g","--google",action="store_true") #use google for ASR
 args = parser.parse_args()
-
+#for HF mode:
+args.google = True
+#args.distilbert = True TODO: ask Kyle about this 
 if not args.silent:
     from tts.gtts_run import tts
     import auto_speech_recognition.get_speech_input as asrg
@@ -42,7 +44,8 @@ class NaturalLanguageGenerator():
 if not args.silent:
 	os.system('play -nq -t alsa synth 0.5 sine 293.66')
 	os.system('play -nq -t alsa synth 0.7 sine 261.63')
-if __name__ == '__main__':
+#if __name__ == '__main__':
+if True:
   persist_dialogue = True
   # Initialise dialogue + other components
   ret = init_dialogue()
@@ -64,13 +67,13 @@ if __name__ == '__main__':
   # While not in end_state, keep running
   while persist_dialogue:
     #print(args )
-    user_input = input("(Press Enter for ASR)\n> ")
-  
+    #user_input = input("(Press Enter for ASR)\n> ")
+    user_input = "" # for 'hands free' mode
     if user_input == "" and not args.silent: # if the user dosn't type a question, use ASR
       if args.google:
-        os.system('play -nq -t alsa synth 0.5 sine 293.66 -vol 0.3')
+        os.system('play -nq  -t alsa synth 0.5 sine 293.66')
         j = json.loads(asrg.get_speech_input_string_google())
-        os.system('play -nq -t  alsa synth 0.7 sine 261.63 -vol 0.3')
+        os.system('play -nq  -t alsa synth 0.7 sine 261.63')
         #this json object contains the best result in "alternative"
         #with the actual text being "transcript" and the confidence % "confidence"
         if "confidence" in j["alternative"][0]: 
@@ -97,7 +100,8 @@ if __name__ == '__main__':
 
     if dialogue_id == DialogueOption.EXIT:
       response = ret['response']
-
+      import gc
+      gc.collect()
       persist_dialogue = False
       response = ret['response']
 

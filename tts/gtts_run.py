@@ -30,20 +30,18 @@ def add_effect(in_file,out_file):
       #.delay(0.4,0.6,[0.5,0.25])
       #.overdrive(gain=5,colour=4)
       .pitch(-300,use_tree=True)
-      .reverb(reverberance=5)
-      .speed(1.1)
+      #.reverb(reverberance=5)
+      #.speed(1.1)
       #.bend([["0","180",".25"],["0","90","1"],["0","10",".25"]])
-      .lowshelf(gain=-20.0,frequency=250,slope=0.8)
-      .tremolo(90,50)
+      #.lowshelf(gain=-20.0,frequency=250,slope=0.8)
+      #.tremolo(90,50)
       .equalizer(20)
       .custom("chorus 1 .5 100 0.8 1 3 -s")
-      .custom("synth sine fmod 10 echo 0.8 0.8 29 0.8")
+      #.custom("synth sine fmod 10 echo 0.8 0.8 29 0.8")
   )
 
   fx(in_file,out_file)
-  #y,fs = sf.read(in_file)
-  #print(type(y))
-  
+
 def tts(text):
   with noalsaerr():
     language = 'en'
@@ -54,10 +52,13 @@ def tts(text):
 
     res = AudioSegment.from_mp3("response.mp3")
     res.export("response.wav",format="wav")
-    os.remove("response.mp3")
+    os.remove("response.mp3")# probably not the cheapest way to do this
     add_effect("response.wav","response_e.wav")
     res = AudioSegment.from_file("response_e.wav")
+    #res = AudioSegment.from_file("response.wav")
+
     os.remove("response.wav")
+    
     os.remove("response_e.wav")
     play(res)
 

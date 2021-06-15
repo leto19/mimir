@@ -1,4 +1,4 @@
-# Mimir (Team 2 Mini Project)
+# Mimir (Team 1 Mini Project)
 __Context:__ you are reading a bulky novel, or a biography, or indeed anything that has a complicated story to tell.
 
 __Challenge:__ design, build and evaluate software capable of
